@@ -1,17 +1,20 @@
 name: Android Build
 
-# Canonical HangulMate workflow (renamed from android.yml — there is exactly
-# one workflow file in this repo; do not add a second competing one).
-# What it does, in order:
-#   1. Checks out the code.
-#   2. Sets up JDK 17 (Temurin) and the Android SDK (API 34 + build-tools).
-#   3. Runs the unit tests (with Gradle caching).
-#   4. Builds the debug APK.
-#   5. Uploads the APK as a downloadable artifact.
-# It runs automatically on every push / pull request to main, and can also be
-# started by hand (Actions tab -> Android Build -> Run workflow).
-# No signing keys or secrets are used or needed: the debug APK is unsigned
-# and installs directly on a phone for testing.
+# DIAGNOSTIC variant (temporary): compile FIRST, test SECOND, and capture
+# both steps' full console output as downloadable artifacts. The current
+# workflow runs the tests before the build, so a test-step failure hides
+# whether the app even compiles. This file answers that in a single run:
+#   - if "Build debug APK" fails, the problem is compilation (KSP / Room /
+#     Hilt validation / a Kotlin error) — read build-compile.log.
+#   - if the build passes but "Run unit tests" fails, the problem is test
+#     execution (Robolectric android-all download / a test assertion) —
+#     read build-test.log.
+# Paste this WHOLE file OVER .github/workflows/android.yml in the repo
+# (GitHub web UI: repo -> .github/workflows/android.yml -> Edit (pencil) ->
+# select all -> paste -> Commit changes). Do NOT create a second workflow
+# file — there must be exactly one workflow, at .github/workflows/android.yml.
+# The file is named android-diagnostic.yml here only so it does not collide
+# with the project's android-build.yml; the repo keeps the name android.yml.
 
 on:
   push:
@@ -61,8 +64,24 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v3
 
+      # --- DIAGNOSTIC STEP 1: compile first, before any test ------------
+      # Runs before the tests so a compile failure shows up on its own.
+      # Full console output is teed to build-compile.log; `set -o pipefail`
+      # keeps the step red when Gradle fails (plain `tee` would mask it).
+      # --console=plain keeps the log readable (no progress-bar control codes).
+      - name: Build debug APK (compile first)
+        run: |
+          set -o pipefail
+          ./gradlew assembleDebug --stacktrace --console=plain 2>&1 | tee build-compile.log
+
+      # --- DIAGNOSTIC STEP 2: tests (only if the compile passed) ---------
+      # Skipped automatically when the compile fails — that is the point:
+      # a red run whose failing step is this one means the failure is in
+      # test execution, not in compilation.
       - name: Run unit tests
-        run: ./gradlew testDebugUnitTest --stacktrace
+        run: |
+          set -o pipefail
+          ./gradlew testDebugUnitTest --stacktrace --console=plain 2>&1 | tee build-test.log
 
       # Test HTML/XML reports are only useful when tests fail — upload them
       # then, so a red run still tells you exactly which test broke.
@@ -75,8 +94,21 @@ jobs:
             app/build/test-results/testDebugUnitTest/
             app/build/reports/tests/testDebugUnitTest/
 
-      - name: Build debug APK
-        run: ./gradlew assembleDebug --stacktrace
+      # The two log files are the diagnostic payload: they hold the exact
+      # error text of whichever step failed. Uploaded on EVERY run (not
+      # just on failure) so the compile log is there even when the build
+      # step fails and the APK upload below is skipped. Download them from
+      # the run page (Actions -> the run -> Artifacts -> hangulmate-build-logs)
+      # and paste the error lines back here — this is the way to read the
+      # failure text without opening the sign-in-walled step log.
+      - name: Upload build logs (always)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hangulmate-build-logs
+          path: |
+            build-compile.log
+            build-test.log
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
