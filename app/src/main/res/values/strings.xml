@@ -75,6 +75,7 @@
     <string name="statistics_empty_state">Statistics will appear after you start learning.</string>
 
     <string name="settings_about">About</string>
+    <string name="about_dictionary_credit">Dictionary data: Basic Korean Dictionary (한국어기초사전) by the National Institute of Korean Language (NIKL), via binjang/NIKL-korean-english-dictionary. Shared under CC BY-SA 2.0 KR.</string>
     <string name="settings_version">Version %1$s</string>
-    <string name="offline_notice">You are offline — HangulMate works fully offline. Your data never leaves your device.</string>
+    <string name="offline_notice">All core features work offline — no internet needed. Your data never leaves your device.</string>
 </resources>

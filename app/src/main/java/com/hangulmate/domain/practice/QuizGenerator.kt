@@ -107,15 +107,35 @@ object QuizGenerator {
         listeningAvailable: Boolean = true,
         random: Random = Random.Default,
     ): List<QuizQuestion> {
-        if (targets.size < MIN_POOL_SIZE) return emptyList()
         if (type == QuizType.IMAGE) return emptyList()
+        // Nepali-dependent types (KO_TO_NE, NE_TO_KO, LISTENING, SPELLING, and
+        // the EPS_MOCK mix that includes them) must only quiz words that have
+        // a real Nepali translation. For "missing" entries the nepali column
+        // holds the English gloss as a display fallback — quizzing it would
+        // present English as Nepali. When enough verified words exist, use
+        // only them; otherwise fall back to the full pool so small datasets
+        // (e.g. a fresh install) still produce quizzes.
+        var effectiveTargets = targets
+        var effectivePool = distractorPool
+        val nepaliDependent = type == QuizType.KO_TO_NE || type == QuizType.NE_TO_KO ||
+            type == QuizType.LISTENING || type == QuizType.SPELLING ||
+            type == QuizType.EPS_MOCK
+        if (nepaliDependent) {
+            val verifiedTargets = targets.filter { it.nepaliStatus == "verified" }
+            val verifiedPool = distractorPool.filter { it.nepaliStatus == "verified" }
+            if (verifiedTargets.size >= MIN_POOL_SIZE && verifiedPool.size >= MIN_POOL_SIZE) {
+                effectiveTargets = verifiedTargets
+                effectivePool = verifiedPool
+            }
+        }
+        if (effectiveTargets.size < MIN_POOL_SIZE) return emptyList()
         return when (type) {
-            QuizType.EPS_MOCK -> generateMixed(targets, distractorPool, count, listeningAvailable, random)
+            QuizType.EPS_MOCK -> generateMixed(effectiveTargets, effectivePool, count, listeningAvailable, random)
             else -> {
                 val questions = mutableListOf<QuizQuestion>()
-                for (target in targets.shuffled(random)) {
+                for (target in effectiveTargets.shuffled(random)) {
                     if (questions.size >= count) break
-                    buildQuestion(type, target, distractorPool, listeningAvailable, random)
+                    buildQuestion(type, target, effectivePool, listeningAvailable, random)
                         ?.let { questions += it }
                 }
                 questions

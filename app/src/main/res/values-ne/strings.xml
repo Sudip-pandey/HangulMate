@@ -75,6 +75,7 @@
     <string name="statistics_empty_state">तपाईंले सिक्न सुरु गरेपछि यहाँ तथ्याङ्क देखिनेछ।</string>
 
     <string name="settings_about">बारेमा</string>
+    <string name="about_dictionary_credit">शब्दकोश डाटा: राष्ट्रिय कोरियाली भाषा संस्थान (NIKL) को Basic Korean Dictionary (한국어기초사전), binjang/NIKL-korean-english-dictionary मार्फत। CC BY-SA 2.0 KR अन्तर्गत साझा गरिएको।</string>
     <string name="settings_version">संस्करण %1$s</string>
-    <string name="offline_notice">तपाईं अफलाइन हुनुहुन्छ — HangulMate अफलाइन नै काम गर्छ। तपाईंको डाटा डिभाइसबाट बाहिर जाँदैन।</string>
+    <string name="offline_notice">HangulMate का सबै मुख्य सुविधाहरू अफलाइन चल्छन् — इन्टरनेट चाहिँदैन। तपाईंको डाटा डिभाइसबाट बाहिर जाँदैन।</string>
 </resources>

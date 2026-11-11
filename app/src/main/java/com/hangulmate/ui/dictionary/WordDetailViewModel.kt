@@ -4,7 +4,9 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hangulmate.domain.model.LearningState
+import com.hangulmate.domain.model.UserCollection
 import com.hangulmate.domain.model.VocabularyWord
+import com.hangulmate.domain.repository.CollectionRepository
 import com.hangulmate.domain.repository.VocabularyRepository
 import com.hangulmate.speech.TtsManager
 import com.hangulmate.speech.TtsState
@@ -30,6 +32,7 @@ data class TopicNavigation(
 class WordDetailViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val vocabularyRepository: VocabularyRepository,
+    private val collectionRepository: CollectionRepository,
     private val ttsManager: TtsManager,
 ) : ViewModel() {
 
@@ -49,6 +52,15 @@ class WordDetailViewModel @Inject constructor(
 
     /** Honest state of the Korean TTS voice on this device. */
     val ttsState: StateFlow<TtsState> = ttsManager.state
+
+    /** All user collections, newest first — for the "Add to collection" picker. */
+    val collections: StateFlow<List<UserCollection>> =
+        collectionRepository.getCollections()
+            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
+
+    /** Name of the collection the word was just added to (shown once, then cleared). */
+    private val _addedToCollection = MutableStateFlow<String?>(null)
+    val addedToCollection: StateFlow<String?> = _addedToCollection
 
     /** Previous / next word within the same topic (hidden at the ends). */
     val navigation: StateFlow<TopicNavigation> = word
@@ -113,5 +125,34 @@ class WordDetailViewModel @Inject constructor(
      */
     fun recordReview(remembered: Boolean) {
         viewModelScope.launch { vocabularyRepository.recordReview(wordId, remembered) }
+    }
+
+    /**
+     * Adds this word to an existing collection. Adding a word that is
+     * already in the collection is a no-op in the repository, and the
+     * collection's word count re-emits from the repository flow.
+     */
+    fun addWordToCollection(collectionId: Long) {
+        val name = collections.value.firstOrNull { it.id == collectionId }?.name
+            ?: return
+        viewModelScope.launch {
+            collectionRepository.addWord(collectionId, wordId)
+            _addedToCollection.value = name
+        }
+    }
+
+    /** Creates a collection and adds this word to it in one step. */
+    fun createCollectionAndAddWord(name: String) {
+        val trimmed = name.trim()
+        if (trimmed.isEmpty()) return
+        viewModelScope.launch {
+            val id = collectionRepository.createCollection(trimmed)
+            collectionRepository.addWord(id, wordId)
+            _addedToCollection.value = trimmed
+        }
+    }
+
+    fun clearAddedToCollection() {
+        _addedToCollection.value = null
     }
 }

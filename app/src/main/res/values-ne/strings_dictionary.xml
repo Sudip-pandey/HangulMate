@@ -35,6 +35,7 @@
     <string name="word_detail_not_found">यो शब्द भेटिएन।</string>
     <string name="word_detail_listen">सुन्नुहोस्</string>
     <string name="word_detail_nepali_meaning">नेपाली अर्थ</string>
+    <string name="word_detail_nepali_pending">नेपाली अर्थ अझै तयार छैन — अहिलेलाई अङ्ग्रेजी अर्थ देखाइएको छ।</string>
     <string name="word_detail_english_meaning">अङ्ग्रेजी अर्थ</string>
     <string name="word_detail_difficulty">स्तर %1$d</string>
     <string name="word_detail_example">उदाहरण</string>
@@ -48,4 +49,23 @@
     <string name="word_detail_confusing">अलमलिने</string>
     <string name="word_detail_previous">अघिल्लो</string>
     <string name="word_detail_next">अर्को</string>
+
+    <!-- सङ्ग्रहमा थप्नुहोस् (शब्द विवरण पृष्ठबाट) -->
+    <string name="word_detail_add_to_collection">सङ्ग्रहमा थप्नुहोस्</string>
+    <string name="word_detail_add_to_collection_title">सङ्ग्रहमा थप्नुहोस्</string>
+    <string name="word_detail_no_collections">अहिलेसम्म कुनै सङ्ग्रह छैन — तल बनाएर थप्नुहोस्।</string>
+    <string name="word_detail_new_collection_name">नयाँ सङ्ग्रहको नाम</string>
+    <string name="word_detail_create_collection_and_add">बनाएर थप्नुहोस्</string>
+    <string name="word_detail_added_to_collection">“%1$s” मा थपियो</string>
+
+    <!-- शब्द थप्नुहोस् -->
+    <string name="dictionary_add_word">शब्द थप्नुहोस्</string>
+    <string name="add_word_title">शब्द थप्नुहोस्</string>
+    <string name="add_word_korean">कोरियाली शब्द</string>
+    <string name="add_word_korean_required">कोरियाली शब्द आवश्यक छ</string>
+    <string name="add_word_nepali">नेपाली अर्थ</string>
+    <string name="add_word_english">अङ्ग्रेजी अर्थ</string>
+    <string name="add_word_part_of_speech">शब्दभेद</string>
+    <string name="add_word_topic">विषय</string>
+    <string name="add_word_save">शब्द सेभ गर्नुहोस्</string>
 </resources>

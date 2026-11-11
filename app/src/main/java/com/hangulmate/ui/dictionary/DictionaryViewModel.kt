@@ -99,23 +99,59 @@ class DictionaryViewModel @Inject constructor(
         .debounce(300)
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), "")
 
+    /**
+     * Full word list (all topics) — the capped candidate set for the
+     * typo-tolerant second pass. A few hundred words at most, so the
+     * pass stays cheap.
+     */
+    private val allWords: StateFlow<List<VocabularyWord>> = combine(
+        Topic.entries.map { vocabularyRepository.getByTopic(it) },
+    ) { arrays -> arrays.flatMap { it } }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
+
+    private data class SearchInputs(
+        val query: String,
+        val favoritesOnly: Boolean,
+        val topic: Topic?,
+        val allWords: List<VocabularyWord>,
+    )
+
     private val results: Flow<List<VocabularyWord>> =
-        combine(debouncedQuery, _favoritesOnly, _selectedTopic) { query, favoritesOnly, topic ->
-            Triple(query, favoritesOnly, topic)
-        }.flatMapLatest { (query, favoritesOnly, topic) ->
+        combine(
+            debouncedQuery,
+            _favoritesOnly,
+            _selectedTopic,
+            allWords,
+        ) { query, favoritesOnly, topic, allWords ->
+            SearchInputs(query, favoritesOnly, topic, allWords)
+        }.flatMapLatest { inputs ->
             when {
                 // 3-way search (Korean / Nepali / English / romanization) —
-                // matching lives in the repository; only filter here.
-                query.isNotBlank() -> vocabularyRepository.search(query).map { list ->
-                    list.filter {
-                        (!favoritesOnly || it.isFavorite) &&
-                            (topic == null || it.topic == topic)
+                // LIKE matching lives in the repository; only filter here.
+                // When LIKE finds little, the typo-tolerant second pass
+                // (choseong + edit distance ≤ 2) runs over allWords.
+                inputs.query.isNotBlank() -> vocabularyRepository.search(inputs.query).map { list ->
+                    val filtered = list.filter {
+                        (!inputs.favoritesOnly || it.isFavorite) &&
+                            (inputs.topic == null || it.topic == inputs.topic)
+                    }
+                    if (filtered.size >= FUZZY_MIN_RESULTS) {
+                        filtered
+                    } else {
+                        filtered + fuzzyMatches(
+                            query = inputs.query,
+                            candidates = inputs.allWords,
+                            alreadyHave = filtered.map { it.id }.toSet(),
+                        ).filter {
+                            (!inputs.favoritesOnly || it.isFavorite) &&
+                                (inputs.topic == null || it.topic == inputs.topic)
+                        }
                     }
                 }
-                favoritesOnly -> vocabularyRepository.getFavorites().map { list ->
-                    list.filter { topic == null || it.topic == topic }
+                inputs.favoritesOnly -> vocabularyRepository.getFavorites().map { list ->
+                    list.filter { inputs.topic == null || it.topic == inputs.topic }
                 }
-                topic != null -> vocabularyRepository.getByTopic(topic)
+                inputs.topic != null -> vocabularyRepository.getByTopic(inputs.topic)
                 // No query, no filter: no results (never the whole table).
                 else -> flowOf(emptyList())
             }
@@ -143,4 +179,9 @@ class DictionaryViewModel @Inject constructor(
         started = SharingStarted.WhileSubscribed(5_000),
         initialValue = DictionaryUiState(),
     )
+
+    companion object {
+        /** LIKE results at or above this count skip the fuzzy second pass. */
+        private const val FUZZY_MIN_RESULTS = 5
+    }
 }

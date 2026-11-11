@@ -41,7 +41,7 @@ annotation class ApplicationScope
  * [SeedOnFirstLaunch] in `onCreate` (e.g. `@Inject lateinit var
  * seedOnFirstLaunch: SeedOnFirstLaunch` + a no-op access) so the import
  * starts at app start. The import itself is guarded by the
- * "seed_imported_v1" flag and is safe to run twice.
+ * "seed_imported_v2" flag and is safe to run twice.
  *
  * UI layers observe [state]: Idle → Importing → Success | Failed.
  * On [SeedState.Failed] the app keeps working with whatever data exists
@@ -78,6 +78,7 @@ object DatabaseModule {
             // Deliberately NO fallbackToDestructiveMigration(): wiping the
             // database would destroy the user's learning progress. Schema
             // changes ship as versioned Migrations (see docs/DATA_MODEL.md).
+            .addMigrations(HangulMateDatabase.MIGRATION_1_2)
             .build()
 
     @Provides
@@ -87,10 +88,10 @@ object DatabaseModule {
             context.getSharedPreferences(SeedImporter.PREFS_NAME, Context.MODE_PRIVATE)
         return object : SeedImportPrefs {
             override fun isImported(): Boolean =
-                prefs.getBoolean(SeedImporter.KEY_SEED_IMPORTED_V1, false)
+                prefs.getBoolean(SeedImporter.KEY_SEED_IMPORTED_V2, false)
 
             override fun markImported() {
-                prefs.edit().putBoolean(SeedImporter.KEY_SEED_IMPORTED_V1, true).apply()
+                prefs.edit().putBoolean(SeedImporter.KEY_SEED_IMPORTED_V2, true).apply()
             }
         }
     }

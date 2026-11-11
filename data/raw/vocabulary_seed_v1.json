@@ -1,0 +1,6139 @@
+[
+  {
+    "id": "HM-0001",
+    "korean": "안녕하세요",
+    "nepali": "नमस्ते",
+    "english": "Hello",
+    "romanization": "annyeonghaseyo",
+    "syllables": [
+      "안",
+      "녕",
+      "하",
+      "세",
+      "요"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "안녕하세요, 저는 수딥입니다.",
+    "exampleNe": "नमस्ते, म सुदीप हुँ।",
+    "exampleEn": "Hello, I am Sudip.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "greeting"
+    ]
+  },
+  {
+    "id": "HM-0002",
+    "korean": "감사합니다",
+    "nepali": "धन्यवाद",
+    "english": "Thank you",
+    "romanization": "gamsahamnida",
+    "syllables": [
+      "감",
+      "사",
+      "합",
+      "니",
+      "다"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "도와주셔서 감사합니다.",
+    "exampleNe": "मद्दत गर्नुभएकोमा धन्यवाद।",
+    "exampleEn": "Thank you for helping me.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "greeting"
+    ]
+  },
+  {
+    "id": "HM-0003",
+    "korean": "죄송합니다",
+    "nepali": "माफ गर्नुहोस्",
+    "english": "I'm sorry",
+    "romanization": "joesonghamnida",
+    "syllables": [
+      "죄",
+      "송",
+      "합",
+      "니",
+      "다"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "늦어서 죄송합니다.",
+    "exampleNe": "ढिलो भएकोमा माफ गर्नुहोस्।",
+    "exampleEn": "I'm sorry for being late.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "polite"
+    ]
+  },
+  {
+    "id": "HM-0004",
+    "korean": "네",
+    "nepali": "हो",
+    "english": "Yes",
+    "romanization": "ne",
+    "syllables": [
+      "네"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "네, 알겠습니다.",
+    "exampleNe": "हो, बुझेँ।",
+    "exampleEn": "Yes, I understand.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "아니요",
+        "noteNe": "네 भनेको हो हो, 아니요 भनेको होइन हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0005",
+    "korean": "아니요",
+    "nepali": "होइन",
+    "english": "No",
+    "romanization": "aniyo",
+    "syllables": [
+      "아",
+      "니",
+      "요"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "아니요, 괜찮습니다.",
+    "exampleNe": "होइन, ठीक छ।",
+    "exampleEn": "No, it's fine.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "네",
+        "noteNe": "아니요 भनेको होइन हो, 네 भनेको हो हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0006",
+    "korean": "이름",
+    "nepali": "नाम",
+    "english": "Name",
+    "romanization": "ireum",
+    "syllables": [
+      "이",
+      "름"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "이름이 무엇입니까?",
+    "exampleNe": "तपाईंको नाम के हो?",
+    "exampleEn": "What is your name?",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0007",
+    "korean": "나이",
+    "nepali": "उमेर",
+    "english": "Age",
+    "romanization": "nai",
+    "syllables": [
+      "나",
+      "이"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "나이가 몇 살입니까?",
+    "exampleNe": "तपाईंको उमेर कति हो?",
+    "exampleEn": "How old are you?",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0008",
+    "korean": "한국",
+    "nepali": "कोरिया",
+    "english": "Korea",
+    "romanization": "hanguk",
+    "syllables": [
+      "한",
+      "국"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "저는 한국에서 일합니다.",
+    "exampleNe": "म कोरियामा काम गर्छु।",
+    "exampleEn": "I work in Korea.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "네팔",
+        "differenceNe": "हाङ्गुक भनेको कोरिया हो, नेपाल भनेको नेपाल हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "country"
+    ]
+  },
+  {
+    "id": "HM-0009",
+    "korean": "네팔",
+    "nepali": "नेपाल",
+    "english": "Nepal",
+    "romanization": "nepal",
+    "syllables": [
+      "네",
+      "팔"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "저는 네팔 사람입니다.",
+    "exampleNe": "म नेपाली हुँ।",
+    "exampleEn": "I am Nepali.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "한국",
+        "differenceNe": "नेपाल भनेको नेपाल हो, हाङ्गुक भनेको कोरिया हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "country"
+    ]
+  },
+  {
+    "id": "HM-0010",
+    "korean": "반갑습니다",
+    "nepali": "भेटेर खुसी लाग्यो",
+    "english": "Nice to meet you",
+    "romanization": "bangapseumnida",
+    "syllables": [
+      "반",
+      "갑",
+      "습",
+      "니",
+      "다"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "만나서 반갑습니다.",
+    "exampleNe": "भेटेर खुसी लाग्यो।",
+    "exampleEn": "Nice to meet you.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "greeting"
+    ]
+  },
+  {
+    "id": "HM-0011",
+    "korean": "괜찮아요",
+    "nepali": "ठीक छ",
+    "english": "It's okay / fine",
+    "romanization": "gwaenchanhayo",
+    "syllables": [
+      "괜",
+      "찮",
+      "아",
+      "요"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "conversation",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "괜찮아요, 걱정하지 마세요.",
+    "exampleNe": "ठीक छ, चिन्ता नगर्नुहोस्।",
+    "exampleEn": "It's okay, don't worry.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0012",
+    "korean": "부탁합니다",
+    "nepali": "कृपया (अनुरोध)",
+    "english": "Please (request)",
+    "romanization": "butakhamnida",
+    "syllables": [
+      "부",
+      "탁",
+      "합",
+      "니",
+      "다"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "잘 부탁합니다.",
+    "exampleNe": "कृपया राम्रोसँग सहयोग गर्नुहोस्।",
+    "exampleEn": "Please take good care of me.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "polite"
+    ]
+  },
+  {
+    "id": "HM-0013",
+    "korean": "실례합니다",
+    "nepali": "माफ गर्नुहोस् (बाधा पुर्‍याउँदा)",
+    "english": "Excuse me",
+    "romanization": "sillyehamnida",
+    "syllables": [
+      "실",
+      "례",
+      "합",
+      "니",
+      "다"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "실례합니다, 여기가 어디입니까?",
+    "exampleNe": "माफ गर्नुहोस्, यो ठाउँ कहाँ हो?",
+    "exampleEn": "Excuse me, where is this place?",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "polite"
+    ]
+  },
+  {
+    "id": "HM-0014",
+    "korean": "안녕히 가세요",
+    "nepali": "बिदाइ (जाने व्यक्तिलाई)",
+    "english": "Goodbye (to the one leaving)",
+    "romanization": "annyeonghi gaseyo",
+    "syllables": [
+      "안",
+      "녕",
+      "히",
+      "가",
+      "세",
+      "요"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "안녕히 가세요, 내일 봐요.",
+    "exampleNe": "बिदाइ, भोलि भेटौँला।",
+    "exampleEn": "Goodbye, see you tomorrow.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "farewell"
+    ]
+  },
+  {
+    "id": "HM-0015",
+    "korean": "안녕히 계세요",
+    "nepali": "बिदाइ (बस्ने व्यक्तिलाई)",
+    "english": "Goodbye (to the one staying)",
+    "romanization": "annyeonghi gyeseyo",
+    "syllables": [
+      "안",
+      "녕",
+      "히",
+      "계",
+      "세",
+      "요"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "안녕히 계세요, 감사합니다.",
+    "exampleNe": "बिदाइ, धन्यवाद।",
+    "exampleEn": "Goodbye, thank you.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "farewell"
+    ]
+  },
+  {
+    "id": "HM-0016",
+    "korean": "잘 지내요",
+    "nepali": "राम्ररी बस्नुहोस्",
+    "english": "Take care / How are you?",
+    "romanization": "jal jinaeyo",
+    "syllables": [
+      "잘",
+      "지",
+      "내",
+      "요"
+    ],
+    "partOfSpeech": "expression",
+    "topic": "conversation",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "잘 지내요?",
+    "exampleNe": "तपाईं सञ्चै हुनुहुन्छ?",
+    "exampleEn": "How are you doing?",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0017",
+    "korean": "집",
+    "nepali": "घर",
+    "english": "House / home",
+    "romanization": "jip",
+    "syllables": [
+      "집"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "저는 집에 갑니다.",
+    "exampleNe": "म घर जान्छु।",
+    "exampleEn": "I am going home.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "건물",
+        "differenceNe": "जिप भनेको घर हो, गोन्मुल भनेको सामान्य भवन हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0018",
+    "korean": "학교",
+    "nepali": "विद्यालय",
+    "english": "School",
+    "romanization": "hakgyo",
+    "syllables": [
+      "학",
+      "교"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "학교에 갑니다.",
+    "exampleNe": "म विद्यालय जान्छु।",
+    "exampleEn": "I go to school.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0019",
+    "korean": "병원",
+    "nepali": "अस्पताल",
+    "english": "Hospital",
+    "romanization": "byeongwon",
+    "syllables": [
+      "병",
+      "원"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "아파서 병원에 갑니다.",
+    "exampleNe": "बिरामी भएर अस्पताल जान्छु।",
+    "exampleEn": "I go to the hospital because I am sick.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0020",
+    "korean": "사람",
+    "nepali": "मानिस",
+    "english": "Person",
+    "romanization": "saram",
+    "syllables": [
+      "사",
+      "람"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "사람이 많습니다.",
+    "exampleNe": "धेरै मानिस छन्।",
+    "exampleEn": "There are many people.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0021",
+    "korean": "남자",
+    "nepali": "पुरुष",
+    "english": "Man",
+    "romanization": "namja",
+    "syllables": [
+      "남",
+      "자"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "남자가 일합니다.",
+    "exampleNe": "पुरुष काम गर्छ।",
+    "exampleEn": "The man works.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0022",
+    "korean": "여자",
+    "nepali": "महिला",
+    "english": "Woman",
+    "romanization": "yeoja",
+    "syllables": [
+      "여",
+      "자"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "여자가 책을 읽습니다.",
+    "exampleNe": "महिला किताब पढ्छिन्।",
+    "exampleEn": "The woman reads a book.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0023",
+    "korean": "아이",
+    "nepali": "बच्चा",
+    "english": "Child",
+    "romanization": "ai",
+    "syllables": [
+      "아",
+      "이"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "아이가 웃습니다.",
+    "exampleNe": "बच्चा हाँस्छ।",
+    "exampleEn": "The child laughs.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0024",
+    "korean": "선생님",
+    "nepali": "शिक्षक",
+    "english": "Teacher",
+    "romanization": "seonsaengnim",
+    "syllables": [
+      "선",
+      "생",
+      "님"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "선생님이 친절합니다.",
+    "exampleNe": "शिक्षक दयालु हुनुहुन्छ।",
+    "exampleEn": "The teacher is kind.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "의사",
+        "differenceNe": "सोन्सैङ्निम भनेको शिक्षक हो, उइसा भनेको चिकित्सक हो; दुवै सम्मानित पेशा हुन्।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0025",
+    "korean": "의사",
+    "nepali": "चिकित्सक",
+    "english": "Doctor",
+    "romanization": "uisa",
+    "syllables": [
+      "의",
+      "사"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "의사가 환자를 봅니다.",
+    "exampleNe": "चिकित्सकले बिरामी हेर्छन्।",
+    "exampleEn": "The doctor sees the patient.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "선생님",
+        "differenceNe": "उइसा भनेको चिकित्सक हो, सोन्सैङ्निम भनेको शिक्षक हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0026",
+    "korean": "경찰",
+    "nepali": "प्रहरी",
+    "english": "Police officer",
+    "romanization": "gyeongchal",
+    "syllables": [
+      "경",
+      "찰"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "경찰이 도와줍니다.",
+    "exampleNe": "प्रहरीले मद्दत गर्छन्।",
+    "exampleEn": "The police officer helps.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0027",
+    "korean": "소방관",
+    "nepali": "दमकलकर्मी",
+    "english": "Firefighter",
+    "romanization": "sobanggwan",
+    "syllables": [
+      "소",
+      "방",
+      "관"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "소방관이 불을 끕니다.",
+    "exampleNe": "दमकलकर्मीले आगो निभाउँछन्।",
+    "exampleEn": "The firefighter puts out the fire.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0028",
+    "korean": "친구",
+    "nepali": "साथी",
+    "english": "Friend",
+    "romanization": "chingu",
+    "syllables": [
+      "친",
+      "구"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "친구와 같이 갑니다.",
+    "exampleNe": "साथीसँगै जान्छु।",
+    "exampleEn": "I go with my friend.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0029",
+    "korean": "가족",
+    "nepali": "परिवार",
+    "english": "Family",
+    "romanization": "gajok",
+    "syllables": [
+      "가",
+      "족"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "가족이 한국에 있습니다.",
+    "exampleNe": "परिवार कोरियामा छ।",
+    "exampleEn": "My family is in Korea.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0030",
+    "korean": "하루",
+    "nepali": "एक दिन",
+    "english": "One day",
+    "romanization": "haru",
+    "syllables": [
+      "하",
+      "루"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "하루에 여덟 시간 일합니다.",
+    "exampleNe": "दिनमा आठ घण्टा काम गर्छु।",
+    "exampleEn": "I work eight hours a day.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0031",
+    "korean": "아침",
+    "nepali": "बिहान",
+    "english": "Morning",
+    "romanization": "achim",
+    "syllables": [
+      "아",
+      "침"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "아침에 일어납니다.",
+    "exampleNe": "बिहान उठ्छु।",
+    "exampleEn": "I wake up in the morning.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "저녁",
+        "differenceNe": "आछिम भनेको बिहान हो, जोन्योक भनेको बेलुका हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0032",
+    "korean": "점심",
+    "nepali": "दिउँसोको खाना",
+    "english": "Lunch",
+    "romanization": "jeomsim",
+    "syllables": [
+      "점",
+      "심"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "점심을 먹습니다.",
+    "exampleNe": "दिउँसोको खाना खान्छु।",
+    "exampleEn": "I eat lunch.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "food"
+    ]
+  },
+  {
+    "id": "HM-0033",
+    "korean": "저녁",
+    "nepali": "बेलुका",
+    "english": "Evening",
+    "romanization": "jeonyeok",
+    "syllables": [
+      "저",
+      "녁"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "daily",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "저녁에 집에 갑니다.",
+    "exampleNe": "बेलुका घर जान्छु।",
+    "exampleEn": "I go home in the evening.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "아침",
+        "differenceNe": "जोन्योक भनेको बेलुका हो, आछिम भनेको बिहान हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0034",
+    "korean": "일",
+    "nepali": "एक",
+    "english": "One (Sino-Korean)",
+    "romanization": "il",
+    "syllables": [
+      "일"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "일 월입니다.",
+    "exampleNe": "जनवरी (एक महिना) हो।",
+    "exampleEn": "It is January.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "하나",
+        "differenceNe": "इल हान्जा संख्या हो, हाना भनेको 고유 कोरियाली संख्या हो; दुवैको अर्थ एक हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0035",
+    "korean": "이",
+    "nepali": "दुई",
+    "english": "Two (Sino-Korean)",
+    "romanization": "i",
+    "syllables": [
+      "이"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "이 월입니다.",
+    "exampleNe": "फेब्रुअरी (दुई महिना) हो।",
+    "exampleEn": "It is February.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0036",
+    "korean": "삼",
+    "nepali": "तीन",
+    "english": "Three (Sino-Korean)",
+    "romanization": "sam",
+    "syllables": [
+      "삼"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "삼 월입니다.",
+    "exampleNe": "मार्च (तीन महिना) हो।",
+    "exampleEn": "It is March.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0037",
+    "korean": "사",
+    "nepali": "चार",
+    "english": "Four (Sino-Korean)",
+    "romanization": "sa",
+    "syllables": [
+      "사"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "사 시입니다.",
+    "exampleNe": "चार बजे हो।",
+    "exampleEn": "It is four o'clock.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0038",
+    "korean": "오",
+    "nepali": "पाँच",
+    "english": "Five (Sino-Korean)",
+    "romanization": "o",
+    "syllables": [
+      "오"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "오 분 기다리세요.",
+    "exampleNe": "पाँच मिनेट पर्खनुहोस्।",
+    "exampleEn": "Please wait five minutes.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0039",
+    "korean": "육",
+    "nepali": "छ",
+    "english": "Six (Sino-Korean)",
+    "romanization": "yuk",
+    "syllables": [
+      "육"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "육 월에 갑니다.",
+    "exampleNe": "जुन (छ महिना) मा जान्छु।",
+    "exampleEn": "I go in June.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0040",
+    "korean": "칠",
+    "nepali": "सात",
+    "english": "Seven (Sino-Korean)",
+    "romanization": "chil",
+    "syllables": [
+      "칠"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "칠 시에 시작합니다.",
+    "exampleNe": "सात बजे सुरु हुन्छ।",
+    "exampleEn": "It starts at seven o'clock.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0041",
+    "korean": "팔",
+    "nepali": "आठ",
+    "english": "Eight (Sino-Korean)",
+    "romanization": "pal",
+    "syllables": [
+      "팔"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "팔 시에 일어납니다.",
+    "exampleNe": "आठ बजे उठ्छु।",
+    "exampleEn": "I wake up at eight o'clock.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0042",
+    "korean": "구",
+    "nepali": "नौ",
+    "english": "Nine (Sino-Korean)",
+    "romanization": "gu",
+    "syllables": [
+      "구"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "구 월입니다.",
+    "exampleNe": "सेप्टेम्बर (नौ महिना) हो।",
+    "exampleEn": "It is September.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0043",
+    "korean": "십",
+    "nepali": "दश",
+    "english": "Ten (Sino-Korean)",
+    "romanization": "sip",
+    "syllables": [
+      "십"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "십 분 후에 갑니다.",
+    "exampleNe": "दश मिनेटपछि जान्छु।",
+    "exampleEn": "I will go in ten minutes.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "열",
+        "differenceNe": "सिप हान्जा संख्या हो, योल भनेको 고유 कोरियाली संख्या हो; दुवैको अर्थ दश हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0044",
+    "korean": "하나",
+    "nepali": "एक",
+    "english": "One (native Korean)",
+    "romanization": "hana",
+    "syllables": [
+      "하",
+      "나"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "사과 하나 주세요.",
+    "exampleNe": "एउटा स्याउ दिनुहोस्।",
+    "exampleEn": "Please give me one apple.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "일",
+        "differenceNe": "हाना गो유 कोरियाली संख्या हो, इल भनेको हान्जा संख्या हो; दुवैको अर्थ एक हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0045",
+    "korean": "둘",
+    "nepali": "दुई",
+    "english": "Two (native Korean)",
+    "romanization": "dul",
+    "syllables": [
+      "둘"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "사과 둘 주세요.",
+    "exampleNe": "दुईवटा स्याउ दिनुहोस्।",
+    "exampleEn": "Please give me two apples.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0046",
+    "korean": "셋",
+    "nepali": "तीन",
+    "english": "Three (native Korean)",
+    "romanization": "set",
+    "syllables": [
+      "셋"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "사람 셋이 있습니다.",
+    "exampleNe": "तीन जना मानिस छन्।",
+    "exampleEn": "There are three people.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0047",
+    "korean": "열",
+    "nepali": "दश",
+    "english": "Ten",
+    "romanization": "yeol",
+    "syllables": [
+      "열"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "열 개 주세요.",
+    "exampleNe": "दशवटा दिनुहोस्।",
+    "exampleEn": "Please give me ten.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "십",
+        "differenceNe": "योल गो유 कोरियाली संख्या हो, सिप भनेको हान्जा संख्या हो; दुवैको अर्थ दश हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0048",
+    "korean": "스물",
+    "nepali": "बीस",
+    "english": "Twenty",
+    "romanization": "seumul",
+    "syllables": [
+      "스",
+      "물"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "스물 살입니다.",
+    "exampleNe": "बीस वर्षको हुँ।",
+    "exampleEn": "I am twenty years old.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0049",
+    "korean": "백",
+    "nepali": "सय",
+    "english": "One hundred",
+    "romanization": "baek",
+    "syllables": [
+      "백"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "백 원입니다.",
+    "exampleNe": "सय वन हो।",
+    "exampleEn": "It is one hundred won.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0050",
+    "korean": "천",
+    "nepali": "हजार",
+    "english": "One thousand",
+    "romanization": "cheon",
+    "syllables": [
+      "천"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "천 원입니다.",
+    "exampleNe": "हजार वन हो।",
+    "exampleEn": "It is one thousand won.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0051",
+    "korean": "만",
+    "nepali": "दश हजार",
+    "english": "Ten thousand",
+    "romanization": "man",
+    "syllables": [
+      "만"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "만 원입니다.",
+    "exampleNe": "दश हजार वन हो।",
+    "exampleEn": "It is ten thousand won.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0052",
+    "korean": "영",
+    "nepali": "शून्य",
+    "english": "Zero",
+    "romanization": "yeong",
+    "syllables": [
+      "영"
+    ],
+    "partOfSpeech": "number",
+    "topic": "numbers",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "영 번입니다.",
+    "exampleNe": "शून्य नम्बर हो।",
+    "exampleEn": "It is number zero.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "number"
+    ]
+  },
+  {
+    "id": "HM-0053",
+    "korean": "오늘",
+    "nepali": "आज",
+    "english": "Today",
+    "romanization": "oneul",
+    "syllables": [
+      "오",
+      "늘"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "오늘은 월요일입니다.",
+    "exampleNe": "आज सोमबार हो।",
+    "exampleEn": "Today is Monday.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "내일",
+        "differenceNe": "ओनुल भनेको आज हो, नैइल भनेको भोलि हो।"
+      },
+      {
+        "korean": "어제",
+        "differenceNe": "ओनुल भनेको आज हो, ओजे भनेको हिजो हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "time"
+    ]
+  },
+  {
+    "id": "HM-0054",
+    "korean": "내일",
+    "nepali": "भोलि",
+    "english": "Tomorrow",
+    "romanization": "naeil",
+    "syllables": [
+      "내",
+      "일"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "내일 일합니다.",
+    "exampleNe": "भोलि काम गर्छु।",
+    "exampleEn": "I work tomorrow.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "어제",
+        "differenceNe": "नैइल भनेको भोलि हो, ओजे भनेको हिजो हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "time"
+    ]
+  },
+  {
+    "id": "HM-0055",
+    "korean": "어제",
+    "nepali": "हिजो",
+    "english": "Yesterday",
+    "romanization": "eoje",
+    "syllables": [
+      "어",
+      "제"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "어제 비가 왔습니다.",
+    "exampleNe": "हिजो पानी पर्यो।",
+    "exampleEn": "It rained yesterday.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "내일",
+        "differenceNe": "ओजे भनेको हिजो हो, नैइल भनेको भोलि हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "time"
+    ]
+  },
+  {
+    "id": "HM-0056",
+    "korean": "오전",
+    "nepali": "बिहान (दिउँसोअघि)",
+    "english": "Morning (AM)",
+    "romanization": "ojeon",
+    "syllables": [
+      "오",
+      "전"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "오전 아홉 시입니다.",
+    "exampleNe": "बिहान नौ बजे हो।",
+    "exampleEn": "It is 9 AM.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "오후",
+        "noteNe": "ओजन भनेको दिउँसोअघिको बिहान हो, ओहु भनेको दिउँसोपछिको समय हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "time"
+    ]
+  },
+  {
+    "id": "HM-0057",
+    "korean": "오후",
+    "nepali": "दिउँसो (दिउँसोपछि)",
+    "english": "Afternoon (PM)",
+    "romanization": "ohu",
+    "syllables": [
+      "오",
+      "후"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "오후 세 시에 만납니다.",
+    "exampleNe": "दिउँसो तीन बजे भेट्छु।",
+    "exampleEn": "We meet at 3 PM.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "오전",
+        "noteNe": "ओहु भनेको दिउँसोपछिको समय हो, ओजन भनेको दिउँसोअघिको बिहान हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "time"
+    ]
+  },
+  {
+    "id": "HM-0058",
+    "korean": "앞",
+    "nepali": "अगाडि",
+    "english": "Front / ahead",
+    "romanization": "ap",
+    "syllables": [
+      "앞"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "앞에 있습니다.",
+    "exampleNe": "अगाडि छ।",
+    "exampleEn": "It is in front.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "뒤",
+        "noteNe": "압 भनेको अगाडि हो, द्वी भनेको पछाडि हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0059",
+    "korean": "뒤",
+    "nepali": "पछाडि",
+    "english": "Back / behind",
+    "romanization": "dwi",
+    "syllables": [
+      "뒤"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "뒤에 있습니다.",
+    "exampleNe": "पछाडि छ।",
+    "exampleEn": "It is behind.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "앞",
+        "noteNe": "द्वी भनेको पछाडि हो, आप भनेको अगाडि हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0060",
+    "korean": "위",
+    "nepali": "माथि",
+    "english": "Above / up",
+    "romanization": "wi",
+    "syllables": [
+      "위"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "위에 있습니다.",
+    "exampleNe": "माथि छ।",
+    "exampleEn": "It is above.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "아래",
+        "noteNe": "वी भनेको माथि हो, आरै भनेको तल हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0061",
+    "korean": "아래",
+    "nepali": "तल",
+    "english": "Below / down",
+    "romanization": "arae",
+    "syllables": [
+      "아",
+      "래"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "아래에 있습니다.",
+    "exampleNe": "तल छ।",
+    "exampleEn": "It is below.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "위",
+        "noteNe": "आरै भनेको तल हो, वी भनेको माथि हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0062",
+    "korean": "왼쪽",
+    "nepali": "बायाँ",
+    "english": "Left",
+    "romanization": "oenjjok",
+    "syllables": [
+      "왼",
+      "쪽"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "왼쪽으로 가세요.",
+    "exampleNe": "बायाँ जानुहोस्।",
+    "exampleEn": "Please go to the left.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "오른쪽",
+        "noteNe": "ओएन्ज्जोक भनेको बायाँ हो, ओरुन्ज्जोक भनेको दायाँ हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0063",
+    "korean": "오른쪽",
+    "nepali": "दायाँ",
+    "english": "Right",
+    "romanization": "oreunjjok",
+    "syllables": [
+      "오",
+      "른",
+      "쪽"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "오른쪽으로 가세요.",
+    "exampleNe": "दायाँ जानुहोस्।",
+    "exampleEn": "Please go to the right.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "왼쪽",
+        "noteNe": "ओरुन्ज्जोक भनेको दायाँ हो, ओएन्ज्जोक भनेको बायाँ हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0064",
+    "korean": "근처",
+    "nepali": "नजिक",
+    "english": "Nearby",
+    "romanization": "geuncheo",
+    "syllables": [
+      "근",
+      "처"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "근처에 가게가 있습니다.",
+    "exampleNe": "नजिकै पसल छ।",
+    "exampleEn": "There is a shop nearby.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "멀리",
+        "noteNe": "गुन्चो भनेको नजिक हो, मोल्ली भनेको टाढा हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0065",
+    "korean": "멀리",
+    "nepali": "टाढा",
+    "english": "Far",
+    "romanization": "meolli",
+    "syllables": [
+      "멀",
+      "리"
+    ],
+    "partOfSpeech": "adverb",
+    "topic": "directions",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "멀리 가지 마세요.",
+    "exampleNe": "टाढा नजानुहोस्।",
+    "exampleEn": "Don't go far.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "근처",
+        "noteNe": "मोल्ली भनेको टाढा हो, गुन्चो भनेको नजिक हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0066",
+    "korean": "길",
+    "nepali": "बाटो",
+    "english": "Road / way",
+    "romanization": "gil",
+    "syllables": [
+      "길"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "이 길이 맞습니다.",
+    "exampleNe": "यो बाटो सही हो।",
+    "exampleEn": "This is the right way.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0067",
+    "korean": "동",
+    "nepali": "पूर्व",
+    "english": "East",
+    "romanization": "dong",
+    "syllables": [
+      "동"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "동쪽으로 가세요.",
+    "exampleNe": "पूर्वतिर जानुहोस्।",
+    "exampleEn": "Please go east.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0068",
+    "korean": "서",
+    "nepali": "पश्चिम",
+    "english": "West",
+    "romanization": "seo",
+    "syllables": [
+      "서"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "서쪽에 있습니다.",
+    "exampleNe": "पश्चिमतिर छ।",
+    "exampleEn": "It is in the west.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0069",
+    "korean": "남",
+    "nepali": "दक्षिण",
+    "english": "South",
+    "romanization": "nam",
+    "syllables": [
+      "남"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "남쪽으로 가세요.",
+    "exampleNe": "दक्षिणतिर जानुहोस्।",
+    "exampleEn": "Please go south.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0070",
+    "korean": "북",
+    "nepali": "उत्तर",
+    "english": "North",
+    "romanization": "buk",
+    "syllables": [
+      "북"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "directions",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "북쪽에 있습니다.",
+    "exampleNe": "उत्तरतिर छ।",
+    "exampleEn": "It is in the north.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0071",
+    "korean": "밥",
+    "nepali": "भात",
+    "english": "Rice / meal",
+    "romanization": "bap",
+    "syllables": [
+      "밥"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "밥을 먹습니다.",
+    "exampleNe": "भात खान्छु।",
+    "exampleEn": "I eat rice.",
+    "similar": [
+      {
+        "korean": "음식",
+        "noteNe": "उम्सिक भनेको सामान्य खाना हो; पाप भनेको भात वा एक छाक खाना हो।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0072",
+    "korean": "물",
+    "nepali": "पानी",
+    "english": "Water",
+    "romanization": "mul",
+    "syllables": [
+      "물"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "물을 마십니다.",
+    "exampleNe": "पानी पिउँछु।",
+    "exampleEn": "I drink water.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0073",
+    "korean": "우유",
+    "nepali": "दूध",
+    "english": "Milk",
+    "romanization": "uyu",
+    "syllables": [
+      "우",
+      "유"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "우유를 마십니다.",
+    "exampleNe": "दूध पिउँछु।",
+    "exampleEn": "I drink milk.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0074",
+    "korean": "커피",
+    "nepali": "कफी",
+    "english": "Coffee",
+    "romanization": "keopi",
+    "syllables": [
+      "커",
+      "피"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "커피를 마십니다.",
+    "exampleNe": "कफी पिउँछु।",
+    "exampleEn": "I drink coffee.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0075",
+    "korean": "차",
+    "nepali": "चिया",
+    "english": "Tea",
+    "romanization": "cha",
+    "syllables": [
+      "차"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "차를 마십니다.",
+    "exampleNe": "चिया पिउँछु।",
+    "exampleEn": "I drink tea.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0076",
+    "korean": "빵",
+    "nepali": "रोटी / पाउरोटी",
+    "english": "Bread",
+    "romanization": "ppang",
+    "syllables": [
+      "빵"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "빵을 먹습니다.",
+    "exampleNe": "रोटी खान्छु।",
+    "exampleEn": "I eat bread.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0077",
+    "korean": "사과",
+    "nepali": "स्याउ",
+    "english": "Apple",
+    "romanization": "sagwa",
+    "syllables": [
+      "사",
+      "과"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "사과를 먹습니다.",
+    "exampleNe": "स्याउ खान्छु।",
+    "exampleEn": "I eat an apple.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "바나나",
+        "differenceNe": "साग्वा भनेको स्याउ हो, बानाना भनेको केरा हो; दुवै फलफूल हुन्।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0078",
+    "korean": "바나나",
+    "nepali": "केरा",
+    "english": "Banana",
+    "romanization": "banana",
+    "syllables": [
+      "바",
+      "나",
+      "나"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "바나나를 먹습니다.",
+    "exampleNe": "केरा खान्छु।",
+    "exampleEn": "I eat a banana.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0079",
+    "korean": "고기",
+    "nepali": "मासु",
+    "english": "Meat",
+    "romanization": "gogi",
+    "syllables": [
+      "고",
+      "기"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "고기를 먹습니다.",
+    "exampleNe": "मासु खान्छु।",
+    "exampleEn": "I eat meat.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0080",
+    "korean": "채소",
+    "nepali": "तरकारी",
+    "english": "Vegetable",
+    "romanization": "chaeso",
+    "syllables": [
+      "채",
+      "소"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "채소를 먹습니다.",
+    "exampleNe": "तरकारी खान्छु।",
+    "exampleEn": "I eat vegetables.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0081",
+    "korean": "김치",
+    "nepali": "किम्ची",
+    "english": "Kimchi",
+    "romanization": "gimchi",
+    "syllables": [
+      "김",
+      "치"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "김치를 먹습니다.",
+    "exampleNe": "किम्ची खान्छु।",
+    "exampleEn": "I eat kimchi.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0082",
+    "korean": "국",
+    "nepali": "झोल / सूप",
+    "english": "Soup",
+    "romanization": "guk",
+    "syllables": [
+      "국"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "국을 먹습니다.",
+    "exampleNe": "झोल खान्छु।",
+    "exampleEn": "I eat soup.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0083",
+    "korean": "라면",
+    "nepali": "रामेन (चाउचाउ)",
+    "english": "Ramyeon (instant noodles)",
+    "romanization": "ramyeon",
+    "syllables": [
+      "라",
+      "면"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "라면을 먹습니다.",
+    "exampleNe": "रामेन खान्छु।",
+    "exampleEn": "I eat ramyeon.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0084",
+    "korean": "과일",
+    "nepali": "फलफूल",
+    "english": "Fruit",
+    "romanization": "gwail",
+    "syllables": [
+      "과",
+      "일"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "과일을 먹습니다.",
+    "exampleNe": "फलफूल खान्छु।",
+    "exampleEn": "I eat fruit.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0085",
+    "korean": "음식",
+    "nepali": "खाना",
+    "english": "Food",
+    "romanization": "eumsik",
+    "syllables": [
+      "음",
+      "식"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "음식이 맛있습니다.",
+    "exampleNe": "खाना मिठो छ।",
+    "exampleEn": "The food is delicious.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0086",
+    "korean": "식당",
+    "nepali": "रेस्टुरेन्ट",
+    "english": "Restaurant",
+    "romanization": "sikdang",
+    "syllables": [
+      "식",
+      "당"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "food",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "식당에서 먹습니다.",
+    "exampleNe": "रेस्टुरेन्टमा खान्छु।",
+    "exampleEn": "I eat at a restaurant.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0087",
+    "korean": "자동차",
+    "nepali": "कार",
+    "english": "Car",
+    "romanization": "jadongcha",
+    "syllables": [
+      "자",
+      "동",
+      "차"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "자동차를 탑니다.",
+    "exampleNe": "कार चढ्छु।",
+    "exampleEn": "I ride in a car.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0088",
+    "korean": "버스",
+    "nepali": "बस",
+    "english": "Bus",
+    "romanization": "beoseu",
+    "syllables": [
+      "버",
+      "스"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "버스를 탑니다.",
+    "exampleNe": "बस चढ्छु।",
+    "exampleEn": "I take the bus.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0089",
+    "korean": "자전거",
+    "nepali": "साइकल",
+    "english": "Bicycle",
+    "romanization": "jajeongeo",
+    "syllables": [
+      "자",
+      "전",
+      "거"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "자전거를 탑니다.",
+    "exampleNe": "साइकल चढ्छु।",
+    "exampleEn": "I ride a bicycle.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "오토바이",
+        "differenceNe": "जाजोङो भनेको खुट्टाले चलाउने साइकल हो, ओटोबाइ भनेको इन्जिन भएको मोटरसाइकल हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0090",
+    "korean": "오토바이",
+    "nepali": "मोटरसाइकल",
+    "english": "Motorcycle",
+    "romanization": "otobai",
+    "syllables": [
+      "오",
+      "토",
+      "바",
+      "이"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "오토바이를 탑니다.",
+    "exampleNe": "मोटरसाइकल चढ्छु।",
+    "exampleEn": "I ride a motorcycle.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "자전거",
+        "differenceNe": "ओटोबाइ भनेको इन्जिन भएको मोटरसाइकल हो, जाजोङो भनेको साइकल हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0091",
+    "korean": "기차",
+    "nepali": "रेल",
+    "english": "Train",
+    "romanization": "gicha",
+    "syllables": [
+      "기",
+      "차"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "기차를 탑니다.",
+    "exampleNe": "रेल चढ्छु।",
+    "exampleEn": "I take the train.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "지하철",
+        "differenceNe": "गिछा भनेको लामो दूरीको रेल हो, जिहाछोल भनेको सहरभित्रको मेट्रो हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0092",
+    "korean": "비행기",
+    "nepali": "हवाईजहाज",
+    "english": "Airplane",
+    "romanization": "bihaenggi",
+    "syllables": [
+      "비",
+      "행",
+      "기"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "비행기를 탑니다.",
+    "exampleNe": "हवाईजहाज चढ्छु।",
+    "exampleEn": "I take an airplane.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0093",
+    "korean": "배",
+    "nepali": "डुङ्गा / जहाज",
+    "english": "Boat / ship",
+    "romanization": "bae",
+    "syllables": [
+      "배"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "배를 탑니다.",
+    "exampleNe": "डुङ्गा चढ्छु।",
+    "exampleEn": "I ride a boat.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0094",
+    "korean": "지하철",
+    "nepali": "मेट्रो",
+    "english": "Subway",
+    "romanization": "jihacheol",
+    "syllables": [
+      "지",
+      "하",
+      "철"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "지하철을 탑니다.",
+    "exampleNe": "मेट्रो चढ्छु।",
+    "exampleEn": "I take the subway.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "기차",
+        "differenceNe": "जिहाछोल भनेको सहरभित्रको मेट्रो हो, गिछा भनेको लामो दूरीको रेल हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0095",
+    "korean": "택시",
+    "nepali": "ट्याक्सी",
+    "english": "Taxi",
+    "romanization": "taeksi",
+    "syllables": [
+      "택",
+      "시"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "택시를 탑니다.",
+    "exampleNe": "ट्याक्सी चढ्छु।",
+    "exampleEn": "I take a taxi.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0096",
+    "korean": "역",
+    "nepali": "स्टेसन",
+    "english": "Station",
+    "romanization": "yeok",
+    "syllables": [
+      "역"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "역에서 만납니다.",
+    "exampleNe": "स्टेसनमा भेट्छु।",
+    "exampleEn": "We meet at the station.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0097",
+    "korean": "도로",
+    "nepali": "सडक",
+    "english": "Road",
+    "romanization": "doro",
+    "syllables": [
+      "도",
+      "로"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "도로를 건넙니다.",
+    "exampleNe": "सडक पार गर्छु।",
+    "exampleEn": "I cross the road.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0098",
+    "korean": "운전",
+    "nepali": "गाडी चलाउनु",
+    "english": "Driving",
+    "romanization": "unjeon",
+    "syllables": [
+      "운",
+      "전"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "운전을 합니다.",
+    "exampleNe": "गाडी चलाउँछु।",
+    "exampleEn": "I drive.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0099",
+    "korean": "교통",
+    "nepali": "यातायात",
+    "english": "Traffic / transport",
+    "romanization": "gyotong",
+    "syllables": [
+      "교",
+      "통"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "교통이 복잡합니다.",
+    "exampleNe": "यातायात व्यस्त छ।",
+    "exampleEn": "The traffic is heavy.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0100",
+    "korean": "표",
+    "nepali": "टिकट",
+    "english": "Ticket",
+    "romanization": "pyo",
+    "syllables": [
+      "표"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "transport",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "표를 삽니다.",
+    "exampleNe": "टिकट किन्छु।",
+    "exampleEn": "I buy a ticket.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0101",
+    "korean": "아프다",
+    "nepali": "बिरामी हुनु",
+    "english": "To be sick / hurt",
+    "romanization": "apeuda",
+    "syllables": [
+      "아",
+      "프",
+      "다"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "health",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "머리가 아픕니다.",
+    "exampleNe": "टाउको दुखेको छ।",
+    "exampleEn": "My head hurts.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "다치다",
+        "differenceNe": "आपुदा भनेको बिरामी हुनु हो, दाछिदा भनेको चोट लाग्नु हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0102",
+    "korean": "몸",
+    "nepali": "शरीर",
+    "english": "Body",
+    "romanization": "mom",
+    "syllables": [
+      "몸"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "몸이 아픕니다.",
+    "exampleNe": "शरीर दुखेको छ।",
+    "exampleEn": "My body hurts.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0103",
+    "korean": "머리",
+    "nepali": "टाउको",
+    "english": "Head",
+    "romanization": "meori",
+    "syllables": [
+      "머",
+      "리"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "머리가 아픕니다.",
+    "exampleNe": "टाउको दुखेको छ।",
+    "exampleEn": "My head hurts.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0104",
+    "korean": "손",
+    "nepali": "हात",
+    "english": "Hand",
+    "romanization": "son",
+    "syllables": [
+      "손"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "손이 아픕니다.",
+    "exampleNe": "हात दुखेको छ।",
+    "exampleEn": "My hand hurts.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0105",
+    "korean": "발",
+    "nepali": "खुट्टा",
+    "english": "Foot",
+    "romanization": "bal",
+    "syllables": [
+      "발"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "발이 아픕니다.",
+    "exampleNe": "खुट्टा दुखेको छ।",
+    "exampleEn": "My foot hurts.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0106",
+    "korean": "약",
+    "nepali": "औषधि",
+    "english": "Medicine",
+    "romanization": "yak",
+    "syllables": [
+      "약"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "약을 먹습니다.",
+    "exampleNe": "औषधि खान्छु।",
+    "exampleEn": "I take medicine.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0107",
+    "korean": "감기",
+    "nepali": "रुघाखोकी",
+    "english": "Cold",
+    "romanization": "gamgi",
+    "syllables": [
+      "감",
+      "기"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "감기에 걸렸습니다.",
+    "exampleNe": "रुघा लागेको छ।",
+    "exampleEn": "I have a cold.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0108",
+    "korean": "기침",
+    "nepali": "खोकी",
+    "english": "Cough",
+    "romanization": "gichim",
+    "syllables": [
+      "기",
+      "침"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "기침이 납니다.",
+    "exampleNe": "खोकी लागेको छ।",
+    "exampleEn": "I have a cough.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0109",
+    "korean": "피",
+    "nepali": "रगत",
+    "english": "Blood",
+    "romanization": "pi",
+    "syllables": [
+      "피"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "피가 납니다.",
+    "exampleNe": "रगत बगेको छ।",
+    "exampleEn": "I am bleeding.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0110",
+    "korean": "다치다",
+    "nepali": "चोट लाग्नु",
+    "english": "To get injured",
+    "romanization": "dachida",
+    "syllables": [
+      "다",
+      "치",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "health",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "손을 다쳤습니다.",
+    "exampleNe": "हातमा चोट लाग्यो।",
+    "exampleEn": "I injured my hand.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "아프다",
+        "differenceNe": "दाछिदा भनेको चोट लाग्नु हो, आपुदा भनेको बिरामी हुनु हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0111",
+    "korean": "쉬다",
+    "nepali": "आराम गर्नु",
+    "english": "To rest",
+    "romanization": "swida",
+    "syllables": [
+      "쉬",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "health",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "조금 쉽니다.",
+    "exampleNe": "अलि आराम गर्छु।",
+    "exampleEn": "I rest a little.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0112",
+    "korean": "건강",
+    "nepali": "स्वास्थ्य",
+    "english": "Health",
+    "romanization": "geongang",
+    "syllables": [
+      "건",
+      "강"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "건강이 중요합니다.",
+    "exampleNe": "स्वास्थ्य महत्त्वपूर्ण छ।",
+    "exampleEn": "Health is important.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0113",
+    "korean": "환자",
+    "nepali": "बिरामी",
+    "english": "Patient",
+    "romanization": "hwanja",
+    "syllables": [
+      "환",
+      "자"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "환자가 병원에 있습니다.",
+    "exampleNe": "बिरामी अस्पतालमा छ।",
+    "exampleEn": "The patient is in the hospital.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0114",
+    "korean": "치료",
+    "nepali": "उपचार",
+    "english": "Treatment",
+    "romanization": "chiryo",
+    "syllables": [
+      "치",
+      "료"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "health",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "치료를 받습니다.",
+    "exampleNe": "उपचार पाउँछु।",
+    "exampleEn": "I receive treatment.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0115",
+    "korean": "회사",
+    "nepali": "कम्पनी",
+    "english": "Company",
+    "romanization": "hoesa",
+    "syllables": [
+      "회",
+      "사"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "회사에 갑니다.",
+    "exampleNe": "कम्पनी जान्छु।",
+    "exampleEn": "I go to the company.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "공장",
+        "differenceNe": "ह्वेसा भनेको कम्पनी/कार्यालय हो, गोङ्जाङ भनेको उत्पादन गर्ने कारखाना हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0116",
+    "korean": "공장",
+    "nepali": "कारखाना",
+    "english": "Factory",
+    "romanization": "gongjang",
+    "syllables": [
+      "공",
+      "장"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "공장에서 일합니다.",
+    "exampleNe": "कारखानामा काम गर्छु।",
+    "exampleEn": "I work in a factory.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "회사",
+        "differenceNe": "गोङ्जाङ भनेको उत्पादन गर्ने कारखाना हो, ह्वेसा भनेको कम्पनी/कार्यालय हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0117",
+    "korean": "업무",
+    "nepali": "काम",
+    "english": "Work",
+    "romanization": "eommu",
+    "syllables": [
+      "업",
+      "무"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "일을 합니다.",
+    "exampleNe": "काम गर्छु।",
+    "exampleEn": "I work.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0118",
+    "korean": "시간",
+    "nepali": "समय",
+    "english": "Time",
+    "romanization": "sigan",
+    "syllables": [
+      "시",
+      "간"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "시간이 없습니다.",
+    "exampleNe": "समय छैन।",
+    "exampleEn": "I have no time.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0119",
+    "korean": "돈",
+    "nepali": "पैसा",
+    "english": "Money",
+    "romanization": "don",
+    "syllables": [
+      "돈"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "돈이 필요합니다.",
+    "exampleNe": "पैसा चाहिन्छ।",
+    "exampleEn": "I need money.",
+    "similar": [
+      {
+        "korean": "월급",
+        "noteNe": "वोल्गुप भनेको महिनाको तलब हो; दोन भनेको सामान्य पैसा हो।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0120",
+    "korean": "월급",
+    "nepali": "तलब",
+    "english": "Monthly salary",
+    "romanization": "wolgeup",
+    "syllables": [
+      "월",
+      "급"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "월급을 받습니다.",
+    "exampleNe": "तलब पाउँछु।",
+    "exampleEn": "I receive my salary.",
+    "similar": [
+      {
+        "korean": "돈",
+        "noteNe": "दोन भनेको सामान्य पैसा हो; वोल्गुप भनेको महिनाको तलब हो।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0121",
+    "korean": "사장",
+    "nepali": "मालिक",
+    "english": "Boss / president",
+    "romanization": "sajang",
+    "syllables": [
+      "사",
+      "장"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "사장이 친절합니다.",
+    "exampleNe": "मालिक दयालु हुनुहुन्छ।",
+    "exampleEn": "The boss is kind.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "동료",
+        "differenceNe": "साजाङ भनेको मालिक हो, दोङ्न्यो भनेको सहकर्मी हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0122",
+    "korean": "동료",
+    "nepali": "सहकर्मी",
+    "english": "Coworker",
+    "romanization": "dongnyo",
+    "syllables": [
+      "동",
+      "료"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "동료와 일합니다.",
+    "exampleNe": "सहकर्मीसँग काम गर्छु।",
+    "exampleEn": "I work with coworkers.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "사장",
+        "differenceNe": "दोङ्न्यो भनेको सहकर्मी हो, साजाङ भनेको मालिक हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0123",
+    "korean": "출근",
+    "nepali": "काममा जानु",
+    "english": "Going to work",
+    "romanization": "chulgeun",
+    "syllables": [
+      "출",
+      "근"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "출근합니다.",
+    "exampleNe": "काममा जान्छु।",
+    "exampleEn": "I go to work.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "퇴근",
+        "noteNe": "छुल्गुन भनेको काममा जानु हो, ट्वेगुन भनेको कामबाट फर्कनु हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0124",
+    "korean": "퇴근",
+    "nepali": "कामबाट फर्कनु",
+    "english": "Leaving work",
+    "romanization": "toegeun",
+    "syllables": [
+      "퇴",
+      "근"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "퇴근합니다.",
+    "exampleNe": "कामबाट फर्कन्छु।",
+    "exampleEn": "I leave work.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "출근",
+        "noteNe": "ट्वेगुन भनेको कामबाट फर्कनु हो, छुल्गुन भनेको काममा जानु हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0125",
+    "korean": "휴일",
+    "nepali": "बिदा",
+    "english": "Holiday / day off",
+    "romanization": "hyuil",
+    "syllables": [
+      "휴",
+      "일"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "휴일에 쉽니다.",
+    "exampleNe": "बिदामा आराम गर्छु।",
+    "exampleEn": "I rest on my day off.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0126",
+    "korean": "연장",
+    "nepali": "थप काम (ओभरटाइम)",
+    "english": "Overtime",
+    "romanization": "yeonjang",
+    "syllables": [
+      "연",
+      "장"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 3,
+    "epsImportance": "medium",
+    "exampleKo": "연장 근무를 합니다.",
+    "exampleNe": "थप काम गर्छु।",
+    "exampleEn": "I work overtime.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0127",
+    "korean": "계약",
+    "nepali": "सम्झौता",
+    "english": "Contract",
+    "romanization": "gyeyak",
+    "syllables": [
+      "계",
+      "약"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 3,
+    "epsImportance": "medium",
+    "exampleKo": "계약을 합니다.",
+    "exampleNe": "सम्झौता गर्छु।",
+    "exampleEn": "I sign a contract.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0128",
+    "korean": "서류",
+    "nepali": "कागजात",
+    "english": "Document",
+    "romanization": "seoryu",
+    "syllables": [
+      "서",
+      "류"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "서류를 준비합니다.",
+    "exampleNe": "कागजात तयार गर्छु।",
+    "exampleEn": "I prepare the documents.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0129",
+    "korean": "회의",
+    "nepali": "बैठक",
+    "english": "Meeting",
+    "romanization": "hoeui",
+    "syllables": [
+      "회",
+      "의"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "회의에 갑니다.",
+    "exampleNe": "बैठकमा जान्छु।",
+    "exampleEn": "I go to a meeting.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0130",
+    "korean": "전화",
+    "nepali": "फोन",
+    "english": "Telephone / phone",
+    "romanization": "jeonhwa",
+    "syllables": [
+      "전",
+      "화"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "workplace",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "전화를 합니다.",
+    "exampleNe": "फोन गर्छु।",
+    "exampleEn": "I make a phone call.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0131",
+    "korean": "기계",
+    "nepali": "मेसिन",
+    "english": "Machine",
+    "romanization": "gigye",
+    "syllables": [
+      "기",
+      "계"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "기계가 고장 났습니다.",
+    "exampleNe": "मेसिन बिग्रिएको छ।",
+    "exampleEn": "The machine is broken.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "도구",
+        "differenceNe": "गिग्ये भनेको मेसिन हो, दोगु भनेको हातले चलाउने औजार हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0132",
+    "korean": "제품",
+    "nepali": "उत्पादन",
+    "english": "Product",
+    "romanization": "jepum",
+    "syllables": [
+      "제",
+      "품"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "제품을 만듭니다.",
+    "exampleNe": "उत्पादन बनाउँछु।",
+    "exampleEn": "I make products.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0133",
+    "korean": "부품",
+    "nepali": "पार्टपुर्जा",
+    "english": "Part / component",
+    "romanization": "bupum",
+    "syllables": [
+      "부",
+      "품"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "부품이 필요합니다.",
+    "exampleNe": "पार्टपुर्जा चाहिन्छ।",
+    "exampleEn": "I need a part.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0134",
+    "korean": "포장",
+    "nepali": "प्याकिङ",
+    "english": "Packaging",
+    "romanization": "pojang",
+    "syllables": [
+      "포",
+      "장"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "포장을 합니다.",
+    "exampleNe": "प्याकिङ गर्छु।",
+    "exampleEn": "I do the packaging.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0135",
+    "korean": "검사",
+    "nepali": "जाँच",
+    "english": "Inspection",
+    "romanization": "geomsa",
+    "syllables": [
+      "검",
+      "사"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "검사를 합니다.",
+    "exampleNe": "जाँच गर्छु।",
+    "exampleEn": "I do the inspection.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0136",
+    "korean": "생산",
+    "nepali": "उत्पादन",
+    "english": "Production",
+    "romanization": "saengsan",
+    "syllables": [
+      "생",
+      "산"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 3,
+    "epsImportance": "medium",
+    "exampleKo": "생산을 합니다.",
+    "exampleNe": "उत्पादन गर्छु।",
+    "exampleEn": "I do production.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0137",
+    "korean": "작업",
+    "nepali": "काम",
+    "english": "Task / operation",
+    "romanization": "jageop",
+    "syllables": [
+      "작",
+      "업"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "작업을 시작합니다.",
+    "exampleNe": "काम सुरु गर्छु।",
+    "exampleEn": "I start the task.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0138",
+    "korean": "공정",
+    "nepali": "प्रक्रिया",
+    "english": "Process",
+    "romanization": "gongjeong",
+    "syllables": [
+      "공",
+      "정"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "공정을 확인합니다.",
+    "exampleNe": "प्रक्रिया जाँच गर्छु।",
+    "exampleEn": "I check the process.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0139",
+    "korean": "품질",
+    "nepali": "गुणस्तर",
+    "english": "Quality",
+    "romanization": "pumjil",
+    "syllables": [
+      "품",
+      "질"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "품질이 좋습니다.",
+    "exampleNe": "गुणस्तर राम्रो छ।",
+    "exampleEn": "The quality is good.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0140",
+    "korean": "불량",
+    "nepali": "खराब (दोषयुक्त)",
+    "english": "Defective",
+    "romanization": "bullyang",
+    "syllables": [
+      "불",
+      "량"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 3,
+    "epsImportance": "medium",
+    "exampleKo": "불량이 있습니다.",
+    "exampleNe": "दोष छ।",
+    "exampleEn": "There is a defect.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0141",
+    "korean": "수리",
+    "nepali": "मर्मत",
+    "english": "Repair",
+    "romanization": "suri",
+    "syllables": [
+      "수",
+      "리"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "수리를 합니다.",
+    "exampleNe": "मर्मत गर्छु।",
+    "exampleEn": "I do the repair.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0142",
+    "korean": "전원",
+    "nepali": "पावर",
+    "english": "Power (supply)",
+    "romanization": "jeonwon",
+    "syllables": [
+      "전",
+      "원"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "전원을 켭니다.",
+    "exampleNe": "पावर खोल्छु।",
+    "exampleEn": "I turn on the power.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0143",
+    "korean": "버튼",
+    "nepali": "बटन",
+    "english": "Button",
+    "romanization": "beoteun",
+    "syllables": [
+      "버",
+      "튼"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "버튼을 누릅니다.",
+    "exampleNe": "बटन थिच्छु।",
+    "exampleEn": "I press the button.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0144",
+    "korean": "공구",
+    "nepali": "औजार",
+    "english": "Tool (workshop)",
+    "romanization": "gonggu",
+    "syllables": [
+      "공",
+      "구"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "manufacturing",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "공구가 필요합니다.",
+    "exampleNe": "औजार चाहिन्छ।",
+    "exampleEn": "I need a tool.",
+    "similar": [
+      {
+        "korean": "도구",
+        "noteNe": "दोगु भनेको सामान्य औजार हो; गोङ्गु भनेको कार्यस्थलको औजार समूह हो।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0145",
+    "korean": "농장",
+    "nepali": "खेतबारी",
+    "english": "Farm",
+    "romanization": "nongjang",
+    "syllables": [
+      "농",
+      "장"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "농장에서 일합니다.",
+    "exampleNe": "खेतबारीमा काम गर्छु।",
+    "exampleEn": "I work on a farm.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0146",
+    "korean": "밭",
+    "nepali": "खेत",
+    "english": "Field",
+    "romanization": "bat",
+    "syllables": [
+      "밭"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "밭에서 일합니다.",
+    "exampleNe": "खेतमा काम गर्छु।",
+    "exampleEn": "I work in the field.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0147",
+    "korean": "농사",
+    "nepali": "खेती",
+    "english": "Farming",
+    "romanization": "nongsa",
+    "syllables": [
+      "농",
+      "사"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "농사를 짓습니다.",
+    "exampleNe": "खेती गर्छु।",
+    "exampleEn": "I do farming.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0148",
+    "korean": "쌀",
+    "nepali": "चामल",
+    "english": "Rice (grain)",
+    "romanization": "ssal",
+    "syllables": [
+      "쌀"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "쌀을 수확합니다.",
+    "exampleNe": "चामल काट्छु।",
+    "exampleEn": "I harvest rice.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0149",
+    "korean": "나무",
+    "nepali": "रूख",
+    "english": "Tree",
+    "romanization": "namu",
+    "syllables": [
+      "나",
+      "무"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "나무가 큽니다.",
+    "exampleNe": "रूख ठूलो छ।",
+    "exampleEn": "The tree is big.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0150",
+    "korean": "꽃",
+    "nepali": "फूल",
+    "english": "Flower",
+    "romanization": "kkot",
+    "syllables": [
+      "꽃"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "꽃이 예쁩니다.",
+    "exampleNe": "फूल राम्रो छ।",
+    "exampleEn": "The flower is pretty.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0151",
+    "korean": "씨앗",
+    "nepali": "बीउ",
+    "english": "Seed",
+    "romanization": "ssiat",
+    "syllables": [
+      "씨",
+      "앗"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "씨앗을 심습니다.",
+    "exampleNe": "बीउ रोप्छु।",
+    "exampleEn": "I plant seeds.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0152",
+    "korean": "비",
+    "nepali": "वर्षा",
+    "english": "Rain",
+    "romanization": "bi",
+    "syllables": [
+      "비"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "비가 옵니다.",
+    "exampleNe": "पानी पर्छ।",
+    "exampleEn": "It rains.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0153",
+    "korean": "태양",
+    "nepali": "सूर्य",
+    "english": "Sun",
+    "romanization": "taeyang",
+    "syllables": [
+      "태",
+      "양"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "태양이 밝습니다.",
+    "exampleNe": "सूर्य उज्यालो छ।",
+    "exampleEn": "The sun is bright.",
+    "similar": [
+      {
+        "korean": "해",
+        "noteNe": "है भनेको दैनिक शब्द हो; थैयाङ भनेको औपचारिक/वैज्ञानिक शब्द हो।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0154",
+    "korean": "비료",
+    "nepali": "मल",
+    "english": "Fertilizer",
+    "romanization": "biryo",
+    "syllables": [
+      "비",
+      "료"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "비료를 줍니다.",
+    "exampleNe": "मल दिन्छु।",
+    "exampleEn": "I apply fertilizer.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0155",
+    "korean": "수확",
+    "nepali": "बाली काट्नु",
+    "english": "Harvest",
+    "romanization": "suhwak",
+    "syllables": [
+      "수",
+      "확"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 3,
+    "epsImportance": "medium",
+    "exampleKo": "수확을 합니다.",
+    "exampleNe": "बाली काट्छु।",
+    "exampleEn": "I harvest.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0156",
+    "korean": "돼지",
+    "nepali": "सुँगुर",
+    "english": "Pig",
+    "romanization": "dwaeji",
+    "syllables": [
+      "돼",
+      "지"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "돼지를 키웁니다.",
+    "exampleNe": "सुँगुर पाल्छु।",
+    "exampleEn": "I raise pigs.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0157",
+    "korean": "소",
+    "nepali": "गाई",
+    "english": "Cow",
+    "romanization": "so",
+    "syllables": [
+      "소"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "agriculture",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "소가 풀을 먹습니다.",
+    "exampleNe": "गाईले घाँस खान्छ।",
+    "exampleEn": "The cow eats grass.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0158",
+    "korean": "건설",
+    "nepali": "निर्माण",
+    "english": "Construction",
+    "romanization": "geonseol",
+    "syllables": [
+      "건",
+      "설"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "건설 현장에서 일합니다.",
+    "exampleNe": "निर्माण स्थलमा काम गर्छु।",
+    "exampleEn": "I work at a construction site.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0159",
+    "korean": "벽",
+    "nepali": "भित्ता",
+    "english": "Wall",
+    "romanization": "byeok",
+    "syllables": [
+      "벽"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "벽을 만듭니다.",
+    "exampleNe": "भित्ता बनाउँछु।",
+    "exampleEn": "I build a wall.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0160",
+    "korean": "지붕",
+    "nepali": "छाना",
+    "english": "Roof",
+    "romanization": "jibung",
+    "syllables": [
+      "지",
+      "붕"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "지붕을 고칩니다.",
+    "exampleNe": "छाना मर्मत गर्छु।",
+    "exampleEn": "I repair the roof.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0161",
+    "korean": "바닥",
+    "nepali": "भुइँ",
+    "english": "Floor",
+    "romanization": "badak",
+    "syllables": [
+      "바",
+      "닥"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "바닥을 닦습니다.",
+    "exampleNe": "भुइँ पुछ्छु।",
+    "exampleEn": "I clean the floor.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0162",
+    "korean": "창문",
+    "nepali": "झ्याल",
+    "english": "Window",
+    "romanization": "changmun",
+    "syllables": [
+      "창",
+      "문"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "창문을 엽니다.",
+    "exampleNe": "झ्याल खोल्छु।",
+    "exampleEn": "I open the window.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0163",
+    "korean": "문",
+    "nepali": "ढोका",
+    "english": "Door",
+    "romanization": "mun",
+    "syllables": [
+      "문"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "문을 닫습니다.",
+    "exampleNe": "ढोका बन्द गर्छु।",
+    "exampleEn": "I close the door.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0164",
+    "korean": "계단",
+    "nepali": "भर्‍याङ",
+    "english": "Stairs",
+    "romanization": "gyedan",
+    "syllables": [
+      "계",
+      "단"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "계단을 오릅니다.",
+    "exampleNe": "भर्‍याङ चढ्छु।",
+    "exampleEn": "I climb the stairs.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0165",
+    "korean": "시멘트",
+    "nepali": "सिमेन्ट",
+    "english": "Cement",
+    "romanization": "simenteu",
+    "syllables": [
+      "시",
+      "멘",
+      "트"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "시멘트를 섞습니다.",
+    "exampleNe": "सिमेन्ट मिसाउँछु।",
+    "exampleEn": "I mix cement.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0166",
+    "korean": "벽돌",
+    "nepali": "इँटा",
+    "english": "Brick",
+    "romanization": "byeokdol",
+    "syllables": [
+      "벽",
+      "돌"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "벽돌을 쌓습니다.",
+    "exampleNe": "इँटा थुपार्छु।",
+    "exampleEn": "I stack bricks.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0167",
+    "korean": "철근",
+    "nepali": "फलामे रड",
+    "english": "Rebar",
+    "romanization": "cheolgeun",
+    "syllables": [
+      "철",
+      "근"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "철근을 자릅니다.",
+    "exampleNe": "फलामे रड काट्छु।",
+    "exampleEn": "I cut the rebar.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0168",
+    "korean": "현장",
+    "nepali": "स्थल",
+    "english": "Work site",
+    "romanization": "hyeonjang",
+    "syllables": [
+      "현",
+      "장"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "현장에 갑니다.",
+    "exampleNe": "स्थलमा जान्छु।",
+    "exampleEn": "I go to the site.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0169",
+    "korean": "건물",
+    "nepali": "भवन",
+    "english": "Building",
+    "romanization": "geonmul",
+    "syllables": [
+      "건",
+      "물"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "건물이 높습니다.",
+    "exampleNe": "भवन अग्लो छ।",
+    "exampleEn": "The building is tall.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "집",
+        "differenceNe": "गोन्मुल भनेको सामान्य भवन हो, जिप भनेको घर हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0170",
+    "korean": "도면",
+    "nepali": "नक्सा",
+    "english": "Blueprint",
+    "romanization": "domyeon",
+    "syllables": [
+      "도",
+      "면"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "도면을 봅니다.",
+    "exampleNe": "नक्सा हेर्छु।",
+    "exampleEn": "I look at the blueprint.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0171",
+    "korean": "사다리",
+    "nepali": "भर्‍याङ (सिँढी)",
+    "english": "Ladder",
+    "romanization": "sadari",
+    "syllables": [
+      "사",
+      "다",
+      "리"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "construction",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "사다리를 오릅니다.",
+    "exampleNe": "भर्‍याङ चढ्छु।",
+    "exampleEn": "I climb the ladder.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0172",
+    "korean": "도구",
+    "nepali": "औजार",
+    "english": "Tool",
+    "romanization": "dogu",
+    "syllables": [
+      "도",
+      "구"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "도구를 사용합니다.",
+    "exampleNe": "औजार प्रयोग गर्छु।",
+    "exampleEn": "I use a tool.",
+    "similar": [
+      {
+        "korean": "공구",
+        "noteNe": "गोङ्गु भनेको कार्यस्थलको औजार समूह हो; दोगु भनेको सामान्य औजार हो।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "기계",
+        "differenceNe": "दोगु भनेको हातले चलाउने औजार हो, गिग्ये भनेको मेसिन हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0173",
+    "korean": "망치",
+    "nepali": "हतौडा",
+    "english": "Hammer",
+    "romanization": "mangchi",
+    "syllables": [
+      "망",
+      "치"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "망치로 못을 박습니다.",
+    "exampleNe": "हतौडाले किला ठोक्छु।",
+    "exampleEn": "I hammer a nail with a hammer.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0174",
+    "korean": "드라이버",
+    "nepali": "पेचकस",
+    "english": "Screwdriver",
+    "romanization": "deuraibeo",
+    "syllables": [
+      "드",
+      "라",
+      "이",
+      "버"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "드라이버로 나사를 풉니다.",
+    "exampleNe": "पेचकसले पेच खोल्छु।",
+    "exampleEn": "I loosen a screw with a screwdriver.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0175",
+    "korean": "톱",
+    "nepali": "आरा",
+    "english": "Saw",
+    "romanization": "top",
+    "syllables": [
+      "톱"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "톱으로 나무를 자릅니다.",
+    "exampleNe": "आराले काठ काट्छु।",
+    "exampleEn": "I cut wood with a saw.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0176",
+    "korean": "가위",
+    "nepali": "कैंची",
+    "english": "Scissors",
+    "romanization": "gawi",
+    "syllables": [
+      "가",
+      "위"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "가위로 종이를 자릅니다.",
+    "exampleNe": "कैंचीले कागज काट्छु।",
+    "exampleEn": "I cut paper with scissors.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0177",
+    "korean": "칼",
+    "nepali": "चक्कु",
+    "english": "Knife",
+    "romanization": "kal",
+    "syllables": [
+      "칼"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "칼로 자릅니다.",
+    "exampleNe": "चक्कुले काट्छु।",
+    "exampleEn": "I cut with a knife.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0178",
+    "korean": "자",
+    "nepali": "रूलर",
+    "english": "Ruler",
+    "romanization": "ja",
+    "syllables": [
+      "자"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "자로 잽니다.",
+    "exampleNe": "रूलरले नाप्छु।",
+    "exampleEn": "I measure with a ruler.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0179",
+    "korean": "줄",
+    "nepali": "डोरी",
+    "english": "Rope / string",
+    "romanization": "jul",
+    "syllables": [
+      "줄"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "줄을 묶습니다.",
+    "exampleNe": "डोरी बाँध्छु।",
+    "exampleEn": "I tie the rope.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0180",
+    "korean": "못",
+    "nepali": "किला",
+    "english": "Nail",
+    "romanization": "mot",
+    "syllables": [
+      "못"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "못을 박습니다.",
+    "exampleNe": "किला ठोक्छु।",
+    "exampleEn": "I hammer a nail.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0181",
+    "korean": "나사",
+    "nepali": "पेच",
+    "english": "Screw",
+    "romanization": "nasa",
+    "syllables": [
+      "나",
+      "사"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "나사를 조입니다.",
+    "exampleNe": "पेच कस्छु।",
+    "exampleEn": "I tighten a screw.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0182",
+    "korean": "열쇠",
+    "nepali": "चाबी",
+    "english": "Key",
+    "romanization": "yeolsoe",
+    "syllables": [
+      "열",
+      "쇠"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "열쇠로 문을 엽니다.",
+    "exampleNe": "चाबीले ढोका खोल्छु।",
+    "exampleEn": "I open the door with a key.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0183",
+    "korean": "전등",
+    "nepali": "बत्ती",
+    "english": "Lamp / light",
+    "romanization": "jeondeung",
+    "syllables": [
+      "전",
+      "등"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "전등을 켭니다.",
+    "exampleNe": "बत्ती बाल्छु।",
+    "exampleEn": "I turn on the light.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0184",
+    "korean": "배터리",
+    "nepali": "ब्याट्री",
+    "english": "Battery",
+    "romanization": "baeteori",
+    "syllables": [
+      "배",
+      "터",
+      "리"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "배터리를 갈아줍니다.",
+    "exampleNe": "ब्याट्री फेर्छु।",
+    "exampleEn": "I replace the battery.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0185",
+    "korean": "상자",
+    "nepali": "बाकस",
+    "english": "Box",
+    "romanization": "sangja",
+    "syllables": [
+      "상",
+      "자"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "tools",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "상자에 넣습니다.",
+    "exampleNe": "बाकसमा हाल्छु।",
+    "exampleEn": "I put it in a box.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0186",
+    "korean": "안전",
+    "nepali": "सुरक्षा",
+    "english": "Safety",
+    "romanization": "anjeon",
+    "syllables": [
+      "안",
+      "전"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "안전이 중요합니다.",
+    "exampleNe": "सुरक्षा महत्त्वपूर्ण छ।",
+    "exampleEn": "Safety is important.",
+    "similar": [
+      {
+        "korean": "조심",
+        "noteNe": "जोसिम भनेको सावधानीपूर्वक व्यवहार हो; अन्जोन भनेको सुरक्षित अवस्था हो।"
+      }
+    ],
+    "opposite": [
+      {
+        "korean": "위험",
+        "noteNe": "अन्जोन भनेको सुरक्षा हो, विहोम भनेको खतरा हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0187",
+    "korean": "위험",
+    "nepali": "खतरा",
+    "english": "Danger",
+    "romanization": "wiheom",
+    "syllables": [
+      "위",
+      "험"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "위험합니다, 조심하세요.",
+    "exampleNe": "खतरा छ, होसियार हुनुहोस्।",
+    "exampleEn": "It is dangerous, be careful.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "안전",
+        "noteNe": "विहोम भनेको खतरा हो, अन्जोन भनेको सुरक्षा हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0188",
+    "korean": "조심",
+    "nepali": "सावधानी",
+    "english": "Caution",
+    "romanization": "josim",
+    "syllables": [
+      "조",
+      "심"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "조심하세요.",
+    "exampleNe": "सावधानी अपनाउनुहोस्।",
+    "exampleEn": "Please be careful.",
+    "similar": [
+      {
+        "korean": "안전",
+        "noteNe": "अन्जोन भनेको सुरक्षित अवस्था हो; जोसिम भनेको सावधानीपूर्वक व्यवहार हो।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0189",
+    "korean": "헬멧",
+    "nepali": "हेल्मेट",
+    "english": "Helmet",
+    "romanization": "helmet",
+    "syllables": [
+      "헬",
+      "멧"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "헬멧을 씁니다.",
+    "exampleNe": "हेल्मेट लगाउँछु।",
+    "exampleEn": "I wear a helmet.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "모자",
+        "differenceNe": "हेल्मेस भनेको सुरक्षा हेल्मेट हो, मोजा भनेको सामान्य टोपी हो।"
+      }
+    ],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0190",
+    "korean": "장갑",
+    "nepali": "पन्जा",
+    "english": "Gloves",
+    "romanization": "janggap",
+    "syllables": [
+      "장",
+      "갑"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "장갑을 낍니다.",
+    "exampleNe": "पन्जा लगाउँछु।",
+    "exampleEn": "I wear gloves.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0191",
+    "korean": "마스크",
+    "nepali": "मास्क",
+    "english": "Mask",
+    "romanization": "maseukeu",
+    "syllables": [
+      "마",
+      "스",
+      "크"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "마스크를 씁니다.",
+    "exampleNe": "मास्क लगाउँछु।",
+    "exampleEn": "I wear a mask.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0192",
+    "korean": "신호",
+    "nepali": "सङ्केत",
+    "english": "Signal",
+    "romanization": "sinho",
+    "syllables": [
+      "신",
+      "호"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "신호를 따릅니다.",
+    "exampleNe": "सङ्केत पालना गर्छु।",
+    "exampleEn": "I follow the signal.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0193",
+    "korean": "소화기",
+    "nepali": "अग्नि नियन्त्रक",
+    "english": "Fire extinguisher",
+    "romanization": "sohwagi",
+    "syllables": [
+      "소",
+      "화",
+      "기"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "소화기가 있습니다.",
+    "exampleNe": "अग्नि नियन्त्रक छ।",
+    "exampleEn": "There is a fire extinguisher.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0194",
+    "korean": "비상구",
+    "nepali": "आपतकालीन निकास",
+    "english": "Emergency exit",
+    "romanization": "bisanggu",
+    "syllables": [
+      "비",
+      "상",
+      "구"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "비상구는 저쪽입니다.",
+    "exampleNe": "आपतकालीन निकास उता छ।",
+    "exampleEn": "The emergency exit is over there.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0195",
+    "korean": "구급상자",
+    "nepali": "प्राथमिक उपचार बाकस",
+    "english": "First-aid kit",
+    "romanization": "gugeupsangja",
+    "syllables": [
+      "구",
+      "급",
+      "상",
+      "자"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "구급상자가 있습니다.",
+    "exampleNe": "प्राथमिक उपचार बाकस छ।",
+    "exampleEn": "There is a first-aid kit.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0196",
+    "korean": "경고",
+    "nepali": "चेतावनी",
+    "english": "Warning",
+    "romanization": "gyeonggo",
+    "syllables": [
+      "경",
+      "고"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 3,
+    "epsImportance": "low",
+    "exampleKo": "경고를 봅니다.",
+    "exampleNe": "चेतावनी हेर्छु।",
+    "exampleEn": "I see the warning.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0197",
+    "korean": "보호",
+    "nepali": "संरक्षण",
+    "english": "Protection",
+    "romanization": "boho",
+    "syllables": [
+      "보",
+      "호"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "safety",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "보호 장비를 씁니다.",
+    "exampleNe": "सुरक्षा उपकरण लगाउँछु।",
+    "exampleEn": "I wear protective equipment.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0198",
+    "korean": "가다",
+    "nepali": "जानु",
+    "english": "To go",
+    "romanization": "gada",
+    "syllables": [
+      "가",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "학교에 갑니다.",
+    "exampleNe": "विद्यालय जान्छु।",
+    "exampleEn": "I go to school.",
+    "similar": [
+      {
+        "korean": "이동하다",
+        "noteNe": "이동하다는 औपचारिक शब्द हो; स्थान परिवर्तनमा जोड दिन्छ, 가다는 दैनिक शब्द हो।"
+      }
+    ],
+    "opposite": [
+      {
+        "korean": "오다",
+        "noteNe": "가दा वक्ताबाट टाढा जानु हो, ओदा वक्तातिर आउनु हो।"
+      }
+    ],
+    "confusing": [
+      {
+        "korean": "오다",
+        "differenceNe": "गादाको दिशा वक्ताबाट टाढा हो, ओदाको दिशा वक्तातिर हो।"
+      },
+      {
+        "korean": "떠나다",
+        "differenceNe": "떠나दाले ठाउँ छोड्नु, प्रायः स्थायी रूपमा, भन्ने अर्थ दिन्छ।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0199",
+    "korean": "오다",
+    "nepali": "आउनु",
+    "english": "To come",
+    "romanization": "oda",
+    "syllables": [
+      "오",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "친구가 옵니다.",
+    "exampleNe": "साथी आउँछ।",
+    "exampleEn": "My friend comes.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "가다",
+        "noteNe": "오दा वक्तातिर आउनु हो, गादा वक्ताबाट टाढा जानु हो।"
+      }
+    ],
+    "confusing": [
+      {
+        "korean": "가다",
+        "differenceNe": "ओदाको दिशा वक्तातिर हो, गादाको दिशा वक्ताबाट टाढा हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0200",
+    "korean": "떠나다",
+    "nepali": "छोडेर जानु",
+    "english": "To leave / depart",
+    "romanization": "tteonada",
+    "syllables": [
+      "떠",
+      "나",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 2,
+    "epsImportance": "high",
+    "exampleKo": "한국을 떠납니다.",
+    "exampleNe": "कोरिया छोडेर जान्छु।",
+    "exampleEn": "I leave Korea.",
+    "similar": [
+      {
+        "korean": "가다",
+        "noteNe": "가다는 सामान्य जानु हो; 떠나दाले ठाउँ छोड्ने कुरामा जोड दिन्छ।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "이동하다",
+        "differenceNe": "이동하다는 तटस्थ रूपमा स्थान सर्नु हो, 떠나दाले छोड्नु भन्ने भाव दिन्छ।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0201",
+    "korean": "이동하다",
+    "nepali": "स्थान परिवर्तन गर्नु",
+    "english": "To move / relocate",
+    "romanization": "idonghada",
+    "syllables": [
+      "이",
+      "동",
+      "하",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 3,
+    "epsImportance": "medium",
+    "exampleKo": "창고로 이동합니다.",
+    "exampleNe": "गोदाममा सर्छु।",
+    "exampleEn": "I move to the warehouse.",
+    "similar": [
+      {
+        "korean": "가다",
+        "noteNe": "가다는 दैनिक शब्द हो; 이동하다는 औपचारिक रूपमा स्थान परिवर्तन गर्नु हो।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "떠나다",
+        "differenceNe": "이동하다는 स्थान सर्नु हो, 떠나दाले ठाउँ छोड्नु हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0202",
+    "korean": "먹다",
+    "nepali": "खानु",
+    "english": "To eat",
+    "romanization": "meokda",
+    "syllables": [
+      "먹",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "밥을 먹습니다.",
+    "exampleNe": "भात खान्छु।",
+    "exampleEn": "I eat rice.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "마시다",
+        "differenceNe": "मोक्दा भनेको ठोस खाना खानु हो, मासिदा भनेको तरल पिउनु हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0203",
+    "korean": "마시다",
+    "nepali": "पिउनु",
+    "english": "To drink",
+    "romanization": "masida",
+    "syllables": [
+      "마",
+      "시",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "물을 마십니다.",
+    "exampleNe": "पानी पिउँछु।",
+    "exampleEn": "I drink water.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "먹다",
+        "differenceNe": "मासिदा भनेको तरल पिउनु हो, मोक्दा भनेको ठोस खाना खानु हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0204",
+    "korean": "보다",
+    "nepali": "हेर्नु",
+    "english": "To see / watch",
+    "romanization": "boda",
+    "syllables": [
+      "보",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "책을 봅니다.",
+    "exampleNe": "किताब हेर्छु।",
+    "exampleEn": "I look at the book.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0205",
+    "korean": "듣다",
+    "nepali": "सुन्नु",
+    "english": "To listen / hear",
+    "romanization": "deutda",
+    "syllables": [
+      "듣",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "음악을 듣습니다.",
+    "exampleNe": "सङ्गीत सुन्छु।",
+    "exampleEn": "I listen to music.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0206",
+    "korean": "말하다",
+    "nepali": "बोल्नु",
+    "english": "To speak",
+    "romanization": "malhada",
+    "syllables": [
+      "말",
+      "하",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "한국말을 합니다.",
+    "exampleNe": "कोरियाली बोल्छु।",
+    "exampleEn": "I speak Korean.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0207",
+    "korean": "일하다",
+    "nepali": "काम गर्नु",
+    "english": "To work",
+    "romanization": "ilhada",
+    "syllables": [
+      "일",
+      "하",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "공장에서 일합니다.",
+    "exampleNe": "कारखानामा काम गर्छु।",
+    "exampleEn": "I work in a factory.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0208",
+    "korean": "공부하다",
+    "nepali": "अध्ययन गर्नु",
+    "english": "To study",
+    "romanization": "gongbuhada",
+    "syllables": [
+      "공",
+      "부",
+      "하",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "한국어를 공부합니다.",
+    "exampleNe": "कोरियाली अध्ययन गर्छु।",
+    "exampleEn": "I study Korean.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0209",
+    "korean": "사다",
+    "nepali": "किन्नु",
+    "english": "To buy",
+    "romanization": "sada",
+    "syllables": [
+      "사",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "사과를 삽니다.",
+    "exampleNe": "स्याउ किन्छु।",
+    "exampleEn": "I buy apples.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "팔다",
+        "noteNe": "सादा भनेको किन्नु हो, पाल्दा भनेको बेच्नु हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0210",
+    "korean": "팔다",
+    "nepali": "बेच्नु",
+    "english": "To sell",
+    "romanization": "palda",
+    "syllables": [
+      "팔",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "물건을 팝니다.",
+    "exampleNe": "सामान बेच्छु।",
+    "exampleEn": "I sell goods.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "사다",
+        "noteNe": "पाल्दा भनेको बेच्नु हो, सादा भनेको किन्नु हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0211",
+    "korean": "만나다",
+    "nepali": "भेट्नु",
+    "english": "To meet",
+    "romanization": "mannada",
+    "syllables": [
+      "만",
+      "나",
+      "다"
+    ],
+    "partOfSpeech": "verb",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "친구를 만납니다.",
+    "exampleNe": "साथीलाई भेट्छु।",
+    "exampleEn": "I meet my friend.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "verb"
+    ]
+  },
+  {
+    "id": "HM-0212",
+    "korean": "좋다",
+    "nepali": "राम्रो हुनु",
+    "english": "To be good",
+    "romanization": "jota",
+    "syllables": [
+      "좋",
+      "다"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "날씨가 좋습니다.",
+    "exampleNe": "मौसम राम्रो छ।",
+    "exampleEn": "The weather is good.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "나쁘다",
+        "noteNe": "좋다는 राम्रो हो, नाप्पुदा भनेको नराम्रो हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0213",
+    "korean": "나쁘다",
+    "nepali": "नराम्रो हुनु",
+    "english": "To be bad",
+    "romanization": "nappeuda",
+    "syllables": [
+      "나",
+      "쁘",
+      "다"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "날씨가 나쁩니다.",
+    "exampleNe": "मौसम नराम्रो छ।",
+    "exampleEn": "The weather is bad.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "좋다",
+        "noteNe": "नाप्पुदा भनेको नराम्रो हो, 좋다는 राम्रो हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0214",
+    "korean": "크다",
+    "nepali": "ठूलो हुनु",
+    "english": "To be big",
+    "romanization": "keuda",
+    "syllables": [
+      "크",
+      "다"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "집이 큽니다.",
+    "exampleNe": "घर ठूलो छ।",
+    "exampleEn": "The house is big.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "작다",
+        "noteNe": "크다는 ठूलो हो, जाक्दा भनेको सानो हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0215",
+    "korean": "작다",
+    "nepali": "सानो हुनु",
+    "english": "To be small",
+    "romanization": "jakda",
+    "syllables": [
+      "작",
+      "다"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "방이 작습니다.",
+    "exampleNe": "कोठा सानो छ।",
+    "exampleEn": "The room is small.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "크다",
+        "noteNe": "जाक्दा भनेको सानो हो, क्रदा भनेको ठूलो हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0216",
+    "korean": "빠르다",
+    "nepali": "छिटो हुनु",
+    "english": "To be fast",
+    "romanization": "ppareuda",
+    "syllables": [
+      "빠",
+      "르",
+      "다"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "general",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "기차가 빠릅니다.",
+    "exampleNe": "रेल छिटो छ।",
+    "exampleEn": "The train is fast.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "느리다",
+        "noteNe": "प्पारुदा भनेको छिटो हो, न्युरिदा भनेको ढिलो हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0217",
+    "korean": "느리다",
+    "nepali": "ढिलो हुनु",
+    "english": "To be slow",
+    "romanization": "neurida",
+    "syllables": [
+      "느",
+      "리",
+      "다"
+    ],
+    "partOfSpeech": "adjective",
+    "topic": "general",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "버스가 느립니다.",
+    "exampleNe": "बस ढिलो छ।",
+    "exampleEn": "The bus is slow.",
+    "similar": [],
+    "opposite": [
+      {
+        "korean": "빠르다",
+        "noteNe": "न्युरिदा भनेको ढिलो हो, प्पारुदा भनेको छिटो हो।"
+      }
+    ],
+    "confusing": [],
+    "tags": [
+      "eps"
+    ]
+  },
+  {
+    "id": "HM-0218",
+    "korean": "개",
+    "nepali": "कुकुर",
+    "english": "Dog",
+    "romanization": "gae",
+    "syllables": [
+      "개"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "개가 짖습니다.",
+    "exampleNe": "कुकुर भुक्छ।",
+    "exampleEn": "The dog barks.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "고양이",
+        "differenceNe": "गै भनेको कुकुर हो, गोयाङी भनेको बिरालो हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0219",
+    "korean": "고양이",
+    "nepali": "बिरालो",
+    "english": "Cat",
+    "romanization": "goyangi",
+    "syllables": [
+      "고",
+      "양",
+      "이"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "고양이가 잡니다.",
+    "exampleNe": "बिरालो सुत्छ।",
+    "exampleEn": "The cat sleeps.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "개",
+        "differenceNe": "गोयाङी भनेको बिरालो हो, गै भनेको कुकुर हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0220",
+    "korean": "새",
+    "nepali": "चरा",
+    "english": "Bird",
+    "romanization": "sae",
+    "syllables": [
+      "새"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "새가 날아갑니다.",
+    "exampleNe": "चरा उड्छ।",
+    "exampleEn": "The bird flies.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0221",
+    "korean": "의자",
+    "nepali": "कुर्सी",
+    "english": "Chair",
+    "romanization": "uija",
+    "syllables": [
+      "의",
+      "자"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "의자에 앉습니다.",
+    "exampleNe": "कुर्सीमा बस्छु।",
+    "exampleEn": "I sit on a chair.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0222",
+    "korean": "책상",
+    "nepali": "डेस्क",
+    "english": "Desk",
+    "romanization": "chaeksang",
+    "syllables": [
+      "책",
+      "상"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "책상 위에 책이 있습니다.",
+    "exampleNe": "डेस्कमा किताब छ।",
+    "exampleEn": "There is a book on the desk.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0223",
+    "korean": "침대",
+    "nepali": "ओछ्यान",
+    "english": "Bed",
+    "romanization": "chimdae",
+    "syllables": [
+      "침",
+      "대"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "침대에서 잡니다.",
+    "exampleNe": "ओछ्यानमा सुत्छु।",
+    "exampleEn": "I sleep in bed.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0224",
+    "korean": "시계",
+    "nepali": "घडी",
+    "english": "Clock / watch",
+    "romanization": "sigye",
+    "syllables": [
+      "시",
+      "계"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "시계를 봅니다.",
+    "exampleNe": "घडी हेर्छु।",
+    "exampleEn": "I look at the clock.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0225",
+    "korean": "컴퓨터",
+    "nepali": "कम्प्युटर",
+    "english": "Computer",
+    "romanization": "keompyuteo",
+    "syllables": [
+      "컴",
+      "퓨",
+      "터"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "컴퓨터를 사용합니다.",
+    "exampleNe": "कम्प्युटर प्रयोग गर्छु।",
+    "exampleEn": "I use a computer.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0226",
+    "korean": "책",
+    "nepali": "किताब",
+    "english": "Book",
+    "romanization": "chaek",
+    "syllables": [
+      "책"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "책을 읽습니다.",
+    "exampleNe": "किताब पढ्छु।",
+    "exampleEn": "I read a book.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0227",
+    "korean": "가방",
+    "nepali": "झोला",
+    "english": "Bag",
+    "romanization": "gabang",
+    "syllables": [
+      "가",
+      "방"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "가방을 맙니다.",
+    "exampleNe": "झोला बोक्छु।",
+    "exampleEn": "I carry a bag.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0228",
+    "korean": "신발",
+    "nepali": "जुत्ता",
+    "english": "Shoes",
+    "romanization": "sinbal",
+    "syllables": [
+      "신",
+      "발"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "신발을 신습니다.",
+    "exampleNe": "जुत्ता लगाउँछु।",
+    "exampleEn": "I wear shoes.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0229",
+    "korean": "모자",
+    "nepali": "टोपी",
+    "english": "Hat",
+    "romanization": "moja",
+    "syllables": [
+      "모",
+      "자"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "모자를 씁니다.",
+    "exampleNe": "टोपी लगाउँछु।",
+    "exampleEn": "I wear a hat.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "헬멧",
+        "differenceNe": "मोजा भनेको सामान्य टोपी हो, हेल्मेस भनेको सुरक्षा हेल्मेट हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0230",
+    "korean": "안경",
+    "nepali": "चस्मा",
+    "english": "Glasses",
+    "romanization": "angyeong",
+    "syllables": [
+      "안",
+      "경"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "안경을 씁니다.",
+    "exampleNe": "चस्मा लगाउँछु।",
+    "exampleEn": "I wear glasses.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0231",
+    "korean": "우산",
+    "nepali": "छाता",
+    "english": "Umbrella",
+    "romanization": "usan",
+    "syllables": [
+      "우",
+      "산"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "우산을 씁니다.",
+    "exampleNe": "छाता ओढ्छु।",
+    "exampleEn": "I use an umbrella.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0232",
+    "korean": "산",
+    "nepali": "पहाड",
+    "english": "Mountain",
+    "romanization": "san",
+    "syllables": [
+      "산"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "산이 높습니다.",
+    "exampleNe": "पहाड अग्लो छ।",
+    "exampleEn": "The mountain is high.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0233",
+    "korean": "바다",
+    "nepali": "समुद्र",
+    "english": "Sea",
+    "romanization": "bada",
+    "syllables": [
+      "바",
+      "다"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "바다가 넓습니다.",
+    "exampleNe": "समुद्र फराकिलो छ।",
+    "exampleEn": "The sea is wide.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0234",
+    "korean": "해",
+    "nepali": "सूर्य",
+    "english": "Sun",
+    "romanization": "hae",
+    "syllables": [
+      "해"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 1,
+    "epsImportance": "high",
+    "exampleKo": "해가 뜹니다.",
+    "exampleNe": "सूर्य उदाउँछ।",
+    "exampleEn": "The sun rises.",
+    "similar": [
+      {
+        "korean": "태양",
+        "noteNe": "थैयाङ भनेको औपचारिक/वैज्ञानिक शब्द हो; है भनेको दैनिक शब्द हो।"
+      }
+    ],
+    "opposite": [],
+    "confusing": [],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0235",
+    "korean": "달",
+    "nepali": "चन्द्रमा",
+    "english": "Moon",
+    "romanization": "dal",
+    "syllables": [
+      "달"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "달이 밝습니다.",
+    "exampleNe": "चन्द्रमा उज्यालो छ।",
+    "exampleEn": "The moon is bright.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "별",
+        "differenceNe": "दाल भनेको चन्द्रमा हो, ब्योल भनेको तारा हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  },
+  {
+    "id": "HM-0236",
+    "korean": "별",
+    "nepali": "तारा",
+    "english": "Star",
+    "romanization": "byeol",
+    "syllables": [
+      "별"
+    ],
+    "partOfSpeech": "noun",
+    "topic": "general",
+    "difficulty": 2,
+    "epsImportance": "medium",
+    "exampleKo": "별이 빛납니다.",
+    "exampleNe": "तारा चम्किन्छ।",
+    "exampleEn": "The stars shine.",
+    "similar": [],
+    "opposite": [],
+    "confusing": [
+      {
+        "korean": "달",
+        "differenceNe": "ब्योल भनेको तारा हो, दाल भनेको चन्द्रमा हो।"
+      }
+    ],
+    "tags": [
+      "eps",
+      "camera"
+    ]
+  }
+]

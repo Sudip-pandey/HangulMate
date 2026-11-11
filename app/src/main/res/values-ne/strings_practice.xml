@@ -72,6 +72,11 @@
     <string name="revision_empty">आज दोहोर्‍याउन कुनै शब्द छैन। पहिले केही नयाँ शब्द सिक्नुहोस्!</string>
     <string name="revision_back">अभ्यासमा फिर्ता</string>
 
+    <!-- प्रश्न इतिहास -->
+    <string name="quiz_history_title">क्विज इतिहास</string>
+    <string name="quiz_history_empty">अहिलेसम्म कुनै क्विज दिइएको छैन। क्विज दिएपछि तपाईंका नतिजाहरू यहाँ देखिनेछन्।</string>
+    <string name="quiz_history_desc">तपाईंका पुराना क्विज नतिजाहरू हेर्नुहोस् — भर्खरको पहिले।</string>
+
     <!-- EPS विषयहरू -->
     <string name="eps_topics_title">EPS-TOPIK विषयहरू</string>
     <string name="eps_filter_difficulty">कठिनाइ</string>

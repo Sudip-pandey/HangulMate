@@ -69,6 +69,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun ProfileScreen(
     onNavigateToCollections: () -> Unit = {},
+    onNavigateToAddWord: () -> Unit = {},
     viewModel: ProfileViewModel = hiltViewModel(),
 ) {
     val context = LocalContext.current
@@ -387,6 +388,18 @@ fun ProfileScreen(
             )
         }
 
+        // Add a word
+        Button(
+            onClick = onNavigateToAddWord,
+            modifier = Modifier.fillMaxWidth(),
+        ) {
+            Icon(Icons.Filled.Add, contentDescription = null)
+            Text(
+                text = stringResource(R.string.add_word_title),
+                modifier = Modifier.padding(start = Spacing.sm),
+            )
+        }
+
         // Backup & restore — all local, no network, no login.
         SettingsCard(title = stringResource(R.string.backup_title)) {
             Column(verticalArrangement = Arrangement.spacedBy(Spacing.sm)) {
@@ -481,6 +494,11 @@ fun ProfileScreen(
                 Text(
                     text = stringResource(R.string.offline_notice),
                     style = MaterialTheme.typography.bodyMedium,
+                )
+                Text(
+                    text = stringResource(R.string.about_dictionary_credit),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
         }

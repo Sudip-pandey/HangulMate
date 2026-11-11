@@ -3,7 +3,7 @@ package com.hangulmate.ui.navigation
 import android.net.Uri
 
 /**
- * All navigation destinations. Five bottom tabs + word detail + collections.
+ * All navigation destinations. Five bottom tabs + word detail + collections + add word.
  *
  * Contract (owned by the Home/Dictionary agent; other agents conform):
  * - [Screen.Dictionary] carries an optional `query` argument (default "").
@@ -12,6 +12,8 @@ import android.net.Uri
  * - [Screen.Collections] is implemented by the collections agent as
  *   `CollectionsScreen(onWordClick: (String) -> Unit)` in
  *   package `com.hangulmate.ui.collections`.
+ * - [Screen.AddWord] carries an optional `prefillKorean` argument (default "").
+ *   Use [Screen.AddWord.createRoute] to build it.
  */
 sealed class Screen(val route: String) {
     data object Home : Screen("home")
@@ -29,5 +31,11 @@ sealed class Screen(val route: String) {
 
     data object WordDetail : Screen("word_detail/{wordId}") {
         fun createRoute(wordId: String): String = "word_detail/$wordId"
+    }
+
+    data object AddWord : Screen("add_word?prefillKorean={prefillKorean}") {
+        fun createRoute(prefillKorean: String = ""): String =
+            if (prefillKorean.isBlank()) "add_word"
+            else "add_word?prefillKorean=${Uri.encode(prefillKorean)}"
     }
 }

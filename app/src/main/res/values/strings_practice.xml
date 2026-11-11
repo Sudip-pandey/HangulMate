@@ -72,6 +72,11 @@
     <string name="revision_empty">No words due for review today. Learn some new words first!</string>
     <string name="revision_back">Back to Practice</string>
 
+    <!-- Quiz history -->
+    <string name="quiz_history_title">Quiz history</string>
+    <string name="quiz_history_empty">No quizzes taken yet. Take a quiz and your results will appear here.</string>
+    <string name="quiz_history_desc">See your past quiz results, newest first.</string>
+
     <!-- EPS topics -->
     <string name="eps_topics_title">EPS-TOPIK topics</string>
     <string name="eps_filter_difficulty">Difficulty</string>

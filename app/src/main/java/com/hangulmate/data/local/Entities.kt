@@ -51,7 +51,16 @@ data class VocabularyEntity(
     /** JSON array of tag strings. */
     val tagsJson: String,
     /** True for user-created / imported words; false for seed words. */
-    val isUserCreated: Boolean = false
+    val isUserCreated: Boolean = false,
+    /**
+     * Nepali translation status (seed v2): "verified" (human-checked),
+     * "mt_review" (machine-translated, awaiting review) or "missing"
+     * (no Nepali yet -- [nepali] then holds the English gloss as a
+     * display fallback, and no "ne" translation row is stored).
+     */
+    val nepaliStatus: String = "verified",
+    /** JSON array of senses, e.g. [{"pos":"noun","definitions":[...]}]. */
+    val sensesJson: String = "[]"
 )
 
 @Entity(

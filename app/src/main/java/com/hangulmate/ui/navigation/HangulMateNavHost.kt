@@ -9,6 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.hangulmate.ui.camera.CameraScreen
 import com.hangulmate.ui.collections.CollectionsScreen
+import com.hangulmate.ui.dictionary.AddWordScreen
 import com.hangulmate.ui.dictionary.DictionaryScreen
 import com.hangulmate.ui.dictionary.WordDetailScreen
 import com.hangulmate.ui.home.HomeScreen
@@ -58,6 +59,22 @@ fun HangulMateNavHost(
                     navController.navigate(Screen.WordDetail.createRoute(wordId))
                 },
                 initialQuery = initialQuery,
+                onAddWord = { navController.navigate(Screen.AddWord.createRoute()) },
+            )
+        }
+        composable(
+            route = Screen.AddWord.route,
+            arguments = listOf(
+                navArgument("prefillKorean") {
+                    type = NavType.StringType
+                    defaultValue = ""
+                },
+            ),
+        ) {
+            AddWordScreen(
+                onWordSaved = { wordId ->
+                    navController.navigate(Screen.WordDetail.createRoute(wordId))
+                },
             )
         }
         composable(
@@ -77,6 +94,9 @@ fun HangulMateNavHost(
                 onWordClick = { wordId ->
                     navController.navigate(Screen.WordDetail.createRoute(wordId))
                 },
+                onAddWord = { korean ->
+                    navController.navigate(Screen.AddWord.createRoute(korean))
+                },
             )
         }
         composable(Screen.Practice.route) {
@@ -86,6 +106,9 @@ fun HangulMateNavHost(
             ProfileScreen(
                 onNavigateToCollections = {
                     navController.navigate(Screen.Collections.route)
+                },
+                onNavigateToAddWord = {
+                    navController.navigate(Screen.AddWord.createRoute())
                 },
             )
         }

@@ -144,6 +144,15 @@ interface VocabularyDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertAll(words: List<VocabularyEntity>): List<Long>
 
+    /**
+     * Refreshes the seed-v2 columns on a row that already exists. Used
+     * by the seed importer on re-import (e.g. the v1 -> v2 upgrade):
+     * plain UPDATE, so no foreign-key cascade fires and user data
+     * (learning progress, favorites, collections) is untouched.
+     */
+    @Query("UPDATE vocabulary SET nepaliStatus = :status, sensesJson = :sensesJson WHERE id = :id")
+    suspend fun updateSeedFields(id: String, status: String, sensesJson: String)
+
     /** Returns -1 for a row that already existed (IGNORE). */
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(word: VocabularyEntity): Long

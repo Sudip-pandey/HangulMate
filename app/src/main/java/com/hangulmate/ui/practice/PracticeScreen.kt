@@ -10,6 +10,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.Image
 import androidx.compose.material.icons.filled.MenuBook
 import androidx.compose.material.icons.filled.Quiz
@@ -48,6 +49,7 @@ private enum class PracticeDestination {
     RESULT,
     REVISION,
     EPS_TOPICS,
+    HISTORY,
 }
 
 /**
@@ -81,6 +83,7 @@ fun PracticeScreen() {
                 destination = PracticeDestination.REVISION
             },
             onOpenEpsTopics = { destination = PracticeDestination.EPS_TOPICS },
+            onOpenQuizHistory = { destination = PracticeDestination.HISTORY },
         )
 
         PracticeDestination.QUIZ -> QuizScreen(
@@ -111,6 +114,10 @@ fun PracticeScreen() {
         PracticeDestination.EPS_TOPICS -> EpsTopicsScreen(
             onBack = { destination = PracticeDestination.HUB },
         )
+
+        PracticeDestination.HISTORY -> QuizHistoryScreen(
+            onBack = { destination = PracticeDestination.HUB },
+        )
     }
 }
 
@@ -120,6 +127,7 @@ private fun PracticeHub(
     onStartQuiz: (QuizType, Int, Boolean) -> Unit,
     onOpenRevision: () -> Unit,
     onOpenEpsTopics: () -> Unit,
+    onOpenQuizHistory: () -> Unit,
 ) {
     val revisionState by viewModel.revisionState.collectAsStateWithLifecycle()
     val totalCount by viewModel.totalCount.collectAsStateWithLifecycle()
@@ -286,6 +294,15 @@ private fun PracticeHub(
                 }
             }
         }
+
+        // Quiz history -------------------------------------------------
+        QuizMenuCard(
+            icon = Icons.Filled.History,
+            title = stringResource(R.string.quiz_history_title),
+            description = stringResource(R.string.quiz_history_desc),
+            enabled = true,
+            onClick = onOpenQuizHistory,
+        )
 
         // EPS topics ---------------------------------------------------
         Card(modifier = Modifier.fillMaxWidth()) {

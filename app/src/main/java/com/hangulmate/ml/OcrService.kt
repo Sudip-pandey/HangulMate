@@ -12,13 +12,13 @@ import kotlinx.coroutines.suspendCancellableCoroutine
 /**
  * On-device Korean text recognition (ML Kit, Korean script).
  *
- * The Korean recognition model is NOT bundled in the APK: it downloads
- * once through Google Play services on first use (needs internet once,
- * then works offline). [recognize] therefore throws [MlKitException] when
- * the model cannot be downloaded or Play services is unavailable — callers
- * must surface that honestly and offer manual text entry instead of
- * pretending OCR worked. Nothing is uploaded; recognition runs on-device.
- * Call [close] when done.
+ * The Korean model is BUNDLED with the app
+ * (`com.google.mlkit:text-recognition-korean`) — it is statically linked
+ * at build time, so there is no Play-services download and no internet
+ * is needed. [recognize] therefore throws [MlKitException] only when
+ * recognition itself fails — callers must surface that honestly and
+ * offer manual text entry instead of pretending OCR worked. Nothing is
+ * uploaded; recognition runs on-device. Call [close] when done.
  */
 class OcrService {
 
@@ -30,8 +30,7 @@ class OcrService {
      * Reads Korean text from [bitmap]. Returns the full text plus blocks
      * and lines with bounding boxes in image pixel coordinates (for the
      * overlay). Throws [MlKitException] when recognition fails — most
-     * commonly because the one-time Korean model download failed or
-     * Play services is unavailable.
+     * commonly because the bundled model failed to initialise.
      */
     suspend fun recognize(bitmap: Bitmap): OcrResult =
         suspendCancellableCoroutine { continuation ->
@@ -56,6 +55,23 @@ class OcrService {
                     continuation.resumeWithException(error)
                 }
         }
+
+    /**
+     * Warms up the bundled model by recognising a 1x1 blank image
+     * (blank input reads as empty text). Returns true when the
+     * recognizer answered. Run once when the Camera screen first opens
+     * so the one-time native initialisation happens before the first
+     * real capture instead of stalling it.
+     */
+    suspend fun warmUp(): Boolean = runCatching {
+        val blank = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888)
+        try {
+            recognize(blank)
+            true
+        } finally {
+            blank.recycle()
+        }
+    }.getOrDefault(false)
 
     fun close() {
         recognizer.close()

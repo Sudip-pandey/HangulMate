@@ -7,31 +7,43 @@ import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.AssistChip
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.hangulmate.R
 import com.hangulmate.domain.model.LearningState
+import com.hangulmate.domain.model.UserCollection
 import com.hangulmate.domain.model.VocabularyWord
 import com.hangulmate.domain.model.WordRelation
 import com.hangulmate.speech.TtsState
@@ -46,8 +58,9 @@ import com.hangulmate.ui.theme.Spacing
  * Full word detail: Korean word + romanization + syllable chips, Nepali and
  * English meanings, TTS speaker, part of speech / topic / difficulty /
  * EPS importance, example sentences with speak buttons, Similar / Opposite /
- * Confusing relations (only what the data contains), learning actions, and
- * previous / next navigation within the same topic.
+ * Confusing relations (only what the data contains), learning actions
+ * (including "Add to collection", which is the only place words enter a
+ * collection), and previous / next navigation within the same topic.
  *
  * Related words are tappable only when the relation resolves to a word in
  * the database; an unresolvable target is shown as plain text, never a
@@ -63,6 +76,8 @@ fun WordDetailScreen(
     val loaded by viewModel.loaded.collectAsStateWithLifecycle()
     val ttsState by viewModel.ttsState.collectAsStateWithLifecycle()
     val navigation by viewModel.navigation.collectAsStateWithLifecycle()
+    val collections by viewModel.collections.collectAsStateWithLifecycle()
+    val addedToCollection by viewModel.addedToCollection.collectAsStateWithLifecycle()
     // Local copy so the null check below smart-casts.
     val currentWord = word
 
@@ -87,11 +102,16 @@ fun WordDetailScreen(
                     word = currentWord,
                     ttsState = ttsState,
                     navigation = navigation,
+                    collections = collections,
+                    addedToCollection = addedToCollection,
                     onSpeak = { viewModel.speak(it) },
                     onToggleFavorite = { viewModel.toggleFavorite() },
                     onMarkLearned = { viewModel.markLearned() },
                     onMarkDifficult = { viewModel.markDifficult() },
                     onRecordReview = { viewModel.recordReview(it) },
+                    onAddToCollection = { viewModel.addWordToCollection(it) },
+                    onCreateCollectionAndAdd = { viewModel.createCollectionAndAddWord(it) },
+                    onClearAddedFeedback = { viewModel.clearAddedToCollection() },
                     onWordClick = onWordClick,
                 )
             }
@@ -104,13 +124,19 @@ private fun WordDetailContent(
     word: VocabularyWord,
     ttsState: TtsState,
     navigation: TopicNavigation,
+    collections: List<UserCollection>,
+    addedToCollection: String?,
     onSpeak: (String) -> Unit,
     onToggleFavorite: () -> Unit,
     onMarkLearned: () -> Unit,
     onMarkDifficult: () -> Unit,
     onRecordReview: (Boolean) -> Unit,
+    onAddToCollection: (Long) -> Unit,
+    onCreateCollectionAndAdd: (String) -> Unit,
+    onClearAddedFeedback: () -> Unit,
     onWordClick: (String) -> Unit,
 ) {
+    var addToCollectionOpen by remember { mutableStateOf(false) }
     // Headword + pronunciation
     Row(
         modifier = Modifier.fillMaxWidth(),
@@ -186,6 +212,16 @@ private fun WordDetailContent(
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
             Text(text = word.nepali, style = MaterialTheme.typography.titleLarge)
+            if (word.nepaliStatus == "missing") {
+                // The nepali column holds the English gloss as a display
+                // fallback for entries without a Nepali translation yet —
+                // say so plainly instead of presenting English as Nepali.
+                Text(
+                    text = stringResource(R.string.word_detail_nepali_pending),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
             Text(
                 text = stringResource(R.string.word_detail_english_meaning),
                 style = MaterialTheme.typography.labelLarge,
@@ -293,6 +329,40 @@ private fun WordDetailContent(
         OutlinedButton(onClick = { onRecordReview(false) }) {
             Text(stringResource(R.string.word_detail_forgot))
         }
+        OutlinedButton(
+            onClick = {
+                onClearAddedFeedback()
+                addToCollectionOpen = true
+            },
+        ) {
+            Icon(Icons.Filled.Add, contentDescription = null)
+            Text(
+                text = stringResource(R.string.word_detail_add_to_collection),
+                modifier = Modifier.padding(start = Spacing.xs),
+            )
+        }
+    }
+    addedToCollection?.let { collectionName ->
+        Text(
+            text = stringResource(R.string.word_detail_added_to_collection, collectionName),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.primary,
+        )
+    }
+
+    if (addToCollectionOpen) {
+        AddToCollectionDialog(
+            collections = collections,
+            onAddToCollection = { collectionId ->
+                onAddToCollection(collectionId)
+                addToCollectionOpen = false
+            },
+            onCreateCollectionAndAdd = { name ->
+                onCreateCollectionAndAdd(name)
+                addToCollectionOpen = false
+            },
+            onDismiss = { addToCollectionOpen = false },
+        )
     }
 
     // Relations — only what the data contains; no invented opposites/synonyms.
@@ -343,6 +413,83 @@ private fun WordDetailContent(
             }
         }
     }
+}
+
+@Composable
+private fun AddToCollectionDialog(
+    collections: List<UserCollection>,
+    onAddToCollection: (Long) -> Unit,
+    onCreateCollectionAndAdd: (String) -> Unit,
+    onDismiss: () -> Unit,
+) {
+    var newName by remember { mutableStateOf("") }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(stringResource(R.string.word_detail_add_to_collection_title)) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(Spacing.sm)) {
+                if (collections.isEmpty()) {
+                    Text(
+                        text = stringResource(R.string.word_detail_no_collections),
+                        style = MaterialTheme.typography.bodyMedium,
+                    )
+                } else {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .heightIn(max = 240.dp)
+                            .verticalScroll(rememberScrollState()),
+                        verticalArrangement = Arrangement.spacedBy(Spacing.xs),
+                    ) {
+                        collections.forEach { collection ->
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable { onAddToCollection(collection.id) }
+                                    .padding(vertical = Spacing.sm),
+                                verticalAlignment = Alignment.CenterVertically,
+                            ) {
+                                Text(
+                                    text = collection.name,
+                                    style = MaterialTheme.typography.bodyLarge,
+                                    modifier = Modifier.weight(1f),
+                                )
+                                Text(
+                                    text = pluralStringResource(
+                                        R.plurals.collections_words_count,
+                                        collection.wordCount,
+                                        collection.wordCount,
+                                    ),
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
+                        }
+                    }
+                }
+                OutlinedTextField(
+                    value = newName,
+                    onValueChange = { newName = it },
+                    label = { Text(stringResource(R.string.word_detail_new_collection_name)) },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+                )
+                Button(
+                    onClick = { onCreateCollectionAndAdd(newName) },
+                    enabled = newName.trim().isNotEmpty(),
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Text(stringResource(R.string.word_detail_create_collection_and_add))
+                }
+            }
+        },
+        confirmButton = {},
+        dismissButton = {
+            TextButton(onClick = onDismiss) {
+                Text(stringResource(R.string.cancel))
+            }
+        },
+    )
 }
 
 @Composable

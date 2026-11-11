@@ -1,0 +1,88 @@
+{
+  "source_rows": 53172,
+  "unique_forms": 48782,
+  "dropped": {
+    "hyphen_prefixed_forms": 1560,
+    "hyphen_prefixed_rows": 1813,
+    "affix_only_forms": 240,
+    "affix_only_rows": 269,
+    "spaced_phrase_forms": 3825,
+    "spaced_phrase_rows": 3826,
+    "non_hangul_forms": 1,
+    "non_hangul_rows": 1,
+    "bare_jamo_forms": 40,
+    "bare_jamo_rows": 42
+  },
+  "usable_forms": 43116,
+  "merged_forms": 43114,
+  "merged_forms_no_senses_dropped": 2,
+  "level_forms": {
+    "중급": 3575,
+    "초급": 1776,
+    "(none)": 33207,
+    "고급": 4556
+  },
+  "v1_entries": 236,
+  "v1_overlapping_nikl": 225,
+  "selected_new": 9764,
+  "selected_by_level": {
+    "초급": 1606,
+    "중급": 3544,
+    "고급": 4546,
+    "(none)": 68
+  },
+  "unselected_candidates": 33125,
+  "phrase_entries": 3825,
+  "final_total": 10000,
+  "nepali_status": {
+    "verified": 851,
+    "missing": 9149
+  },
+  "with_examples": 9960,
+  "with_pos_nondefault": 2826,
+  "topic_counts": {
+    "agriculture": 26,
+    "construction": 18,
+    "conversation": 988,
+    "daily": 1592,
+    "directions": 339,
+    "food": 355,
+    "general": 4776,
+    "health": 723,
+    "manufacturing": 47,
+    "numbers": 257,
+    "safety": 112,
+    "tools": 47,
+    "transport": 138,
+    "workplace": 582
+  },
+  "difficulty_counts": {
+    "1": 1736,
+    "2": 3696,
+    "3": 4568
+  },
+  "eps_counts": {
+    "high": 1750,
+    "low": 84,
+    "medium": 8166
+  },
+  "pos_counts": {
+    "adjective": 782,
+    "adverb": 564,
+    "expression": 11,
+    "interjection": 13,
+    "noun": 7174,
+    "number": 22,
+    "pronoun": 33,
+    "verb": 1401
+  },
+  "senses_total": 12201,
+  "senses_per_entry_avg": 1.22,
+  "entries_with_multiple_senses": 1616,
+  "relations_total": 80,
+  "source_counts": {
+    "v1": 11,
+    "NIKL+v1": 225,
+    "NIKL": 9764
+  }
+}

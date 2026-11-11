@@ -18,10 +18,12 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -118,6 +120,11 @@ class PracticeViewModel @Inject constructor(
 
     private val _revisionState = MutableStateFlow<RevisionUiState>(RevisionUiState.Loading)
     val revisionState: StateFlow<RevisionUiState> = _revisionState.asStateFlow()
+
+    /** Most recent quiz results, newest first — for the quiz-history screen. */
+    val quizHistory: StateFlow<List<QuizResult>> =
+        learningRepository.getQuizHistory(QUIZ_HISTORY_LIMIT)
+            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
 
     private val _quizState = MutableStateFlow<QuizUiState>(QuizUiState.Idle)
     val quizState: StateFlow<QuizUiState> = _quizState.asStateFlow()
@@ -397,5 +404,10 @@ class PracticeViewModel @Inject constructor(
         cancelTimer()
         ttsManager.stop()
         super.onCleared()
+    }
+
+    companion object {
+        /** Quiz results kept for the history screen (newest first). */
+        private const val QUIZ_HISTORY_LIMIT = 50
     }
 }

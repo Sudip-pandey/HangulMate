@@ -13,6 +13,12 @@ data class VocabularyWord(
     val id: String,
     val korean: String,
     val nepali: String,
+    /**
+     * Nepali translation state: "verified" (real Nepali), "mt_review"
+     * (machine-translated, needs review), or "missing" (no Nepali yet —
+     * [nepali] holds the English gloss as a display fallback).
+     */
+    val nepaliStatus: String = "verified",
     val english: String,
     val romanization: String,
     val syllables: List<String>,

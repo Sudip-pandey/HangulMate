@@ -16,12 +16,12 @@
     <string name="camera_permission_permanently_denied">Camera permission is turned off for HangulMate. Open Settings to allow it, or use the gallery and manual text entry instead.</string>
     <string name="camera_open_settings">Open Settings</string>
 
-    <string name="camera_ocr_downloading">Downloading the Korean text model — one time only…</string>
+    <string name="camera_ocr_preparing">Preparing Korean text reading…</string>
     <string name="camera_ocr_reading">Reading Korean text…</string>
-    <string name="camera_ocr_unavailable">Korean text reading is unavailable right now — the one-time Korean text model could not be downloaded (check your connection and Play services, then retry). You can type or paste the Korean text below instead.</string>
+    <string name="camera_ocr_unavailable">Korean text reading is unavailable right now — the text model could not be started on this device. You can type or paste the Korean text below instead.</string>
     <string name="camera_ocr_error">Could not read the text from this photo. Please try again or type the text below.</string>
     <string name="camera_ocr_no_text">No Korean text was found in this photo. Try a clearer photo, or type the text below.</string>
-    <string name="camera_ocr_model_note">First use downloads the Korean text model once (needs internet). After that, text reading works fully offline.</string>
+    <string name="camera_ocr_model_note">Korean text reading runs fully on this device — no internet needed.</string>
 
     <string name="camera_extracted_text_label">Scanned text (tap to edit)</string>
     <string name="camera_manual_entry_label">Korean text (type or paste)</string>

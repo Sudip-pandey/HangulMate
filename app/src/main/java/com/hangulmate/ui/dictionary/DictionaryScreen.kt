@@ -12,6 +12,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Search
@@ -21,6 +22,7 @@ import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -46,13 +48,16 @@ import com.hangulmate.ui.theme.Spacing
  * with a 300ms debounce, live top-5 suggestions, search-history chips,
  * a favorites-only toggle and topic filter chips.
  *
- * Matching (including typo tolerance) lives entirely in the repository —
- * when nothing matches, the screen says so instead of inventing results.
+ * Matching is SQL LIKE `%pattern%` in the repository; when LIKE returns
+ * few results the ViewModel adds a typo-tolerant second pass (choseong
+ * matching + edit distance ≤ 2 — see [FuzzySearch]). When nothing
+ * matches, the screen says so instead of inventing results.
  */
 @Composable
 fun DictionaryScreen(
     onWordClick: (String) -> Unit,
     initialQuery: String = "",
+    onAddWord: () -> Unit = {},
     viewModel: DictionaryViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
@@ -138,6 +143,13 @@ fun DictionaryScreen(
                     Icon(Icons.Filled.Favorite, contentDescription = null)
                 },
             )
+            OutlinedButton(onClick = onAddWord) {
+                Icon(Icons.Filled.Add, contentDescription = null)
+                Text(
+                    text = stringResource(R.string.dictionary_add_word),
+                    modifier = Modifier.padding(start = Spacing.xs),
+                )
+            }
         }
         LazyRow(
             horizontalArrangement = Arrangement.spacedBy(Spacing.sm),

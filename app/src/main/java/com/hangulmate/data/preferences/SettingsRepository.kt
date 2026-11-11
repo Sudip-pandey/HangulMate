@@ -7,7 +7,9 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.floatPreferencesKey
 import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
+import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -51,6 +53,15 @@ interface SettingsRepository {
     /** True once the user has completed onboarding. Default false. */
     val onboardingCompleted: Flow<Boolean>
 
+    /** Epoch day the [todayShownWordIds] set belongs to (0 = none recorded). */
+    val todayShownWordDay: Flow<Long>
+
+    /** Ids shown in the Home "today's new words" strip today. */
+    val todayShownWordIds: Flow<Set<String>>
+
+    /** Ids shown in that strip on days before [todayShownWordDay]. */
+    val shownNewWordIdsBeforeToday: Flow<Set<String>>
+
     suspend fun setDailyGoal(goal: Int)
     suspend fun setInterfaceLanguage(language: String)
     suspend fun setThemeMode(mode: String)
@@ -59,6 +70,16 @@ interface SettingsRepository {
     suspend fun setRemindersEnabled(enabled: Boolean)
     suspend fun setReminderHour(hour: Int)
     suspend fun setOnboardingCompleted(completed: Boolean)
+
+    /**
+     * Records a new day's strip in one edit: [day] becomes the current
+     * strip day, [todayIds] replaces today's shown set and
+     * [beforeTodayIds] replaces the earlier-days set (rollover).
+     */
+    suspend fun setTodayShownWords(day: Long, todayIds: Set<String>, beforeTodayIds: Set<String>)
+
+    /** Unions [ids] into today's shown set. */
+    suspend fun addTodayShownWordIds(ids: Set<String>)
 }
 
 class SettingsRepositoryImpl(
@@ -90,6 +111,17 @@ class SettingsRepositoryImpl(
 
     override val onboardingCompleted: Flow<Boolean> =
         dataStore.data.map { it[Keys.ONBOARDING_COMPLETED] ?: Defaults.ONBOARDING_COMPLETED }
+
+    override val todayShownWordDay: Flow<Long> =
+        dataStore.data.map { it[Keys.TODAY_SHOWN_WORD_DAY] ?: Defaults.TODAY_SHOWN_WORD_DAY }
+
+    override val todayShownWordIds: Flow<Set<String>> =
+        dataStore.data.map { it[Keys.TODAY_SHOWN_WORD_IDS] ?: Defaults.TODAY_SHOWN_WORD_IDS }
+
+    override val shownNewWordIdsBeforeToday: Flow<Set<String>> =
+        dataStore.data.map {
+            it[Keys.SHOWN_NEW_WORD_IDS_BEFORE_TODAY] ?: Defaults.SHOWN_NEW_WORD_IDS_BEFORE_TODAY
+        }
 
     override suspend fun setDailyGoal(goal: Int) {
         dataStore.edit { it[Keys.DAILY_GOAL] = goal.coerceIn(1, 50) }
@@ -128,6 +160,25 @@ class SettingsRepositoryImpl(
         dataStore.edit { it[Keys.ONBOARDING_COMPLETED] = completed }
     }
 
+    override suspend fun setTodayShownWords(
+        day: Long,
+        todayIds: Set<String>,
+        beforeTodayIds: Set<String>,
+    ) {
+        dataStore.edit {
+            it[Keys.TODAY_SHOWN_WORD_DAY] = day
+            it[Keys.TODAY_SHOWN_WORD_IDS] = todayIds
+            it[Keys.SHOWN_NEW_WORD_IDS_BEFORE_TODAY] = beforeTodayIds
+        }
+    }
+
+    override suspend fun addTodayShownWordIds(ids: Set<String>) {
+        dataStore.edit {
+            val current = it[Keys.TODAY_SHOWN_WORD_IDS] ?: emptySet()
+            it[Keys.TODAY_SHOWN_WORD_IDS] = current + ids
+        }
+    }
+
     private object Keys {
         val DAILY_GOAL = intPreferencesKey("daily_goal")
         val INTERFACE_LANGUAGE = stringPreferencesKey("interface_language")
@@ -137,6 +188,10 @@ class SettingsRepositoryImpl(
         val REMINDERS_ENABLED = booleanPreferencesKey("reminders_enabled")
         val REMINDER_HOUR = intPreferencesKey("reminder_hour")
         val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
+        val TODAY_SHOWN_WORD_DAY = longPreferencesKey("today_shown_word_day")
+        val TODAY_SHOWN_WORD_IDS = stringSetPreferencesKey("today_shown_word_ids")
+        val SHOWN_NEW_WORD_IDS_BEFORE_TODAY =
+            stringSetPreferencesKey("shown_new_word_ids_before_today")
     }
 
     private object Defaults {
@@ -148,5 +203,8 @@ class SettingsRepositoryImpl(
         const val REMINDERS_ENABLED = false
         const val REMINDER_HOUR = 19
         const val ONBOARDING_COMPLETED = false
+        const val TODAY_SHOWN_WORD_DAY = 0L
+        val TODAY_SHOWN_WORD_IDS: Set<String> = emptySet()
+        val SHOWN_NEW_WORD_IDS_BEFORE_TODAY: Set<String> = emptySet()
     }
 }

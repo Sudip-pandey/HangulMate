@@ -2,8 +2,158 @@
 
 - **Dataset:** `app/src/main/assets/seed/vocabulary_seed.json`
 - **Schema:** `app/src/main/assets/seed/schema.json`
-- **Validator:** `tools/validate_seed.py` (Python 3, stdlib only)
-- **Date:** 2026-11-11
+- **Validator:** `tools/validate_seed_v2.py` (Python 3, stdlib only)
+- **Date:** 2026-11-11 (seed v2)
+- **Total entries:** **10,000** (IDs `HM-0001`–`HM-0236` + `HM-10001`–`HM-19764`, sequential, unique)
+- **Full pipeline report:** `data/reports/dataset_report.md`
+
+## Seed v2 — NIKL dictionary integration (2026-11-11)
+
+10,000 entries: the 236-entry hand-built v1 seed, preserved verbatim
+(its Nepali stays — it is verified human-quality), plus **9,764 new
+entries** from NIKL's Basic Korean Dictionary (한국어기초사전) via
+binjang's Hugging Face parse (`2024_01.csv`: 53,172 rows, 48,782 unique
+forms). Rows sharing a headword were merged into one entry with a
+`senses` array (12,201 senses total, avg 1.22/entry, 1,616 multi-sense
+entries) — polysemy is preserved, never deleted as "duplicates".
+
+**Nepali coverage is the honest gap: 851 verified / 0 machine-translated /
+9,149 missing.** Verified = 236 v1 entries + 615 hand-translated 초급
+core words (`tools/nepali_core.py`). No machine translation was used:
+the only real candidate, `facebook/nllb-200-distilled-600M`, cannot run
+in this VM (no torch, 411 MB free RAM, 512 MB `/tmp`), and
+`Helsinki-NLP/opus-mt-en-ne` is not loadable via the HF API. Entries
+without Nepali carry `nepali: null`, `nepaliStatus: "missing"`, and the
+app shows their English gloss instead (the importer stores no `ne`
+translation row for them). Nothing was fabricated or randomly generated.
+
+**Licence (verified, important):** the dictionary content is NIKL's,
+**CC BY-SA 2.0 KR** (attribution + ShareAlike). The Hugging Face
+`license: mit` tag is **misleading** — it covers binjang's parser code
+only. Attribution lives in `app/src/main/assets/seed/NOTICE.md`, in the
+`about_dictionary_credit` string (Settings → About — the About screen
+still needs to display it), and in `data/reports/dataset_report.md`.
+
+### Counts per topic (v2)
+
+| Topic | Entries | | Topic | Entries |
+|---|---:|---|---:|---:|
+| general | 4,776 | | daily | 1,592 |
+| conversation | 988 | | health | 723 |
+| workplace | 582 | | food | 355 |
+| directions | 339 | | numbers | 257 |
+| transport | 138 | | safety | 112 |
+| manufacturing | 47 | | tools | 47 |
+| agriculture | 26 | | construction | 18 |
+| **Total** | **10,000** | | | |
+
+`general` is the largest because 87% of NIKL rows carry no semantic
+category and the keyword fallback is deliberately narrow;
+agriculture (26) and construction (18) stay small because NIKL's
+leveled core is general vocabulary.
+
+### Counts per difficulty / EPS importance / part of speech (v2)
+
+| Difficulty | Entries | | EPS importance | Entries | | Part of speech | Entries |
+|---|---:|---|---:|---|---:|---|---:|---:|
+| 1 (beginner) | 1,736 | | high | 1,750 | | noun | 7,174 |
+| 2 (intermediate) | 3,696 | | medium | 8,166 | | verb | 1,401 |
+| 3 (advanced) | 4,568 | | low | 84 | | adjective | 782 |
+| | | | | | | adverb | 564 |
+| | | | | | | number | 22 |
+| | | | | | | pronoun | 33 |
+| | | | | | | expression | 11 |
+| | | | | | | interjection | 13 |
+| **Total** | **10,000** | | **Total** | **10,000** | | **Total** | **10,000** |
+
+The v1 gaps are closed: verbs 16 → 1,401, adjectives 8 → 782,
+adverbs 1 → 564, pronouns 0 → 33, interjections 0 → 13.
+
+### Relations (v2 — unchanged from v1)
+
+| Relation | Count |
+|---|---:|
+| similar | 12 |
+| opposite | 26 |
+| confusing | 42 |
+| **Total** | **80** |
+
+No new relations were invented for the 9,764 NIKL entries; the 80
+hand-written v1 relations all still resolve (validator-checked).
+
+### Examples, senses, romanization (v2)
+
+- Entries with a Korean example sentence: **9,960** (9,724 NIKL usages +
+  236 v1); 40 entries have none. Nepali/English example translations
+  exist only on the 236 v1 entries — NIKL usages are Korean-only and no
+  example translation was invented.
+- Romanization is generated Revised Romanization
+  (`tools/romanization.py`): self-test 23/23 plus 10 spot-checks, 33/33.
+  It agrees with the v1 hand-written romanizations on 235/236 entries
+  (괜찮아요: v1 `gwaenchanhayo`, pipeline `gwaenchanayo`; v1 kept as-is).
+- Phrases: 3,825 spaced idioms were kept as a separate table
+  (`data/processed/phrases.json`), not dropped and not in the seed yet.
+
+### Validation results (v2)
+
+Run: `python3 tools/validate_seed_v2.py` — exit code 0.
+
+```text
+Entries: 10000
+Nepali status: {'missing': 9149, 'verified': 851}
+With exampleKo: 9960 (99%)
+Topics: {'agriculture': 26, 'construction': 18, 'conversation': 988, 'daily': 1592, 'directions': 339, 'food': 355, 'general': 4776, 'health': 723, 'manufacturing': 47, 'numbers': 257, 'safety': 112, 'tools': 47, 'transport': 138, 'workplace': 582}
+Difficulty: {1: 1736, 2: 3696, 3: 4568}
+EPS importance: {'high': 1750, 'low': 84, 'medium': 8166}
+Part of speech: {'adjective': 782, 'adverb': 564, 'expression': 11, 'interjection': 13, 'noun': 7174, 'number': 22, 'pronoun': 33, 'verb': 1401}
+Source: {'NIKL': 9764, 'NIKL+v1': 225, 'v1': 11}
+Level: {'None': 93, '고급': 4556, '중급': 3575, '초급': 1776}
+Senses: total=12201 multi-sense entries=1616
+Relations: similar=12 opposite=26 confusing=42
+
+PASS: all checks passed
+```
+
+The v2 validator additionally checks: exactly 10,000 entries; every
+entry has ≥1 English sense; `nepali` is null exactly when
+`nepaliStatus` is "missing" and Devanagari exactly when "verified";
+all 14 topics non-empty; `senses` entries have a valid POS and
+non-empty definitions.
+
+### Import (v2)
+
+- Room database v1 → v2, additive `Migration(1, 2)` (new columns
+  `nepaliStatus`, `sensesJson`; defaults backfill v1 rows). Guard flag
+  versioned to `seed_imported_v2`; a v1 install re-imports once and its
+  236 rows are refreshed in place (no FK cascade, user data survives).
+  Inserts are batched in the existing single transaction.
+- Files changed for v2 (data layer only): `Entities.kt`,
+  `SeedImporter.kt`, `Daos.kt` (`updateSeedFields`), `HangulMateDatabase.kt`
+  (v2 + migration), `di/DatabaseModule.kt` (v2 guard + migration wiring),
+  `res/values/strings.xml` (attribution string only), plus the seed,
+  schema, NOTICE, pipeline, validator, core translations and reports.
+- Not verified on device: Gradle cannot run in this VM (the known JVM
+  loopback-TCP sandbox block), so the migration, the 10,000-row import
+  timing and the Android-side seed parse are validator- + review-verified
+  only. `SeedImportTest` still targets the 236-entry v1 fixture; a v2
+  fixture test should be added when CI runs again.
+
+### Known gaps carried forward from v2 (see also `data/reports/dataset_report.md`)
+
+1. **Nepali 8.5%** — the single biggest gap; needs a real en→ne model
+   run on a capable machine or more hand translation.
+2. **First-sense ordering is NIKL's, not frequency** — for some headwords
+   the displayed English gloss is a rare homonym sense (공원 "factory
+   worker", 과거 "civil-service exam"). All senses are in the array.
+3. **NIKL categories are occasionally wrong** and mostly absent — hence
+   the large `general` topic.
+4. **English glosses are full-sentence definitions**, not short glosses.
+5. **No example translations** for NIKL entries.
+
+---
+
+## Seed v1 report (2026-11-11, kept verbatim for reference)
+
 - **Total entries:** **236** (IDs `HM-0001`–`HM-0236`, sequential, unique)
 
 236 is slightly above the 200–230 target. The overshoot is not padding: it comes

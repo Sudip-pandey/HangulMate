@@ -12,13 +12,17 @@ import com.hangulmate.domain.model.VocabularyWord
 import com.hangulmate.domain.repository.LearningRepository
 import com.hangulmate.domain.repository.VocabularyRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 import java.time.LocalTime
 import javax.inject.Inject
 
@@ -48,11 +52,27 @@ data class HomeUiState(
 class HomeViewModel @Inject constructor(
     private val vocabularyRepository: VocabularyRepository,
     private val learningRepository: LearningRepository,
-    settingsRepository: SettingsRepository,
+    private val settingsRepository: SettingsRepository,
     seedOnFirstLaunch: SeedOnFirstLaunch,
 ) : ViewModel() {
 
     private val todayEpochDay: Long = DateUtils.today()
+
+    /** Word ids already shown in the "today's new words" strip on earlier days. */
+    private val _excludedIds = MutableStateFlow<Set<String>>(emptySet())
+
+    /**
+     * Today's new words, excluding ids already shown on earlier days
+     * (until the word gains learning progress — the repository already
+     * excludes learned words). Within one day the same 10 keep showing.
+     */
+    private val todayNewWords: Flow<List<VocabularyWord>> =
+        _excludedIds.flatMapLatest { ids ->
+            vocabularyRepository.getTodayNewWords(
+                limit = TODAY_NEW_WORDS_LIMIT,
+                learnedIds = ids,
+            )
+        }
 
     /** Live seed-import state (Idle → Importing → Success | Failed). */
     val seedState: StateFlow<SeedState> = seedOnFirstLaunch.state
@@ -67,12 +87,7 @@ class HomeViewModel @Inject constructor(
         vocabularyRepository.getLearnedCount(),
         vocabularyRepository.getMasteredCount(),
         vocabularyRepository.getTotalCount(),
-        vocabularyRepository.getTodayNewWords(
-            limit = 10,
-            // No "already shown" set is tracked; the repository returns the
-            // first unlearned words by EPS importance.
-            learnedIds = emptySet(),
-        ),
+        todayNewWords,
         vocabularyRepository.getRevisionQueue(todayEpochDay),
         vocabularyRepository.getRecentlySearched(limit = 5),
         vocabularyRepository.getDifficult(),
@@ -115,6 +130,30 @@ class HomeViewModel @Inject constructor(
     )
 
     init {
+        // "Today's 10" rotation: ids shown in the strip on earlier days
+        // are excluded until learned. On a new day, yesterday's set rolls
+        // into the before-today set and the strip shows the next 10.
+        // Sequenced in one coroutine so the strip is recorded only after
+        // the exclusions are applied (no stale-set race).
+        viewModelScope.launch {
+            val storedDay = settingsRepository.todayShownWordDay.first()
+            val todayIds = settingsRepository.todayShownWordIds.first()
+            val beforeIds = settingsRepository.shownNewWordIdsBeforeToday.first()
+            val excluded = if (storedDay == todayEpochDay) {
+                beforeIds
+            } else {
+                val rolled = beforeIds + todayIds
+                settingsRepository.setTodayShownWords(
+                    day = todayEpochDay,
+                    todayIds = emptySet(),
+                    beforeTodayIds = rolled,
+                )
+                rolled
+            }
+            _excludedIds.value = excluded
+            val shown = todayNewWords.first { it.isNotEmpty() }
+            settingsRepository.addTodayShownWordIds(shown.map { it.id }.toSet())
+        }
         // Word of the day is a one-shot suspend call that throws while the
         // database is empty — load it once data exists, then never again
         // (it is deterministic for the day).
@@ -130,6 +169,9 @@ class HomeViewModel @Inject constructor(
     }
 
     companion object {
+        /** Words shown in the Home "today's new words" strip. */
+        private const val TODAY_NEW_WORDS_LIMIT = 10
+
         fun greetingResForHour(hour: Int): Int = when (hour) {
             in 5..11 -> R.string.home_greeting_morning
             in 12..16 -> R.string.home_greeting_afternoon

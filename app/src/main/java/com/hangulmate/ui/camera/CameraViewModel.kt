@@ -46,14 +46,18 @@ enum class MeaningLanguage { NEPALI, ENGLISH }
 sealed interface OcrUiState {
     data object Idle : OcrUiState
 
-    /** OCR running. [downloadingModel] is true on the first run, when the
-     * one-time Korean model download may still be in progress. */
-    data class Processing(val downloadingModel: Boolean) : OcrUiState
+    /**
+     * OCR running. [preparingModel] is true only while the recognizer
+     * is still warming up (warmed up in init when the Camera screen
+     * opens); a capture never downloads anything — the Korean model
+     * is bundled.
+     */
+    data class Processing(val preparingModel: Boolean) : OcrUiState
 
     data class Success(val result: OcrResult) : OcrUiState
 
-    /** ML Kit could not run (model download failed / no Play services /
-     * offline on first use). Manual text entry is the fallback. */
+    /** ML Kit could not run (the bundled model failed to initialise).
+     * Manual text entry is the fallback. */
     data object Unavailable : OcrUiState
 
     data class Error(val message: String) : OcrUiState
@@ -96,6 +100,10 @@ data class CameraUiState(
     val manualObjectResults: List<VocabularyWord> = emptyList(),
     val manualObjectSearching: Boolean = false,
     val ocrModelReady: Boolean = false,
+    /** True while the one-time recognizer warm-up is running. */
+    val ocrModelPreparing: Boolean = false,
+    /** True when the warm-up failed — OCR is unavailable, manual entry stays. */
+    val ocrModelFailed: Boolean = false,
     val ttsAvailable: Boolean = false,
     /** One-shot notice (a string resource id), cleared after display. */
     val noticeRes: Int? = null,
@@ -121,6 +129,23 @@ class CameraViewModel @Inject constructor(
         runCatching { TfLiteClassifier(context) }.getOrNull()
 
     init {
+        // Warm up the bundled Korean OCR model as soon as the Camera
+        // screen opens, so the first capture does not stall on the
+        // one-time native initialisation. A failed warm-up only marks
+        // OCR unavailable — manual text entry still works.
+        viewModelScope.launch {
+            _state.update { it.copy(ocrModelPreparing = true) }
+            val ready = withContext(Dispatchers.Default) {
+                ocrService.warmUp()
+            }
+            _state.update {
+                it.copy(
+                    ocrModelPreparing = false,
+                    ocrModelReady = ready,
+                    ocrModelFailed = !ready,
+                )
+            }
+        }
         viewModelScope.launch {
             ttsManager.state.collect {
                 _state.update { current -> current.copy(ttsAvailable = ttsManager.isKoreanAvailable()) }
@@ -199,7 +224,7 @@ class CameraViewModel @Inject constructor(
         viewModelScope.launch {
             _state.update {
                 it.copy(
-                    ocrState = OcrUiState.Processing(downloadingModel = !it.ocrModelReady),
+                    ocrState = OcrUiState.Processing(preparingModel = false),
                     extractedText = "",
                     breakdown = null,
                 )

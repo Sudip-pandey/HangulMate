@@ -10,6 +10,13 @@ Profile.
 > Gradle build is blocked by this VM's sandbox (JVM outbound TCP is denied;
 > see README "Build status"). Everything below describes the code as
 > written, statically reviewed, not the code as executed.
+>
+> v2 continuation (2026-11-11 evening): vocabulary expanded to 10,000
+> entries (NIKL source, see §7); collections + TTS + search + OCR-first-use
+> fixes applied (see §9); workflow renamed to
+> `.github/workflows/android-build.yml` (repo still runs the earlier
+> `android.yml`). CI run #1 failed fast (exit 126 — `gradlew` not
+> executable in the repo); iteration is in progress, see README.
 
 ## 1. Layers
 
@@ -39,21 +46,21 @@ is the single source of truth for words, progress, history and collections.
 | `di` | `AppModule` (SettingsRepository, TtsManager), `DatabaseModule` (Room DB, all DAOs, all repositories, `SeedOnFirstLaunch`, `@ApplicationScope` CoroutineScope) |
 | `domain/model` | `VocabularyWord`, `LearningState` (+ `DailyStats`), `Topic`, `PartOfSpeech`, `EpsImportance`, `RelationKind`, `WordRelation`, `QuizResult`, `UserCollection`, `ImportReport` |
 | `domain/repository` | `VocabularyRepository`, `LearningRepository`, `SearchHistoryRepository`, `CollectionRepository` |
-| `domain/practice` | `QuizGenerator` — 5 quiz types (`QuizType`, `QuizQuestion`) |
-| `data/local` | Room: `HangulMateDatabase` (v1, 13 entities, `exportSchema = true`, schemas → `app/schemas/`), `Entities.kt`, `Daos.kt` (11 DAOs), `Converters.kt`, `SeedImporter` + `SeedImportPrefs`/`SeedState`, `DateUtils` |
+| `domain/practice` | `QuizGenerator` — 7 playable quiz types (`QuizType`, `QuizQuestion`) + timed EPS mock; Nepali-dependent types quiz only words with a verified Nepali translation |
+| `data/local` | Room: `HangulMateDatabase` (v2 + `MIGRATION_1_2`, 13 entities, `exportSchema = true`, schemas → `app/schemas/`), `Entities.kt` (incl. `nepaliStatus`, `sensesJson`), `Daos.kt` (11 DAOs), `Converters.kt`, `SeedImporter` + `SeedImportPrefs`/`SeedState`, `DateUtils` (device-local day boundaries) |
 | `data/repository` | `VocabularyRepositoryImpl`, `LearningRepositoryImpl`, `SearchHistoryRepositoryImpl`, `CollectionRepositoryImpl`, `Mappers.kt`, `SrsScheduler` |
 | `data/preferences` | `SettingsRepository` (+ impl): DataStore `"hangulmate_settings"` — theme, language, daily goal, TTS rate/pitch, reminders |
 | `data/backup` | `BackupManager`: full JSON export / import via `VocabularyRepository.exportAll` / `importJson` |
 | `speech` | `TtsManager` — real Android `TextToSpeech`, `Locale.KOREAN`, `TtsState` (`Ready` / `MissingVoice` / …); never fakes speech |
 | `locale` | `LocaleManager` — per-app locale (`ne` / `en`) via `AppCompatDelegate` |
-| `ml` | `OcrService` (ML Kit Korean text recognition), `TfLiteClassifier` (bundled MobileNet v1 quantised + `LabelMapper`), `TranslationBreakdown` (OCR text → per-word dictionary lookup), `CameraModels` |
-| `work` | `ReminderWorker` (plain `CoroutineWorker`, no Hilt worker) + `ReminderScheduler` (WorkManager daily reminder) |
+| `ml` | `OcrService` (ML Kit Korean text recognition, **bundled model** — no download; `warmUp()` on Camera open), `TfLiteClassifier` (bundled MobileNet v1 quantised + `LabelMapper`), `TranslationBreakdown` (OCR text → per-word dictionary lookup), `CameraModels` |
+| `work` | `ReminderWorker` (plain `CoroutineWorker`, no Hilt worker) + `ReminderScheduler` (WorkManager daily reminder) + `BootReceiver` (re-asserts reminders after reboot) |
 | `ui/theme` | Material 3 light + dark, `Color`, `Type`, `Shape`, `Spacing` |
 | `ui/navigation` | `Routes.kt` (`Screen` sealed class) + `HangulMateNavHost` |
 | `ui/home` | `HomeScreen` + `HomeViewModel` (greeting, daily goal, due reviews, seed-import state) |
-| `ui/dictionary` | `DictionaryScreen` + `ViewModel` (3-way search), `WordDetailScreen` + `ViewModel` |
+| `ui/dictionary` | `DictionaryScreen` + `ViewModel` (3-way search + choseong/fuzzy second pass), `WordDetailScreen` + `ViewModel` (incl. add-to-collection picker), `AddWordScreen` + `ViewModel` (user words, prefilled from OCR unknowns), `FuzzySearch.kt` (choseong + Levenshtein ≤ 2) |
 | `ui/camera` | `CameraScreen` + `CameraViewModel` (permission, OCR + object modes), `OcrOverlay` |
-| `ui/practice` | `PracticeScreen` + `ViewModel` (internal destinations: quiz / revision / results / EPS topics), `QuizScreen`, `RevisionScreen`, `QuizResultScreen` |
+| `ui/practice` | `PracticeScreen` + `ViewModel` (internal destinations: quiz / revision / results / EPS topics / history), `QuizScreen`, `RevisionScreen`, `QuizResultScreen`, `QuizHistoryScreen` |
 | `ui/eps` | `EpsTopicsScreen` + `ViewModel`, `EpsStudyScreen` |
 | `ui/collections` | `CollectionsScreen` + `ViewModel` (user word collections) |
 | `ui/profile` | `ProfileScreen` + `ViewModel` (settings, stats, backup/restore, reminders) |
@@ -65,14 +72,20 @@ is the single source of truth for words, progress, history and collections.
 
 ```text
 HangulMateApp.onCreate()
+  ├─ apply persisted TTS rate/pitch to TtsManager (startup, not just slider drag)
   └─ @Inject SeedOnFirstLaunch (touched → Hilt creates the singleton)
        └─ ApplicationScope.launch { SeedImporter.importIfNeeded() }
-            ├─ guard: SharedPreferences "seed_imported_v1" (set ONLY after success)
-            ├─ read assets/seed/vocabulary_seed.json (236 entries)
+            ├─ guard: SharedPreferences "seed_imported_v2" (set ONLY after success)
+            ├─ read assets/seed/vocabulary_seed.json (10,000 entries)
             ├─ insert words, translations, relations, examples, categories
+            │   (batched; entries with nepaliStatus "missing" store the
+            │   English gloss in the nepali column as a display fallback and
+            │   get no "ne" translation row)
             └─ state: Idle → Importing → Success | Failed
 HomeViewModel observes SeedOnFirstLaunch.state and shows the import state.
 On Failed the app keeps working with whatever data exists and retries next launch.
+A v1 database upgrades via MIGRATION_1_2 (additive: nepaliStatus, sensesJson);
+existing v1 words are refresh-matched by id so their Nepali stays verified.
 ```
 
 ### 3.2 Dictionary search (3-way)
@@ -80,7 +93,13 @@ On Failed the app keeps working with whatever data exists and retries next launc
 `DictionaryViewModel` searches, in order of relevance: Korean (hangul /
 romanization), Nepali meaning, English meaning. Search history is stored
 via `SearchHistoryRepository`. Opening a word records it and navigates to
-`WordDetailScreen(wordId)`.
+`WordDetailScreen(wordId)`. When the LIKE search returns fewer than 5
+results, a second pass runs `FuzzySearch` (Hangul choseong matching +
+Levenshtein ≤ 2 over korean/romanization/english) over the word list.
+Quizzes that depend on Nepali (KO→NE, NE→KO, listening, spelling, EPS
+mock) only use words whose `nepaliStatus` is `"verified"` when enough exist;
+the word detail screen labels the English fallback for `"missing"` entries
+instead of presenting it as Nepali.
 
 ### 3.3 Learning / SRS (SM-2-lite)
 
@@ -94,10 +113,14 @@ schema changes ship as versioned, additive migrations
 
 ### 3.4 Quiz generation
 
-`QuizGenerator` builds questions from stored words: 5 `QuizType`s
-(Korean→Nepali, Nepali→Korean, listening via TTS, etc.). `PracticeViewModel`
-runs the session; `QuizResultScreen` shows the result and persists it via
-`LearningRepository`.
+`QuizGenerator` builds questions from stored words: 7 playable `QuizType`s
+(Korean→Nepali, Nepali→Korean, listening via TTS, Hangul spelling,
+fill-in-the-blank, similar/opposite identification, timed EPS mock); the
+IMAGE type is implemented but honestly disabled (no image assets bundled).
+Nepali-dependent types filter to `nepaliStatus == "verified"` words when
+possible (see §3.2). `PracticeViewModel` runs the session; `QuizResultScreen`
+shows the result and persists it via `LearningRepository`; `QuizHistoryScreen`
+lists past results.
 
 ### 3.5 Camera pipelines
 
@@ -112,10 +135,14 @@ CameraScreen (CameraX Preview + ImageAnalysis)
             word, only where the mapping is verified) → visual dictionary card
 ```
 
-ML Kit's Korean model is the **one optional download** in the app (Google
-Play services may fetch it once). Everything else is bundled. If the model
-is absent and the device is offline, OCR reports the missing-model state
-instead of crashing — verify on hardware.
+ML Kit's Korean model is **bundled** in the app
+(`com.google.mlkit:text-recognition-korean:16.0.1` is a bundled-model
+library) — there is no download and no network use anywhere in the app.
+`OcrService.warmUp()` runs a real recognizer call when the Camera screen
+first opens so the first capture does not pay a cold-start surprise; manual
+text entry remains as a fallback. (Earlier docs claimed a one-time
+Play-services download; that was wrong — the dependency was verified
+against Google's ML Kit docs during the v2 continuation.)
 
 ### 3.6 Backup / restore
 
@@ -169,28 +196,42 @@ Selected-tab matching compares destination `route` against
 
 ## 6. Offline guarantees
 
-- Vocabulary (236 verified entries), SRS, quizzes, collections, backup /
-  restore, TFLite object recognition: fully offline, zero network.
-- ML Kit Korean OCR: on-device inference; one optional model download.
+- Vocabulary (10,000 entries; 851 with verified Nepali), SRS, quizzes,
+  collections, backup / restore, TFLite object recognition: fully offline,
+  zero network.
+- ML Kit Korean OCR: on-device inference with a bundled model — no
+  download, no network.
 - TTS: on-device Android `TextToSpeech`; missing Korean voice is reported
   honestly (`TtsState.MissingVoice`).
-- No account, no server, no analytics, no ads. The manifest's `INTERNET`
-  permission exists only for the ML Kit model download and is commented
-  as such.
+- No account, no server, no analytics, no ads. The app contains **no
+  network code at all**; the `INTERNET` + `ACCESS_NETWORK_STATE`
+  permissions were removed in the v2 continuation.
 
 ## 7. Vocabulary data
 
 Source of truth: `app/src/main/assets/seed/vocabulary_seed.json`
-(236 entries, IDs `HM-0001`–`HM-0236`; schema:
-`app/src/main/assets/seed/schema.json`). Validated by
-`tools/validate_seed.py` (Python 3, stdlib only): sequential unique IDs,
-14 topics (general 39, numbers 19, directions 18, daily 17, conversation
-16, food 16, workplace 16, transport 14, health 14, manufacturing 14,
-construction 14, tools 14, …), relations similar 12 / opposite 26 /
-confusing 42, EPS importance high 144 / medium 76 / low 16. Full report:
-`docs/DATA_QUALITY_REPORT.md`. Data model: `docs/DATA_MODEL.md`.
+(10,000 entries, 8.75 MB; schema: `app/src/main/assets/seed/schema.json`).
+236 original verified EPS entries (`HM-0001`–`HM-0236`, Nepali verified) +
+9,764 entries from NIKL's Basic Korean Dictionary (한국어기초사전) via
+`binjang/NIKL-korean-english-dictionary` (53,172 source rows → 43,114
+merged headwords → 10,000 selected EPS-first). Validated by
+`tools/validate_seed_v2.py` (Python 3, stdlib only): 10,000 unique entries,
+all 14 topics non-empty, relations similar 12 / opposite 26 / confusing 42
+(all resolve), EPS importance high 1,750 / medium 8,166 / low 84. Nepali:
+851 verified, 9,149 missing (English fallback, labelled in the UI).
+Pipeline: `tools/nikl_pipeline.py` + `tools/romanization.py` (Revised
+Romanization, 33/33 checks) + `tools/nepali_core.py` (615 hand-translated
+EPS-core glosses). Topic distribution is skewed — "general" holds 4,776
+entries while agriculture (26), construction (18), tools (47) and
+manufacturing (47) are thin — because 87% of NIKL rows carry no semantic
+category. Full report: `data/reports/dataset_report.md` (and
+`docs/DATA_QUALITY_REPORT.md`). Data model: `docs/DATA_MODEL.md`.
 ML assets (bundled MobileNet v1 quantised 4.3 MB, `labels.txt`,
 `label_aliases.json`): `docs/ML_ASSETS.md`.
+Licence: NIKL dictionary content is **CC BY-SA 2.0 Korea** (attribution +
+ShareAlike). Attribution is in the app (Profile → About) and in
+`app/src/main/assets/seed/NOTICE.md`. The Hugging Face `mit` tag covers
+only the parser author's code and must not be relied on.
 
 ## 8. Build & test
 
@@ -205,19 +246,37 @@ ML assets (bundled MobileNet v1 quantised 4.3 MB, `labels.txt`,
   `SearchTest` 8, `SeedImportTest` 14. They use JUnit4,
   `androidx.test:core` (`ApplicationProvider`), `kotlinx-coroutines-test`
   (`runTest`). **Never executed yet** — first run is expected from CI
-  (see README "Build status").
-- CI: `.github/workflows/android.yml` — `ubuntu-latest`, JDK 17 Temurin,
-  `./gradlew assembleDebug`, `./gradlew testDebugUnitTest`, uploads
-  `app-debug.apk`.
+  (see README "Build status"). Note: `SeedImportTest` still targets the
+  236-entry v1 fixture; a v2 fixture test is still to be added.
+- CI: `.github/workflows/android-build.yml` in this checkout (explicit
+  Android SDK setup, Gradle caching, tests before build, test-report
+  upload on failure, `workflow_dispatch`, APK artifact). The repo
+  currently runs the earlier `.github/workflows/android.yml` (same build +
+  test steps, no caching/SDK step) — the improved workflow cannot be
+  pushed through GitHub's API (workflow files are blocked for API
+  integrations), so it must be swapped in via the web UI or a git push
+  from a machine. CI run #1 (on `android.yml`) failed in 7 s with exit
+  code 126: `gradlew` is mode `100644` in the repo, not executable.
 
-## 9. Known gaps (as of integration, 2026-11-11)
+## 9. Known gaps (as of v2 continuation, 2026-11-11)
 
-1. No successful compile or test run anywhere; no APK.
+1. No successful compile or test run anywhere; no APK. CI run #1 failed on
+   the `gradlew` executable bit (one command on Byte's machine to fix).
 2. Runtime behaviour on a real device is entirely unverified: CameraX,
-   ML Kit first-run model download, TTS Korean voice presence, TFLite
-   inference, WorkManager reminders, seed import timing on first launch.
+   OCR warm-up, TTS Korean voice presence, TFLite inference, WorkManager
+   reminders, seed import timing on first launch (10,000 rows now), Room
+   migration v1→v2 on a device that already has v1 data.
 3. `gradle.properties` in the project sets `org.gradle.jvmargs=-Xmx2g`;
    on memory-constrained machines lower it (or override via
    `GRADLE_USER_HOME/gradle.properties`).
 4. The `"{query}"` defensive guard in `HangulMateNavHost` is belt-and-
    braces now that `MainActivity` uses `createRoute()`; it can stay.
+5. Nepali coverage is partial (851 / 10,000) and topic balance is skewed
+   (see §7); the image quiz stays honestly disabled (no image assets);
+   the data-layer audit (Room migrations/indices, backup validation) was
+   not completed this turn — see `docs/PROJECT_AUDIT.md`.
+6. The data-layer audit gap from the audit (modules A/D/V/Z/AA) still
+   stands: those areas were not rated because the audit worker was refused
+   by a safety policy. The follow-up must verify Room migrations/indices,
+   backup validation, and test execution (CI) before calling the app
+   production-ready.

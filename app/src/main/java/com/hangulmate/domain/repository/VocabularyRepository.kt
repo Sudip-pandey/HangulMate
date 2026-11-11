@@ -16,7 +16,8 @@ import kotlinx.coroutines.flow.Flow
  *   change (Room observable queries).
  * - A blank [search] query returns an empty list (never the whole table).
  * - [getWordOfTheDay] is deterministic: the same [dateEpochDay] always
- *   returns the same word. [dateEpochDay] is days since 1970-01-01 UTC.
+ *   returns the same word. [dateEpochDay] is days since 1970-01-01 in
+ *   the device time zone (see [com.hangulmate.data.local.DateUtils]).
  * - Relations are embedded in the [VocabularyWord] returned by [getById]
  *   (and by [getByKorean]); there is no separate getRelated call.
  * - [recordReview] applies the SM-2-lite schedule (see docs/DATA_MODEL.md).

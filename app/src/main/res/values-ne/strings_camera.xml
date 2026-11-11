@@ -16,12 +16,12 @@
     <string name="camera_permission_permanently_denied">HangulMate का लागि क्यामेरा अनुमति बन्द छ। अनुमति दिन Settings खोल्नुहोस्, वा ग्यालरी र म्यानुअल पाठ प्रयोग गर्नुहोस्।</string>
     <string name="camera_open_settings">सेटिङ खोल्नुहोस्</string>
 
-    <string name="camera_ocr_downloading">कोरियाली पाठ मोडेल डाउनलोड हुँदैछ — एक पटक मात्र…</string>
+    <string name="camera_ocr_preparing">कोरियाली पाठ पढ्ने तयारी हुँदैछ…</string>
     <string name="camera_ocr_reading">कोरियाली पाठ पढिँदैछ…</string>
-    <string name="camera_ocr_unavailable">कोरियाली पाठ पढ्न अहिले उपलब्ध छैन — एक पटक डाउनलोड हुने कोरियाली पाठ मोडेल डाउनलोड हुन सकेन (इन्टरनेट र Play services जाँचेर फेरि प्रयास गर्नुहोस्)। तपाईं तल कोरियाली पाठ टाइप वा पेस्ट गर्न सक्नुहुन्छ।</string>
+    <string name="camera_ocr_unavailable">कोरियाली पाठ पढ्न अहिले उपलब्ध छैन — यस डिभाइसमा पाठ मोडेल सुरु हुन सकेन। तपाईं तल कोरियाली पाठ टाइप वा पेस्ट गर्न सक्नुहुन्छ।</string>
     <string name="camera_ocr_error">यस फोटोबाट पाठ पढ्न सकिएन। कृपया फेरि प्रयास गर्नुहोस् वा तल पाठ टाइप गर्नुहोस्।</string>
     <string name="camera_ocr_no_text">यस फोटोमा कुनै कोरियाली पाठ भेटिएन। अझ स्पष्ट फोटो प्रयास गर्नुहोस्, वा तल पाठ टाइप गर्नुहोस्।</string>
-    <string name="camera_ocr_model_note">पहिलो प्रयोगमा कोरियाली पाठ मोडेल एक पटक डाउनलोड हुन्छ (इन्टरनेट चाहिन्छ)। त्यसपछि पाठ पढ्ने सुविधा पूर्ण रूपमा अफलाइन चल्छ।</string>
+    <string name="camera_ocr_model_note">कोरियाली पाठ पढ्ने सुविधा यसै डिभाइसमा चल्छ — इन्टरनेट चाहिँदैन।</string>
 
     <string name="camera_extracted_text_label">स्क्यान गरिएको पाठ (सम्पादन गर्न ट्याप गर्नुहोस्)</string>
     <string name="camera_manual_entry_label">कोरियाली पाठ (टाइप गर्नुहोस् वा पेस्ट गर्नुहोस्)</string>

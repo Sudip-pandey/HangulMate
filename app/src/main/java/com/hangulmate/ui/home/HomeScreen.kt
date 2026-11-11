@@ -1,6 +1,5 @@
 package com.hangulmate.ui.home
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -22,7 +21,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -75,26 +73,35 @@ fun HomeScreen(
             style = MaterialTheme.typography.bodyLarge,
         )
 
-        // Quick search bar — tap opens the Dictionary; camera icon opens Camera.
-        OutlinedTextField(
-            value = "",
-            onValueChange = {},
-            readOnly = true,
-            modifier = Modifier
-                .fillMaxWidth()
-                .clickable { onNavigateToDictionary() },
-            placeholder = { Text(stringResource(R.string.home_search_hint)) },
-            leadingIcon = { Icon(Icons.Filled.Search, contentDescription = null) },
-            trailingIcon = {
+        // Quick search bar — a real tap target: tapping anywhere except
+        // the camera icon opens the Dictionary. A readOnly TextField can
+        // swallow the tap, so this is a Card styled as a search bar.
+        Card(
+            onClick = onNavigateToDictionary,
+            modifier = Modifier.fillMaxWidth(),
+        ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(Spacing.md),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(Spacing.sm),
+            ) {
+                Icon(Icons.Filled.Search, contentDescription = null)
+                Text(
+                    text = stringResource(R.string.home_search_hint),
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.weight(1f),
+                )
                 IconButton(onClick = onNavigateToCamera) {
                     Icon(
                         Icons.Filled.CameraAlt,
                         contentDescription = stringResource(R.string.home_camera_content_desc),
                     )
                 }
-            },
-            singleLine = true,
-        )
+            }
+        }
 
         when {
             state.isPreparing -> {

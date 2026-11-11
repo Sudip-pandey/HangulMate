@@ -107,6 +107,7 @@ import java.io.ByteArrayOutputStream
 @Composable
 fun CameraScreen(
     onWordClick: (String) -> Unit,
+    onAddWord: (String) -> Unit = {},
     viewModel: CameraViewModel = hiltViewModel(),
 ) {
     val context = LocalContext.current
@@ -215,6 +216,25 @@ fun CameraScreen(
             text = stringResource(R.string.camera_title),
             style = MaterialTheme.typography.headlineMedium,
         )
+
+        // One-time recognizer warm-up state: shown while the bundled
+        // Korean model initialises, and honestly when it failed (manual
+        // text entry below still works).
+        if (state.ocrModelPreparing) {
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(Spacing.sm),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                CircularProgressIndicator(modifier = Modifier.size(24.dp))
+                Text(
+                    text = stringResource(R.string.camera_ocr_preparing),
+                    style = MaterialTheme.typography.bodyMedium,
+                )
+            }
+        }
+        if (state.ocrModelFailed) {
+            WarningCard(stringResource(R.string.camera_ocr_unavailable))
+        }
 
         state.noticeRes?.let { noticeRes ->
             Card(
@@ -382,6 +402,7 @@ fun CameraScreen(
                 state = state,
                 viewModel = viewModel,
                 onWordClick = onWordClick,
+                onAddWord = onAddWord,
             )
         } else {
             ObjectModeContent(
@@ -453,6 +474,7 @@ private fun TextModeContent(
     state: CameraUiState,
     viewModel: CameraViewModel,
     onWordClick: (String) -> Unit,
+    onAddWord: (String) -> Unit,
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(Spacing.lg)) {
         when (val ocr = state.ocrState) {
@@ -464,8 +486,8 @@ private fun TextModeContent(
                     CircularProgressIndicator(modifier = Modifier.size(24.dp))
                     Text(
                         text = stringResource(
-                            if (ocr.downloadingModel) {
-                                R.string.camera_ocr_downloading
+                            if (ocr.preparingModel) {
+                                R.string.camera_ocr_preparing
                             } else {
                                 R.string.camera_ocr_reading
                             },
@@ -559,6 +581,7 @@ private fun TextModeContent(
                 state = state,
                 viewModel = viewModel,
                 onWordClick = onWordClick,
+                onAddWord = onAddWord,
             )
         }
     }
@@ -570,6 +593,7 @@ private fun BreakdownSection(
     state: CameraUiState,
     viewModel: CameraViewModel,
     onWordClick: (String) -> Unit,
+    onAddWord: (String) -> Unit,
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(Spacing.lg)) {
         breakdown.phraseWord?.let { phraseWord ->
@@ -682,17 +706,27 @@ private fun BreakdownSection(
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.Bold,
             )
-            Card(
-                colors = CardDefaults.cardColors(
-                    containerColor = MaterialTheme.colorScheme.errorContainer,
-                ),
-            ) {
-                Text(
-                    text = breakdown.unknown.joinToString("  •  "),
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = MaterialTheme.colorScheme.onErrorContainer,
-                    modifier = Modifier.padding(Spacing.lg),
-                )
+            // Each unknown word gets its own Save button: it opens the
+            // add-word form prefilled with the Korean text, and the user
+            // supplies the Nepali meaning there. No meaning is guessed.
+            Column(verticalArrangement = Arrangement.spacedBy(Spacing.xs)) {
+                for (unknown in breakdown.unknown) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Text(
+                            text = unknown,
+                            style = MaterialTheme.typography.bodyLarge,
+                            color = MaterialTheme.colorScheme.error,
+                            modifier = Modifier.weight(1f),
+                        )
+                        OutlinedButton(onClick = { onAddWord(unknown) }) {
+                            Text(stringResource(R.string.save))
+                        }
+                    }
+                }
             }
             Text(
                 text = stringResource(R.string.camera_unknown_note),
