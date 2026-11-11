@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Camera feature strings (kept separate from strings.xml). -->
+
+    <string name="camera_capture_photo">Capture</string>
+    <string name="camera_import_gallery">Gallery</string>
+    <string name="camera_retake">Retake</string>
+    <string name="camera_torch_on">Torch on</string>
+    <string name="camera_torch_off">Torch off</string>
+    <string name="camera_capture_hint">Point the camera at Korean text or an object, then tap Capture. Photos are processed on this device only and never uploaded.</string>
+    <string name="camera_capture_failed">Could not take the photo. Please try again.</string>
+    <string name="camera_import_failed">Could not open that image. Please try another one.</string>
+    <string name="camera_no_camera">No camera is available on this device. You can still import a photo from the gallery or type text below.</string>
+
+    <string name="camera_permission_denied">Camera permission was denied, so the live preview is off. You can still import photos from the gallery or type Korean text below.</string>
+    <string name="camera_permission_permanently_denied">Camera permission is turned off for HangulMate. Open Settings to allow it, or use the gallery and manual text entry instead.</string>
+    <string name="camera_open_settings">Open Settings</string>
+
+    <string name="camera_ocr_downloading">Downloading the Korean text model — one time only…</string>
+    <string name="camera_ocr_reading">Reading Korean text…</string>
+    <string name="camera_ocr_unavailable">Korean text reading is unavailable right now — the one-time Korean text model could not be downloaded (check your connection and Play services, then retry). You can type or paste the Korean text below instead.</string>
+    <string name="camera_ocr_error">Could not read the text from this photo. Please try again or type the text below.</string>
+    <string name="camera_ocr_no_text">No Korean text was found in this photo. Try a clearer photo, or type the text below.</string>
+    <string name="camera_ocr_model_note">First use downloads the Korean text model once (needs internet). After that, text reading works fully offline.</string>
+
+    <string name="camera_extracted_text_label">Scanned text (tap to edit)</string>
+    <string name="camera_manual_entry_label">Korean text (type or paste)</string>
+    <string name="camera_search_this_text">Search This Text</string>
+    <string name="camera_copied">Copied</string>
+
+    <string name="camera_breakdown_word_by_word">शब्द-दर-शब्द अर्थ (word-by-word)</string>
+    <string name="camera_breakdown_meaning_nepali">नेपाली</string>
+    <string name="camera_breakdown_meaning_english">English</string>
+    <string name="camera_full_translation_title">Full-sentence translation</string>
+    <string name="camera_full_translation_note">Full-sentence Nepali translation is not bundled offline — only the word-by-word breakdown above is provided, using real meanings from your dictionary. No translation is guessed.</string>
+    <string name="camera_phrase_found">This whole phrase is in your dictionary</string>
+    <string name="camera_exact_matches">Exact matches</string>
+    <string name="camera_partial_matches">Close matches</string>
+    <string name="camera_unknown_words">Not in your dictionary yet</string>
+    <string name="camera_unknown_note">These words are not in your dictionary, so there is no meaning to show — and none is guessed.</string>
+    <string name="camera_save_to_learn">Save to learn list</string>
+    <string name="camera_saved_to_learn">Saved to your learn list</string>
+    <string name="camera_add_favorite">Favorite</string>
+    <string name="camera_remove_favorite">Favorited</string>
+    <string name="camera_listen">Listen</string>
+    <string name="camera_example">Example</string>
+    <string name="camera_related">Related words</string>
+    <string name="camera_category">Category</string>
+
+    <string name="camera_object_model_missing">Object recognition is not available — the recognition model is not installed on this device. You can still search the dictionary below.</string>
+    <string name="camera_object_error">Could not recognise the object in this photo. Please try again or search the dictionary below.</string>
+    <string name="camera_object_not_identified">Could not identify this object</string>
+    <string name="camera_object_not_identified_hint">The model did not recognise this as a word in your dictionary. Try another object, or look it up below — no guess is shown.</string>
+    <string name="camera_object_top_guess">The model\'s closest guess was “%1$s” (%2$d%%), but there is no Korean word for it in your dictionary.</string>
+    <string name="camera_object_other_guesses">Other guesses — tap one to pick it</string>
+    <string name="camera_object_manual_search">Search the dictionary</string>
+    <string name="camera_object_search_hint">Type a Korean, Nepali or English word…</string>
+    <string name="camera_confidence">Confidence: %1$d%%</string>
+    <string name="camera_classifying">Recognising object…</string>
+</resources>

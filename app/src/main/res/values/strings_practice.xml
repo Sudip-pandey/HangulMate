@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Practice hub -->
+    <string name="practice_hub_quizzes">Quizzes</string>
+    <string name="practice_revision_title">Today\'s revision</string>
+    <string name="practice_revision_due">%1$d words due for review</string>
+    <string name="practice_revision_all_done">Nothing due — you\'re all caught up!</string>
+    <string name="practice_revision_start">Start revision</string>
+    <string name="practice_eps_topics_title">EPS-TOPIK topics</string>
+    <string name="practice_eps_topics_desc">Study vocabulary by EPS-TOPIK topic, with filters and flashcards.</string>
+    <string name="practice_eps_topics_open">Browse topics</string>
+
+    <!-- Quiz types -->
+    <string name="quiz_ko_to_ne">Korean → Nepali</string>
+    <string name="quiz_ko_to_ne_desc">See a Korean word, pick its Nepali meaning.</string>
+    <string name="quiz_ne_to_ko">Nepali → Korean</string>
+    <string name="quiz_ne_to_ko_desc">See a Nepali meaning, pick the Korean word.</string>
+    <string name="quiz_listening">Listening</string>
+    <string name="quiz_listening_desc">Hear a Korean word, pick its Nepali meaning.</string>
+    <string name="quiz_spelling">Hangul spelling</string>
+    <string name="quiz_spelling_desc">Pick the correct Hangul spelling of a word.</string>
+    <string name="quiz_fill_blank">Fill in the blank</string>
+    <string name="quiz_fill_blank_desc">Complete an example sentence with the missing word.</string>
+    <string name="quiz_relation">Similar / opposite</string>
+    <string name="quiz_relation_desc">Pick the similar or opposite word — only for words that have one.</string>
+    <string name="quiz_image">Picture quiz</string>
+    <string name="quiz_image_desc">Pick the word that matches a picture.</string>
+    <string name="quiz_image_disabled">No image assets bundled yet, so this quiz can\'t run.</string>
+    <string name="quiz_eps_mock">EPS mock test (timed)</string>
+    <string name="quiz_eps_mock_desc">A mixed EPS-style test with a countdown timer. 60 seconds per question.</string>
+    <string name="quiz_questions_10">10 questions</string>
+    <string name="quiz_questions_20">20 questions</string>
+
+    <!-- Quiz screen -->
+    <string name="quiz_not_enough_words">Not enough vocabulary yet</string>
+    <string name="quiz_not_enough_words_detail">This quiz needs at least 4 words. Only %1$d are available in this selection.</string>
+    <string name="quiz_question_number">Question %1$d of %2$d</string>
+    <string name="quiz_time_left">%1$s left</string>
+    <string name="quiz_next">Next</string>
+    <string name="quiz_see_result">See result</string>
+    <string name="quiz_listen_prompt">Tap to hear the word, then pick its Nepali meaning.</string>
+    <string name="quiz_listen_again">Listen again</string>
+    <string name="quiz_spelling_prompt">Choose the correct Korean spelling of:</string>
+    <string name="quiz_relation_similar_prompt">Which word is similar in meaning to:</string>
+    <string name="quiz_relation_opposite_prompt">Which word is the opposite of:</string>
+    <string name="quiz_correct">Correct!</string>
+    <string name="quiz_wrong">Not quite — the correct answer is highlighted.</string>
+    <string name="quiz_back">Back</string>
+
+    <!-- Quiz result -->
+    <string name="quiz_result_title">Quiz result</string>
+    <string name="quiz_result_score">%1$d out of %2$d correct</string>
+    <string name="quiz_result_review">Review answers</string>
+    <string name="quiz_result_your_answer">Your answer: %1$s</string>
+    <string name="quiz_result_correct_answer">Correct answer: %1$s</string>
+    <string name="quiz_result_no_mistakes">No mistakes — great job!</string>
+    <string name="quiz_result_mistakes">Words to revise</string>
+    <string name="quiz_result_add_difficult">Add to difficult</string>
+    <string name="quiz_result_added_difficult">Added to difficult</string>
+    <string name="quiz_result_retry">Retry quiz</string>
+    <string name="quiz_result_back_practice">Back to Practice</string>
+
+    <!-- SRS revision -->
+    <string name="revision_title">Today\'s revision</string>
+    <string name="revision_progress">%1$d of %2$d reviewed</string>
+    <string name="revision_tap_to_reveal">Tap the card to reveal the meaning</string>
+    <string name="revision_know">I know this</string>
+    <string name="revision_need_practice">I need practice</string>
+    <string name="revision_forgot">I forgot this</string>
+    <string name="revision_done">Revision complete!</string>
+    <string name="revision_done_detail">You reviewed %1$d words today. Forgotten words will come back tomorrow.</string>
+    <string name="revision_empty">No words due for review today. Learn some new words first!</string>
+    <string name="revision_back">Back to Practice</string>
+
+    <!-- EPS topics -->
+    <string name="eps_topics_title">EPS-TOPIK topics</string>
+    <string name="eps_filter_difficulty">Difficulty</string>
+    <string name="eps_filter_importance">EPS importance</string>
+    <string name="eps_filter_all">All</string>
+    <string name="eps_importance_high">High</string>
+    <string name="eps_importance_medium">Medium</string>
+    <string name="eps_importance_low">Low</string>
+    <string name="eps_words_count">%1$d words</string>
+    <string name="eps_study_title">Study: %1$s</string>
+    <string name="eps_study_know">I know</string>
+    <string name="eps_study_dont_know">I don\'t know</string>
+    <string name="eps_study_done">Study session complete!</string>
+    <string name="eps_study_done_detail">You went through %1$d words from %2$s.</string>
+    <string name="eps_study_empty">No words in this topic match the selected filters.</string>
+    <string name="eps_study_back_topics">Back to topics</string>
+    <string name="eps_study_tap_reveal">Tap the card to reveal the meaning</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- अभ्यास हब -->
+    <string name="practice_hub_quizzes">अभ्यास प्रश्नहरू</string>
+    <string name="practice_revision_title">आजको दोहोर्‍याइ</string>
+    <string name="practice_revision_due">%1$d शब्द दोहोर्‍याउन बाँकी</string>
+    <string name="practice_revision_all_done">आज दोहोर्‍याउन केही छैन — सबै सकियो!</string>
+    <string name="practice_revision_start">दोहोर्‍याइ सुरु गर्नुहोस्</string>
+    <string name="practice_eps_topics_title">EPS-TOPIK विषयहरू</string>
+    <string name="practice_eps_topics_desc">EPS-TOPIK विषयअनुसार शब्दावली अध्ययन गर्नुहोस् — फिल्टर र फ्ल्यासकार्डसहित।</string>
+    <string name="practice_eps_topics_open">विषयहरू हेर्नुहोस्</string>
+
+    <!-- प्रश्न प्रकारहरू -->
+    <string name="quiz_ko_to_ne">कोरियाली → नेपाली</string>
+    <string name="quiz_ko_to_ne_desc">कोरियाली शब्द हेर्नुहोस्, नेपाली अर्थ छान्नुहोस्।</string>
+    <string name="quiz_ne_to_ko">नेपाली → कोरियाली</string>
+    <string name="quiz_ne_to_ko_desc">नेपाली अर्थ हेर्नुहोस्, कोरियाली शब्द छान्नुहोस्।</string>
+    <string name="quiz_listening">सुन्ने अभ्यास</string>
+    <string name="quiz_listening_desc">कोरियाली शब्द सुन्नुहोस्, नेपाली अर्थ छान्नुहोस्।</string>
+    <string name="quiz_spelling">हङ्गुल हिज्जे</string>
+    <string name="quiz_spelling_desc">शब्दको सही हङ्गुल हिज्जे छान्नुहोस्।</string>
+    <string name="quiz_fill_blank">खाली ठाउँ भर्नुहोस्</string>
+    <string name="quiz_fill_blank_desc">उदाहरण वाक्यमा छुटेको शब्द भर्नुहोस्।</string>
+    <string name="quiz_relation">समानार्थी / विपरीतार्थी</string>
+    <string name="quiz_relation_desc">समान वा विपरीत शब्द छान्नुहोस् — सम्बन्ध भएका शब्दहरूमा मात्र।</string>
+    <string name="quiz_image">तस्बिर प्रश्न</string>
+    <string name="quiz_image_desc">तस्बिरसँग मिल्ने शब्द छान्नुहोस्।</string>
+    <string name="quiz_image_disabled">अझै कुनै तस्बिर समावेश गरिएको छैन, त्यसैले यो प्रश्न चलाउन सकिँदैन।</string>
+    <string name="quiz_eps_mock">EPS नमुना परीक्षा (समयसहित)</string>
+    <string name="quiz_eps_mock_desc">काउन्टडाउन टाइमरसहितको मिश्रित EPS-शैली परीक्षा। प्रति प्रश्न ६० सेकेन्ड।</string>
+    <string name="quiz_questions_10">10 प्रश्नहरू</string>
+    <string name="quiz_questions_20">20 प्रश्नहरू</string>
+
+    <!-- प्रश्न स्क्रिन -->
+    <string name="quiz_not_enough_words">अझै पर्याप्त शब्दावली छैन</string>
+    <string name="quiz_not_enough_words_detail">यो प्रश्नका लागि कम्तीमा 4 शब्द चाहिन्छ। यो छनोटमा जम्मा %1$d मात्र छन्।</string>
+    <string name="quiz_question_number">प्रश्न %1$d / %2$d</string>
+    <string name="quiz_time_left">%1$s बाँकी</string>
+    <string name="quiz_next">अर्को</string>
+    <string name="quiz_see_result">नतिजा हेर्नुहोस्</string>
+    <string name="quiz_listen_prompt">शब्द सुन्न ट्याप गर्नुहोस्, अनि नेपाली अर्थ छान्नुहोस्।</string>
+    <string name="quiz_listen_again">फेरि सुन्नुहोस्</string>
+    <string name="quiz_spelling_prompt">यसको सही कोरियाली हिज्जे छान्नुहोस्:</string>
+    <string name="quiz_relation_similar_prompt">यससँग अर्थ मिल्ने शब्द कुन हो:</string>
+    <string name="quiz_relation_opposite_prompt">यसको विपरीत शब्द कुन हो:</string>
+    <string name="quiz_correct">सही!</string>
+    <string name="quiz_wrong">मिलेन — सही उत्तर हरियोले देखाइएको छ।</string>
+    <string name="quiz_back">फिर्ता</string>
+
+    <!-- प्रश्न नतिजा -->
+    <string name="quiz_result_title">प्रश्न नतिजा</string>
+    <string name="quiz_result_score">%2$d मध्ये %1$d सही</string>
+    <string name="quiz_result_review">उत्तरहरू हेर्नुहोस्</string>
+    <string name="quiz_result_your_answer">तपाईंको उत्तर: %1$s</string>
+    <string name="quiz_result_correct_answer">सही उत्तर: %1$s</string>
+    <string name="quiz_result_no_mistakes">कुनै गल्ती छैन — राम्रो!</string>
+    <string name="quiz_result_mistakes">दोहोर्‍याउनुपर्ने शब्दहरू</string>
+    <string name="quiz_result_add_difficult">कठिनमा थप्नुहोस्</string>
+    <string name="quiz_result_added_difficult">कठिनमा थपियो</string>
+    <string name="quiz_result_retry">फेरि प्रयास गर्नुहोस्</string>
+    <string name="quiz_result_back_practice">अभ्यासमा फिर्ता</string>
+
+    <!-- SRS दोहोर्‍याइ -->
+    <string name="revision_title">आजको दोहोर्‍याइ</string>
+    <string name="revision_progress">%2$d मध्ये %1$d दोहोर्‍याइयो</string>
+    <string name="revision_tap_to_reveal">अर्थ हेर्न कार्डमा ट्याप गर्नुहोस्</string>
+    <string name="revision_know">मलाई थाहा छ</string>
+    <string name="revision_need_practice">अभ्यास चाहिन्छ</string>
+    <string name="revision_forgot">मैले बिर्सें</string>
+    <string name="revision_done">दोहोर्‍याइ सकियो!</string>
+    <string name="revision_done_detail">आज तपाईंले %1$d शब्द दोहोर्‍याउनुभयो। बिर्सिएका शब्दहरू भोलि फेरि आउनेछन्।</string>
+    <string name="revision_empty">आज दोहोर्‍याउन कुनै शब्द छैन। पहिले केही नयाँ शब्द सिक्नुहोस्!</string>
+    <string name="revision_back">अभ्यासमा फिर्ता</string>
+
+    <!-- EPS विषयहरू -->
+    <string name="eps_topics_title">EPS-TOPIK विषयहरू</string>
+    <string name="eps_filter_difficulty">कठिनाइ</string>
+    <string name="eps_filter_importance">EPS महत्त्व</string>
+    <string name="eps_filter_all">सबै</string>
+    <string name="eps_importance_high">उच्च</string>
+    <string name="eps_importance_medium">मध्यम</string>
+    <string name="eps_importance_low">न्यून</string>
+    <string name="eps_words_count">%1$d शब्दहरू</string>
+    <string name="eps_study_title">अध्ययन: %1$s</string>
+    <string name="eps_study_know">थाहा छ</string>
+    <string name="eps_study_dont_know">थाहा छैन</string>
+    <string name="eps_study_done">अध्ययन सकियो!</string>
+    <string name="eps_study_done_detail">%2$s बाट %1$d शब्दहरू हेर्नुभयो।</string>
+    <string name="eps_study_empty">यो विषयमा छानिएका फिल्टरसँग मिल्ने कुनै शब्द छैन।</string>
+    <string name="eps_study_back_topics">विषयहरूमा फिर्ता</string>
+    <string name="eps_study_tap_reveal">अर्थ हेर्न कार्डमा ट्याप गर्नुहोस्</string>
+</resources>

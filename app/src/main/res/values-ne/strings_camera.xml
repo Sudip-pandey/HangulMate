@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- क्यामेरा सुविधाका स्ट्रिङहरू (strings.xml बाट छुट्टै राखिएको)। -->
+
+    <string name="camera_capture_photo">फोटो खिच्नुहोस्</string>
+    <string name="camera_import_gallery">ग्यालरी</string>
+    <string name="camera_retake">फेरि खिच्नुहोस्</string>
+    <string name="camera_torch_on">फ्ल्यास अन छ</string>
+    <string name="camera_torch_off">फ्ल्यास अफ छ</string>
+    <string name="camera_capture_hint">कोरियाली पाठ वा वस्तुतर्फ क्यामेरा सोझ्याएर Capture थिच्नुहोस्। फोटोहरू यसै डिभाइसमा मात्र प्रशोधन हुन्छन्, कहिल्यै बाहिर पठाइँदैनन्।</string>
+    <string name="camera_capture_failed">फोटो खिच्न सकिएन। कृपया फेरि प्रयास गर्नुहोस्।</string>
+    <string name="camera_import_failed">त्यो तस्वीर खोल्न सकिएन। कृपया अर्को तस्वीर प्रयास गर्नुहोस्।</string>
+    <string name="camera_no_camera">यस डिभाइसमा क्यामेरा उपलब्ध छैन। तपाईं ग्यालरीबाट फोटो ल्याउन वा तल पाठ टाइप गर्न सक्नुहुन्छ।</string>
+
+    <string name="camera_permission_denied">क्यामेरा अनुमति दिइएको छैन, त्यसैले लाइभ प्रिभ्यु बन्द छ। तपाईं ग्यालरीबाट फोटो ल्याउन वा तल कोरियाली पाठ टाइप गर्न सक्नुहुन्छ।</string>
+    <string name="camera_permission_permanently_denied">HangulMate का लागि क्यामेरा अनुमति बन्द छ। अनुमति दिन Settings खोल्नुहोस्, वा ग्यालरी र म्यानुअल पाठ प्रयोग गर्नुहोस्।</string>
+    <string name="camera_open_settings">सेटिङ खोल्नुहोस्</string>
+
+    <string name="camera_ocr_downloading">कोरियाली पाठ मोडेल डाउनलोड हुँदैछ — एक पटक मात्र…</string>
+    <string name="camera_ocr_reading">कोरियाली पाठ पढिँदैछ…</string>
+    <string name="camera_ocr_unavailable">कोरियाली पाठ पढ्न अहिले उपलब्ध छैन — एक पटक डाउनलोड हुने कोरियाली पाठ मोडेल डाउनलोड हुन सकेन (इन्टरनेट र Play services जाँचेर फेरि प्रयास गर्नुहोस्)। तपाईं तल कोरियाली पाठ टाइप वा पेस्ट गर्न सक्नुहुन्छ।</string>
+    <string name="camera_ocr_error">यस फोटोबाट पाठ पढ्न सकिएन। कृपया फेरि प्रयास गर्नुहोस् वा तल पाठ टाइप गर्नुहोस्।</string>
+    <string name="camera_ocr_no_text">यस फोटोमा कुनै कोरियाली पाठ भेटिएन। अझ स्पष्ट फोटो प्रयास गर्नुहोस्, वा तल पाठ टाइप गर्नुहोस्।</string>
+    <string name="camera_ocr_model_note">पहिलो प्रयोगमा कोरियाली पाठ मोडेल एक पटक डाउनलोड हुन्छ (इन्टरनेट चाहिन्छ)। त्यसपछि पाठ पढ्ने सुविधा पूर्ण रूपमा अफलाइन चल्छ।</string>
+
+    <string name="camera_extracted_text_label">स्क्यान गरिएको पाठ (सम्पादन गर्न ट्याप गर्नुहोस्)</string>
+    <string name="camera_manual_entry_label">कोरियाली पाठ (टाइप गर्नुहोस् वा पेस्ट गर्नुहोस्)</string>
+    <string name="camera_search_this_text">यो पाठ खोज्नुहोस्</string>
+    <string name="camera_copied">कपी भयो</string>
+
+    <string name="camera_breakdown_word_by_word">शब्द-दर-शब्द अर्थ</string>
+    <string name="camera_breakdown_meaning_nepali">नेपाली</string>
+    <string name="camera_breakdown_meaning_english">English</string>
+    <string name="camera_full_translation_title">पूर्ण वाक्य अनुवाद</string>
+    <string name="camera_full_translation_note">पूर्ण वाक्यको नेपाली अनुवाद अफलाइन राखिएको छैन — माथिको शब्द-दर-शब्द अर्थ मात्र दिइन्छ, जुन तपाईंको शब्दकोशका वास्तविक अर्थहरू हुन्। कुनै अनुवाद अनुमान गरिँदैन।</string>
+    <string name="camera_phrase_found">यो पूरै वाक्यांश तपाईंको शब्दकोशमा छ</string>
+    <string name="camera_exact_matches">ठ्याक्कै मिलेका शब्दहरू</string>
+    <string name="camera_partial_matches">नजिकका मिल्दा शब्दहरू</string>
+    <string name="camera_unknown_words">तपाईंको शब्दकोशमा अझै छैनन्</string>
+    <string name="camera_unknown_note">यी शब्दहरू तपाईंको शब्दकोशमा छैनन्, त्यसैले देखाउन कुनै अर्थ छैन — र कुनै अर्थ अनुमान गरिँदैन।</string>
+    <string name="camera_save_to_learn">सिक्ने सूचीमा राख्नुहोस्</string>
+    <string name="camera_saved_to_learn">सिक्ने सूचीमा राखियो</string>
+    <string name="camera_add_favorite">मनपर्ने</string>
+    <string name="camera_remove_favorite">मनपर्नेमा छ</string>
+    <string name="camera_listen">सुन्नुहोस्</string>
+    <string name="camera_example">उदाहरण</string>
+    <string name="camera_related">सम्बन्धित शब्दहरू</string>
+    <string name="camera_category">श्रेणी</string>
+
+    <string name="camera_object_model_missing">वस्तु चिन्ने सुविधा उपलब्ध छैन — चिन्ने मोडेल यस डिभाइसमा स्थापित छैन। तपाईं तल शब्दकोश खोज्न सक्नुहुन्छ।</string>
+    <string name="camera_object_error">यस फोटोको वस्तु चिन्न सकिएन। कृपया फेरि प्रयास गर्नुहोस् वा तल शब्दकोश खोज्नुहोस्।</string>
+    <string name="camera_object_not_identified">यो वस्तु चिन्न सकिएन</string>
+    <string name="camera_object_not_identified_hint">मोडेलले यसलाई तपाईंको शब्दकोशको शब्दको रूपमा चिनेन। अर्को वस्तु प्रयास गर्नुहोस्, वा तल खोज्नुहोस् — कुनै अनुमान देखाइँदैन।</string>
+    <string name="camera_object_top_guess">मोडेलको नजिकको अनुमान “%1$s” (%2$d%%) थियो, तर त्यसको लागि तपाईंको शब्दकोशमा कुनै कोरियाली शब्द छैन।</string>
+    <string name="camera_object_other_guesses">अन्य अनुमानहरू — छान्न ट्याप गर्नुहोस्</string>
+    <string name="camera_object_manual_search">शब्दकोश खोज्नुहोस्</string>
+    <string name="camera_object_search_hint">कोरियाली, नेपाली वा अङ्ग्रेजी शब्द टाइप गर्नुहोस्…</string>
+    <string name="camera_confidence">विश्वास: %1$d%%</string>
+    <string name="camera_classifying">वस्तु चिनिँदैछ…</string>
+</resources>

@@ -1,0 +1,1081 @@
+{
+  "aliases": [
+    {
+      "label": "affenpinscher",
+      "korean": "개"
+    },
+    {
+      "label": "afghan hound",
+      "korean": "개"
+    },
+    {
+      "label": "african grey",
+      "korean": "새"
+    },
+    {
+      "label": "aircraft carrier",
+      "korean": "배"
+    },
+    {
+      "label": "airedale",
+      "korean": "개"
+    },
+    {
+      "label": "airliner",
+      "korean": "비행기"
+    },
+    {
+      "label": "airship",
+      "korean": "비행기"
+    },
+    {
+      "label": "alp",
+      "korean": "산"
+    },
+    {
+      "label": "ambulance",
+      "korean": "자동차"
+    },
+    {
+      "label": "american egret",
+      "korean": "새"
+    },
+    {
+      "label": "american staffordshire terrier",
+      "korean": "개"
+    },
+    {
+      "label": "analog clock",
+      "korean": "시계"
+    },
+    {
+      "label": "appenzeller",
+      "korean": "개"
+    },
+    {
+      "label": "australian terrier",
+      "korean": "개"
+    },
+    {
+      "label": "backpack",
+      "korean": "가방"
+    },
+    {
+      "label": "bagel",
+      "korean": "빵"
+    },
+    {
+      "label": "bald eagle",
+      "korean": "새"
+    },
+    {
+      "label": "ballplayer",
+      "korean": "사람"
+    },
+    {
+      "label": "banana",
+      "korean": "바나나"
+    },
+    {
+      "label": "barber chair",
+      "korean": "의자"
+    },
+    {
+      "label": "basenji",
+      "korean": "개"
+    },
+    {
+      "label": "basset",
+      "korean": "개"
+    },
+    {
+      "label": "bathing cap",
+      "korean": "모자"
+    },
+    {
+      "label": "beach wagon",
+      "korean": "자동차"
+    },
+    {
+      "label": "beagle",
+      "korean": "개"
+    },
+    {
+      "label": "bedlington terrier",
+      "korean": "개"
+    },
+    {
+      "label": "bee eater",
+      "korean": "새"
+    },
+    {
+      "label": "bernese mountain dog",
+      "korean": "개"
+    },
+    {
+      "label": "bicycle-built-for-two",
+      "korean": "자전거"
+    },
+    {
+      "label": "bittern",
+      "korean": "새"
+    },
+    {
+      "label": "black grouse",
+      "korean": "새"
+    },
+    {
+      "label": "black stork",
+      "korean": "새"
+    },
+    {
+      "label": "black swan",
+      "korean": "새"
+    },
+    {
+      "label": "black-and-tan coonhound",
+      "korean": "개"
+    },
+    {
+      "label": "blenheim spaniel",
+      "korean": "개"
+    },
+    {
+      "label": "bloodhound",
+      "korean": "개"
+    },
+    {
+      "label": "bluetick",
+      "korean": "개"
+    },
+    {
+      "label": "bonnet",
+      "korean": "모자"
+    },
+    {
+      "label": "book jacket",
+      "korean": "책"
+    },
+    {
+      "label": "border collie",
+      "korean": "개"
+    },
+    {
+      "label": "border terrier",
+      "korean": "개"
+    },
+    {
+      "label": "borzoi",
+      "korean": "개"
+    },
+    {
+      "label": "boston bull",
+      "korean": "개"
+    },
+    {
+      "label": "bouvier des flandres",
+      "korean": "개"
+    },
+    {
+      "label": "boxer",
+      "korean": "개"
+    },
+    {
+      "label": "brabancon griffon",
+      "korean": "개"
+    },
+    {
+      "label": "brambling",
+      "korean": "새"
+    },
+    {
+      "label": "briard",
+      "korean": "개"
+    },
+    {
+      "label": "brittany spaniel",
+      "korean": "개"
+    },
+    {
+      "label": "bull mastiff",
+      "korean": "개"
+    },
+    {
+      "label": "cairn",
+      "korean": "개"
+    },
+    {
+      "label": "canoe",
+      "korean": "배"
+    },
+    {
+      "label": "cardigan",
+      "korean": "개"
+    },
+    {
+      "label": "catamaran",
+      "korean": "배"
+    },
+    {
+      "label": "cellular telephone",
+      "korean": "전화"
+    },
+    {
+      "label": "chesapeake bay retriever",
+      "korean": "개"
+    },
+    {
+      "label": "chickadee",
+      "korean": "새"
+    },
+    {
+      "label": "chihuahua",
+      "korean": "개"
+    },
+    {
+      "label": "chow",
+      "korean": "개"
+    },
+    {
+      "label": "clog",
+      "korean": "신발"
+    },
+    {
+      "label": "clumber",
+      "korean": "개"
+    },
+    {
+      "label": "cocker spaniel",
+      "korean": "개"
+    },
+    {
+      "label": "coffee mug",
+      "korean": "커피"
+    },
+    {
+      "label": "collie",
+      "korean": "개"
+    },
+    {
+      "label": "computer keyboard",
+      "korean": "컴퓨터"
+    },
+    {
+      "label": "container ship",
+      "korean": "배"
+    },
+    {
+      "label": "convertible",
+      "korean": "자동차"
+    },
+    {
+      "label": "coucal",
+      "korean": "새"
+    },
+    {
+      "label": "cowboy boot",
+      "korean": "신발"
+    },
+    {
+      "label": "cowboy hat",
+      "korean": "모자"
+    },
+    {
+      "label": "cradle",
+      "korean": "침대"
+    },
+    {
+      "label": "crane",
+      "korean": "새"
+    },
+    {
+      "label": "crib",
+      "korean": "침대"
+    },
+    {
+      "label": "curly-coated retriever",
+      "korean": "개"
+    },
+    {
+      "label": "daisy",
+      "korean": "꽃"
+    },
+    {
+      "label": "dalmatian",
+      "korean": "개"
+    },
+    {
+      "label": "dandie dinmont",
+      "korean": "개"
+    },
+    {
+      "label": "desk",
+      "korean": "책상"
+    },
+    {
+      "label": "desktop computer",
+      "korean": "컴퓨터"
+    },
+    {
+      "label": "dial telephone",
+      "korean": "전화"
+    },
+    {
+      "label": "digital clock",
+      "korean": "시계"
+    },
+    {
+      "label": "doberman",
+      "korean": "개"
+    },
+    {
+      "label": "drake",
+      "korean": "새"
+    },
+    {
+      "label": "egyptian cat",
+      "korean": "고양이"
+    },
+    {
+      "label": "electric locomotive",
+      "korean": "기차"
+    },
+    {
+      "label": "english foxhound",
+      "korean": "개"
+    },
+    {
+      "label": "english setter",
+      "korean": "개"
+    },
+    {
+      "label": "english springer",
+      "korean": "개"
+    },
+    {
+      "label": "entlebucher",
+      "korean": "개"
+    },
+    {
+      "label": "eskimo dog",
+      "korean": "개"
+    },
+    {
+      "label": "espresso",
+      "korean": "커피"
+    },
+    {
+      "label": "espresso maker",
+      "korean": "커피"
+    },
+    {
+      "label": "fire engine",
+      "korean": "소방관"
+    },
+    {
+      "label": "fireboat",
+      "korean": "배"
+    },
+    {
+      "label": "flamingo",
+      "korean": "새"
+    },
+    {
+      "label": "flat-coated retriever",
+      "korean": "개"
+    },
+    {
+      "label": "folding chair",
+      "korean": "의자"
+    },
+    {
+      "label": "four-poster",
+      "korean": "침대"
+    },
+    {
+      "label": "freight car",
+      "korean": "기차"
+    },
+    {
+      "label": "french bulldog",
+      "korean": "개"
+    },
+    {
+      "label": "french loaf",
+      "korean": "빵"
+    },
+    {
+      "label": "garbage truck",
+      "korean": "자동차"
+    },
+    {
+      "label": "german shepherd",
+      "korean": "개"
+    },
+    {
+      "label": "german short-haired pointer",
+      "korean": "개"
+    },
+    {
+      "label": "giant schnauzer",
+      "korean": "개"
+    },
+    {
+      "label": "golden retriever",
+      "korean": "개"
+    },
+    {
+      "label": "goldfinch",
+      "korean": "새"
+    },
+    {
+      "label": "gondola",
+      "korean": "배"
+    },
+    {
+      "label": "goose",
+      "korean": "새"
+    },
+    {
+      "label": "gordon setter",
+      "korean": "개"
+    },
+    {
+      "label": "granny smith",
+      "korean": "사과"
+    },
+    {
+      "label": "great dane",
+      "korean": "개"
+    },
+    {
+      "label": "great grey owl",
+      "korean": "새"
+    },
+    {
+      "label": "great pyrenees",
+      "korean": "개"
+    },
+    {
+      "label": "greater swiss mountain dog",
+      "korean": "개"
+    },
+    {
+      "label": "groenendael",
+      "korean": "개"
+    },
+    {
+      "label": "groom",
+      "korean": "남자"
+    },
+    {
+      "label": "half track",
+      "korean": "자동차"
+    },
+    {
+      "label": "hornbill",
+      "korean": "새"
+    },
+    {
+      "label": "house finch",
+      "korean": "새"
+    },
+    {
+      "label": "hummingbird",
+      "korean": "새"
+    },
+    {
+      "label": "ibizan hound",
+      "korean": "개"
+    },
+    {
+      "label": "indigo bunting",
+      "korean": "새"
+    },
+    {
+      "label": "irish setter",
+      "korean": "개"
+    },
+    {
+      "label": "irish terrier",
+      "korean": "개"
+    },
+    {
+      "label": "irish water spaniel",
+      "korean": "개"
+    },
+    {
+      "label": "irish wolfhound",
+      "korean": "개"
+    },
+    {
+      "label": "italian greyhound",
+      "korean": "개"
+    },
+    {
+      "label": "jacamar",
+      "korean": "새"
+    },
+    {
+      "label": "japanese spaniel",
+      "korean": "개"
+    },
+    {
+      "label": "jay",
+      "korean": "새"
+    },
+    {
+      "label": "jeep",
+      "korean": "자동차"
+    },
+    {
+      "label": "junco",
+      "korean": "새"
+    },
+    {
+      "label": "keeshond",
+      "korean": "개"
+    },
+    {
+      "label": "kelpie",
+      "korean": "개"
+    },
+    {
+      "label": "kerry blue terrier",
+      "korean": "개"
+    },
+    {
+      "label": "kite",
+      "korean": "새"
+    },
+    {
+      "label": "komondor",
+      "korean": "개"
+    },
+    {
+      "label": "kuvasz",
+      "korean": "개"
+    },
+    {
+      "label": "labrador retriever",
+      "korean": "개"
+    },
+    {
+      "label": "lakeland terrier",
+      "korean": "개"
+    },
+    {
+      "label": "laptop",
+      "korean": "컴퓨터"
+    },
+    {
+      "label": "leonberg",
+      "korean": "개"
+    },
+    {
+      "label": "lhasa",
+      "korean": "개"
+    },
+    {
+      "label": "lifeboat",
+      "korean": "배"
+    },
+    {
+      "label": "limousine",
+      "korean": "자동차"
+    },
+    {
+      "label": "limpkin",
+      "korean": "새"
+    },
+    {
+      "label": "liner",
+      "korean": "배"
+    },
+    {
+      "label": "little blue heron",
+      "korean": "새"
+    },
+    {
+      "label": "loafer",
+      "korean": "신발"
+    },
+    {
+      "label": "lorikeet",
+      "korean": "새"
+    },
+    {
+      "label": "macaw",
+      "korean": "새"
+    },
+    {
+      "label": "magpie",
+      "korean": "새"
+    },
+    {
+      "label": "mailbag",
+      "korean": "가방"
+    },
+    {
+      "label": "malamute",
+      "korean": "개"
+    },
+    {
+      "label": "malinois",
+      "korean": "개"
+    },
+    {
+      "label": "maltese dog",
+      "korean": "개"
+    },
+    {
+      "label": "mexican hairless",
+      "korean": "개"
+    },
+    {
+      "label": "milk can",
+      "korean": "우유"
+    },
+    {
+      "label": "miniature pinscher",
+      "korean": "개"
+    },
+    {
+      "label": "miniature poodle",
+      "korean": "개"
+    },
+    {
+      "label": "miniature schnauzer",
+      "korean": "개"
+    },
+    {
+      "label": "minibus",
+      "korean": "버스"
+    },
+    {
+      "label": "minivan",
+      "korean": "자동차"
+    },
+    {
+      "label": "model t",
+      "korean": "자동차"
+    },
+    {
+      "label": "modem",
+      "korean": "컴퓨터"
+    },
+    {
+      "label": "monitor",
+      "korean": "컴퓨터"
+    },
+    {
+      "label": "moped",
+      "korean": "오토바이"
+    },
+    {
+      "label": "mortarboard",
+      "korean": "모자"
+    },
+    {
+      "label": "motor scooter",
+      "korean": "오토바이"
+    },
+    {
+      "label": "mountain bike",
+      "korean": "자전거"
+    },
+    {
+      "label": "mouse",
+      "korean": "컴퓨터"
+    },
+    {
+      "label": "moving van",
+      "korean": "자동차"
+    },
+    {
+      "label": "newfoundland",
+      "korean": "개"
+    },
+    {
+      "label": "norfolk terrier",
+      "korean": "개"
+    },
+    {
+      "label": "norwegian elkhound",
+      "korean": "개"
+    },
+    {
+      "label": "norwich terrier",
+      "korean": "개"
+    },
+    {
+      "label": "old english sheepdog",
+      "korean": "개"
+    },
+    {
+      "label": "ostrich",
+      "korean": "새"
+    },
+    {
+      "label": "otterhound",
+      "korean": "개"
+    },
+    {
+      "label": "papillon",
+      "korean": "개"
+    },
+    {
+      "label": "partridge",
+      "korean": "새"
+    },
+    {
+      "label": "passenger car",
+      "korean": "기차"
+    },
+    {
+      "label": "peacock",
+      "korean": "새"
+    },
+    {
+      "label": "pekinese",
+      "korean": "개"
+    },
+    {
+      "label": "pembroke",
+      "korean": "개"
+    },
+    {
+      "label": "persian cat",
+      "korean": "고양이"
+    },
+    {
+      "label": "pickup",
+      "korean": "자동차"
+    },
+    {
+      "label": "police van",
+      "korean": "경찰"
+    },
+    {
+      "label": "pomeranian",
+      "korean": "개"
+    },
+    {
+      "label": "prairie chicken",
+      "korean": "새"
+    },
+    {
+      "label": "pretzel",
+      "korean": "빵"
+    },
+    {
+      "label": "ptarmigan",
+      "korean": "새"
+    },
+    {
+      "label": "pug",
+      "korean": "개"
+    },
+    {
+      "label": "purse",
+      "korean": "가방"
+    },
+    {
+      "label": "quail",
+      "korean": "새"
+    },
+    {
+      "label": "racer",
+      "korean": "자동차"
+    },
+    {
+      "label": "red-breasted merganser",
+      "korean": "새"
+    },
+    {
+      "label": "redbone",
+      "korean": "개"
+    },
+    {
+      "label": "rhodesian ridgeback",
+      "korean": "개"
+    },
+    {
+      "label": "robin",
+      "korean": "새"
+    },
+    {
+      "label": "rocking chair",
+      "korean": "의자"
+    },
+    {
+      "label": "rottweiler",
+      "korean": "개"
+    },
+    {
+      "label": "ruffed grouse",
+      "korean": "새"
+    },
+    {
+      "label": "saint bernard",
+      "korean": "개"
+    },
+    {
+      "label": "saluki",
+      "korean": "개"
+    },
+    {
+      "label": "samoyed",
+      "korean": "개"
+    },
+    {
+      "label": "sandal",
+      "korean": "신발"
+    },
+    {
+      "label": "schipperke",
+      "korean": "개"
+    },
+    {
+      "label": "school bus",
+      "korean": "버스"
+    },
+    {
+      "label": "schooner",
+      "korean": "배"
+    },
+    {
+      "label": "scotch terrier",
+      "korean": "개"
+    },
+    {
+      "label": "scottish deerhound",
+      "korean": "개"
+    },
+    {
+      "label": "screen",
+      "korean": "컴퓨터"
+    },
+    {
+      "label": "scuba diver",
+      "korean": "사람"
+    },
+    {
+      "label": "sealyham terrier",
+      "korean": "개"
+    },
+    {
+      "label": "seashore",
+      "korean": "바다"
+    },
+    {
+      "label": "shetland sheepdog",
+      "korean": "개"
+    },
+    {
+      "label": "shih-tzu",
+      "korean": "개"
+    },
+    {
+      "label": "shower cap",
+      "korean": "모자"
+    },
+    {
+      "label": "siamese cat",
+      "korean": "고양이"
+    },
+    {
+      "label": "siberian husky",
+      "korean": "개"
+    },
+    {
+      "label": "silky terrier",
+      "korean": "개"
+    },
+    {
+      "label": "soft-coated wheaten terrier",
+      "korean": "개"
+    },
+    {
+      "label": "sombrero",
+      "korean": "모자"
+    },
+    {
+      "label": "speedboat",
+      "korean": "배"
+    },
+    {
+      "label": "spoonbill",
+      "korean": "새"
+    },
+    {
+      "label": "sports car",
+      "korean": "자동차"
+    },
+    {
+      "label": "staffordshire bullterrier",
+      "korean": "개"
+    },
+    {
+      "label": "standard poodle",
+      "korean": "개"
+    },
+    {
+      "label": "standard schnauzer",
+      "korean": "개"
+    },
+    {
+      "label": "steam locomotive",
+      "korean": "기차"
+    },
+    {
+      "label": "stethoscope",
+      "korean": "의사"
+    },
+    {
+      "label": "stopwatch",
+      "korean": "시계"
+    },
+    {
+      "label": "streetcar",
+      "korean": "기차"
+    },
+    {
+      "label": "submarine",
+      "korean": "배"
+    },
+    {
+      "label": "sulphur-crested cockatoo",
+      "korean": "새"
+    },
+    {
+      "label": "sunglasses",
+      "korean": "안경"
+    },
+    {
+      "label": "sussex spaniel",
+      "korean": "개"
+    },
+    {
+      "label": "tabby",
+      "korean": "고양이"
+    },
+    {
+      "label": "teapot",
+      "korean": "차"
+    },
+    {
+      "label": "tibetan mastiff",
+      "korean": "개"
+    },
+    {
+      "label": "tibetan terrier",
+      "korean": "개"
+    },
+    {
+      "label": "tiger cat",
+      "korean": "고양이"
+    },
+    {
+      "label": "toucan",
+      "korean": "새"
+    },
+    {
+      "label": "tow truck",
+      "korean": "자동차"
+    },
+    {
+      "label": "toy poodle",
+      "korean": "개"
+    },
+    {
+      "label": "toy terrier",
+      "korean": "개"
+    },
+    {
+      "label": "trailer truck",
+      "korean": "자동차"
+    },
+    {
+      "label": "tricycle",
+      "korean": "자전거"
+    },
+    {
+      "label": "trimaran",
+      "korean": "배"
+    },
+    {
+      "label": "trolleybus",
+      "korean": "버스"
+    },
+    {
+      "label": "umbrella",
+      "korean": "우산"
+    },
+    {
+      "label": "vizsla",
+      "korean": "개"
+    },
+    {
+      "label": "vulture",
+      "korean": "새"
+    },
+    {
+      "label": "walker hound",
+      "korean": "개"
+    },
+    {
+      "label": "wall clock",
+      "korean": "시계"
+    },
+    {
+      "label": "warplane",
+      "korean": "비행기"
+    },
+    {
+      "label": "water bottle",
+      "korean": "물"
+    },
+    {
+      "label": "water ouzel",
+      "korean": "새"
+    },
+    {
+      "label": "weimaraner",
+      "korean": "개"
+    },
+    {
+      "label": "welsh springer spaniel",
+      "korean": "개"
+    },
+    {
+      "label": "west highland white terrier",
+      "korean": "개"
+    },
+    {
+      "label": "whippet",
+      "korean": "개"
+    },
+    {
+      "label": "white stork",
+      "korean": "새"
+    },
+    {
+      "label": "wire-haired fox terrier",
+      "korean": "개"
+    },
+    {
+      "label": "yawl",
+      "korean": "배"
+    },
+    {
+      "label": "yellow lady's slipper",
+      "korean": "꽃"
+    },
+    {
+      "label": "yorkshire terrier",
+      "korean": "개"
+    }
+  ],
+  "notes": "Each 'label' is an ImageNet label from labels.txt, lowercased, matched exactly against the classifier's top-1 label. Multiple labels may map to the same Korean vocabulary word. Only labels the author is confident about are included, and every Korean word is from the app's core vocabulary list, so a matched word always exists in the vocabulary dataset. Labels with no entry here (the large majority of the 1001 ImageNet classes, e.g. wild animals, furniture, food and objects with no core-vocabulary equivalent) MUST NOT be guessed or approximated: the app must show the honest 'could not identify' state instead, prompting the user to try another object or use dictionary search. Never fabricate a Korean word for an unmatched label."
+}

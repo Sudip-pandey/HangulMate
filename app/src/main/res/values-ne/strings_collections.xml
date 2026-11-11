@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Collections -->
+    <string name="collections_title">मेरा सङ्ग्रहहरू</string>
+    <string name="collections_my_collections">मेरा सङ्ग्रहहरू</string>
+    <string name="collections_empty">तपाईंले अझै कुनै सङ्ग्रह बनाउनुभएको छैन। आफ्नो तरिकाले शब्दहरू समूहबद्ध गर्न एउटा बनाउनुहोस् — जस्तै, EPS क्रियापदहरू वा सधैं झुक्किने शब्दहरू।</string>
+    <string name="collections_new">नयाँ सङ्ग्रह</string>
+    <string name="collections_create_title">नयाँ सङ्ग्रह</string>
+    <string name="collections_name_hint">सङ्ग्रहको नाम</string>
+    <string name="collections_create">बनाउनुहोस्</string>
+    <string name="collections_rename_title">सङ्ग्रहको नाम बदल्नुहोस्</string>
+    <string name="collections_rename">बदल्नुहोस्</string>
+    <string name="collections_rename_action">सङ्ग्रहको नाम बदल्नुहोस्</string>
+    <string name="collections_delete_title">सङ्ग्रह मेटाउने?</string>
+    <string name="collections_delete_message">“%1$s” मेटिनेछ। त्यसभित्रका शब्दहरू तपाईंको शब्दकोशमै रहन्छन्।</string>
+    <string name="collections_delete">मेटाउनुहोस्</string>
+    <string name="collections_delete_action">सङ्ग्रह मेटाउनुहोस्</string>
+    <string name="collections_no_words">यस सङ्ग्रहमा अझै कुनै शब्द छैन। शब्दको विवरण पृष्ठबाट शब्दहरू थप्न सक्नुहुन्छ।</string>
+    <string name="collections_remove_word">सङ्ग्रहबाट हटाउनुहोस्</string>
+    <string name="collections_show_words">शब्दहरू देखाउनुहोस्</string>
+    <string name="collections_hide_words">शब्दहरू लुकाउनुहोस्</string>
+    <plurals name="collections_words_count">
+        <item quantity="one">%d शब्द</item>
+        <item quantity="other">%d शब्दहरू</item>
+    </plurals>
+
+    <!-- Statistics -->
+    <string name="stats_streak">लगातार दिन</string>
+    <string name="stats_streak_days">%1$d दिन</string>
+    <string name="stats_learned">सिकिएका शब्दहरू</string>
+    <string name="stats_mastered">पक्का भएका शब्दहरू</string>
+    <string name="stats_total_words">कुल शब्दहरू</string>
+    <string name="stats_quizzes">दिइएका क्विजहरू</string>
+
+    <!-- Backup &amp; restore -->
+    <string name="backup_title">ब्याकअप र रिस्टोर</string>
+    <string name="backup_export">ब्याकअप निर्यात गर्नुहोस्</string>
+    <string name="backup_import">ब्याकअप आयात गर्नुहोस्</string>
+    <string name="backup_save_local">यस डिभाइसमा ब्याकअप सेभ गर्नुहोस्</string>
+    <string name="backup_local_saved">यस डिभाइसमा सेभ गरिएको: %1$s</string>
+    <string name="backup_local_none">यस डिभाइसमा अझै कुनै ब्याकअप सेभ गरिएको छैन।</string>
+    <string name="backup_note">ब्याकअपहरू तपाईंको डिभाइसमा नै रहन्छन्। निर्यातले तपाईंले जहाँ राखे पनि हुने प्रतिलिपि सेभ गर्छ; आयातले ब्याकअप फाइलबाट शब्दहरू र सिकाइ प्रगति फर्काउँछ।</string>
+    <string name="backup_export_done">ब्याकअप निर्यात भयो।</string>
+    <string name="backup_export_failed">निर्यात असफल भयो। कृपया फेरि प्रयास गर्नुहोस्।</string>
+    <string name="backup_import_title">आयात नतिजा</string>
+    <string name="backup_import_summary">थपिए: %1$d · छोडिए: %2$d · त्रुटि: %3$d</string>
+    <string name="backup_import_failed">त्यो फाइल पढ्न सकिएन। यो HangulMate ब्याकअप हो भनी निश्चित गर्नुहोस्।</string>
+    <string name="backup_import_errors">त्रुटिहरू:\n%1$s</string>
+
+    <!-- Reset progress -->
+    <string name="reset_title">प्रगति रिसेट</string>
+    <string name="reset_button">प्रगति रिसेट गर्नुहोस्</string>
+    <string name="reset_confirm_title">सबै प्रगति रिसेट गर्ने?</string>
+    <string name="reset_confirm_message">यसले तपाईंको सिकाइ प्रगति, मनपर्ने शब्दहरू, खोज इतिहास, क्विज नतिजा र सङ्ग्रहहरू हटाउँछ। तपाईंका शब्दहरू — तपाईंले थपेका शब्दहरू समेत — यथावत रहन्छन्।</string>
+    <string name="reset_done">प्रगति रिसेट भयो।</string>
+
+    <!-- Reminders -->
+    <string name="settings_reminders_note_live">तपाईंले छानेको समयमा समीक्षा गर्न सूचना आउनेछ। सूचना अनुमति दिइएको अवस्थामा मात्र यो काम गर्छ।</string>
+    <string name="reminder_permission_title">सूचनाहरू बन्द छन्</string>
+    <string name="reminder_permission_message">अध्ययन सम्झाउन HangulMate लाई सूचना अनुमति चाहिन्छ। तपाईंले HangulMate को प्रणाली सेटिङहरूमा गएर यसलाई खोल्न सक्नुहुन्छ।</string>
+    <string name="reminder_open_settings">सेटिङहरू खोल्नुहोस्</string>
+    <string name="reminder_notification_text">आजको कोरियन शब्दहरू दोहोर्याउनुहोस्</string>
+    <string name="reminder_channel_name">अध्ययन सम्झाउनेहरू</string>
+
+    <string name="common_ok">ठीक छ</string>
+</resources>

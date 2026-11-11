@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HangulMate</string>
+
+    <string name="tab_home">होम</string>
+    <string name="tab_dictionary">शब्दकोश</string>
+    <string name="tab_camera">क्यामेरा</string>
+    <string name="tab_practice">अभ्यास</string>
+    <string name="tab_profile">प्रोफाइल</string>
+
+    <string name="search">खोज्नुहोस्</string>
+    <string name="favorite">मनपर्ने</string>
+    <string name="learn">सिक्नुहोस्</string>
+    <string name="difficult">कठिन</string>
+    <string name="revise">दोहोर्‍याउनुहोस्</string>
+    <string name="settings">सेटिङहरू</string>
+    <string name="save">सेभ गर्नुहोस्</string>
+    <string name="cancel">रद्द गर्नुहोस्</string>
+    <string name="retry">पुनः प्रयास गर्नुहोस्</string>
+    <string name="share">सेयर गर्नुहोस्</string>
+    <string name="copy">कपी गर्नुहोस्</string>
+
+    <string name="home_greeting">안녕하세요! आज केही नयाँ कोरियाली शब्दहरू सिकौं।</string>
+    <string name="home_daily_goal">आजको लक्ष्य: %1$d शब्दहरू</string>
+    <string name="home_empty_state">तपाईंले अझै सिक्न सुरु गर्नुभएको छैन। शब्दकोशबाट पहिलो शब्द छान्नुहोस्।</string>
+
+    <string name="dictionary_type_to_search">खोज्न सुरु गर्न माथि लेख्नुहोस्।</string>
+    <string name="dictionary_no_data_yet">शब्दहरू अझै लोड भएका छैनन्। शब्दकोश सुविधा चाँडै आउँदैछ।</string>
+
+    <string name="word_detail_title">शब्द विवरण</string>
+    <string name="word_detail_empty_state">यस शब्दको विवरण अझै उपलब्ध छैन (id: %1$s)।</string>
+
+    <string name="camera_title">क्यामेरा स्क्यान</string>
+    <string name="camera_permission_rationale">HangulMate ले तपाईंको क्यामेराबाट कोरियाली शब्दहरू स्क्यान गर्छ। तपाईंका फोटोहरू डिभाइसबाट बाहिर पठाइँदैनन्। जारी राख्न क्यामेरा अनुमति आवश्यक छ।</string>
+    <string name="camera_grant_permission">क्यामेरा अनुमति दिनुहोस्</string>
+    <string name="camera_permission_granted">क्यामेरा अनुमति दिइएको छ।</string>
+    <string name="camera_mode_scan_text">पाठ स्क्यान</string>
+    <string name="camera_mode_scan_object">वस्तु स्क्यान</string>
+    <string name="camera_scan_text_coming">पाठ स्क्यान सुविधा चाँडै आउँदैछ — क्यामेराले देखाइएका कोरियाली अक्षरहरू पढ्नेछ र तिनको अर्थ नेपालीमा बताउनेछ।</string>
+    <string name="camera_scan_object_coming">वस्तु स्क्यान सुविधा चाँडै आउँदैछ — क्यामेराले देखाइएका वस्तुहरू चिन्नेछ र तिनको कोरियाली नाम बताउनेछ।</string>
+
+    <string name="practice_title">अभ्यास</string>
+    <string name="practice_empty_state">तपाईंले अझै कुनै शब्द सिक्नुभएको छैन। केही शब्द सिकेपछि यहाँ अभ्यास र दोहोर्‍याउने प्रश्नहरू देखिनेछन्।</string>
+
+    <string name="profile_title">प्रोफाइल</string>
+
+    <string name="settings_daily_goal">दैनिक लक्ष्य</string>
+    <string name="settings_daily_goal_value">%1$d शब्दहरू</string>
+    <string name="decrease">घटाउनुहोस्</string>
+    <string name="increase">बढाउनुहोस्</string>
+
+    <string name="settings_language">भाषा</string>
+    <string name="language_nepali">नेपाली</string>
+    <string name="language_english">English</string>
+
+    <string name="settings_theme">थिम</string>
+    <string name="theme_system">प्रणाली अनुसार</string>
+    <string name="theme_light">उज्यालो</string>
+    <string name="theme_dark">अँध्यारो</string>
+
+    <string name="settings_tts">आवाज (TTS)</string>
+    <string name="settings_tts_rate">बोल्ने गति: %1$.1f</string>
+    <string name="settings_tts_pitch">स्वर: %1$.1f</string>
+    <string name="settings_tts_test_voice">आवाज परीक्षण गर्नुहोस्</string>
+    <string name="tts_missing_voice">तपाईंको डिभाइसमा कोरियाली आवाज भेटिएन। कृपया Google Text-to-Speech मा कोरियाली आवाज इन्स्टल गर्नुहोस्।</string>
+    <string name="tts_error">आवाज इन्जिन सुरु हुन सकेन।</string>
+    <string name="tts_checking">आवाज जाँच हुँदैछ…</string>
+
+    <string name="settings_reminders">सम्झाउनुहोस्</string>
+    <string name="settings_reminders_enable">दैनिक अध्ययनको लागि सम्झाउनुहोस्</string>
+    <string name="settings_reminder_hour">%1$d:00</string>
+    <string name="settings_reminders_note">तपाईंको रिमाइन्डर समय यहाँ सेभ हुन्छ। वास्तविक सूचना सुविधा सिकाइ सुविधासँगै आउनेछ।</string>
+
+    <string name="settings_statistics">तथ्याङ्क</string>
+    <string name="statistics_empty_state">तपाईंले सिक्न सुरु गरेपछि यहाँ तथ्याङ्क देखिनेछ।</string>
+
+    <string name="settings_about">बारेमा</string>
+    <string name="settings_version">संस्करण %1$s</string>
+    <string name="offline_notice">तपाईं अफलाइन हुनुहुन्छ — HangulMate अफलाइन नै काम गर्छ। तपाईंको डाटा डिभाइसबाट बाहिर जाँदैन।</string>
+</resources>

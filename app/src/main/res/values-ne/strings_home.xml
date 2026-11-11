@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- समयअनुसार अभिवादन -->
+    <string name="home_greeting_morning">शुभप्रभात — आज केही कोरियाली शब्दहरू सिकौं।</string>
+    <string name="home_greeting_afternoon">शुभ दिउँसो — आज केही कोरियाली शब्दहरू सिकौं।</string>
+    <string name="home_greeting_evening">शुभ साँझ — आज केही कोरियाली शब्दहरू सिकौं।</string>
+    <string name="home_greeting_night">शुभ रात्रि — सुत्नुअघि केही शब्दहरू?</string>
+
+    <string name="home_search_hint">कोरियाली, नेपाली वा अङ्ग्रेजी खोज्नुहोस्…</string>
+    <string name="home_camera_content_desc">क्यामेराबाट स्क्यान गर्नुहोस्</string>
+    <string name="home_open_dictionary">शब्दकोश खोल्नुहोस्</string>
+
+    <string name="home_daily_goal_title">आजको लक्ष्य</string>
+    <string name="home_goal_progress">आज %1$d / %2$d शब्द सिक्नुभयो</string>
+    <string name="home_reviewed_today">आज %1$d शब्द दोहोर्‍याउनुभयो</string>
+
+    <string name="home_streak">लगातार दिन</string>
+    <string name="home_learned">सिकेका</string>
+    <string name="home_mastered">पारंगत</string>
+    <string name="home_remaining">सिक्न बाँकी</string>
+
+    <string name="home_word_of_the_day">आजको शब्द</string>
+    <string name="home_today_new_words">आजका नयाँ शब्दहरू</string>
+    <string name="home_no_new_words">आजका लागि नयाँ शब्द छैनन् — राम्रो!</string>
+    <string name="home_continue_learning">सिकाइ जारी राख्नुहोस्</string>
+    <string name="home_words_due">%1$d शब्द दोहोर्‍याउन बाँकी</string>
+    <string name="home_review_now">अहिले दोहोर्‍याउनुहोस्</string>
+
+    <string name="home_eps_practice">EPS अभ्यास</string>
+    <string name="home_eps_practice_desc">EPS-TOPIK परीक्षाका लागि क्विज र फ्ल्यासकार्डबाट दोहोर्‍याउनुहोस्।</string>
+    <string name="home_start_practice">अभ्यास सुरु गर्नुहोस्</string>
+
+    <string name="home_recently_searched">भर्खरै खोजिएका</string>
+    <string name="home_weak_words">दोहोर्‍याउनुपर्ने शब्दहरू</string>
+
+    <string name="home_preparing">शब्दावली तयार हुँदैछ…</string>
+    <string name="home_seed_failed">शब्दावली लोड हुन सकेन। अर्को पटक एप खोल्दा पुनः प्रयास गरिनेछ।</string>
+</resources>

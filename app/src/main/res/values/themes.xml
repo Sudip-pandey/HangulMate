@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The app UI is Jetpack Compose; this theme only provides the window
+     baseline (no action bar). Colours live in ui/theme/Color.kt. -->
+<resources>
+    <style name="Theme.HangulMate" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

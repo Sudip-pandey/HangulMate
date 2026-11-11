@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Collections -->
+    <string name="collections_title">My Collections</string>
+    <string name="collections_my_collections">My Collections</string>
+    <string name="collections_empty">You haven\'t created any collections yet. Create one to group words your way — for example, EPS verbs or words you keep mixing up.</string>
+    <string name="collections_new">New collection</string>
+    <string name="collections_create_title">New collection</string>
+    <string name="collections_name_hint">Collection name</string>
+    <string name="collections_create">Create</string>
+    <string name="collections_rename_title">Rename collection</string>
+    <string name="collections_rename">Rename</string>
+    <string name="collections_rename_action">Rename collection</string>
+    <string name="collections_delete_title">Delete collection?</string>
+    <string name="collections_delete_message">“%1$s” will be deleted. The words in it stay in your dictionary.</string>
+    <string name="collections_delete">Delete</string>
+    <string name="collections_delete_action">Delete collection</string>
+    <string name="collections_no_words">No words in this collection yet. You can add words from a word\'s detail screen.</string>
+    <string name="collections_remove_word">Remove from collection</string>
+    <string name="collections_show_words">Show words</string>
+    <string name="collections_hide_words">Hide words</string>
+    <plurals name="collections_words_count">
+        <item quantity="one">%d word</item>
+        <item quantity="other">%d words</item>
+    </plurals>
+
+    <!-- Statistics -->
+    <string name="stats_streak">Day streak</string>
+    <string name="stats_streak_days">%1$d days</string>
+    <string name="stats_learned">Words learned</string>
+    <string name="stats_mastered">Words mastered</string>
+    <string name="stats_total_words">Total words</string>
+    <string name="stats_quizzes">Quizzes taken</string>
+
+    <!-- Backup &amp; restore -->
+    <string name="backup_title">Backup &amp; Restore</string>
+    <string name="backup_export">Export backup</string>
+    <string name="backup_import">Import backup</string>
+    <string name="backup_save_local">Save a backup on this device</string>
+    <string name="backup_local_saved">Saved on this device: %1$s</string>
+    <string name="backup_local_none">No backup saved on this device yet.</string>
+    <string name="backup_note">Backups stay on your device. Export saves a copy you can keep anywhere; import restores words and learning progress from a backup file.</string>
+    <string name="backup_export_done">Backup exported.</string>
+    <string name="backup_export_failed">Export failed. Please try again.</string>
+    <string name="backup_import_title">Import result</string>
+    <string name="backup_import_summary">Added: %1$d · Skipped: %2$d · Errors: %3$d</string>
+    <string name="backup_import_failed">Could not read that file. Make sure it is a HangulMate backup.</string>
+    <string name="backup_import_errors">Errors:\n%1$s</string>
+
+    <!-- Reset progress -->
+    <string name="reset_title">Reset Progress</string>
+    <string name="reset_button">Reset progress</string>
+    <string name="reset_confirm_title">Reset all progress?</string>
+    <string name="reset_confirm_message">This clears your learning progress, favorites, search history, quiz results and collections. Your vocabulary words — including words you added — stay untouched.</string>
+    <string name="reset_done">Progress reset.</string>
+
+    <!-- Reminders -->
+    <string name="settings_reminders_note_live">A notification reminds you to review at the time you choose. It only works when notification permission is allowed.</string>
+    <string name="reminder_permission_title">Notifications are off</string>
+    <string name="reminder_permission_message">HangulMate needs notification permission to remind you to study. You can turn it on in the system settings for HangulMate.</string>
+    <string name="reminder_open_settings">Open Settings</string>
+    <string name="reminder_notification_text">आजको कोरियन शब्दहरू दोहोर्याउनुहोस्</string>
+    <string name="reminder_channel_name">Study reminders</string>
+
+    <string name="common_ok">OK</string>
+</resources>

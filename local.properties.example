@@ -1,0 +1,3 @@
+# Copy this file to local.properties and adjust the path if your SDK lives elsewhere.
+# Do NOT commit a real local.properties.
+sdk.dir=/home/hatch/android/sdk

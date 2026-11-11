@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Time-of-day greetings (Nepali-first UI; English fallback here). -->
+    <string name="home_greeting_morning">Good morning — let\'s learn some Korean today.</string>
+    <string name="home_greeting_afternoon">Good afternoon — let\'s learn some Korean today.</string>
+    <string name="home_greeting_evening">Good evening — let\'s learn some Korean today.</string>
+    <string name="home_greeting_night">Good night — a few words before bed?</string>
+
+    <string name="home_search_hint">Search Korean, Nepali or English…</string>
+    <string name="home_camera_content_desc">Scan with camera</string>
+    <string name="home_open_dictionary">Open dictionary</string>
+
+    <string name="home_daily_goal_title">Today\'s goal</string>
+    <string name="home_goal_progress">%1$d / %2$d words learned today</string>
+    <string name="home_reviewed_today">%1$d words reviewed today</string>
+
+    <string name="home_streak">Day streak</string>
+    <string name="home_learned">Learned</string>
+    <string name="home_mastered">Mastered</string>
+    <string name="home_remaining">To learn</string>
+
+    <string name="home_word_of_the_day">Word of the day</string>
+    <string name="home_today_new_words">Today\'s new words</string>
+    <string name="home_no_new_words">No new words for today — great job!</string>
+    <string name="home_continue_learning">Continue learning</string>
+    <string name="home_words_due">%1$d words due for review</string>
+    <string name="home_review_now">Review now</string>
+
+    <string name="home_eps_practice">EPS practice</string>
+    <string name="home_eps_practice_desc">Revise with quizzes and flashcards for the EPS-TOPIK exam.</string>
+    <string name="home_start_practice">Start practice</string>
+
+    <string name="home_recently_searched">Recently searched</string>
+    <string name="home_weak_words">Words to revise</string>
+
+    <string name="home_preparing">Preparing vocabulary…</string>
+    <string name="home_seed_failed">Vocabulary could not be loaded. It will be retried the next time you open the app.</string>
+</resources>

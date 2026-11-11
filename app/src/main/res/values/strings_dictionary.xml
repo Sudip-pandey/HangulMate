@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dictionary_search_hint">Search Korean, Nepali, English…</string>
+    <string name="dictionary_clear_search">Clear search</string>
+    <string name="dictionary_favorites_only">Favorites only</string>
+    <string name="dictionary_all_topics">All</string>
+    <string name="dictionary_recent_searches">Recent searches</string>
+    <string name="dictionary_clear_history">Clear history</string>
+    <string name="dictionary_results_count">%1$d words</string>
+
+    <string name="dictionary_no_query">Type above to search in Korean, Nepali or English.</string>
+    <string name="dictionary_no_results">No match — try another spelling.</string>
+    <string name="dictionary_empty_database">No words loaded yet. Vocabulary is still being prepared.</string>
+    <string name="dictionary_no_favorites">No favorites yet. Tap the heart on a word to save it here.</string>
+    <string name="dictionary_no_topic_words">No words in this topic yet.</string>
+
+    <!-- Part of speech labels -->
+    <string name="pos_noun">Noun</string>
+    <string name="pos_verb">Verb</string>
+    <string name="pos_adjective">Adjective</string>
+    <string name="pos_adverb">Adverb</string>
+    <string name="pos_expression">Expression</string>
+    <string name="pos_number">Number</string>
+    <string name="pos_pronoun">Pronoun</string>
+    <string name="pos_particle">Particle</string>
+    <string name="pos_interjection">Interjection</string>
+
+    <!-- EPS-TOPIK importance -->
+    <string name="eps_high">EPS: High</string>
+    <string name="eps_medium">EPS: Medium</string>
+    <string name="eps_low">EPS: Low</string>
+
+    <!-- Word detail -->
+    <string name="word_detail_loading">Loading word…</string>
+    <string name="word_detail_not_found">This word could not be found.</string>
+    <string name="word_detail_listen">Listen</string>
+    <string name="word_detail_nepali_meaning">Nepali meaning</string>
+    <string name="word_detail_english_meaning">English meaning</string>
+    <string name="word_detail_difficulty">Level %1$d</string>
+    <string name="word_detail_example">Example</string>
+    <string name="word_detail_your_progress">Your progress</string>
+    <string name="word_detail_mark_learned">Mark as learned</string>
+    <string name="word_detail_mark_difficult">Mark as difficult</string>
+    <string name="word_detail_remembered">I remembered</string>
+    <string name="word_detail_forgot">I forgot</string>
+    <string name="word_detail_similar">Similar</string>
+    <string name="word_detail_opposite">Opposite</string>
+    <string name="word_detail_confusing">Easily confused</string>
+    <string name="word_detail_previous">Previous</string>
+    <string name="word_detail_next">Next</string>
+</resources>

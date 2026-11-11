@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dictionary_search_hint">कोरियाली, नेपाली, अङ्ग्रेजी खोज्नुहोस्…</string>
+    <string name="dictionary_clear_search">खोजी हटाउनुहोस्</string>
+    <string name="dictionary_favorites_only">मनपर्ने मात्र</string>
+    <string name="dictionary_all_topics">सबै</string>
+    <string name="dictionary_recent_searches">भर्खरैका खोजीहरू</string>
+    <string name="dictionary_clear_history">इतिहास हटाउनुहोस्</string>
+    <string name="dictionary_results_count">%1$d शब्द</string>
+
+    <string name="dictionary_no_query">माथि लेखेर कोरियाली, नेपाली वा अङ्ग्रेजीमा खोज्नुहोस्।</string>
+    <string name="dictionary_no_results">कुनै मिल्दो शब्द भेटिएन — अर्को हिज्जे प्रयास गर्नुहोस्।</string>
+    <string name="dictionary_empty_database">अहिलेसम्म कुनै शब्द लोड भएका छैनन्। शब्दावली तयार हुँदैछ।</string>
+    <string name="dictionary_no_favorites">अहिलेसम्म मनपर्ने शब्द छैनन्। शब्दमा मुटु थिचेर यहाँ सेभ गर्नुहोस्।</string>
+    <string name="dictionary_no_topic_words">यस विषयमा अहिलेसम्म कुनै शब्द छैन।</string>
+
+    <!-- शब्दभेद -->
+    <string name="pos_noun">नाम</string>
+    <string name="pos_verb">क्रिया</string>
+    <string name="pos_adjective">विशेषण</string>
+    <string name="pos_adverb">क्रियाविशेषण</string>
+    <string name="pos_expression">अभिव्यक्ति</string>
+    <string name="pos_number">संख्या</string>
+    <string name="pos_pronoun">सर्वनाम</string>
+    <string name="pos_particle">विभक्ति</string>
+    <string name="pos_interjection">विस्मयादिबोधक</string>
+
+    <!-- EPS-TOPIK महत्त्व -->
+    <string name="eps_high">EPS: उच्च</string>
+    <string name="eps_medium">EPS: मध्यम</string>
+    <string name="eps_low">EPS: न्यून</string>
+
+    <!-- शब्द विवरण -->
+    <string name="word_detail_loading">शब्द लोड हुँदैछ…</string>
+    <string name="word_detail_not_found">यो शब्द भेटिएन।</string>
+    <string name="word_detail_listen">सुन्नुहोस्</string>
+    <string name="word_detail_nepali_meaning">नेपाली अर्थ</string>
+    <string name="word_detail_english_meaning">अङ्ग्रेजी अर्थ</string>
+    <string name="word_detail_difficulty">स्तर %1$d</string>
+    <string name="word_detail_example">उदाहरण</string>
+    <string name="word_detail_your_progress">तपाईंको प्रगति</string>
+    <string name="word_detail_mark_learned">सिकियो भनेर चिन्ह लगाउनुहोस्</string>
+    <string name="word_detail_mark_difficult">कठिन भनेर चिन्ह लगाउनुहोस्</string>
+    <string name="word_detail_remembered">सम्झिएँ</string>
+    <string name="word_detail_forgot">बिर्सिएँ</string>
+    <string name="word_detail_similar">मिल्दोजुल्दा</string>
+    <string name="word_detail_opposite">विपरीत</string>
+    <string name="word_detail_confusing">अलमलिने</string>
+    <string name="word_detail_previous">अघिल्लो</string>
+    <string name="word_detail_next">अर्को</string>
+</resources>
