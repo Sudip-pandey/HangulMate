@@ -15,11 +15,16 @@ import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 /**
  * Search behaviour tests against the real repository implementation.
  * Covers all four match fields, empty-query behaviour and ordering.
  */
+@RunWith(RobolectricTestRunner::class)
+@Config(sdk = [34])
 class SearchTest {
 
     private lateinit var db: HangulMateDatabase

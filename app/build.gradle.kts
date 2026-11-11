@@ -44,6 +44,13 @@ android {
         buildConfig = true
     }
 
+    // Robolectric needs the app's Android resources packaged for unit
+    // tests (the test classes run the Room database against a real
+    // Application context via ApplicationProvider).
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
+
     // Room schema export is enabled in HangulMateDatabase (exportSchema = true).
     ksp {
         arg("room.schemaLocation", "$projectDir/schemas")
@@ -86,8 +93,8 @@ dependencies {
     implementation(libs.androidx.camerax.lifecycle)
     implementation(libs.androidx.camerax.view)
 
-    // ML Kit Korean text recognition (on-device; the Korean model is the one
-    // optional download — see README.md). TFLite model is bundled in assets/ml/.
+    // ML Kit Korean text recognition (on-device, bundled model — no
+    // download). TFLite model is bundled in assets/ml/.
     implementation(libs.mlkit.text.recognition.korean)
     implementation(libs.tensorflow.lite)
     implementation(libs.tensorflow.lite.support)
@@ -95,6 +102,11 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.androidx.test.core)
     testImplementation(libs.kotlinx.coroutines.test)
+    // The Room tests build a real in-memory database via
+    // ApplicationProvider.getApplicationContext(), which only works under
+    // Robolectric in a local JVM unit test — without it every DB test
+    // fails with "No instrumentation registered!".
+    testImplementation(libs.robolectric)
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.androidx.test.espresso.core)
     androidTestImplementation(libs.androidx.compose.ui.test.manifest)
