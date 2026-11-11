@@ -141,7 +141,7 @@ object DatabaseModule {
     fun provideQuizDao(database: HangulMateDatabase) = database.quizDao()
 
     @Provides
-    fun provideDailyActivityDao(database: HangulmateDatabase) = database.dailyActivityDao()
+    fun provideDailyActivityDao(database: HangulMateDatabase) = database.dailyActivityDao()
 
     @Provides
     fun provideCollectionDao(database: HangulMateDatabase) = database.collectionDao()
