@@ -1,16 +1,38 @@
-name: Android CI
+name: Android Build
+
+# Canonical HangulMate workflow (renamed from android.yml — there is exactly
+# one workflow file in this repo; do not add a second competing one).
+# What it does, in order:
+#   1. Checks out the code.
+#   2. Sets up JDK 17 (Temurin) and the Android SDK (API 34 + build-tools).
+#   3. Runs the unit tests (with Gradle caching).
+#   4. Builds the debug APK.
+#   5. Uploads the APK as a downloadable artifact.
+# It runs automatically on every push / pull request to main, and can also be
+# started by hand (Actions tab -> Android Build -> Run workflow).
+# No signing keys or secrets are used or needed: the debug APK is unsigned
+# and installs directly on a phone for testing.
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      # gradlew loses its executable bit when the project is pushed from
+      # Windows (repo mode 100644 instead of 100755) — that alone failed
+      # CI runs #1 and #2 with exit code 126 before Gradle even started.
+      # Restoring the bit here makes the build independent of the stored mode.
+      - name: Make gradlew executable
+        run: chmod +x gradlew
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -18,16 +40,47 @@ jobs:
           java-version: "17"
           distribution: "temurin"
 
-      # Gradle wrapper (gradlew / gradle-wrapper.jar / gradle-wrapper.properties)
-      # is committed in the repo (Gradle 8.7, bin distribution).
-      - name: Build debug APK
-        run: ./gradlew assembleDebug
+      # ubuntu-latest runners ship an Android SDK, but the exact packages are
+      # not guaranteed, so install the API level and build-tools this project
+      # needs (compileSdk 34) explicitly.
+      - name: Set up Android SDK
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" \
+            "platforms;android-34" "build-tools;34.0.0" > /dev/null
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null <<'EOF'
+          y
+          y
+          y
+          y
+          y
+          y
+          EOF
+          echo "ANDROID_HOME=$ANDROID_HOME" >> "$GITHUB_ENV"
+
+      # Official Gradle action: dependency + wrapper caching, no extra config.
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v3
 
       - name: Run unit tests
-        run: ./gradlew testDebugUnitTest
+        run: ./gradlew testDebugUnitTest --stacktrace
+
+      # Test HTML/XML reports are only useful when tests fail — upload them
+      # then, so a red run still tells you exactly which test broke.
+      - name: Upload test reports (on failure only)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hangulmate-test-reports
+          path: |
+            app/build/test-results/testDebugUnitTest/
+            app/build/reports/tests/testDebugUnitTest/
+
+      - name: Build debug APK
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
           name: hangulmate-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
