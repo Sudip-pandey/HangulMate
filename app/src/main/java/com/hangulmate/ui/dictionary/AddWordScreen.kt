@@ -2,6 +2,7 @@ package com.hangulmate.ui.dictionary
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -33,6 +34,7 @@ import com.hangulmate.ui.theme.Spacing
  * screen ([onWordSaved]). Nothing is invented: romanization, examples
  * and syllables stay empty until the user adds them elsewhere.
  */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun AddWordScreen(
     onWordSaved: (String) -> Unit,
