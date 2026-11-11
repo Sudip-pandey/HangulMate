@@ -77,6 +77,10 @@ dependencies {
 
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+    // Room's KSP compiler generates HangulMateDatabase_Impl; without it
+    // Room fails at runtime ("Cannot find implementation") even though
+    // compilation succeeds.
+    ksp(libs.androidx.room.compiler)
 
     // Room is declared here so the data layer can use it; entities/DAOs/database
     // and repository bindings are owned by the data-layer agent.
