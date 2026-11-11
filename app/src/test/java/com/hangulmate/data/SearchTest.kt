@@ -7,6 +7,7 @@ import com.hangulmate.data.local.VocabularyEntity
 import com.hangulmate.data.local.VocabularyTranslationEntity
 import com.hangulmate.data.repository.VocabularyRepositoryImpl
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.withTimeoutOrNull
 import org.junit.After
@@ -115,9 +116,12 @@ class SearchTest {
     fun emptyQuery_returnsEmpty_neverWholeTable() = runTest {
         seed()
         // search("") returns an empty Flow (no emission at all).
-        val emitted = withTimeoutOrNull(500) { repo.search("").first() }
+        // firstOrNull() is required here: .first() throws
+        // NoSuchElementException on a flow that completes without
+        // emitting, instead of waiting for a timeout.
+        val emitted = withTimeoutOrNull(500) { repo.search("").firstOrNull() }
         assertNull(emitted)
-        val blankEmitted = withTimeoutOrNull(500) { repo.search("   ").first() }
+        val blankEmitted = withTimeoutOrNull(500) { repo.search("   ").firstOrNull() }
         assertNull(blankEmitted)
     }
 
