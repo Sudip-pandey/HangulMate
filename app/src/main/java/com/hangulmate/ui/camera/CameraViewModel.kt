@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory
 import android.graphics.ImageDecoder
 import android.net.Uri
 import android.os.Build
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.mlkit.common.MlKitException
@@ -56,9 +57,12 @@ sealed interface OcrUiState {
 
     data class Success(val result: OcrResult) : OcrUiState
 
-    /** ML Kit could not run (the bundled model failed to initialise).
-     * Manual text entry is the fallback. */
-    data object Unavailable : OcrUiState
+    /** ML Kit could not run on a real capture (the bundled model
+     * failed to initialise). [detail] carries the underlying
+     * exception (class + message) so the next report shows the cause
+     * instead of only the generic banner. Manual text entry is the
+     * fallback. */
+    data class Unavailable(val detail: String? = null) : OcrUiState
 
     data class Error(val message: String) : OcrUiState
 }
@@ -102,7 +106,9 @@ data class CameraUiState(
     val ocrModelReady: Boolean = false,
     /** True while the one-time recognizer warm-up is running. */
     val ocrModelPreparing: Boolean = false,
-    /** True when the warm-up failed — OCR is unavailable, manual entry stays. */
+    /** True when a real capture failed because the model could not
+     * start — OCR is unavailable, manual entry stays. A failed
+     * warm-up alone never sets this (see init). */
     val ocrModelFailed: Boolean = false,
     val ttsAvailable: Boolean = false,
     /** One-shot notice (a string resource id), cleared after display. */
@@ -135,14 +141,19 @@ class CameraViewModel @Inject constructor(
         // OCR unavailable — manual text entry still works.
         viewModelScope.launch {
             _state.update { it.copy(ocrModelPreparing = true) }
-            val ready = withContext(Dispatchers.Default) {
+            val warmUpResult = withContext(Dispatchers.Default) {
                 ocrService.warmUp()
             }
             _state.update {
                 it.copy(
                     ocrModelPreparing = false,
-                    ocrModelReady = ready,
-                    ocrModelFailed = !ready,
+                    // A failed warm-up does NOT mean OCR is unavailable:
+                    // the probe can fail on its own while real captures
+                    // still work, so Capture stays offered. Only a
+                    // failed recognition on a real photo (see runOcr)
+                    // marks the model failed.
+                    ocrModelReady = warmUpResult.getOrDefault(false),
+                    ocrModelFailed = false,
                 )
             }
         }
@@ -238,17 +249,23 @@ class CameraViewModel @Inject constructor(
                         ocrState = OcrUiState.Success(ocr),
                         extractedText = ocr.fullText,
                         ocrModelReady = true,
+                        ocrModelFailed = false,
                     )
                 }
                 analyzeText(ocr.fullText)
             }.onFailure { error ->
+                val detail = "${error.javaClass.simpleName}: ${error.message ?: "no message"}"
+                Log.e("HangulMateOcr", "OCR recognition failed on capture: $detail", error)
                 _state.update {
                     it.copy(
                         ocrState = if (error is MlKitException) {
-                            OcrUiState.Unavailable
+                            OcrUiState.Unavailable(detail)
                         } else {
-                            OcrUiState.Error(error.message ?: "")
+                            OcrUiState.Error(detail)
                         },
+                        // Only a real-capture failure marks the model
+                        // failed; a warm-up failure never does.
+                        ocrModelFailed = error is MlKitException,
                     )
                 }
             }

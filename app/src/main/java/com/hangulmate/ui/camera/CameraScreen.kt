@@ -233,7 +233,17 @@ fun CameraScreen(
             }
         }
         if (state.ocrModelFailed) {
-            WarningCard(stringResource(R.string.camera_ocr_unavailable))
+            // Shown only after a real capture failed (never after a
+            // warm-up failure). The underlying error is appended so
+            // the next report carries the cause.
+            val detail = (state.ocrState as? OcrUiState.Unavailable)?.detail
+            WarningCard(
+                if (detail.isNullOrBlank()) {
+                    stringResource(R.string.camera_ocr_unavailable)
+                } else {
+                    stringResource(R.string.camera_ocr_unavailable) + "\n\n" + detail
+                },
+            )
         }
 
         state.noticeRes?.let { noticeRes ->
@@ -496,11 +506,21 @@ private fun TextModeContent(
                     )
                 }
             }
-            OcrUiState.Unavailable -> WarningCard(
-                stringResource(R.string.camera_ocr_unavailable),
+            is OcrUiState.Unavailable -> WarningCard(
+                if (ocr.detail.isNullOrBlank()) {
+                    stringResource(R.string.camera_ocr_unavailable)
+                } else {
+                    stringResource(R.string.camera_ocr_unavailable) + "\n\n" + ocr.detail
+                },
             )
             is OcrUiState.Error -> {
-                WarningCard(stringResource(R.string.camera_ocr_error))
+                WarningCard(
+                    if (ocr.message.isBlank()) {
+                        stringResource(R.string.camera_ocr_error)
+                    } else {
+                        stringResource(R.string.camera_ocr_error) + "\n\n" + ocr.message
+                    },
+                )
                 if (state.capturedBitmap != null) {
                     OutlinedButton(onClick = { viewModel.retryOcr() }) {
                         Text(stringResource(R.string.retry))

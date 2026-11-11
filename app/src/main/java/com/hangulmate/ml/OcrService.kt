@@ -1,6 +1,7 @@
 package com.hangulmate.ml
 
 import android.graphics.Bitmap
+import android.util.Log
 import com.google.mlkit.common.MlKitException
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
@@ -57,23 +58,48 @@ class OcrService {
         }
 
     /**
-     * Warms up the bundled model by recognising a 1x1 blank image
-     * (blank input reads as empty text). Returns true when the
-     * recognizer answered. Run once when the Camera screen first opens
-     * so the one-time native initialisation happens before the first
-     * real capture instead of stalling it.
+     * Warms up the bundled model by recognising a blank image (blank
+     * input reads as empty text). Returns a [Result]: success(true)
+     * when the recognizer answered, failure carrying the exception
+     * otherwise — the exception is also logged (tag [TAG]) so logcat
+     * carries the real cause instead of a bare boolean. The probe is
+     * a 256x256 blank image, deliberately NOT a 1x1 one: a 1x1 image
+     * is far outside ML Kit's documented input range (each character
+     * should be at least 16x16 px, 24x24 for Korean), and such a
+     * degenerate input can fail the detector pipeline on its own —
+     * a warm-up failure then says nothing about the real recognizer.
+     * Run once when the Camera screen first opens so the one-time
+     * native initialisation happens before the first real capture
+     * instead of stalling it.
      */
-    suspend fun warmUp(): Boolean = runCatching {
-        val blank = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888)
+    suspend fun warmUp(): Result<Boolean> = runCatching {
+        val blank = Bitmap.createBitmap(
+            WARM_UP_SIDE_PX,
+            WARM_UP_SIDE_PX,
+            Bitmap.Config.ARGB_8888,
+        )
         try {
             recognize(blank)
             true
         } finally {
             blank.recycle()
         }
-    }.getOrDefault(false)
+    }.onFailure { error ->
+        Log.e(
+            TAG,
+            "OCR warm-up failed: ${error.javaClass.simpleName}: ${error.message}",
+            error,
+        )
+    }
 
     fun close() {
         recognizer.close()
+    }
+
+    companion object {
+        private const val TAG = "HangulMateOcr"
+
+        /** Probe size — a normal image the detector can process. */
+        private const val WARM_UP_SIDE_PX = 256
     }
 }
