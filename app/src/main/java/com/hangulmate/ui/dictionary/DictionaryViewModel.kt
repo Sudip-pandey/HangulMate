@@ -116,6 +116,19 @@ class DictionaryViewModel @Inject constructor(
         val allWords: List<VocabularyWord>,
     )
 
+    /**
+     * The [uiState] combine's first five inputs. `combine` only has
+     * typed overloads up to 5 flows (kotlinx-coroutines 1.8.1), so the
+     * 6-flow state is built as a 5-flow combine plus the topic flow.
+     */
+    private data class DictionaryInputs(
+        val query: String,
+        val results: List<VocabularyWord>,
+        val recentWords: List<VocabularyWord>,
+        val totalCount: Int,
+        val favoritesOnly: Boolean,
+    )
+
     private val results: Flow<List<VocabularyWord>> =
         combine(
             debouncedQuery,
@@ -158,21 +171,25 @@ class DictionaryViewModel @Inject constructor(
         }
 
     val uiState: StateFlow<DictionaryUiState> = combine(
-        _query,
-        results,
-        vocabularyRepository.getRecentlySearched(limit = 8),
-        vocabularyRepository.getTotalCount(),
-        _favoritesOnly,
+        combine(
+            _query,
+            results,
+            vocabularyRepository.getRecentlySearched(limit = 8),
+            vocabularyRepository.getTotalCount(),
+            _favoritesOnly,
+        ) { query, results, recentWords, totalCount, favoritesOnly ->
+            DictionaryInputs(query, results, recentWords, totalCount, favoritesOnly)
+        },
         _selectedTopic,
-    ) { query, results, recentWords, totalCount, favoritesOnly, selectedTopic ->
+    ) { inputs, selectedTopic ->
         DictionaryUiState(
-            query = query,
-            results = results,
-            suggestions = if (query.isBlank()) emptyList() else results.take(5),
-            favoritesOnly = favoritesOnly,
+            query = inputs.query,
+            results = inputs.results,
+            suggestions = if (inputs.query.isBlank()) emptyList() else inputs.results.take(5),
+            favoritesOnly = inputs.favoritesOnly,
             selectedTopic = selectedTopic,
-            recentWords = recentWords,
-            totalCount = totalCount,
+            recentWords = inputs.recentWords,
+            totalCount = inputs.totalCount,
         )
     }.stateIn(
         scope = viewModelScope,

@@ -146,8 +146,7 @@ class SeedImporter(
      */
     suspend fun importFromJsonString(json: String): SeedImportReport {
         val parsed = parseSeedJson(json)
-        var report: SeedImportReport
-        database.withTransaction {
+        val report = database.withTransaction {
             val vocabDao = database.vocabularyDao()
             val translationDao = database.translationDao()
             val relationDao = database.relationDao()
@@ -231,7 +230,7 @@ class SeedImporter(
                 if (rows.isNotEmpty()) relationDao.insertAll(rows)
             }
 
-            report = SeedImportReport(
+            SeedImportReport(
                 wordsImported = wordsImported,
                 wordsSkipped = wordsSkipped,
                 translationsInserted = translations,
@@ -276,7 +275,11 @@ class SeedImporter(
         val relationsBySource = mutableMapOf<String, MutableList<RawRelation>>()
         var errors = 0
         for (i in 0 until array.length()) {
-            val obj = array.optJSONObject(i) ?: run { errors++; continue }
+            val obj = array.optJSONObject(i)
+            if (obj == null) {
+                errors++
+                continue
+            }
             val id = obj.optString("id").trim()
             val korean = obj.optString("korean").trim()
             val nepaliRaw = if (obj.isNull("nepali")) null else obj.optString("nepali").trim()

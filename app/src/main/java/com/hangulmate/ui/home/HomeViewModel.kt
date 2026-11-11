@@ -79,48 +79,75 @@ class HomeViewModel @Inject constructor(
 
     private val _wordOfTheDay = MutableStateFlow<VocabularyWord?>(null)
 
+    /**
+     * The [uiState] combine's inputs, grouped so each `combine` stays
+     * within the typed overloads (`combine` only has typed overloads up
+     * to 5 flows in kotlinx-coroutines 1.8.1; a 12-flow call silently
+     * falls back to the vararg overload and fails to compile).
+     */
+    private data class HomeInputsA(
+        val seed: SeedState,
+        val dailyGoal: Int,
+        val todayStats: DailyStats,
+        val streak: Int,
+        val learnedCount: Int,
+    )
+
+    private data class HomeInputsB(
+        val masteredCount: Int,
+        val totalCount: Int,
+        val todayNewWords: List<VocabularyWord>,
+        val revisionQueue: List<VocabularyWord>,
+        val recentlySearched: List<VocabularyWord>,
+    )
+
+    private data class HomeInputsC(
+        val difficult: List<VocabularyWord>,
+        val wordOfTheDay: VocabularyWord?,
+    )
+
     val uiState: StateFlow<HomeUiState> = combine(
-        seedState,
-        settingsRepository.dailyGoal,
-        learningRepository.getTodayStats(todayEpochDay),
-        learningRepository.getStreak(),
-        vocabularyRepository.getLearnedCount(),
-        vocabularyRepository.getMasteredCount(),
-        vocabularyRepository.getTotalCount(),
-        todayNewWords,
-        vocabularyRepository.getRevisionQueue(todayEpochDay),
-        vocabularyRepository.getRecentlySearched(limit = 5),
-        vocabularyRepository.getDifficult(),
-        _wordOfTheDay,
-    ) { seed: SeedState,
-        dailyGoal: Int,
-        todayStats: DailyStats,
-        streak: Int,
-        learnedCount: Int,
-        masteredCount: Int,
-        totalCount: Int,
-        todayNewWords: List<VocabularyWord>,
-        revisionQueue: List<VocabularyWord>,
-        recentlySearched: List<VocabularyWord>,
-        difficult: List<VocabularyWord>,
-        wordOfTheDay: VocabularyWord?
-        ->
+        combine(
+            seedState,
+            settingsRepository.dailyGoal,
+            learningRepository.getTodayStats(todayEpochDay),
+            learningRepository.getStreak(),
+            vocabularyRepository.getLearnedCount(),
+        ) { seed, dailyGoal, todayStats, streak, learnedCount ->
+            HomeInputsA(seed, dailyGoal, todayStats, streak, learnedCount)
+        },
+        combine(
+            vocabularyRepository.getMasteredCount(),
+            vocabularyRepository.getTotalCount(),
+            todayNewWords,
+            vocabularyRepository.getRevisionQueue(todayEpochDay),
+            vocabularyRepository.getRecentlySearched(limit = 5),
+        ) { masteredCount, totalCount, todayNewWords, revisionQueue, recentlySearched ->
+            HomeInputsB(masteredCount, totalCount, todayNewWords, revisionQueue, recentlySearched)
+        },
+        combine(
+            vocabularyRepository.getDifficult(),
+            _wordOfTheDay,
+        ) { difficult, wordOfTheDay ->
+            HomeInputsC(difficult, wordOfTheDay)
+        },
+    ) { a, b, c ->
         HomeUiState(
-            isPreparing = totalCount == 0 && seed !is SeedState.Failed,
-            seedFailureMessage = (seed as? SeedState.Failed)?.message
-                ?.takeIf { totalCount == 0 },
-            dailyGoal = dailyGoal,
-            wordsLearnedToday = todayStats.wordsLearned,
-            wordsReviewedToday = todayStats.wordsReviewed,
-            streakDays = streak,
-            learnedCount = learnedCount,
-            masteredCount = masteredCount,
-            totalCount = totalCount,
-            wordOfTheDay = wordOfTheDay,
-            todayNewWords = todayNewWords,
-            revisionQueue = revisionQueue,
-            recentlySearched = recentlySearched,
-            difficultWords = difficult.take(5),
+            isPreparing = b.totalCount == 0 && a.seed !is SeedState.Failed,
+            seedFailureMessage = (a.seed as? SeedState.Failed)?.message
+                ?.takeIf { b.totalCount == 0 },
+            dailyGoal = a.dailyGoal,
+            wordsLearnedToday = a.todayStats.wordsLearned,
+            wordsReviewedToday = a.todayStats.wordsReviewed,
+            streakDays = a.streak,
+            learnedCount = a.learnedCount,
+            masteredCount = b.masteredCount,
+            totalCount = b.totalCount,
+            wordOfTheDay = c.wordOfTheDay,
+            todayNewWords = b.todayNewWords,
+            revisionQueue = b.revisionQueue,
+            recentlySearched = b.recentlySearched,
+            difficultWords = c.difficult.take(5),
             greetingRes = greetingResForHour(LocalTime.now().hour),
         )
     }.stateIn(

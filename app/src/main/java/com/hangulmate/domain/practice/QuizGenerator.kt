@@ -182,7 +182,8 @@ object QuizGenerator {
         pool: List<VocabularyWord>,
         listeningAvailable: Boolean,
         random: Random,
-    ): QuizQuestion? = when (type) {
+    ): QuizQuestion? {
+        return when (type) {
         QuizType.KO_TO_NE -> {
             val (options, correctIndex) = optionsWithCorrect(
                 correct = target.nepali,
@@ -310,6 +311,7 @@ object QuizGenerator {
         }
 
         QuizType.IMAGE, QuizType.EPS_MOCK -> null
+        }
     }
 
     /**
