@@ -44,11 +44,19 @@ android {
             )
         }
         release {
-            isMinifyEnabled = false
+            // Size: same R8 treatment as debug (was OFF before).
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
             )
+            // Test distribution: signed with the debug key so the release
+            // APK installs and updates alongside the debug APK (same
+            // signature, no install conflict for Byte's friend). This is
+            // NOT a Play Store release key — publishing needs a real
+            // release keystore + GitHub secrets, a separate step.
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
 
