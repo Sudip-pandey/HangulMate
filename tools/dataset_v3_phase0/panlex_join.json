@@ -1,0 +1,5502 @@
+{
+ "header": {
+  "dataset": "gtak1/panlex-meanings",
+  "revision": "95d5b0e9941a5aee02559169ae906e25921385e6",
+  "license": "CC0 (PanLex data); dataset card: gtak1/panlex-meanings",
+  "korean_config": "kor (Hangul txt rows only)",
+  "nepali_configs": [
+   "npi (primary, langvar 503)",
+   "npl (secondary, langvar 7556)"
+  ],
+  "total_kor_rows": 435144,
+  "total_kor_hangul_rows": 393455,
+  "total_npi_rows": 51009,
+  "total_npl_rows": 2567,
+  "seed_target_words": 9149,
+  "matched_count": 470,
+  "matched_percent": 5.14,
+  "exactly_one_candidate": 367,
+  "multiple_candidates": 103,
+  "note": "Candidates are NOT verified Nepali. Every row is a candidate for human/MT review. 851 verified entries untouched."
+ },
+ "matches": [
+  {
+   "korean": "가르치다",
+   "nepali_candidates": [
+    "सिकाउनु"
+   ],
+   "meaning_ids": [
+    27949668
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "가지",
+   "nepali_candidates": [
+    "बैजनी",
+    "भण्टा",
+    "भ्यान्टा"
+   ],
+   "meaning_ids": [
+    27881535,
+    27881535,
+    32095017
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "갈색",
+   "nepali_candidates": [
+    "खैरो"
+   ],
+   "meaning_ids": [
+    27862193
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "강",
+   "nepali_candidates": [
+    "नदी"
+   ],
+   "meaning_ids": [
+    27934324
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "결혼식",
+   "nepali_candidates": [
+    "विवाह"
+   ],
+   "meaning_ids": [
+    32095105
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "교육",
+   "nepali_candidates": [
+    "शिक्षा"
+   ],
+   "meaning_ids": [
+    1192668
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "교회",
+   "nepali_candidates": [
+    "गिर्जाघर"
+   ],
+   "meaning_ids": [
+    32095087
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "군인",
+   "nepali_candidates": [
+    "सैनिक"
+   ],
+   "meaning_ids": [
+    27942520
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "그리고",
+   "nepali_candidates": [
+    "र"
+   ],
+   "meaning_ids": [
+    27849769
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "그저께",
+   "nepali_candidates": [
+    "अस्ति"
+   ],
+   "meaning_ids": [
+    32091429
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "금요일",
+   "nepali_candidates": [
+    "सञ्चर्बार",
+    "सनिचर्बार",
+    "सन्चर्बार",
+    "सन्सर्बार",
+    "शुक्रवार",
+    "सुकबार",
+    "शुक्रबार"
+   ],
+   "meaning_ids": [
+    18379,
+    18379,
+    18379,
+    18379,
+    1527648,
+    36223547,
+    36223547
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "기타",
+   "nepali_candidates": [
+    "गितार"
+   ],
+   "meaning_ids": [
+    32095349
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "김",
+   "nepali_candidates": [
+    "वाफ"
+   ],
+   "meaning_ids": [
+    27945209
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "내",
+   "nepali_candidates": [
+    "नदी"
+   ],
+   "meaning_ids": [
+    31740698
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "넥타이",
+   "nepali_candidates": [
+    "टाई"
+   ],
+   "meaning_ids": [
+    32094902
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "년",
+   "nepali_candidates": [
+    "वर्ष",
+    "बर्ष",
+    "बसर"
+   ],
+   "meaning_ids": [
+    32088903,
+    32088907,
+    37301478
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "노트",
+   "nepali_candidates": [
+    "नट",
+    "लेजर"
+   ],
+   "meaning_ids": [
+    32090846,
+    32095392
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "녹색",
+   "nepali_candidates": [
+    "हरियो"
+   ],
+   "meaning_ids": [
+    28549961
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "달리기",
+   "nepali_candidates": [
+    "धावक"
+   ],
+   "meaning_ids": [
+    32094829
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "대",
+   "nepali_candidates": [
+    "स्क्वायर्ड भर्सेज"
+   ],
+   "meaning_ids": [
+    32095638
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "도",
+   "nepali_candidates": [
+    "डिग्री",
+    "°"
+   ],
+   "meaning_ids": [
+    32090752,
+    32090847
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "돌",
+   "nepali_candidates": [
+    "ढुङ्गा",
+    "पत्थर"
+   ],
+   "meaning_ids": [
+    27945823,
+    37301435
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "동물",
+   "nepali_candidates": [
+    "जनावर",
+    "वस्तु"
+   ],
+   "meaning_ids": [
+    31711344,
+    37301242
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "들다",
+   "nepali_candidates": [
+    "हु"
+   ],
+   "meaning_ids": [
+    31753278
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "라디오",
+   "nepali_candidates": [
+    "रेडियो"
+   ],
+   "meaning_ids": [
+    1480447
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "매우",
+   "nepali_candidates": [
+    "वर्षा ऋतु"
+   ],
+   "meaning_ids": [
+    27930617
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "목소리",
+   "nepali_candidates": [
+    "स्वर"
+   ],
+   "meaning_ids": [
+    37301458
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "목요일",
+   "nepali_candidates": [
+    "बिहीवार",
+    "बिहिबार",
+    "गुरुबार"
+   ],
+   "meaning_ids": [
+    1241258,
+    36223546,
+    36223546
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "무궁화",
+   "nepali_candidates": [
+    "हाइबिस्कस"
+   ],
+   "meaning_ids": [
+    32094987
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "물고기",
+   "nepali_candidates": [
+    "माछा"
+   ],
+   "meaning_ids": [
+    27887149
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "밀가루",
+   "nepali_candidates": [
+    "पिठो",
+    "आटो"
+   ],
+   "meaning_ids": [
+    27888018,
+    27888018
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "바닷가",
+   "nepali_candidates": [
+    "तिर्",
+    "बगर्",
+    "रेति"
+   ],
+   "meaning_ids": [
+    31739969,
+    31739969,
+    31739969
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "바이올린",
+   "nepali_candidates": [
+    "भायोलिन"
+   ],
+   "meaning_ids": [
+    32095352
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "배우다",
+   "nepali_candidates": [
+    "सिक्नु"
+   ],
+   "meaning_ids": [
+    27906237
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "뱀",
+   "nepali_candidates": [
+    "साँप",
+    "साप"
+   ],
+   "meaning_ids": [
+    27941819,
+    27941819
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "벌",
+   "nepali_candidates": [
+    "मौरी"
+   ],
+   "meaning_ids": [
+    27857578
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "변호사",
+   "nepali_candidates": [
+    "न्यायधीवक्ता"
+   ],
+   "meaning_ids": [
+    31701616
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "볼펜",
+   "nepali_candidates": [
+    "कलम"
+   ],
+   "meaning_ids": [
+    27922408
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "봉투",
+   "nepali_candidates": [
+    "खाम"
+   ],
+   "meaning_ids": [
+    32095408
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "부엌",
+   "nepali_candidates": [
+    "भान्छा"
+   ],
+   "meaning_ids": [
+    37301343
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "붉다",
+   "nepali_candidates": [
+    "रातो"
+   ],
+   "meaning_ids": [
+    28562111
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "빨간색",
+   "nepali_candidates": [
+    "रातो"
+   ],
+   "meaning_ids": [
+    28562111
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사전",
+   "nepali_candidates": [
+    "शब्दकोश"
+   ],
+   "meaning_ids": [
+    31729566
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사탕",
+   "nepali_candidates": [
+    "चिनी",
+    "सखर",
+    "क्याण्डी"
+   ],
+   "meaning_ids": [
+    27947240,
+    27947240,
+    32095051
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "상",
+   "nepali_candidates": [
+    "टेबुल",
+    "टेबिल"
+   ],
+   "meaning_ids": [
+    27948730,
+    37301441
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "생각",
+   "nepali_candidates": [
+    "सोचविचार"
+   ],
+   "meaning_ids": [
+    27951185
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "생선",
+   "nepali_candidates": [
+    "माछा"
+   ],
+   "meaning_ids": [
+    27887149
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "설탕",
+   "nepali_candidates": [
+    "चिनी",
+    "सखर"
+   ],
+   "meaning_ids": [
+    27947240,
+    27947240
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "섬",
+   "nepali_candidates": [
+    "द्वीप",
+    "टापू",
+    "टापु"
+   ],
+   "meaning_ids": [
+    27903109,
+    27903109,
+    37301339
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "센티미터",
+   "nepali_candidates": [
+    "सेन्टिमिटर"
+   ],
+   "meaning_ids": [
+    32090806
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "소금",
+   "nepali_candidates": [
+    "नून"
+   ],
+   "meaning_ids": [
+    27935916
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "소식",
+   "nepali_candidates": [
+    "सन्देश"
+   ],
+   "meaning_ids": [
+    27911548
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "속도",
+   "nepali_candidates": [
+    "गति"
+   ],
+   "meaning_ids": [
+    27957541
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "손가락",
+   "nepali_candidates": [
+    "औंला"
+   ],
+   "meaning_ids": [
+    27886872
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "손바닥",
+   "nepali_candidates": [
+    "उठाइएको हात"
+   ],
+   "meaning_ids": [
+    32094854
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "수",
+   "nepali_candidates": [
+    "नदी",
+    "जल",
+    "पानी",
+    "Anka",
+    "Sankhya",
+    "बुध",
+    "बु",
+    "नम्बर"
+   ],
+   "meaning_ids": [
+    27934324,
+    27959307,
+    27959307,
+    33792,
+    33792,
+    32088771,
+    32088778,
+    37301377
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "수박",
+   "nepali_candidates": [
+    "खरबुजा"
+   ],
+   "meaning_ids": [
+    32095005
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "수요일",
+   "nepali_candidates": [
+    "बुधवार",
+    "बुध्बार",
+    "बुधबार"
+   ],
+   "meaning_ids": [
+    1771540,
+    36223545,
+    32088792
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "숟가락",
+   "nepali_candidates": [
+    "चम्चा"
+   ],
+   "meaning_ids": [
+    27944036
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "스포츠",
+   "nepali_candidates": [
+    "खेल"
+   ],
+   "meaning_ids": [
+    27944063
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "시",
+   "nepali_candidates": [
+    "घण्डटा",
+    "कविता",
+    "घण्टा"
+   ],
+   "meaning_ids": [
+    27898217,
+    27925363,
+    32088995
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "시월",
+   "nepali_candidates": [
+    "अक्टोबर"
+   ],
+   "meaning_ids": [
+    36223559
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "식초",
+   "nepali_candidates": [
+    "अमिलो",
+    "सिर्का"
+   ],
+   "meaning_ids": [
+    37301457,
+    37301457
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "신문",
+   "nepali_candidates": [
+    "समाचारपत्र"
+   ],
+   "meaning_ids": [
+    32095396
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "신부",
+   "nepali_candidates": [
+    "घुम्तो सहित बेहुली"
+   ],
+   "meaning_ids": [
+    32094815
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "십이월",
+   "nepali_candidates": [
+    "डिसेम्बर"
+   ],
+   "meaning_ids": [
+    36223561
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "십일월",
+   "nepali_candidates": [
+    "नोभेम्बर"
+   ],
+   "meaning_ids": [
+    36223560
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아버지",
+   "nepali_candidates": [
+    "बाबु"
+   ],
+   "meaning_ids": [
+    27885832
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아이스크림",
+   "nepali_candidates": [
+    "आइस क्रिम"
+   ],
+   "meaning_ids": [
+    32095045
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아홉",
+   "nepali_candidates": [
+    "नौ",
+    "nau"
+   ],
+   "meaning_ids": [
+    27916069,
+    37566323
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "어머니",
+   "nepali_candidates": [
+    "आमा",
+    "आम",
+    "Aama"
+   ],
+   "meaning_ids": [
+    27913699,
+    28211332,
+    31702046
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "어머님",
+   "nepali_candidates": [
+    "आमा"
+   ],
+   "meaning_ids": [
+    27913699
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "얼음",
+   "nepali_candidates": [
+    "बरफ"
+   ],
+   "meaning_ids": [
+    37301337
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "여덟",
+   "nepali_candidates": [
+    "आठ",
+    "आठौं",
+    "āṭ"
+   ],
+   "meaning_ids": [
+    27881593,
+    28534392,
+    37566322
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "여동생",
+   "nepali_candidates": [
+    "दिदी",
+    "बहिनी"
+   ],
+   "meaning_ids": [
+    27940664,
+    27940664
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "여섯",
+   "nepali_candidates": [
+    "छ",
+    "cha"
+   ],
+   "meaning_ids": [
+    27940707,
+    37566320
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "역사",
+   "nepali_candidates": [
+    "इतिहास"
+   ],
+   "meaning_ids": [
+    51691
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "연필",
+   "nepali_candidates": [
+    "पेन्सिल"
+   ],
+   "meaning_ids": [
+    31719472
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "영화",
+   "nepali_candidates": [
+    "सिनेमा"
+   ],
+   "meaning_ids": [
+    32095595
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "예",
+   "nepali_candidates": [
+    "हो"
+   ],
+   "meaning_ids": [
+    32091019
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "왕",
+   "nepali_candidates": [
+    "राजा"
+   ],
+   "meaning_ids": [
+    27904633
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "우리",
+   "nepali_candidates": [
+    "हामी"
+   ],
+   "meaning_ids": [
+    37301462
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "우체국",
+   "nepali_candidates": [
+    "हुलाक"
+   ],
+   "meaning_ids": [
+    32095094
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "움직이다",
+   "nepali_candidates": [
+    "फ्याँक"
+   ],
+   "meaning_ids": [
+    31750838
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "월요일",
+   "nepali_candidates": [
+    "सोम्बार",
+    "सौँबार",
+    "सोमवार",
+    "सोमबार"
+   ],
+   "meaning_ids": [
+    18375,
+    18375,
+    1539561,
+    32088790
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "유리",
+   "nepali_candidates": [
+    "ग्लास"
+   ],
+   "meaning_ids": [
+    27892347
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "음",
+   "nepali_candidates": [
+    "ध्वनि"
+   ],
+   "meaning_ids": [
+    27942911
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "음료수",
+   "nepali_candidates": [
+    "उष्णप्रदेशीय पेय पद्दार्थ"
+   ],
+   "meaning_ids": [
+    32095062
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "음악",
+   "nepali_candidates": [
+    "संगीत",
+    "सङ्गीत"
+   ],
+   "meaning_ids": [
+    27914367,
+    37301369
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "인터넷",
+   "nepali_candidates": [
+    "अन्तरजाल"
+   ],
+   "meaning_ids": [
+    27835112
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "일곱",
+   "nepali_candidates": [
+    "सात",
+    "sāt"
+   ],
+   "meaning_ids": [
+    27938753,
+    37566321
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "일요일",
+   "nepali_candidates": [
+    "आइतवार",
+    "रबिबार",
+    "आइत्बार",
+    "आइतबार"
+   ],
+   "meaning_ids": [
+    1710870,
+    27841792,
+    27841792,
+    32088789
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "잎",
+   "nepali_candidates": [
+    "पात"
+   ],
+   "meaning_ids": [
+    27906179
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "잠자다",
+   "nepali_candidates": [
+    "सुत्नु"
+   ],
+   "meaning_ids": [
+    27941199
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "잡수시다",
+   "nepali_candidates": [
+    "खानु"
+   ],
+   "meaning_ids": [
+    27881124
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "장미",
+   "nepali_candidates": [
+    "गुलाफ"
+   ],
+   "meaning_ids": [
+    32094986
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "전기",
+   "nepali_candidates": [
+    "बिजुली"
+   ],
+   "meaning_ids": [
+    27881791
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "정원",
+   "nepali_candidates": [
+    "बगैंचा"
+   ],
+   "meaning_ids": [
+    37301318
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "종이",
+   "nepali_candidates": [
+    "कागज"
+   ],
+   "meaning_ids": [
+    27920959
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "주",
+   "nepali_candidates": [
+    "हप्ता"
+   ],
+   "meaning_ids": [
+    9779830
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "주무시다",
+   "nepali_candidates": [
+    "सुत्नु"
+   ],
+   "meaning_ids": [
+    27941199
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "주일",
+   "nepali_candidates": [
+    "हप्ता"
+   ],
+   "meaning_ids": [
+    27959793
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "지각",
+   "nepali_candidates": [
+    "बिपना"
+   ],
+   "meaning_ids": [
+    31726769
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "지난달",
+   "nepali_candidates": [
+    "गएको महिना"
+   ],
+   "meaning_ids": [
+    32088913
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "지난주",
+   "nepali_candidates": [
+    "गएको हप्ता"
+   ],
+   "meaning_ids": [
+    32088919
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "지도",
+   "nepali_candidates": [
+    "नक्शा"
+   ],
+   "meaning_ids": [
+    27910062
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "짝",
+   "nepali_candidates": [
+    "कमरेड"
+   ],
+   "meaning_ids": [
+    31742911
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "초",
+   "nepali_candidates": [
+    "सेकेन्ड",
+    "सेकेण्ड",
+    "मैनबत्ती"
+   ],
+   "meaning_ids": [
+    32089001,
+    32090785,
+    37301272
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "축구공",
+   "nepali_candidates": [
+    "सकर बल"
+   ],
+   "meaning_ids": [
+    32095289
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "카메라",
+   "nepali_candidates": [
+    "क्यामेरा"
+   ],
+   "meaning_ids": [
+    32095372
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "컵",
+   "nepali_candidates": [
+    "कप्स"
+   ],
+   "meaning_ids": [
+    32090870
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "코끼리",
+   "nepali_candidates": [
+    "हात्ती"
+   ],
+   "meaning_ids": [
+    31713457
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "킬로그램",
+   "nepali_candidates": [
+    "किलोग्राम"
+   ],
+   "meaning_ids": [
+    32090822
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "킬로미터",
+   "nepali_candidates": [
+    "किलोमिटर"
+   ],
+   "meaning_ids": [
+    32090803
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "테니스",
+   "nepali_candidates": [
+    "टेनिस"
+   ],
+   "meaning_ids": [
+    27950112
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "텔레비전",
+   "nepali_candidates": [
+    "टेलिभिजन"
+   ],
+   "meaning_ids": [
+    32095371
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "토끼",
+   "nepali_candidates": [
+    "खरायो"
+   ],
+   "meaning_ids": [
+    32094954
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "토마토",
+   "nepali_candidates": [
+    "गोलभेंडा",
+    "टमाटर"
+   ],
+   "meaning_ids": [
+    32095016,
+    37301447
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "토요일",
+   "nepali_candidates": [
+    "शनिवार",
+    "सञ्चर्बार",
+    "सनिचर्बार",
+    "सन्चर्बार",
+    "सन्सर्बार",
+    "शनिबार"
+   ],
+   "meaning_ids": [
+    1670922,
+    36223548,
+    36223548,
+    36223548,
+    36223548,
+    32088795
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "티셔츠",
+   "nepali_candidates": [
+    "टि-सर्ट"
+   ],
+   "meaning_ids": [
+    32094903
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "파티",
+   "nepali_candidates": [
+    "पार्टी पपर"
+   ],
+   "meaning_ids": [
+    32095273
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "팔월",
+   "nepali_candidates": [
+    "अगस्त"
+   ],
+   "meaning_ids": [
+    36223557
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "편의점",
+   "nepali_candidates": [
+    "सुविधाजनक स्टोर"
+   ],
+   "meaning_ids": [
+    32095099
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "포도",
+   "nepali_candidates": [
+    "अङ्गुर"
+   ],
+   "meaning_ids": [
+    32095003
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "풍경",
+   "nepali_candidates": [
+    "विन्ड चाइम"
+   ],
+   "meaning_ids": [
+    32095280
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "프라이팬",
+   "nepali_candidates": [
+    "खाना बनाउँदै"
+   ],
+   "meaning_ids": [
+    32095067
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "프로그램",
+   "nepali_candidates": [
+    "क्रमादेश"
+   ],
+   "meaning_ids": [
+    27928013
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "피아노",
+   "nepali_candidates": [
+    "सांगीतिक किबोर्ड"
+   ],
+   "meaning_ids": [
+    32095350
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "피자",
+   "nepali_candidates": [
+    "पिज्जा"
+   ],
+   "meaning_ids": [
+    32095026
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "하늘",
+   "nepali_candidates": [
+    "आकाश",
+    "स्वर्ग"
+   ],
+   "meaning_ids": [
+    9780271,
+    27816401
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "할머니",
+   "nepali_candidates": [
+    "बूढी आइमाई"
+   ],
+   "meaning_ids": [
+    32094802
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "할아버지",
+   "nepali_candidates": [
+    "बूढो छोरामान्छे"
+   ],
+   "meaning_ids": [
+    32094801
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "햄버거",
+   "nepali_candidates": [
+    "ह्यामबर्गर"
+   ],
+   "meaning_ids": [
+    27894950
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "형제",
+   "nepali_candidates": [
+    "दाजु"
+   ],
+   "meaning_ids": [
+    27862176
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "호랑이",
+   "nepali_candidates": [
+    "बाघ"
+   ],
+   "meaning_ids": [
+    31712609
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "호수",
+   "nepali_candidates": [
+    "ताल"
+   ],
+   "meaning_ids": [
+    27905270
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "화가",
+   "nepali_candidates": [
+    "कलाकार"
+   ],
+   "meaning_ids": [
+    31742266
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "화요일",
+   "nepali_candidates": [
+    "मंगलवार",
+    "मङ्गल्बार",
+    "मङ्गलबार"
+   ],
+   "meaning_ids": [
+    1624789,
+    36223544,
+    32088791
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "화장실",
+   "nepali_candidates": [
+    "शौंचालय"
+   ],
+   "meaning_ids": [
+    32095486
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "러시아",
+   "nepali_candidates": [
+    "रसिया",
+    "रूस"
+   ],
+   "meaning_ids": [
+    1665234,
+    28513457
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "말레이시아",
+   "nepali_candidates": [
+    "मलेसिया",
+    "मलेशिया"
+   ],
+   "meaning_ids": [
+    31685158,
+    1347861
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "몽골",
+   "nepali_candidates": [
+    "मङ्गोलिया"
+   ],
+   "meaning_ids": [
+    31685149
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "베트남",
+   "nepali_candidates": [
+    "भिएतनाम"
+   ],
+   "meaning_ids": [
+    32088609
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "인도네시아",
+   "nepali_candidates": [
+    "इन्डोनेशिया"
+   ],
+   "meaning_ids": [
+    32088464
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "캐나다",
+   "nepali_candidates": [
+    "क्यानाडा"
+   ],
+   "meaning_ids": [
+    31685056
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "크리스마스",
+   "nepali_candidates": [
+    "क्रिसमस",
+    "ख्रिस्टमस"
+   ],
+   "meaning_ids": [
+    27831391,
+    32089135
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "프랑스",
+   "nepali_candidates": [
+    "फ्रान्स"
+   ],
+   "meaning_ids": [
+    1620788
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "꽃다발",
+   "nepali_candidates": [
+    "बुके"
+   ],
+   "meaning_ids": [
+    32094982
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "댁",
+   "nepali_candidates": [
+    "घर",
+    "बास्स्थान"
+   ],
+   "meaning_ids": [
+    27898240,
+    27898240
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "또",
+   "nepali_candidates": [
+    "पनि"
+   ],
+   "meaning_ids": [
+    27848633
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "생활",
+   "nepali_candidates": [
+    "चिठी",
+    "जीब"
+   ],
+   "meaning_ids": [
+    27907022,
+    37301352
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "성함",
+   "nepali_candidates": [
+    "नाम"
+   ],
+   "meaning_ids": [
+    27914814
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아버님",
+   "nepali_candidates": [
+    "बाबु"
+   ],
+   "meaning_ids": [
+    27885832
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "역시",
+   "nepali_candidates": [
+    "पनि"
+   ],
+   "meaning_ids": [
+    27848633
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "와",
+   "nepali_candidates": [
+    "र"
+   ],
+   "meaning_ids": [
+    27849769
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "젖다",
+   "nepali_candidates": [
+    "भिजेको"
+   ],
+   "meaning_ids": [
+    27960037
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "주소",
+   "nepali_candidates": [
+    "आवास"
+   ],
+   "meaning_ids": [
+    31737796
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "하다",
+   "nepali_candidates": [
+    "गर"
+   ],
+   "meaning_ids": [
+    31749235
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "호텔",
+   "nepali_candidates": [
+    "होटेल"
+   ],
+   "meaning_ids": [
+    32095097
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "나",
+   "nepali_candidates": [
+    "म"
+   ],
+   "meaning_ids": [
+    27834776
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "저",
+   "nepali_candidates": [
+    "म"
+   ],
+   "meaning_ids": [
+    27834776
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "가루",
+   "nepali_candidates": [
+    "पिठो",
+    "आटो",
+    "पीठो"
+   ],
+   "meaning_ids": [
+    27888018,
+    27888018,
+    37301311
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "가사",
+   "nepali_candidates": [
+    "छाता"
+   ],
+   "meaning_ids": [
+    27955125
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "가정",
+   "nepali_candidates": [
+    "परिबार"
+   ],
+   "meaning_ids": [
+    27885530
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "간",
+   "nepali_candidates": [
+    "कलेजो"
+   ],
+   "meaning_ids": [
+    28408350
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "개구리",
+   "nepali_candidates": [
+    "भ्यागुतो"
+   ],
+   "meaning_ids": [
+    37301317
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "개미",
+   "nepali_candidates": [
+    "कमिला"
+   ],
+   "meaning_ids": [
+    27850482
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "거미",
+   "nepali_candidates": [
+    "maakoora",
+    "माकुरो",
+    "माकुरा"
+   ],
+   "meaning_ids": [
+    46857,
+    27943657,
+    32094979
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "경찰관",
+   "nepali_candidates": [
+    "प्रहरी अधिकृत"
+   ],
+   "meaning_ids": [
+    32094804
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "고구마",
+   "nepali_candidates": [
+    "रोस्ट गरिएको सखरखण्ड"
+   ],
+   "meaning_ids": [
+    32095038
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "고추",
+   "nepali_candidates": [
+    "लिङ्ग",
+    "शिश्न"
+   ],
+   "meaning_ids": [
+    27922468,
+    27922468
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "골프",
+   "nepali_candidates": [
+    "झण्डामा प्वाल"
+   ],
+   "meaning_ids": [
+    32095297
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "곰",
+   "nepali_candidates": [
+    "भालु"
+   ],
+   "meaning_ids": [
+    28505440
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "공기",
+   "nepali_candidates": [
+    "हावा"
+   ],
+   "meaning_ids": [
+    27847589
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "공주",
+   "nepali_candidates": [
+    "राजकुमारी"
+   ],
+   "meaning_ids": [
+    32094809
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "공포",
+   "nepali_candidates": [
+    "डर"
+   ],
+   "meaning_ids": [
+    37301306
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "과",
+   "nepali_candidates": [
+    "र"
+   ],
+   "meaning_ids": [
+    27849769
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "과학",
+   "nepali_candidates": [
+    "बिज्ञान"
+   ],
+   "meaning_ids": [
+    36282946
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "국어",
+   "nepali_candidates": [
+    "भाषा"
+   ],
+   "meaning_ids": [
+    31729014
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "그램",
+   "nepali_candidates": [
+    "ग्राम"
+   ],
+   "meaning_ids": [
+    32090823
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "금",
+   "nepali_candidates": [
+    "सुन",
+    "शुक्र",
+    "शु"
+   ],
+   "meaning_ids": [
+    27892914,
+    32088773,
+    32088780
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "기도",
+   "nepali_candidates": [
+    "जोडेको हातहरू",
+    "प्राथर्ना"
+   ],
+   "meaning_ids": [
+    32094824,
+    37301402
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "깨닫다",
+   "nepali_candidates": [
+    "उठ"
+   ],
+   "meaning_ids": [
+    31749808
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "꿀",
+   "nepali_candidates": [
+    "मह",
+    "महको भाँडो"
+   ],
+   "meaning_ids": [
+    27897735,
+    32095054
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "꿈꾸다",
+   "nepali_candidates": [
+    "सपना देख्नु"
+   ],
+   "meaning_ids": [
+    27879995
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "나비",
+   "nepali_candidates": [
+    "putali",
+    "पुतली"
+   ],
+   "meaning_ids": [
+    44086,
+    27863159
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "낙엽",
+   "nepali_candidates": [
+    "झरेको पात"
+   ],
+   "meaning_ids": [
+    32095001
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "날개",
+   "nepali_candidates": [
+    "पखेटा"
+   ],
+   "meaning_ids": [
+    28562875
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "남미",
+   "nepali_candidates": [
+    "दक्षिण अमेरिका"
+   ],
+   "meaning_ids": [
+    31685514
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "눈동자",
+   "nepali_candidates": [
+    "आँखाको नानी"
+   ],
+   "meaning_ids": [
+    27929185
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "눈썹",
+   "nepali_candidates": [
+    "आँखीभौं"
+   ],
+   "meaning_ids": [
+    27885029
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "달러",
+   "nepali_candidates": [
+    "डलर बैङ्कनोट"
+   ],
+   "meaning_ids": [
+    32095402
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "대사",
+   "nepali_candidates": [
+    "राजदूत"
+   ],
+   "meaning_ids": [
+    31742159
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "독일어",
+   "nepali_candidates": [
+    "जर्मन"
+   ],
+   "meaning_ids": [
+    97642
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "동양",
+   "nepali_candidates": [
+    "पूर्व"
+   ],
+   "meaning_ids": [
+    28534313
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "두려움",
+   "nepali_candidates": [
+    "डर"
+   ],
+   "meaning_ids": [
+    37301306
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "따님",
+   "nepali_candidates": [
+    "छोरी"
+   ],
+   "meaning_ids": [
+    27874926
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "땅콩",
+   "nepali_candidates": [
+    "बदाम"
+   ],
+   "meaning_ids": [
+    28424295
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "또한",
+   "nepali_candidates": [
+    "पनि"
+   ],
+   "meaning_ids": [
+    27848633
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "레몬",
+   "nepali_candidates": [
+    "कागती"
+   ],
+   "meaning_ids": [
+    32095007
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "리터",
+   "nepali_candidates": [
+    "लिटर"
+   ],
+   "meaning_ids": [
+    32090860
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "마늘",
+   "nepali_candidates": [
+    "लसुन"
+   ],
+   "meaning_ids": [
+    27890846
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "면",
+   "nepali_candidates": [
+    "कपास"
+   ],
+   "meaning_ids": [
+    37301284
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "모래",
+   "nepali_candidates": [
+    "तिर्",
+    "बगर्",
+    "रेति",
+    "बालुवा"
+   ],
+   "meaning_ids": [
+    31739969,
+    31739969,
+    31739969,
+    37301415
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "무지개",
+   "nepali_candidates": [
+    "इन्द्रेनी",
+    "इन्द्रेणी"
+   ],
+   "meaning_ids": [
+    31740667,
+    32095254
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "묵다",
+   "nepali_candidates": [
+    "सुत"
+   ],
+   "meaning_ids": [
+    31748270
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "문학",
+   "nepali_candidates": [
+    "साहित्य"
+   ],
+   "meaning_ids": [
+    27907699
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "물가",
+   "nepali_candidates": [
+    "तिर्",
+    "बगर्",
+    "रेति"
+   ],
+   "meaning_ids": [
+    31739969,
+    31739969,
+    31739969
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "민주주의",
+   "nepali_candidates": [
+    "लोकतन्त्र"
+   ],
+   "meaning_ids": [
+    28443188
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "밀리미터",
+   "nepali_candidates": [
+    "मिलिमिटर"
+   ],
+   "meaning_ids": [
+    32090807
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "바위",
+   "nepali_candidates": [
+    "ढुङ्गा"
+   ],
+   "meaning_ids": [
+    37301410
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "밤색",
+   "nepali_candidates": [
+    "खैरो"
+   ],
+   "meaning_ids": [
+    37301268
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "방울",
+   "nepali_candidates": [
+    "छिटो"
+   ],
+   "meaning_ids": [
+    37301294
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "배구",
+   "nepali_candidates": [
+    "भलिबल"
+   ],
+   "meaning_ids": [
+    28507697
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "배꼽",
+   "nepali_candidates": [
+    "नाइटो"
+   ],
+   "meaning_ids": [
+    27915169
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "버섯",
+   "nepali_candidates": [
+    "च्याउ"
+   ],
+   "meaning_ids": [
+    32095020
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "벌레",
+   "nepali_candidates": [
+    "कीरा"
+   ],
+   "meaning_ids": [
+    37301477
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "법",
+   "nepali_candidates": [
+    "कानून"
+   ],
+   "meaning_ids": [
+    1656455
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "베개",
+   "nepali_candidates": [
+    "सिरानी"
+   ],
+   "meaning_ids": [
+    27924172
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "벼",
+   "nepali_candidates": [
+    "चामल",
+    "चामलको सिफ"
+   ],
+   "meaning_ids": [
+    27933929,
+    32094996
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "보름달",
+   "nepali_candidates": [
+    "पूर्णिमा"
+   ],
+   "meaning_ids": [
+    32095226
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "보리",
+   "nepali_candidates": [
+    "जौ"
+   ],
+   "meaning_ids": [
+    37301250
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "보행자",
+   "nepali_candidates": [
+    "पदयात्री"
+   ],
+   "meaning_ids": [
+    32094828
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "복숭아",
+   "nepali_candidates": [
+    "आरु",
+    "बखडा"
+   ],
+   "meaning_ids": [
+    28584295,
+    32095013
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "볼링",
+   "nepali_candidates": [
+    "बलिङ्ग"
+   ],
+   "meaning_ids": [
+    32095296
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "부처",
+   "nepali_candidates": [
+    "बुद्ध"
+   ],
+   "meaning_ids": [
+    28510300
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "분필",
+   "nepali_candidates": [
+    "चक",
+    "खरीमट्टी"
+   ],
+   "meaning_ids": [
+    27865789,
+    27865789
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "불어",
+   "nepali_candidates": [
+    "फ्रांसिसी",
+    "फ्रान्सेली भाषा"
+   ],
+   "meaning_ids": [
+    28164809,
+    31685312
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "빛",
+   "nepali_candidates": [
+    "प्रकाश"
+   ],
+   "meaning_ids": [
+    27907118
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "뺨",
+   "nepali_candidates": [
+    "गाला"
+   ],
+   "meaning_ids": [
+    37301274
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "뼈",
+   "nepali_candidates": [
+    "हाड"
+   ],
+   "meaning_ids": [
+    37301263
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사내",
+   "nepali_candidates": [
+    "मानव",
+    "मान्छे"
+   ],
+   "meaning_ids": [
+    27909736,
+    27909736
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사막",
+   "nepali_candidates": [
+    "मरुभूमि"
+   ],
+   "meaning_ids": [
+    37301290
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사망",
+   "nepali_candidates": [
+    "मृत्यु"
+   ],
+   "meaning_ids": [
+    27875166
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사자",
+   "nepali_candidates": [
+    "सिंह"
+   ],
+   "meaning_ids": [
+    27907527
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사회자",
+   "nepali_candidates": [
+    "अध्यक्ष"
+   ],
+   "meaning_ids": [
+    31702639
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "선글라스",
+   "nepali_candidates": [
+    "घाममा लगाउने चश्मा"
+   ],
+   "meaning_ids": [
+    32094901
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "섭씨",
+   "nepali_candidates": [
+    "डिग्री सेल्सियस्"
+   ],
+   "meaning_ids": [
+    32090848
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "세기",
+   "nepali_candidates": [
+    "शताब्दी"
+   ],
+   "meaning_ids": [
+    32090778
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "소나무",
+   "nepali_candidates": [
+    "सल्ला",
+    "सदाबहार"
+   ],
+   "meaning_ids": [
+    27924246,
+    32094992
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "소방차",
+   "nepali_candidates": [
+    "फायर इन्जिन"
+   ],
+   "meaning_ids": [
+    32095146
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "소비자",
+   "nepali_candidates": [
+    "उपभोक्ता"
+   ],
+   "meaning_ids": [
+    31741434
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "속눈썹",
+   "nepali_candidates": [
+    "परेला"
+   ],
+   "meaning_ids": [
+    27885036
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "손뼉",
+   "nepali_candidates": [
+    "ताली बजिरहेका हातहरू"
+   ],
+   "meaning_ids": [
+    32094861
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "쇠",
+   "nepali_candidates": [
+    "phalam"
+   ],
+   "meaning_ids": [
+    43840
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "수단",
+   "nepali_candidates": [
+    "सुडान"
+   ],
+   "meaning_ids": [
+    32088562
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "수학",
+   "nepali_candidates": [
+    "गणित"
+   ],
+   "meaning_ids": [
+    27910642
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "숲",
+   "nepali_candidates": [
+    "जङ्गल"
+   ],
+   "meaning_ids": [
+    37301314
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "식물",
+   "nepali_candidates": [
+    "बिरूवा"
+   ],
+   "meaning_ids": [
+    27924739
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "신",
+   "nepali_candidates": [
+    "ईश्वर",
+    "देवता",
+    "परमात्मा",
+    "परमेश्वर"
+   ],
+   "meaning_ids": [
+    27892865,
+    28510206,
+    28510206,
+    28510206
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "심장",
+   "nepali_candidates": [
+    "मुटु",
+    "हृदय"
+   ],
+   "meaning_ids": [
+    27895981,
+    27895981
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아가",
+   "nepali_candidates": [
+    "सुलेमानको श्रेष्ठगीत"
+   ],
+   "meaning_ids": [
+    36300154
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아드님",
+   "nepali_candidates": [
+    "छोरा"
+   ],
+   "meaning_ids": [
+    27942723
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아픔",
+   "nepali_candidates": [
+    "दुख"
+   ],
+   "meaning_ids": [
+    37301387
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "안내원",
+   "nepali_candidates": [
+    "सूचना डेस्कको व्यक्ति"
+   ],
+   "meaning_ids": [
+    32094820
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "애정",
+   "nepali_candidates": [
+    "माया"
+   ],
+   "meaning_ids": [
+    27908602
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "양",
+   "nepali_candidates": [
+    "भेंडा",
+    "भेडाा"
+   ],
+   "meaning_ids": [
+    27939288,
+    32094947
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "양파",
+   "nepali_candidates": [
+    "प्याज"
+   ],
+   "meaning_ids": [
+    37301382
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "연",
+   "nepali_candidates": [
+    "सीसा"
+   ],
+   "meaning_ids": [
+    28599955
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "연인",
+   "nepali_candidates": [
+    "मुटु सहितको जोडी"
+   ],
+   "meaning_ids": [
+    32094833
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "예술가",
+   "nepali_candidates": [
+    "कलाकार"
+   ],
+   "meaning_ids": [
+    31742266
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "오리",
+   "nepali_candidates": [
+    "हाँस"
+   ],
+   "meaning_ids": [
+    27880505
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "옥수수",
+   "nepali_candidates": [
+    "मकैको पात"
+   ],
+   "meaning_ids": [
+    32095018
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "와인",
+   "nepali_candidates": [
+    "वाइन गिलास"
+   ],
+   "meaning_ids": [
+    32095060
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "외과",
+   "nepali_candidates": [
+    "शल्यचिकित्सा"
+   ],
+   "meaning_ids": [
+    28436785
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "용",
+   "nepali_candidates": [
+    "ड्रयागन"
+   ],
+   "meaning_ids": [
+    32094967
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "우주",
+   "nepali_candidates": [
+    "ब्रमाण्ड",
+    "विश्व"
+   ],
+   "meaning_ids": [
+    9779133,
+    27956102
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "우편함",
+   "nepali_candidates": [
+    "पोस्टबक्स"
+   ],
+   "meaning_ids": [
+    32095419
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "원숭이",
+   "nepali_candidates": [
+    "बाँदर"
+   ],
+   "meaning_ids": [
+    37301363
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "유도",
+   "nepali_candidates": [
+    "जूडो"
+   ],
+   "meaning_ids": [
+    28467612
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "은",
+   "nepali_candidates": [
+    "चाँदी",
+    "रूप्यम्"
+   ],
+   "meaning_ids": [
+    27940372,
+    36272290
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "이름표",
+   "nepali_candidates": [
+    "नामको ब्याड्ज"
+   ],
+   "meaning_ids": [
+    32095535
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "이메일",
+   "nepali_candidates": [
+    "इ-मेल"
+   ],
+   "meaning_ids": [
+    32095409
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "이비인후과",
+   "nepali_candidates": [
+    "ओटोल्यारिंजियोलोजी"
+   ],
+   "meaning_ids": [
+    1154779
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "이자",
+   "nepali_candidates": [
+    "अग्न्याशय"
+   ],
+   "meaning_ids": [
+    28490090
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "인간",
+   "nepali_candidates": [
+    "मान्छे"
+   ],
+   "meaning_ids": [
+    37301334
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "인도",
+   "nepali_candidates": [
+    "भारत",
+    "हिन्दुस्तान"
+   ],
+   "meaning_ids": [
+    98753,
+    98753
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "일본어",
+   "nepali_candidates": [
+    "जापानी"
+   ],
+   "meaning_ids": [
+    17287
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "일출",
+   "nepali_candidates": [
+    "सूर्योदय"
+   ],
+   "meaning_ids": [
+    32095113
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "임금",
+   "nepali_candidates": [
+    "राजा"
+   ],
+   "meaning_ids": [
+    27904633
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "자매",
+   "nepali_candidates": [
+    "दिदी",
+    "बहिनी"
+   ],
+   "meaning_ids": [
+    27940664,
+    27940664
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "작곡가",
+   "nepali_candidates": [
+    "रचनाकार"
+   ],
+   "meaning_ids": [
+    31742916
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "잠자리",
+   "nepali_candidates": [
+    "ओछ्यान",
+    "खाट"
+   ],
+   "meaning_ids": [
+    27857527,
+    27857527
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "적",
+   "nepali_candidates": [
+    "शत्रु"
+   ],
+   "meaning_ids": [
+    37301300
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "점",
+   "nepali_candidates": [
+    "बिन्दु"
+   ],
+   "meaning_ids": [
+    27925391
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "정오",
+   "nepali_candidates": [
+    "मध्यान्ह",
+    "n"
+   ],
+   "meaning_ids": [
+    32088850,
+    32088860
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "젖",
+   "nepali_candidates": [
+    "दुध"
+   ],
+   "meaning_ids": [
+    27912135
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "조상",
+   "nepali_candidates": [
+    "पुर्खा"
+   ],
+   "meaning_ids": [
+    31742175
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "종교",
+   "nepali_candidates": [
+    "धमर"
+   ],
+   "meaning_ids": [
+    37301407
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "주먹",
+   "nepali_candidates": [
+    "उठाइएको मुठ्ठी"
+   ],
+   "meaning_ids": [
+    32094858
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "주유소",
+   "nepali_candidates": [
+    "इन्धनको पम्प"
+   ],
+   "meaning_ids": [
+    32095158
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "죽음",
+   "nepali_candidates": [
+    "मृत्यु"
+   ],
+   "meaning_ids": [
+    27875166
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "중국어",
+   "nepali_candidates": [
+    "चीनी",
+    "चीनियाँ",
+    "चिनियाँ"
+   ],
+   "meaning_ids": [
+    17325,
+    36131,
+    4445083
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "쥐",
+   "nepali_candidates": [
+    "मुसो"
+   ],
+   "meaning_ids": [
+    27913862
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "지구",
+   "nepali_candidates": [
+    "पृथ्वी",
+    "भूमध्य रेखा सहितको विश्व"
+   ],
+   "meaning_ids": [
+    98777,
+    32095072
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "지진",
+   "nepali_candidates": [
+    "भूकम्प",
+    "भुँइचालो",
+    "भुइँचालो",
+    "भैँचालो"
+   ],
+   "meaning_ids": [
+    27881062,
+    27881062,
+    28356602,
+    28356602
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "질병",
+   "nepali_candidates": [
+    "रोग",
+    "बिमारी"
+   ],
+   "meaning_ids": [
+    27878286,
+    27878286
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "짐승",
+   "nepali_candidates": [
+    "जनावर"
+   ],
+   "meaning_ids": [
+    31711344
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "철",
+   "nepali_candidates": [
+    "phalam",
+    "फलाम"
+   ],
+   "meaning_ids": [
+    43840,
+    36272283
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "총",
+   "nepali_candidates": [
+    "पिस्तोल"
+   ],
+   "meaning_ids": [
+    32095468
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "치즈",
+   "nepali_candidates": [
+    "पनिर"
+   ],
+   "meaning_ids": [
+    27866286
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "키스",
+   "nepali_candidates": [
+    "चुम्बन"
+   ],
+   "meaning_ids": [
+    32094832
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "탁자",
+   "nepali_candidates": [
+    "टेबुल"
+   ],
+   "meaning_ids": [
+    27948730
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "턱",
+   "nepali_candidates": [
+    "चिउँडो"
+   ],
+   "meaning_ids": [
+    37301278
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "털",
+   "nepali_candidates": [
+    "कपाल"
+   ],
+   "meaning_ids": [
+    28533769
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "토",
+   "nepali_candidates": [
+    "शनि",
+    "श"
+   ],
+   "meaning_ids": [
+    32088774,
+    32088781
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "파도",
+   "nepali_candidates": [
+    "पानीको तरंग"
+   ],
+   "meaning_ids": [
+    32095266
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "페이지",
+   "nepali_candidates": [
+    "पाना"
+   ],
+   "meaning_ids": [
+    37301386
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "풀",
+   "nepali_candidates": [
+    "जडीबुटी"
+   ],
+   "meaning_ids": [
+    32094997
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "프린터",
+   "nepali_candidates": [
+    "प्रिन्टर"
+   ],
+   "meaning_ids": [
+    32095360
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "하느님",
+   "nepali_candidates": [
+    "ईश्वर",
+    "देवता",
+    "परमात्मा",
+    "परमेश्वर"
+   ],
+   "meaning_ids": [
+    27892865,
+    31741130,
+    31741130,
+    31741130
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "하양",
+   "nepali_candidates": [
+    "सेतो"
+   ],
+   "meaning_ids": [
+    28376273
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "한국말",
+   "nepali_candidates": [
+    "कोरियाली"
+   ],
+   "meaning_ids": [
+    18445
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "한국어",
+   "nepali_candidates": [
+    "कोरियाली",
+    "कोरियन"
+   ],
+   "meaning_ids": [
+    17356,
+    32088256
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "한밤중",
+   "nepali_candidates": [
+    "मध्यरात",
+    "अधरात"
+   ],
+   "meaning_ids": [
+    27912000,
+    27912000
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "한자",
+   "nepali_candidates": [
+    "हान"
+   ],
+   "meaning_ids": [
+    32088236
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "해변",
+   "nepali_candidates": [
+    "तिर्",
+    "बगर्",
+    "रेति"
+   ],
+   "meaning_ids": [
+    31739969,
+    31739969,
+    31739969
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "핸드백",
+   "nepali_candidates": [
+    "हातेब्याग"
+   ],
+   "meaning_ids": [
+    32094910
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "형님",
+   "nepali_candidates": [
+    "दाजु"
+   ],
+   "meaning_ids": [
+    27862176
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "홍수",
+   "nepali_candidates": [
+    "बाढी"
+   ],
+   "meaning_ids": [
+    28572194
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "화폐",
+   "nepali_candidates": [
+    "मुद्रा"
+   ],
+   "meaning_ids": [
+    28543322
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "회장",
+   "nepali_candidates": [
+    "अध्यक्ष"
+   ],
+   "meaning_ids": [
+    31702639
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "후추",
+   "nepali_candidates": [
+    "खोसार्नी",
+    "मरिच"
+   ],
+   "meaning_ids": [
+    37301394,
+    37301394
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "대한민국",
+   "nepali_candidates": [
+    "दक्षिण कोरिया"
+   ],
+   "meaning_ids": [
+    27841522
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아시아",
+   "nepali_candidates": [
+    "एसिया",
+    "एशिया"
+   ],
+   "meaning_ids": [
+    88060,
+    1346200
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아프리카",
+   "nepali_candidates": [
+    "अफ्रीका",
+    "अफ्रिका"
+   ],
+   "meaning_ids": [
+    1555354,
+    36229626
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "유럽",
+   "nepali_candidates": [
+    "युरोप",
+    "युरोपेली संघ"
+   ],
+   "meaning_ids": [
+    1699330,
+    27832884
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "거품",
+   "nepali_candidates": [
+    "बबल"
+   ],
+   "meaning_ids": [
+    27862302
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "괴롭히다",
+   "nepali_candidates": [
+    "दुख दि"
+   ],
+   "meaning_ids": [
+    31746794
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "기적",
+   "nepali_candidates": [
+    "चमत्कार"
+   ],
+   "meaning_ids": [
+    27912476
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "눈사람",
+   "nepali_candidates": [
+    "हिममानव"
+   ],
+   "meaning_ids": [
+    32095261
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "도서",
+   "nepali_candidates": [
+    "पुस्तक",
+    "किताप"
+   ],
+   "meaning_ids": [
+    27860683,
+    27860683
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "도시락",
+   "nepali_candidates": [
+    "बेन्टो बक्स"
+   ],
+   "meaning_ids": [
+    32095031
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "독",
+   "nepali_candidates": [
+    "बिख"
+   ],
+   "meaning_ids": [
+    37301400
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "독립",
+   "nepali_candidates": [
+    "स्वतन्त्रता"
+   ],
+   "meaning_ids": [
+    28392125
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "동화",
+   "nepali_candidates": [
+    "बालकथा"
+   ],
+   "meaning_ids": [
+    27885334
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "떠오르다",
+   "nepali_candidates": [
+    "चढ"
+   ],
+   "meaning_ids": [
+    31750105
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "똥",
+   "nepali_candidates": [
+    "पुको थुप्रो"
+   ],
+   "meaning_ids": [
+    32094787
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "리본",
+   "nepali_candidates": [
+    "रिबन"
+   ],
+   "meaning_ids": [
+    32095282
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "마우스",
+   "nepali_candidates": [
+    "मुसो"
+   ],
+   "meaning_ids": [
+    31712984
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "마이크",
+   "nepali_candidates": [
+    "माइक्रोफोन"
+   ],
+   "meaning_ids": [
+    32095347
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "문서",
+   "nepali_candidates": [
+    "स्क्रोल"
+   ],
+   "meaning_ids": [
+    32095394
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "문자",
+   "nepali_candidates": [
+    "akshyar",
+    "वर्णमाला",
+    "अक्षर"
+   ],
+   "meaning_ids": [
+    33893,
+    27848597,
+    27906703
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "문장",
+   "nepali_candidates": [
+    "चिन्ह",
+    "निशान"
+   ],
+   "meaning_ids": [
+    27868389,
+    27868389
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "바구니",
+   "nepali_candidates": [
+    "टोकरी"
+   ],
+   "meaning_ids": [
+    27856969
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "바늘",
+   "nepali_candidates": [
+    "सियो"
+   ],
+   "meaning_ids": [
+    37301372
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "발자국",
+   "nepali_candidates": [
+    "खुट्टाको डोब"
+   ],
+   "meaning_ids": [
+    32094867
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "비우다",
+   "nepali_candidates": [
+    "खा",
+    "खानु"
+   ],
+   "meaning_ids": [
+    31746938,
+    31746938
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사생활",
+   "nepali_candidates": [
+    "गोपनियता"
+   ],
+   "meaning_ids": [
+    27927630
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사설",
+   "nepali_candidates": [
+    "सम्पादकिय"
+   ],
+   "meaning_ids": [
+    27881378
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "삶",
+   "nepali_candidates": [
+    "चिठी"
+   ],
+   "meaning_ids": [
+    27907022
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "생명",
+   "nepali_candidates": [
+    "चिठी"
+   ],
+   "meaning_ids": [
+    27907022
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "서적",
+   "nepali_candidates": [
+    "पुस्तक",
+    "किताप"
+   ],
+   "meaning_ids": [
+    28196653,
+    28196653
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "연기",
+   "nepali_candidates": [
+    "धुँवा",
+    "धूवाँ"
+   ],
+   "meaning_ids": [
+    27941680,
+    27941680
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "영혼",
+   "nepali_candidates": [
+    "आत्मा"
+   ],
+   "meaning_ids": [
+    27942899
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "온천",
+   "nepali_candidates": [
+    "तातो स्प्रिङ्"
+   ],
+   "meaning_ids": [
+    32095117
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "우물",
+   "nepali_candidates": [
+    "ईनार"
+   ],
+   "meaning_ids": [
+    27959914
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "운명",
+   "nepali_candidates": [
+    "भाग्य"
+   ],
+   "meaning_ids": [
+    27885810
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "인류",
+   "nepali_candidates": [
+    "मान्छे"
+   ],
+   "meaning_ids": [
+    27909737
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "전쟁",
+   "nepali_candidates": [
+    "थियो",
+    "लडाइँ",
+    "युद्ध"
+   ],
+   "meaning_ids": [
+    27958998,
+    37301460,
+    37301460
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "정보",
+   "nepali_candidates": [
+    "जानकारी",
+    "सुचना"
+   ],
+   "meaning_ids": [
+    27901406,
+    27901406
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "죽이다",
+   "nepali_candidates": [
+    "मार्नु"
+   ],
+   "meaning_ids": [
+    27904529
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "진실",
+   "nepali_candidates": [
+    "सत्य"
+   ],
+   "meaning_ids": [
+    37301453
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "질",
+   "nepali_candidates": [
+    "पुति",
+    "योनीमार्ग"
+   ],
+   "meaning_ids": [
+    27957125,
+    27957125
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "충돌",
+   "nepali_candidates": [
+    "टक्कर"
+   ],
+   "meaning_ids": [
+    32094892
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "탑",
+   "nepali_candidates": [
+    "धररा"
+   ],
+   "meaning_ids": [
+    37301451
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "평화",
+   "nepali_candidates": [
+    "शान्ति"
+   ],
+   "meaning_ids": [
+    36281040
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "풍선",
+   "nepali_candidates": [
+    "बेलुन"
+   ],
+   "meaning_ids": [
+    32095272
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "후보",
+   "nepali_candidates": [
+    "उमेद्वार"
+   ],
+   "meaning_ids": [
+    31742652
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "가축",
+   "nepali_candidates": [
+    "जनावर"
+   ],
+   "meaning_ids": [
+    31711344
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "고아",
+   "nepali_candidates": [
+    "गोआ"
+   ],
+   "meaning_ids": [
+    27833688
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "골짜기",
+   "nepali_candidates": [
+    "उपत्यका",
+    "खाल्डो"
+   ],
+   "meaning_ids": [
+    37301455,
+    37301455
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "교도소",
+   "nepali_candidates": [
+    "थाना"
+   ],
+   "meaning_ids": [
+    27927617
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "구급차",
+   "nepali_candidates": [
+    "एम्बुलेन्स"
+   ],
+   "meaning_ids": [
+    32095145
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "굶주림",
+   "nepali_candidates": [
+    "भोक"
+   ],
+   "meaning_ids": [
+    37301335
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "기",
+   "nepali_candidates": [
+    "झण्डा"
+   ],
+   "meaning_ids": [
+    27887400
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "기호",
+   "nepali_candidates": [
+    "प्रतीकहरू",
+    "संकेतहरू राख्न"
+   ],
+   "meaning_ids": [
+    32088322,
+    32095620
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "낙타",
+   "nepali_candidates": [
+    "ऊँट",
+    "उँट"
+   ],
+   "meaning_ids": [
+    27863767,
+    28530868
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "낱말",
+   "nepali_candidates": [
+    "शब्द"
+   ],
+   "meaning_ids": [
+    27961480
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "놈",
+   "nepali_candidates": [
+    "नोमे"
+   ],
+   "meaning_ids": [
+    32089380
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "누이",
+   "nepali_candidates": [
+    "बहिनी"
+   ],
+   "meaning_ids": [
+    28279684
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "눈꺼풀",
+   "nepali_candidates": [
+    "परेली"
+   ],
+   "meaning_ids": [
+    27885045
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "늑대",
+   "nepali_candidates": [
+    "ब्वाँसो",
+    "भेड़िया"
+   ],
+   "meaning_ids": [
+    31712541,
+    37301472
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "다이아몬드",
+   "nepali_candidates": [
+    "हिरा",
+    "डायमन्ड सूट"
+   ],
+   "meaning_ids": [
+    28518109,
+    32095328
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "당구",
+   "nepali_candidates": [
+    "बिलियर्ड्स"
+   ],
+   "meaning_ids": [
+    32095295
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "당뇨병",
+   "nepali_candidates": [
+    "मधुमेह"
+   ],
+   "meaning_ids": [
+    1326315
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "동사",
+   "nepali_candidates": [
+    "क्रिया"
+   ],
+   "meaning_ids": [
+    27957656
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "동지",
+   "nepali_candidates": [
+    "कमरेड",
+    "साथी"
+   ],
+   "meaning_ids": [
+    27870106,
+    27870106
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "마누라",
+   "nepali_candidates": [
+    "पत्नी"
+   ],
+   "meaning_ids": [
+    27960735
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "명칭",
+   "nepali_candidates": [
+    "नाम"
+   ],
+   "meaning_ids": [
+    27914814
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "물방울",
+   "nepali_candidates": [
+    "थोपा"
+   ],
+   "meaning_ids": [
+    32095265
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "밀림",
+   "nepali_candidates": [
+    "जंगल",
+    "जंङगल",
+    "जङ्गल"
+   ],
+   "meaning_ids": [
+    28381007,
+    28381007,
+    31737634
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "바퀴벌레",
+   "nepali_candidates": [
+    "साँग्लो"
+   ],
+   "meaning_ids": [
+    28609045
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "벗",
+   "nepali_candidates": [
+    "मित्र",
+    "साथी"
+   ],
+   "meaning_ids": [
+    27889720,
+    27889720
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "벚꽃",
+   "nepali_candidates": [
+    "चेरी फुल्ने"
+   ],
+   "meaning_ids": [
+    32094983
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "병아리",
+   "nepali_candidates": [
+    "कुखुराको चल्ला"
+   ],
+   "meaning_ids": [
+    32094961
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "분기",
+   "nepali_candidates": [
+    "सत्र"
+   ],
+   "meaning_ids": [
+    32088909
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "불꽃놀이",
+   "nepali_candidates": [
+    "आतिशबाजी"
+   ],
+   "meaning_ids": [
+    32095269
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "비둘기",
+   "nepali_candidates": [
+    "ढुक्कुर",
+    "ढुकुर"
+   ],
+   "meaning_ids": [
+    32094963,
+    37301397
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "빈혈",
+   "nepali_candidates": [
+    "रक्त अल्पता"
+   ],
+   "meaning_ids": [
+    27849874
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "사원",
+   "nepali_candidates": [
+    "क्लर्क"
+   ],
+   "meaning_ids": [
+    31742828
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "산소",
+   "nepali_candidates": [
+    "अक्सिजन"
+   ],
+   "meaning_ids": [
+    36272271
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "상표",
+   "nepali_candidates": [
+    "व्यापार चिन्ह"
+   ],
+   "meaning_ids": [
+    32095563
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "새싹",
+   "nepali_candidates": [
+    "अंकुर"
+   ],
+   "meaning_ids": [
+    32094991
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "샘",
+   "nepali_candidates": [
+    "ईनार"
+   ],
+   "meaning_ids": [
+    27959914
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "석탄",
+   "nepali_candidates": [
+    "कोइला"
+   ],
+   "meaning_ids": [
+    37301281
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "선박",
+   "nepali_candidates": [
+    "जहाज"
+   ],
+   "meaning_ids": [
+    27939497
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "성경",
+   "nepali_candidates": [
+    "बाइबल"
+   ],
+   "meaning_ids": [
+    27830040
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "솔",
+   "nepali_candidates": [
+    "सल्ला"
+   ],
+   "meaning_ids": [
+    27924246
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "수염",
+   "nepali_candidates": [
+    "दाह्री"
+   ],
+   "meaning_ids": [
+    27857388
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "수화기",
+   "nepali_candidates": [
+    "टेलिफोन रिसिभर"
+   ],
+   "meaning_ids": [
+    32095356
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "승마",
+   "nepali_candidates": [
+    "घोडा दौड"
+   ],
+   "meaning_ids": [
+    32095306
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "시간대",
+   "nepali_candidates": [
+    "समय क्षेत्र"
+   ],
+   "meaning_ids": [
+    32089005
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "식은땀",
+   "nepali_candidates": [
+    "चिसो पसिना सहितको अनुहार"
+   ],
+   "meaning_ids": [
+    32094751
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "신장",
+   "nepali_candidates": [
+    "मिर्गौलो"
+   ],
+   "meaning_ids": [
+    27904517
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "아이디",
+   "nepali_candidates": [
+    "स्क्वायर्ड आइडी"
+   ],
+   "meaning_ids": [
+    32095629
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "양반",
+   "nepali_candidates": [
+    "पति",
+    "लोग्ने"
+   ],
+   "meaning_ids": [
+    27898660,
+    28571126
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "양초",
+   "nepali_candidates": [
+    "मैन बत्ती"
+   ],
+   "meaning_ids": [
+    32095381
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "어미",
+   "nepali_candidates": [
+    "आमा"
+   ],
+   "meaning_ids": [
+    27913699
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "여우",
+   "nepali_candidates": [
+    "फ्याउरो"
+   ],
+   "meaning_ids": [
+    37301315
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "염소",
+   "nepali_candidates": [
+    "क्लोरिन",
+    "बाख्रा"
+   ],
+   "meaning_ids": [
+    36272280,
+    32094948
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "오만",
+   "nepali_candidates": [
+    "ओमन"
+   ],
+   "meaning_ids": [
+    32088536
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "우기",
+   "nepali_candidates": [
+    "वर्षा ऋतु"
+   ],
+   "meaning_ids": [
+    27930617
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "의학",
+   "nepali_candidates": [
+    "चिकित्साशास्त्र"
+   ],
+   "meaning_ids": [
+    36282943
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "이슬람교",
+   "nepali_candidates": [
+    "इस्लाम"
+   ],
+   "meaning_ids": [
+    27835239
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "인",
+   "nepali_candidates": [
+    "फास्फोरस"
+   ],
+   "meaning_ids": [
+    36272278
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "일몰",
+   "nepali_candidates": [
+    "सूर्यास्त"
+   ],
+   "meaning_ids": [
+    32095115
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "자정",
+   "nepali_candidates": [
+    "मध्यरात",
+    "अधरात"
+   ],
+   "meaning_ids": [
+    28587770,
+    28587770
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "전구",
+   "nepali_candidates": [
+    "बत्तिको चिम"
+   ],
+   "meaning_ids": [
+    32095382
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "천막",
+   "nepali_candidates": [
+    "पाल"
+   ],
+   "meaning_ids": [
+    28582317
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "철학",
+   "nepali_candidates": [
+    "दर्शन"
+   ],
+   "meaning_ids": [
+    36282944
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "톤",
+   "nepali_candidates": [
+    "टन"
+   ],
+   "meaning_ids": [
+    32090826
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "폭탄",
+   "nepali_candidates": [
+    "बम"
+   ],
+   "meaning_ids": [
+    32094891
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "피부과",
+   "nepali_candidates": [
+    "डर्म्याटोलोजी",
+    "चर्मशास्त्र"
+   ],
+   "meaning_ids": [
+    28443531,
+    31728157
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "하천",
+   "nepali_candidates": [
+    "नदी"
+   ],
+   "meaning_ids": [
+    31740698
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "해양",
+   "nepali_candidates": [
+    "सागर"
+   ],
+   "meaning_ids": [
+    27937313
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "혈액",
+   "nepali_candidates": [
+    "हि"
+   ],
+   "meaning_ids": [
+    28562558
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "형용사",
+   "nepali_candidates": [
+    "विशेषण"
+   ],
+   "meaning_ids": [
+    27846396
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "화산",
+   "nepali_candidates": [
+    "ज्वालामुखी"
+   ],
+   "meaning_ids": [
+    27958517
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "화살",
+   "nepali_candidates": [
+    "बाण"
+   ],
+   "meaning_ids": [
+    37301246
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "화학",
+   "nepali_candidates": [
+    "रसायन शास्त्र",
+    "रसायनशास्त्र"
+   ],
+   "meaning_ids": [
+    27866360,
+    36282938
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "황색",
+   "nepali_candidates": [
+    "पहेंलो"
+   ],
+   "meaning_ids": [
+    28547992
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "남한",
+   "nepali_candidates": [
+    "दक्षिण कोरिया"
+   ],
+   "meaning_ids": [
+    27841522
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "북한",
+   "nepali_candidates": [
+    "उत्तर कोरिया"
+   ],
+   "meaning_ids": [
+    37261549
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "예수",
+   "nepali_candidates": [
+    "येशु क्राइस्ट",
+    "येशु"
+   ],
+   "meaning_ids": [
+    1519911,
+    28416072
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "고리",
+   "nepali_candidates": [
+    "टोकरी",
+    "कर्ली लुप"
+   ],
+   "meaning_ids": [
+    27856969,
+    32095548
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "관",
+   "nepali_candidates": [
+    "कफिन"
+   ],
+   "meaning_ids": [
+    32095475
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "괴물",
+   "nepali_candidates": [
+    "परदेशी राक्षस"
+   ],
+   "meaning_ids": [
+    32094785
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "깃발",
+   "nepali_candidates": [
+    "झण्डा"
+   ],
+   "meaning_ids": [
+    28143513
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "나침반",
+   "nepali_candidates": [
+    "कम्पास"
+   ],
+   "meaning_ids": [
+    27869777
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "넋",
+   "nepali_candidates": [
+    "आत्मा"
+   ],
+   "meaning_ids": [
+    27942899
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "다다르다",
+   "nepali_candidates": [
+    "पछार"
+   ],
+   "meaning_ids": [
+    31751623
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "대양",
+   "nepali_candidates": [
+    "महासागर"
+   ],
+   "meaning_ids": [
+    27917645
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "도끼",
+   "nepali_candidates": [
+    "बन्चरो"
+   ],
+   "meaning_ids": [
+    37301249
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "만세",
+   "nepali_candidates": [
+    "हात उठाइरहेको व्यक्ति"
+   ],
+   "meaning_ids": [
+    32094823
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "망원경",
+   "nepali_candidates": [
+    "टेलिस्कोप"
+   ],
+   "meaning_ids": [
+    32095379
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "바이러스",
+   "nepali_candidates": [
+    "विषाणु"
+   ],
+   "meaning_ids": [
+    27958244
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "방패",
+   "nepali_candidates": [
+    "ढाल"
+   ],
+   "meaning_ids": [
+    32095469
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "석",
+   "nepali_candidates": [
+    "तीन"
+   ],
+   "meaning_ids": [
+    27951240
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "시체",
+   "nepali_candidates": [
+    "मुर्दा",
+    "लास",
+    "मुदार्",
+    "लाश",
+    "अङ्ग"
+   ],
+   "meaning_ids": [
+    27871985,
+    27871985,
+    27871985,
+    27871985,
+    28612632
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "종료",
+   "nepali_candidates": [
+    "सकिएको संकेत गर्ने वाण"
+   ],
+   "meaning_ids": [
+    32095518
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "중지",
+   "nepali_candidates": [
+    "बीचको औंला"
+   ],
+   "meaning_ids": [
+    32094848
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "지리",
+   "nepali_candidates": [
+    "भूगोल"
+   ],
+   "meaning_ids": [
+    31728413
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "지지",
+   "nepali_candidates": [
+    "भूगोल"
+   ],
+   "meaning_ids": [
+    31728413
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "집사람",
+   "nepali_candidates": [
+    "पत्नी"
+   ],
+   "meaning_ids": [
+    27960735
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "칼로리",
+   "nepali_candidates": [
+    "क्यालोरी"
+   ],
+   "meaning_ids": [
+    32090794
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "큰절",
+   "nepali_candidates": [
+    "निहुरिरहेको व्यक्ति"
+   ],
+   "meaning_ids": [
+    32094822
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "팩스",
+   "nepali_candidates": [
+    "फ्याक्स मेसिन"
+   ],
+   "meaning_ids": [
+    32095704
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "폭죽",
+   "nepali_candidates": [
+    "हीरा"
+   ],
+   "meaning_ids": [
+    32095270
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  },
+  {
+   "korean": "회전",
+   "nepali_candidates": [
+    "परिक्रमा"
+   ],
+   "meaning_ids": [
+    32090750
+   ],
+   "source": "panlex",
+   "status": "candidate"
+  }
+ ]
+}

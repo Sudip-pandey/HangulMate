@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<channel>
+	<title>한국어 기초사전 개발 지원(Open API) - 사전 검색</title>
+	<link>https://krdict.korean.go.kr</link>
+	<description>한국어 기초사전 개발 지원(Open API) - 사전 검색 결과</description>
+	<lastBuildDate>20261112021632</lastBuildDate>
+	<total>3</total>
+	<start>1</start>
+	<num>10</num>
+	
+	
+	
+	<item>
+		
+		
+		<target_code>68755</target_code>
+		<word>빠르다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>빠르다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>형용사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=68755</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>어떤 동작을 하는 데 걸리는 시간이 짧다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>한곳에서 다른 곳으로 움직이는 데 걸리는 시간이 짧다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>어떤 일이 이루어지는 데 걸리는 시간이 짧다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>어떤 것이 다른 것보다 시간 순서상으로 앞서 있다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>5</sense_order>
+			<definition>어떤 일을 하기에는 아직 시간이 더 필요하다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>66981</target_code>
+		<word>약삭빠르다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>약싹빠르다</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>형용사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=66981</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>눈치가 빠르거나 자기의 실속을 챙기는 것이 빠르다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>74240</target_code>
+		<word>재빠르다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>재빠르다</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>형용사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=74240</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>동작 등이 날쌔고 빠르다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	
+	
+</channel>
+
+
+

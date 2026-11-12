@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<channel>
+	<title>한국어 기초사전 개발 지원(Open API) - 사전 검색</title>
+	<link>https://krdict.korean.go.kr</link>
+	<description>한국어 기초사전 개발 지원(Open API) - 사전 검색 결과</description>
+	<lastBuildDate>20261112021614</lastBuildDate>
+	<total>1</total>
+	<start>1</start>
+	<num>10</num>
+	
+	
+	
+	<item>
+		
+		
+		<target_code>72481</target_code>
+		<word>행복하다</word>
+		<sup_no>0</sup_no>
+		
+		<origin>幸福하다</origin>
+		
+		
+		<pronunciation>행ː보카다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>형용사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=72481</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>삶에서 충분한 만족과 기쁨을 느껴 흐뭇하다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	
+	
+</channel>
+
+
+

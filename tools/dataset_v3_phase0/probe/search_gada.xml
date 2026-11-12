@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<channel>
+	<title>한국어 기초사전 개발 지원(Open API) - 사전 검색</title>
+	<link>https://krdict.korean.go.kr</link>
+	<description>한국어 기초사전 개발 지원(Open API) - 사전 검색 결과</description>
+	<lastBuildDate>20261112021556</lastBuildDate>
+	<total>83</total>
+	<start>1</start>
+	<num>10</num>
+	
+	
+	
+	<item>
+		
+		
+		<target_code>27500</target_code>
+		<word>가다</word>
+		<sup_no>1</sup_no>
+		
+		
+		<pronunciation>가다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=27500</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>한 곳에서 다른 곳으로 장소를 이동하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>배, 비행기, 자동차 등이 일정한 곳을 다니다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>어떤 목적을 가진 모임에 참석하기 위해 이동하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>어떤 목적을 가지고 일정한 곳으로 움직이다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>5</sense_order>
+			<definition>어떤 단체나 기관에 소속되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>6</sense_order>
+			<definition>특정한 일을 맡아서 하기 위해 다른 곳으로 옮기다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>7</sense_order>
+			<definition>물건이나 권리 등이 누구의 소유가 되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>8</sense_order>
+			<definition>관심이나 눈길이 어떤 대상에 끌리다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>9</sense_order>
+			<definition>말이나 소식 등이 알려지거나 전해지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>10</sense_order>
+			<definition>어떤 상태나 상황을 향해 나아가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>11</sense_order>
+			<definition>어떤 수준이나 정도에 이르다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>12</sense_order>
+			<definition>어느 때가 되거나 어느 곳에 이르다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>13</sense_order>
+			<definition>어떤 현상이나 상태가 유지되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>14</sense_order>
+			<definition>어떤 경로를 통해 움직이다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>15</sense_order>
+			<definition>어떤 일을 하기 위해서 다른 곳으로 이동하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>16</sense_order>
+			<definition>어떤 곳으로 향하거나 이어지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>17</sense_order>
+			<definition>없어져 보이지 않게 되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>18</sense_order>
+			<definition>일이 진행되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>19</sense_order>
+			<definition>어떤 대상에게 이익이나 손해 등이 생기다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>20</sense_order>
+			<definition>건강에 해가 되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>21</sense_order>
+			<definition>어떤 일을 할 때 수고가 많이 들다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>22</sense_order>
+			<definition>줄, 주름, 흠집 등이 생기다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>23</sense_order>
+			<definition>어떤 것에 대해 생각이나 이해가 되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>24</sense_order>
+			<definition>어떤 대상에 작용하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>25</sense_order>
+			<definition>어떤 대상에 노력이나 힘이 미치다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>26</sense_order>
+			<definition>시간이 지나거나 흐르다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>27</sense_order>
+			<definition>기계 등이 움직이거나 작동하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>28</sense_order>
+			<definition>상하거나 변질되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>29</sense_order>
+			<definition>때나 얼룩이 잘 지워지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>30</sense_order>
+			<definition>충격이나 다른 것으로부터의 영향으로 정신을 제대로 못 차리게 되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>31</sense_order>
+			<definition>통신이 연결되었다는 신호 소리가 들리다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>32</sense_order>
+			<definition>어떤 상태로 계속되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>33</sense_order>
+			<definition>사람이 죽다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>28764</target_code>
+		<word>가다</word>
+		<sup_no>2</sup_no>
+		
+		
+		<pronunciation>가다</pronunciation>
+		
+		
+		<word_grade>중급</word_grade>
+		
+		<pos>보조 동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=28764</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>앞말이 나타내는 동작이나 상태, 상태 변화가 계속되거나 진행되는 것을 나타내는 말.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>앞말이 나타내는 동작을 이따금씩 반복해서 계속하는 것을 나타내는 말.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>28116</target_code>
+		<word>가다가</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>가다가</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>부사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=28116</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>어떤 일을 계속하는 동안에 어쩌다가 가끔.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>28117</target_code>
+		<word>가다듬다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>가다듬따</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=28117</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>마음이나 정신 등을 바로잡다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>몸가짐이나 자세 등을 단정하게 정리하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>목청이나 호흡 등을 고르게 조절하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>흐트러진 대열이나 조직 등을 정리하여 싸울 준비를 하다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>53811</target_code>
+		<word>가져가다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>가저가다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=53811</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>어떤 물건을 한 곳에서 다른 곳으로 옮겨 가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>어떤 물건을 챙겨 가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>다른 사람의 물건을 훔쳐 자신의 것으로 만들다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>어떤 상태나 결과로 이끌어 가다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>60092</target_code>
+		<word>건너가다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>건ː너가다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=60092</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>강이나 다리, 도로 등을 사이에 두고 이쪽에서 저쪽으로 가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>이쪽에서 저쪽으로 가다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>32042</target_code>
+		<word>걸어가다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>거러가다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=32042</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>목적지를 향하여 다리를 움직여 나아가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>목적지에 이르기 위하여 어떤 길을 지나가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>(비유적으로) 어떤 분야의 일을 계속해 나가거나, 운명적으로 주어진 과정을 거쳐 나가다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>71456</target_code>
+		<word>나가다</word>
+		<sup_no>1</sup_no>
+		
+		
+		<pronunciation>나가다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=71456</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>어떤 지역이나 공간의 안에서 밖으로 이동하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>앞쪽으로 움직이다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>물건 등이 만들어져 사회에 퍼지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>언론 매체를 통해 무엇이 드러나거나 알려지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>5</sense_order>
+			<definition>말이나 사실, 소문 등이 알려지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>6</sense_order>
+			<definition>새로운 곳이나 영역 등에서 활동을 시작하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>7</sense_order>
+			<definition>일정한 곳에 일하러 다니다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>8</sense_order>
+			<definition>목적이 있어서 어떤 곳에 가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>9</sense_order>
+			<definition>모임에 참여하거나, 운동 경기에 출전하거나, 선거 등에 후보자로 나서다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>10</sense_order>
+			<definition>어떤 지역이나 공간, 또는 속해 있던 곳을 떠나거나 벗어나다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>11</sense_order>
+			<definition>어떤 행동이나 태도를 취하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>12</sense_order>
+			<definition>값이나 무게 등이 어떤 정도에 이르다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>13</sense_order>
+			<definition>돈이나 물건 등이 지급되거나 지출되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>14</sense_order>
+			<definition>옷이나 신, 양말 등이 닳거나 찢어지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>15</sense_order>
+			<definition>사물 등이 부서지거나 신체의 일부를 다치다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>16</sense_order>
+			<definition>의식이나 정신이 없어지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>17</sense_order>
+			<definition>감기 등의 병이 낫다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>18</sense_order>
+			<definition>내놓은 집이나 방 등이 계약이 이루어지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>19</sense_order>
+			<definition>전기가 들어오지 않거나 전깃불이 꺼지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>20</sense_order>
+			<definition>날이 달린 물건이 잘 먹거나 들다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>21</sense_order>
+			<definition>물건이 잘 팔리다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>22</sense_order>
+			<definition>어떤 일을 하러 가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>23</sense_order>
+			<definition>살던 곳에서 다른 곳으로 이사를 하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>24</sense_order>
+			<definition>일이 어느 정도 진행되다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>63723</target_code>
+		<word>내려가다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>내려가다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=63723</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>위에서 아래로 가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>도심이나 중심지에서 지방으로 가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>북쪽에서 남쪽으로 가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>수준이나 등급을 위에서 아래로 옮기다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>5</sense_order>
+			<definition>뒷날로 전하여 이어지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>6</sense_order>
+			<definition>먹은 음식이 소화되다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>7</sense_order>
+			<definition>값이나 통계 수치, 온도, 물가 등이 낮아지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>8</sense_order>
+			<definition>음의 높이가 낮아지다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>9</sense_order>
+			<definition>어떤 장소를 높은 곳에서 낮은 쪽으로 옮겨 가다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>10</sense_order>
+			<definition>어떤 물체를 높은 곳에서 낮은 곳으로 옮겨 가다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>64541</target_code>
+		<word>데려가다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>데려가다</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>동사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64541</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>자기를 따라오게 하여 함께 가다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	
+	
+</channel>
+
+
+

@@ -1,0 +1,702 @@
+[
+ {
+  "source_word": "아주",
+  "kind": "similar",
+  "target": "매우",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "마음씨",
+  "kind": "similar",
+  "target": "심정",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "불리",
+  "kind": "opposite",
+  "target": "유리",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "기여",
+  "kind": "similar",
+  "target": "공헌",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "애인",
+  "kind": "similar",
+  "target": "연인",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "받다",
+  "kind": "opposite",
+  "target": "주다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "직",
+  "kind": "similar",
+  "target": "직업",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "입대",
+  "kind": "opposite",
+  "target": "제대",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "고기",
+  "kind": "similar",
+  "target": "물고기",
+  "verdict": "unclear",
+  "note": ""
+ },
+ {
+  "source_word": "낯설다",
+  "kind": "opposite",
+  "target": "낯익다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "해안",
+  "kind": "similar",
+  "target": "바닷가",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "강자",
+  "kind": "opposite",
+  "target": "약자",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "출생",
+  "kind": "similar",
+  "target": "탄생",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "얼핏",
+  "kind": "similar",
+  "target": "언뜻",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "여기저기",
+  "kind": "similar",
+  "target": "도처",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "두뇌",
+  "kind": "similar",
+  "target": "뇌",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "근사하다",
+  "kind": "similar",
+  "target": "비슷하다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "모르다",
+  "kind": "opposite",
+  "target": "알다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "빼앗다",
+  "kind": "similar",
+  "target": "뺏다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "골목길",
+  "kind": "similar",
+  "target": "골목",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "체중",
+  "kind": "similar",
+  "target": "몸무게",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "절정",
+  "kind": "similar",
+  "target": "정점",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "맏이",
+  "kind": "similar",
+  "target": "첫째",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "이따금",
+  "kind": "similar",
+  "target": "때때로",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "넓이",
+  "kind": "similar",
+  "target": "너비",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "같다",
+  "kind": "opposite",
+  "target": "다르다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "죽이다",
+  "kind": "opposite",
+  "target": "살리다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "노트",
+  "kind": "similar",
+  "target": "공책",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "풍경",
+  "kind": "similar",
+  "target": "경치",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "거주",
+  "kind": "similar",
+  "target": "주거",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "가까스로",
+  "kind": "similar",
+  "target": "겨우",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "어처구니없다",
+  "kind": "similar",
+  "target": "어이없다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "청색",
+  "kind": "similar",
+  "target": "파랑",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "줄다",
+  "kind": "similar",
+  "target": "감하다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "발끝",
+  "kind": "similar",
+  "target": "발꿈치",
+  "verdict": "wrong",
+  "note": ""
+ },
+ {
+  "source_word": "검은색",
+  "kind": "opposite",
+  "target": "흰색",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "고급",
+  "kind": "opposite",
+  "target": "저급",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "시선",
+  "kind": "similar",
+  "target": "눈길",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "좌측",
+  "kind": "similar",
+  "target": "왼편",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "데려가다",
+  "kind": "opposite",
+  "target": "데려오다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "민주주의",
+  "kind": "similar",
+  "target": "민주",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "행",
+  "kind": "similar",
+  "target": "줄",
+  "verdict": "wrong",
+  "note": ""
+ },
+ {
+  "source_word": "역할",
+  "kind": "similar",
+  "target": "역",
+  "verdict": "wrong",
+  "note": ""
+ },
+ {
+  "source_word": "어제",
+  "kind": "similar",
+  "target": "어저께",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "틈",
+  "kind": "similar",
+  "target": "틈새",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "어른",
+  "kind": "similar",
+  "target": "성인",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "최대한",
+  "kind": "opposite",
+  "target": "최소한",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "군",
+  "kind": "similar",
+  "target": "군대",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "평소",
+  "kind": "similar",
+  "target": "평상시",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "특히",
+  "kind": "similar",
+  "target": "특별히",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "켜다",
+  "kind": "opposite",
+  "target": "끄다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "놀이",
+  "kind": "similar",
+  "target": "유희",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "나가다",
+  "kind": "opposite",
+  "target": "들어오다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "끼니",
+  "kind": "similar",
+  "target": "끼",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "슈퍼마켓",
+  "kind": "similar",
+  "target": "슈퍼",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "비방",
+  "kind": "similar",
+  "target": "비법",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "내리막길",
+  "kind": "opposite",
+  "target": "오르막길",
+  "verdict": "correct",
+  "note": "relation correct; seed gloss for 오르막길 is backwards (v2 bug, fixed as gloss fix 3)"
+ },
+ {
+  "source_word": "억양",
+  "kind": "similar",
+  "target": "어조",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "열다",
+  "kind": "opposite",
+  "target": "닫다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "희망",
+  "kind": "similar",
+  "target": "소원",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "냉방",
+  "kind": "opposite",
+  "target": "난방",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "층",
+  "kind": "similar",
+  "target": "계층",
+  "verdict": "unclear",
+  "note": ""
+ },
+ {
+  "source_word": "수입",
+  "kind": "opposite",
+  "target": "지출",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "찬물",
+  "kind": "similar",
+  "target": "냉수",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "명분",
+  "kind": "similar",
+  "target": "이름",
+  "verdict": "unclear",
+  "note": ""
+ },
+ {
+  "source_word": "영화배우",
+  "kind": "similar",
+  "target": "연기자",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "그래서",
+  "kind": "similar",
+  "target": "따라서",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "저해",
+  "kind": "similar",
+  "target": "장애",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "막내",
+  "kind": "opposite",
+  "target": "맏이",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "안내판",
+  "kind": "similar",
+  "target": "게시판",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "소인",
+  "kind": "opposite",
+  "target": "대인",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "글자",
+  "kind": "similar",
+  "target": "글",
+  "verdict": "unclear",
+  "note": ""
+ },
+ {
+  "source_word": "과소평가",
+  "kind": "opposite",
+  "target": "과대평가",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "마음속",
+  "kind": "similar",
+  "target": "염두",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "신세대",
+  "kind": "opposite",
+  "target": "구세대",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "세균",
+  "kind": "similar",
+  "target": "균",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "상체",
+  "kind": "similar",
+  "target": "상반신",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "즉",
+  "kind": "similar",
+  "target": "곧",
+  "verdict": "unclear",
+  "note": ""
+ },
+ {
+  "source_word": "퇴장",
+  "kind": "opposite",
+  "target": "등장",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "각도",
+  "kind": "similar",
+  "target": "각",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "복장",
+  "kind": "similar",
+  "target": "옷차림",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "풍경",
+  "kind": "similar",
+  "target": "경관",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "의도",
+  "kind": "similar",
+  "target": "의사",
+  "verdict": "wrong",
+  "note": ""
+ },
+ {
+  "source_word": "지출",
+  "kind": "opposite",
+  "target": "수입",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "단기간",
+  "kind": "similar",
+  "target": "단기",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "영역",
+  "kind": "similar",
+  "target": "부문",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "넋",
+  "kind": "similar",
+  "target": "혼",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "아침",
+  "kind": "opposite",
+  "target": "저녁",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "불러내다",
+  "kind": "opposite",
+  "target": "불러들이다",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "오른쪽",
+  "kind": "similar",
+  "target": "우편",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "순식간",
+  "kind": "similar",
+  "target": "순간",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "진찰",
+  "kind": "similar",
+  "target": "검진",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "명목",
+  "kind": "similar",
+  "target": "명분",
+  "verdict": "unclear",
+  "note": ""
+ },
+ {
+  "source_word": "처",
+  "kind": "similar",
+  "target": "아내",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "답",
+  "kind": "similar",
+  "target": "대답",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "대한민국",
+  "kind": "similar",
+  "target": "우리나라",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "동의",
+  "kind": "opposite",
+  "target": "이의",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "불만",
+  "kind": "similar",
+  "target": "불만족",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "의도",
+  "kind": "similar",
+  "target": "의향",
+  "verdict": "correct",
+  "note": ""
+ },
+ {
+  "source_word": "여기저기",
+  "kind": "similar",
+  "target": "이곳저곳",
+  "verdict": "correct",
+  "note": ""
+ }
+]

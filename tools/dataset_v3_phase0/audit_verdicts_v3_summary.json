@@ -1,0 +1,6 @@
+{
+ "correct": 90,
+ "wrong": 4,
+ "unclear": 6,
+ "notes": "unclear: 고기 similar -> 물고기; wrong: 발끝 similar -> 발꿈치; wrong: 행 similar -> 줄; wrong: 역할 similar -> 역; note: 내리막길 — relation correct; seed gloss for 오르막길 is backwards (v2 bug, fixed as gloss fix 3); unclear: 층 similar -> 계층; unclear: 명분 similar -> 이름; unclear: 글자 similar -> 글; unclear: 즉 similar -> 곧; wrong: 의도 similar -> 의사; unclear: 명목 similar -> 명분"
+}

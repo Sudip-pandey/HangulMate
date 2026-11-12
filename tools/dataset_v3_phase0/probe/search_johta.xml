@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<channel>
+	<title>한국어 기초사전 개발 지원(Open API) - 사전 검색</title>
+	<link>https://krdict.korean.go.kr</link>
+	<description>한국어 기초사전 개발 지원(Open API) - 사전 검색 결과</description>
+	<lastBuildDate>20261112021554</lastBuildDate>
+	<total>3</total>
+	<start>1</start>
+	<num>10</num>
+	
+	
+	
+	<item>
+		
+		
+		<target_code>79033</target_code>
+		<word>좋다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>조ː타</pronunciation>
+		
+		
+		<word_grade>초급</word_grade>
+		
+		<pos>형용사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=79033</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>어떤 것의 성질이나 내용 등이 훌륭하여 만족할 만하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>2</sense_order>
+			<definition>성격 등이 원만하고 착하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>3</sense_order>
+			<definition>말투나 태도 등이 부드럽다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>4</sense_order>
+			<definition>신체적 조건이나 건강 상태 등이 보통보다 낫다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>5</sense_order>
+			<definition>체면을 따지지 않거나 부끄러움을 아는 마음이 없다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>6</sense_order>
+			<definition>날씨가 맑고 화창하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>7</sense_order>
+			<definition>충분하거나 넉넉하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>8</sense_order>
+			<definition>머리카락이 많고 상태가 괜찮다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>9</sense_order>
+			<definition>날짜나 기회 등이 알맞다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>10</sense_order>
+			<definition>어떤 일이나 대상이 마음에 들고 만족스럽다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>11</sense_order>
+			<definition>감정 등이 기쁘고 흐뭇하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>12</sense_order>
+			<definition>어떤 행동이나 일 등이 문제될 것이 없다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>13</sense_order>
+			<definition>어떤 일을 하기가 쉽거나 편하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>14</sense_order>
+			<definition>어떤 것이 몸이나 건강을 더 나아지게 하는 성질이 있다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>15</sense_order>
+			<definition>어떤 것이 다른 것과 비교하여 질이나 수준 등이 더 높다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>16</sense_order>
+			<definition>서로 가깝고 친하다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>17</sense_order>
+			<definition>어느 편에 유리하게 해석하는 데가 있다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>18</sense_order>
+			<definition>앞말을 부정하며 핀잔을 주는 데가 있다.</definition>
+			
+		</sense>
+		
+		<sense>
+			<sense_order>19</sense_order>
+			<definition>재료의 용도로나 어떤 일을 하는 데 적합하다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>15896</target_code>
+		<word>사이좋다</word>
+		<sup_no>0</sup_no>
+		
+		
+		<pronunciation>사이조타</pronunciation>
+		
+		
+		<word_grade>중급</word_grade>
+		
+		<pos>형용사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=15896</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>다투지 않고 서로 친하다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	<item>
+		
+		
+		<target_code>71409</target_code>
+		<word>의좋다</word>
+		<sup_no>0</sup_no>
+		
+		<origin>誼좋다</origin>
+		
+		
+		<pronunciation>의ː조타</pronunciation>
+		
+		
+		<word_grade>고급</word_grade>
+		
+		<pos>형용사</pos>
+		<link>https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=71409</link>
+		
+		
+		<sense>
+			<sense_order>1</sense_order>
+			<definition>정이 두텁다.</definition>
+			
+		</sense>
+		
+		
+		
+
+		
+
+		
+
+		
+
+		
+	</item>
+	
+	
+	
+</channel>
+
+
+

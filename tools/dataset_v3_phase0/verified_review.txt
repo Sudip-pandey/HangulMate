@@ -1,0 +1,271 @@
+가게 | A place where products are displayed and sold on a small scale. || similar >> 상점 | A store that sells goods. || mutual=True overlap=
+가겟집 | A shop or store selling products. || similar >> 가게 | A place where products are displayed and sold on a small scale. || mutual=False overlap=product
+가난뱅이 | (disparaging) A poor person. || opposite >> 부자 | A father and his son. || mutual=False overlap=
+가방 | Bag || similar >> 지갑 | An object made of leather, cloth, etc., for carrying money, credit cards, business cards, etc. || mutual=False overlap=
+가방 | Bag || similar >> 백 | One hundred || mutual=True overlap=belonging
+가입 | The act of joining a group or signing up for goods and services. || opposite >> 탈퇴 | An act of ending one's relationship with an organization or group one had belonged to and leaving. || mutual=True overlap=group
+가장자리 | The end part or outer rim of something. || similar >> 테두리 | A line, cord, or trimming drawn or attached around or along the edges of a certain object. || mutual=False overlap=rim
+가장자리 | The end part or outer rim of something. || opposite >> 가운데 | A point that is almost equally distant from all ends of an object or within a space. || mutual=True overlap=end
+가족 | Family || similar >> 가속 | An increase in speed, or the speed itself. || mutual=False overlap=
+가족 | Family || similar >> 식구 | A group of people who mainly live together in the same house. || mutual=True overlap=group,house,live,mainly,together
+가짜 | Something which is made to look real, but is not real. || similar >> 위조 | The act of making an object or document look genuine, in order to deceive others. || mutual=False overlap=look
+가짜 | Something which is made to look real, but is not real. || opposite >> 진짜 | Something that is neither an imitation nor fake. || mutual=True overlap=
+강간 | An act of using violence or threats to forcibly have sexual intercourse. || similar >> 폭행 | A rough and fierce behavior, such as beating or hurting someone. || mutual=False overlap=
+거만 | A superior attitude in which a person looks down on others. || similar >> 오만 | The quality of being prideful and haughty, or such an attitude or behavior. || mutual=True overlap=attitude
+거절 | An act of not accepting the request, proposal or gift from another person. || similar >> 거부 | A great amount of wealth. || mutual=True overlap=accept
+거짓 | Something that is not true but made to look true. || similar >> 허위 | Something that is not true, but made to look true. || mutual=False overlap=look,true
+거짓 | Something that is not true but made to look true. || opposite >> 참 | Something that is not contrary to a fact or reason. || mutual=True overlap=
+거짓말 | A remark which is not true, intended to make someone believe it is true. || opposite >> 진실 | Something that is true, not false. || mutual=False overlap=true
+검 | A big, long knife used as a weapon. || similar >> 신 | An object that one wears in order to protect one's feet when standing or walking. || mutual=False overlap=
+겁 | A state of mind when one is scared or anxious. || similar >> 두려움 | A feeling of fear and concern, or such a feeling. || mutual=False overlap=
+겁 | A state of mind when one is scared or anxious. || similar >> 공포 | An act of announcing an established law, regulation, etc., to the public. || mutual=False overlap=scar
+게재 | An act of publishing writings or pictures in a newspaper or magazine. || similar >> 등재 | The act of recording a name or content on a ledger. || mutual=False overlap=magazine,publish
+게재 | An act of publishing writings or pictures in a newspaper or magazine. || similar >> 게시 | An act of putting up a notice or something for public viewing. || mutual=False overlap=
+겨울 | One of four seasons which is the coldest, and comes between fall and spring. || similar >> 동 | East || mutual=False overlap=four
+고속 | Very high speed. || similar >> 급속도 | Very fast speed. || mutual=False overlap=spe
+고집 | An attitude of insisting on an idea or opinion. || similar >> 억지 | An obstinate will to push ahead with something that has a low chance of success. || mutual=False overlap=
+고통 | Physical or mental suffering or agony. || similar >> 아픔 | A state of being physically painful. || mutual=True overlap=
+곡식 | Food eaten as the main dish, such as rice, barley, wheat, corn, etc. || similar >> 곡물 | Crops often eaten as staples, including rice, barley, wheat, corn, etc. || mutual=False overlap=barley,corn,eaten,etc,rice,wheat
+골목 | A long and narrow path between houses. || similar >> 골목길 | A narrow pathway between houses. || mutual=False overlap=hous,narrow
+공경 | The act of respecting one's elders politely. || similar >> 경지 | One's unique area or field marked by specific qualities and organization, in academic studies or art. || mutual=False overlap=
+관하다 | To have something as the subject of conversation or thought. || similar >> 대하다 | To be face to face. || mutual=True overlap=
+교체 | The act of replacing a person, object, system, etc., in a certain role with another person, object, system, etc. || similar >> 대체 | Using something of a similar function in the position of another. || mutual=True overlap=
+교회 | A community of believers of Jesus Christ, or a place where they gather for religious activities. || similar >> 상봉 | An act of meeting one another. || mutual=False overlap=
+교회 | A community of believers of Jesus Christ, or a place where they gather for religious activities. || opposite >> 이별 | The act of separating or parting from someone so that one cannot see him/her for a long time. || mutual=True overlap=
+구경꾼 | A person who looks at a person, object, or watches an incident, etc. || similar >> 관객 | A person who watches sports games, movies, plays, concerts, dance performances, etc. || mutual=False overlap=etc,watch
+구매 | The act of buying a product. || similar >> 사기 | An energetic spirit to achieve something or win. || mutual=False overlap=
+구매 | The act of buying a product. || similar >> 구입 | The act of buying goods, etc. || mutual=True overlap=buy
+구매 | The act of buying a product. || opposite >> 판매 | An act of selling products. || mutual=True overlap=product
+구세대 | The previous generation, or the generation of old people. || opposite >> 신세대 | A generation with a strong character that easily accepts new kinds of culture. || mutual=True overlap=generation
+국도 | Major roads directly managed by the government. || similar >> 수도 | A facility that sends out water through pipes for certain uses including drinking. || mutual=False overlap=government
+국민 | People that compose a country or a person with the nationality of a country. || similar >> 시민 | A resident living in a city. || mutual=False overlap=country
+근래 | The days or years near the present. || similar >> 요즈음 | A period from a while ago to the present. || mutual=False overlap=present
+근심 | A fearful and anxious feeling that something bad might occur. || similar >> 염려 | The state of being anxious and worried about something that has not happened yet; such anxiety. || mutual=False overlap=anxiou
+근심 | A fearful and anxious feeling that something bad might occur. || similar >> 우려 | The act of worrying or being concerned about something; or such a worry or concern. || mutual=False overlap=
+근육 | The tendons and flesh which move the body of an animal or person. || similar >> 근 | A bound noun that serves as a unit of weight measurement. || mutual=False overlap=
+글자 | A sign used to write down a spoken word. || similar >> 문자 | A system of symbols designed to visualize the sound or meaning of speech || mutual=True overlap=
+글자 | A sign used to write down a spoken word. || similar >> 글씨 | The form in which characters are written. || mutual=True overlap=word
+긍정 | Recognizing that a certain fact or idea is correct or right. || opposite >> 부정 | Irregularity; an irregular act. || mutual=True overlap=right
+기만 | The act of deceiving someone. || similar >> 기사 | A person who drives vehicles or operates machines as a profession. || mutual=False overlap=
+기만 | The act of deceiving someone. || similar >> 사기 | An energetic spirit to achieve something or win. || mutual=False overlap=deceiv
+기여 | Being helpful. || similar >> 공헌 | The act of making an effort and playing a role in making something worthwhile. || mutual=False overlap=
+길거리 | A street or road for people or cars to travel on. || similar >> 거리 | A road, street, etc., for pedestrians or cars. || mutual=False overlap=car,road,street,travel
+까닭 | A reason for or situation in which a certain thing happened or one did a certain thing. || similar >> 원인 | An affair or event that acts as the root of an occurrence of a certain thing or change of an object's state. || mutual=False overlap=certain
+까닭 | A reason for or situation in which a certain thing happened or one did a certain thing. || similar >> 이유 | The cause or reason of a certain result. || mutual=False overlap=certain,happen,reason
+나그네 | A person who leaves home and travels, or who wanders here and there. || similar >> 여인 | An adult female. || mutual=False overlap=
+나이 | Age || similar >> 살 | The tender part of the human or animal body that covers the bones. || mutual=True overlap=animal,plant,year
+나이 | Age || similar >> 연령 | The number of years one has lived. || mutual=True overlap=liv,year
+나이 | Age || similar >> 연세 | (honorific) One's age. || mutual=True overlap=
+남편 | The man of a married couple. || opposite >> 부인 | (polite form) Another man's wife. || mutual=False overlap=man,marri
+남편 | The man of a married couple. || opposite >> 아내 | The man's female partner in marriage. || mutual=True overlap=man
+남편 | The man of a married couple. || opposite >> 처 | A man's female partner in marriage. || mutual=True overlap=man
+냄비 | A container, smaller than a caldron. which has a lid and two handles and is used in the kitchen to cook food. || similar >> 솥 | A big bowl made of iron, etc., used to make rice or boil food by placing it over a fire. || mutual=False overlap=food
+너머 | The opposite side over a boundary or an obstacle. || similar >> 건너 | A place across something; on the other side. || mutual=False overlap=side
+너머 | The opposite side over a boundary or an obstacle. || similar >> 저쪽 | A pronoun used to indicate a place or direction that is far from both the speaker and listener. || mutual=False overlap=
+너비 | The horizontal length of a plane figure or a wide object. || similar >> 폭 | The horizontal length of a plane figure or a wide object. || mutual=True overlap=figure,horizontal,length,object,plane,wide
+노랑 | The color of a banana or lemon. || similar >> 노란색 | The color of a chick or banana. || mutual=False overlap=banana,color
+논 | An irrigated land for growing rice. || similar >> 답 | The act of speaking in response to a call, or words spoken in such a manner. || mutual=False overlap=
+누다 | To discharge urine or excrement from the body. || similar >> 싸다 | To wrap an object or person with paper, fabric, etc. || mutual=False overlap=
+누이 | A term of address used by a boy in referring to a girl who is either a sibling born to the same parents or a relative. || similar >> 동생 | A word used to refer to or address a person who is younger than oneself among one's siblings or relatives. || mutual=True overlap=addres
+누이 | A term of address used by a boy in referring to a girl who is either a sibling born to the same parents or a relative. || opposite >> 형 | A word used only by a male to refer to or address his male siblings or cousins older than himself. || mutual=False overlap=addres
+누이 | A term of address used by a boy in referring to a girl who is either a sibling born to the same parents or a relative. || opposite >> 오빠 | A word used only by a girl to refer to or address her male siblings or cousins older than herself. || mutual=False overlap=addres,girl
+누이 | A term of address used by a boy in referring to a girl who is either a sibling born to the same parents or a relative. || opposite >> 언니 | A word used only by a female to refer to or address her female siblings or cousins older than herself. || mutual=True overlap=addres
+눈동자 | The black part in the center of an eyeball. || similar >> 모자 | Hat || mutual=False overlap=
+눈동자 | The black part in the center of an eyeball. || similar >> 수확 | Harvest || mutual=False overlap=
+눈동자 | The black part in the center of an eyeball. || similar >> 안정 | A consistent state kept, without being changed or shaken. || mutual=False overlap=
+단어 | The smallest independent unit of language, which has a certain meaning or function. || similar >> 낱말 | The smallest independent unit of speech, which can be used alone, with a meaning, sound, and function of its own. || mutual=False overlap=function,independent,mean,smallest,unit
+달라지다 | To become different from before. || similar >> 변하다 | For something to become something else or become different in nature. || mutual=True overlap=become,different
+대꾸 | A remark in response to what others say; a short answer. || similar >> 대답 | The act of replying to a call, or such words. || mutual=True overlap=say
+대꾸 | A remark in response to what others say; a short answer. || opposite >> 물음 | The act of asking, or the words of inquiry. || mutual=True overlap=
+대한민국 | A country located in southern East Asia; it consists of the Korean Peninsula and affiliated islands, also called South Korea; divided into South and North since the 1953 ceasefire agreement; the official language is Korean and the capital is Seoul. || similar >> 우리나라 | A term used by the Korean people to refer to Korea. || mutual=False overlap=korea,korean
+대한민국 | A country located in southern East Asia; it consists of the Korean Peninsula and affiliated islands, also called South Korea; divided into South and North since the 1953 ceasefire agreement; the official language is Korean and the capital is Seoul. || similar >> 한국 | Korea || mutual=True overlap=affiliat,agreement,asia,call,capital,ceasefire,consist,country,divid,east,island,korea,korean,language,locat,north,official,peninsula,seoul,since,south
+덕분 | The favor or help provided by someone, or gains from an incident. || similar >> 덕 | Generous and moral character capable of understanding and accepting others. || mutual=False overlap=favor,help
+덕분 | The favor or help provided by someone, or gains from an incident. || similar >> 덕택 | The favor or help provided by someone. || mutual=False overlap=favor,help,provid
+도깨비 | A manlike ghost with a horn on its head that carries a club. || similar >> 귀신 | A spirit said to be left behind after one's death. || mutual=False overlap=
+도처 | All places. || similar >> 여기저기 | A variety of places or locations that are not clearly specified. || mutual=False overlap=plac
+도처 | All places. || similar >> 이곳저곳 | A variety of places or locations that are not clearly specified. || mutual=False overlap=plac
+돌멩이 | A stone one can hold in one hand. || similar >> 돌 | One year from the day a baby was born. || mutual=True overlap=stone
+동네 | An area where many houses are gathered. || similar >> 마을 | A place where many houses are gathered. || mutual=True overlap=gather,hous,many
+동전 | Round money made of copper, etc. || similar >> 동화 | Qualities or forms becoming the same by resembling each other. || mutual=False overlap=
+등산 | Mountain climbing with the purpose of exercising, amusement, etc. || similar >> 등반 | The act of climbing a high mountain. || mutual=False overlap=climb,mountain
+딸 | A female child in relation to her parents. || similar >> 여아 | A child of the female gender. || mutual=False overlap=child,female
+딸 | A female child in relation to her parents. || similar >> 영양 | The process of maintaining life and developing the body by absorbing the energy and substance necessary for a living thing to live and function, or the components necessary for this. || mutual=False overlap=
+딸 | A female child in relation to her parents. || opposite >> 아들 | One's male child. || mutual=True overlap=child
+뜰 | Flat, empty land that adjoins a house. || similar >> 마당 | A flat, empty land attached to a house. || mutual=False overlap=empty,flat,house,land
+뜰 | Flat, empty land that adjoins a house. || similar >> 공원 | A person who works at a factory. || mutual=False overlap=
+마을 | A place where many houses are gathered. || similar >> 동네 | An area where many houses are gathered. || mutual=True overlap=gather,hous,many
+마중 | The act of going out to the station or airport, etc., to greet the person who is coming to see you. || opposite >> 배웅 | The act of going along with a person who is leaving the area to send him/her off. || mutual=False overlap=going
+면적 | The size of a flat or curved surface. || similar >> 넓이 | The extent of a space or surface that a place or object occupies. || mutual=True overlap=surface
+무덤 | An underground place where the body or bones of a dead person are buried. || similar >> 구분 | The act of categorizing a whole into several parts according to a standard. || mutual=True overlap=
+무덤 | An underground place where the body or bones of a dead person are buried. || similar >> 묘지 | A place for burying the body or remains of a dead person beneath the ground. || mutual=True overlap=body,dead
+물고기 | An underwater vertebrate that has gills, fins and scales. || similar >> 고기 | Meat || mutual=False overlap=
+미인 | A woman who has a beautiful face or figure. || similar >> 미녀 | A woman with a beautiful face. || mutual=False overlap=beautiful,face,woman
+민족 | A group of people who have formed their own unique language, culture, and history while living together in a certain region over a long period of time. || similar >> 국민 | People that compose a country or a person with the nationality of a country. || mutual=False overlap=
+민족 | A group of people who have formed their own unique language, culture, and history while living together in a certain region over a long period of time. || similar >> 부족 | A state of being not enough or being less than what is needed. || mutual=True overlap=language
+바닷가 | A place where sea and land meet, or an area near that place. || similar >> 해변 | A place where sea and land meet, or an area near such a place. || mutual=False overlap=area,land,meet,near,sea
+방언 | The everyday language spoken by the people of a specific area or social group. || similar >> 사투리 | A type of language different from a standard language and used only in some local provinces. || mutual=True overlap=language
+방언 | The everyday language spoken by the people of a specific area or social group. || similar >> 방어 | The act of defending against an attack or threat. || mutual=False overlap=
+방언 | The everyday language spoken by the people of a specific area or social group. || opposite >> 표준어 | A language that is officially used in a country. || mutual=True overlap=language
+배우 | A person who acts the part of a character in a movie, play, drama, etc. || similar >> 연기자 | A person who acts professionally. || mutual=False overlap=act
+백성 | (old-fashioned) The public that makes up the foundation of a nation. || similar >> 국민 | People that compose a country or a person with the nationality of a country. || mutual=False overlap=
+버스 | Bus || similar >> 승합차 | A large car that can carry a lot of people. || mutual=False overlap=carry,large
+번창 | The state of an organization, activity, etc., flourishing. || similar >> 번성 | A state in which one's force grows and prevails. || mutual=False overlap=
+번창 | The state of an organization, activity, etc., flourishing. || similar >> 번영 | The state of a society or organization flourishing and having material affluence. || mutual=True overlap=flourish,organization
+부부 | Husband and wife. || similar >> 내외 | A compound word for the inside and outside. || mutual=True overlap=husband,wife
+부설 | Establishment of something as an attachment to an institution; such an attached facility. || similar >> 놓다 | To let something that one is either holding in one's hand or pushing be released by opening or relaxing one's hand. || mutual=False overlap=
+불가능 | The state of being unable to do or become something. || opposite >> 가능 | The state of being able to do or be something. || mutual=False overlap=
+불리 | A condition, position, etc., being not advantageous. || similar >> 불이익 | A state of being a loss without being beneficial to someone. || mutual=False overlap=
+불리 | A condition, position, etc., being not advantageous. || opposite >> 유리 | The state of being profitable. || mutual=False overlap=etc
+빛깔 | An object's color that appears when exposed to light. || similar >> 색깔 | A sheen or color an object takes on when exposed to light. || mutual=False overlap=color,expos,light,object
+빛깔 | An object's color that appears when exposed to light. || similar >> 색채 | The color of an object when light is shed on it. || mutual=False overlap=color,light,object
+사망 | A state in which a person dies. || similar >> 죽음 | The act of dying, or the state of being dead. || mutual=True overlap=
+사망 | A state in which a person dies. || opposite >> 생 | Living, or aliveness. || mutual=False overlap=
+사망 | A state in which a person dies. || opposite >> 출생 | An act of coming out of a womb, into the world. || mutual=True overlap=
+사투리 | A type of language different from a standard language and used only in some local provinces. || similar >> 방언 | The everyday language spoken by the people of a specific area or social group. || mutual=True overlap=language
+사투리 | A type of language different from a standard language and used only in some local provinces. || opposite >> 표준어 | A language that is officially used in a country. || mutual=True overlap=language
+사회주의 | An ideology or a movement to realize a social system hoping to surpass capitalism by socializing the means of production without recognizing privately-owned property. || opposite >> 개인주의 | One's way of thinking or attitude, believing that the rights and interests of an individual come before those of a nation or society. || mutual=True overlap=
+사회주의 | An ideology or a movement to realize a social system hoping to surpass capitalism by socializing the means of production without recognizing privately-owned property. || opposite >> 자본주의 | A social and economic system where production activities to earn profits are guaranteed to people who have capital as means of production. || mutual=False overlap=mean,production,social,system
+삭제 | An act of removing or erasing. || opposite >> 복구 | The act of restoring a broken or destroyed thing to its former condition. || mutual=False overlap=
+살인 | The act of killing a person. || similar >> 살해 | An act of killing a person. || mutual=False overlap=kill
+상상 | An act of picturing something in mind that does not exist or one has never experienced. || similar >> 공상 | The act of thinking about something that does not actually exist or will never happen in one's head, or such a thought. || mutual=False overlap=exist,never
+상점 | A store that sells goods. || similar >> 가게 | A place where products are displayed and sold on a small scale. || mutual=True overlap=
+상표 | The mark of a symbol or picture that represents a company that makes a product. || similar >> 브랜드 | A name of a product. || mutual=False overlap=product
+상황 | The stiuation or state of how something is proceeding. || similar >> 정세 | The direction or state of political developments. || mutual=False overlap=
+상황 | The stiuation or state of how something is proceeding. || similar >> 사정 | The situation or reason for an incident. || mutual=False overlap=
+상황 | The stiuation or state of how something is proceeding. || similar >> 형편 | The progress or unfolding of a certain event. || mutual=True overlap=
+선박 | A large boat equipped with many facilities. || similar >> 배 | Boat / ship || mutual=True overlap=
+설치 | The act of making an institution, facility, etc., or placing it in the right spot for appropriate use. || similar >> 전설 | A story that has been passed on from a long time ago. || mutual=False overlap=
+성공 | The act of achieving something that one wanted or aimed for. || opposite >> 실패 | An object around which a very long thread is wound, to make it easy to use when sewing. || mutual=False overlap=want
+성실 | A sincere, genuine attitude or behavior. || opposite >> 불성실 | One's attitude or behavior being not truthful or sincere. || mutual=False overlap=attitude,behavior,sincere
+센티미터 | A length unit. || similar >> 센티 | A length unit. || mutual=False overlap=length,unit
+소비 | The act of using up money, objects, time, efforts, strength, etc. || similar >> 소모 | The act of using something up. || mutual=False overlap=
+속담 | A short phrase with a lesson that descends from the people of the old times. || similar >> 속어 | An indecent word widely used by people. || mutual=True overlap=
+속담 | A short phrase with a lesson that descends from the people of the old times. || similar >> 속설 | An explanation or opinion passed down through generations. || mutual=False overlap=
+속도 | The speed of either an object's movement or the process of things. || similar >> 속력 | The speed of an object's movement or the process of things, or the power that makes up the speed. || mutual=False overlap=movement,object,spe
+솜 | Fabric made of cotton that is mainly used as a material for blanket fillings or cotton cloth. || similar >> 면 | An administrative district in rural areas, which is a subdivision of a gun (county) or a si (city), consisting of several ri's (villages). || mutual=False overlap=cloth,cotton
+쇠고기 | Meat from cow, bull or ox. || similar >> 소고기 | Meat from cow, bull or ox. || mutual=False overlap=bull,cow,meat
+수요일 | The third day of a week that starts from Monday. || similar >> 수요 | A person's desire to buy a product. || mutual=False overlap=
+수컷 | Among animals for which there is a gender distinction, the one that does not get pregnant. || opposite >> 암컷 | The female side that gives birth to a baby among sexually dimorphic animals. || mutual=True overlap=among,animal
+슈퍼마켓 | A big store that is equipped with food, daily necessities, etc., and sells them. || similar >> 슈퍼 | A big store that is equipped with food, daily necessities, etc., and sells them. || mutual=False overlap=big,daily,equipp,etc,food,necessiti,sell,store,them
+스타킹 | Thin, stretchy, long leggings for females. || similar >> 양말 | A thing made of thread or cloth, worn on the foot to cover it or protect it from cold. || mutual=False overlap=
+슬퍼하다 | To consider as sad and sorrowful enough to cry. || opposite >> 기뻐하다 | To be joyful and happy. || mutual=True overlap=
+승낙 | The act of accepting another's request. || similar >> 허가 | The act of allowing someone to perform a certain act or task. || mutual=False overlap=
+승낙 | The act of accepting another's request. || similar >> 허락 | The act of accepting another's request. || mutual=False overlap=accept,request
+승자 | The person who wins a fight, game, etc., or such a group. || opposite >> 패자 | A person who loses a fight or game. || mutual=False overlap=fight,game
+신세대 | A generation with a strong character that easily accepts new kinds of culture. || opposite >> 구세대 | The previous generation, or the generation of old people. || mutual=True overlap=generation
+신형 | A new type or appearance, different from former ones. || opposite >> 구형 | The act of a prosecutor making a request to a judge in a criminal trial to give a certain penalty to the accused as stipulated by law. || mutual=True overlap=
+실내 | The inside of a room, building, etc. || opposite >> 실외 | The outside of a room, building, etc. || mutual=True overlap=build,etc,room
+씩씩거리다 | For the sound of breathing very hard and roughly to be heard; to make such a sound. || similar >> 씩씩하다 | One's behavior or attitude being vigorous, powerful, and strong. || mutual=True overlap=
+아내 | The man's female partner in marriage. || similar >> 처 | A man's female partner in marriage. || mutual=True overlap=female,man,marriage,partner
+아내 | The man's female partner in marriage. || opposite >> 남편 | The man of a married couple. || mutual=True overlap=man
+아들 | One's male child. || similar >> 남아 | A child of the male gender. || mutual=False overlap=child,male
+아들 | One's male child. || opposite >> 딸 | A female child in relation to her parents. || mutual=True overlap=child
+암컷 | The female side that gives birth to a baby among sexually dimorphic animals. || opposite >> 수컷 | Among animals for which there is a gender distinction, the one that does not get pregnant. || mutual=True overlap=among,animal
+액자 | A frame where a painting, photo, writing, etc. are inserted. || similar >> 틀 | A frame that is used to produce the same things repeatedly in a solid or semi-solid state. || mutual=False overlap=frame
+약세 | A low value or a weak tendency. || opposite >> 강세 | A high value or a strong tendency. || mutual=False overlap=tendency,value
+약화 | A state in which one's power, function, etc. become weak, or an act of making something weak. || opposite >> 강화 | The act of causing power or force to be stronger. || mutual=True overlap=power
+어기다 | To violate a rule, promise, order, etc. || similar >> 거스르다 | To act or go against the way things are progressing, instead of complying with them. || mutual=False overlap=etc,order
+어기다 | To violate a rule, promise, order, etc. || opposite >> 지키다 | To prevent something from the loss of wealth, profit, safety, etc., or protecting against external aggression. || mutual=True overlap=etc,order
+어젯밤 | The previous night. || similar >> 간밤 | The previous night. || mutual=False overlap=night,previou
+억지 | An obstinate will to push ahead with something that has a low chance of success. || similar >> 떼 | Many people or animals gathered at one place. || mutual=False overlap=
+언어 | The means of communication, such as sounds, letters, etc. for expressing or conveying one's thoughts or feelings; or the system of such means. || similar >> 말 | Human voice through which thoughts or feelings are expressed and conveyed. || mutual=True overlap=convey,etc,express,feeling,letter,mean,sound,thought
+언어 | The means of communication, such as sounds, letters, etc. for expressing or conveying one's thoughts or feelings; or the system of such means. || similar >> 글 | A state of expressing one's thoughts or affairs in words. || mutual=True overlap=express,mean,sound,system,thought
+여건 | A given condition. || similar >> 조건 | A state or element that is needed in advance to accomplish something. || mutual=False overlap=
+여당 | In party politics, a party that has produced the president or holds the majority of seats in the parliament. || opposite >> 야당 | A political party currently not in power. || mutual=True overlap=party
+여류 | A woman skilled in doing a professional work. || similar >> 여당 | In party politics, a party that has produced the president or holds the majority of seats in the parliament. || mutual=False overlap=
+여름 | One of four seasons which is hot and comes between spring and fall. || similar >> 하 | A word imitating the sound or describing the motion of opening one's mouth wide and blowing one's breath on something. || mutual=False overlap=
+연세 | (honorific) One's age. || similar >> 나이 | Age || mutual=True overlap=
+영하 | A temperature below zero degrees Celsius. || opposite >> 영상 | A picture shown on the screen of a film, TV, etc. || mutual=True overlap=celsiu,degre,temperature,zero
+영화배우 | A person who performs in a movie. || similar >> 연기자 | A person who acts professionally. || mutual=False overlap=
+오랫동안 | For a very long time. || similar >> 한동안 | A long duration of time. || mutual=False overlap=long
+오른쪽 | Right || similar >> 오른편 | The east-facing side from the vantage point of someone who is facing north. || mutual=False overlap=east,fac,north,side,vantage
+오른쪽 | Right || similar >> 우편 | The side that is the same as the east when a person faces north. || mutual=False overlap=east,fac,north,side
+오른쪽 | Right || similar >> 우측 | The side that is the same as the east when a person faces north. || mutual=False overlap=east,fac,north,side
+와이셔츠 | A shirt with a collar and sleeves, which is worn under a suit jacket. || similar >> 티셔츠 | A short-sleeved shirt that looks like the letter 'T'. || mutual=False overlap=shirt,sleev
+완전 | The state of having everything in place without shortcomings. || opposite >> 불완전 | A state of being imperfect or incomplete. || mutual=False overlap=
+우량 | A state of being good in terms of quality, condition, etc. || opposite >> 불량 | Defective || mutual=True overlap=etc,quality
+운전사 | A person whose occupation is to operate a machine or car, etc. || similar >> 운전자 | A person who drives a car. || mutual=False overlap=car
+유골 | The bones left after a dead persons' body is burned, or the bones found in a tomb. || similar >> 유해 | The state of being hazardous. || mutual=True overlap=
+유해 | The state of being hazardous. || similar >> 유아 | A young child before school age. || mutual=False overlap=
+유해 | The state of being hazardous. || similar >> 유골 | The bones left after a dead persons' body is burned, or the bones found in a tomb. || mutual=True overlap=
+유효 | The state of being able to use something or being effective. || opposite >> 무효 | The state of having no effect. || mutual=False overlap=
+음식물 | Something eaten or drunk by people. || similar >> 음식 | Food || mutual=False overlap=
+음악회 | A gathering organized so that people can listen to music being played live. || similar >> 콘서트 | A gathering organized so that people can listen to songs or music being sung or played live. || mutual=False overlap=gather,listen,live,music,organiz,play
+음악회 | A gathering organized so that people can listen to music being played live. || similar >> 연주회 | A performance of music in front of an audience. || mutual=False overlap=music
+이득 | The act of making a profit; the profit. || similar >> 저리 | To that place, or in that direction. || mutual=False overlap=
+이벤트 | An event or party held for many people. || similar >> 행사 | An act of performing a certain task with a purpose or plan according to a procedure; or such a task. || mutual=False overlap=
+이별 | The act of separating or parting from someone so that one cannot see him/her for a long time. || opposite >> 교회 | A community of believers of Jesus Christ, or a place where they gather for religious activities. || mutual=True overlap=
+이별 | The act of separating or parting from someone so that one cannot see him/her for a long time. || opposite >> 상봉 | An act of meeting one another. || mutual=False overlap=
+이혼 | The act by a married couple to end their marriage legally. || opposite >> 결혼 | A man and woman become legally a married couple. || mutual=False overlap=couple,legally,marri
+인하 | An act of lowering the price of goods, wage, fare, etc. || opposite >> 인상 | The appearance of a person's face. || mutual=True overlap=etc,fare,good,price,wage
+일본 | An island country located in East Asia, known for its advanced manufacturing and electronic industries, and high economic standard; the official language is Japanese and the capital is Tokyo. || similar >> 왜 | For what reason; how come. || mutual=False overlap=japanese
+일본어 | A language that Japanese people speak. || similar >> 일어 | A language that Japanese people speak. || mutual=False overlap=japanese,language,speak
+일부분 | One portion of something, or part of the whole. || opposite >> 전부 | The entire sum of all parts. || mutual=False overlap=
+일부분 | One portion of something, or part of the whole. || opposite >> 전체 | Something considered as an entirety, which is composed of elements or parts. || mutual=False overlap=
+일생 | One's lifetime from birth to death. || similar >> 평생 | The time between birth and death. || mutual=False overlap=birth,death
+일월 | The first month of a year, out of twelve months. || similar >> 정월 | The first lunar month of the year. || mutual=True overlap=month,year
+입국 | An act of entering one's own country or another country. || opposite >> 출국 | An act of crossing a national border and going to another country. || mutual=True overlap=country
+자동차 | Car || similar >> 차 | Tea || mutual=False overlap=wheel
+자살 | The act of killing oneself. || similar >> 자재 | A basic object or thing needed for making something. || mutual=True overlap=
+잔치 | An occasion on which a lot of people gather together and enjoy food when there is something to celebrate. || similar >> 파티 | A feast or gathering to make friends or to celebrate an occasion. || mutual=False overlap=celebrate,gather,occasion
+장가 | The act of a man taking a woman as his wife. || opposite >> 시집 | The house that one's husband's parents live in, or one's husband's household. || mutual=False overlap=
+저가 | A low price. || opposite >> 고가 | A song or words from a song of yore. || mutual=False overlap=price
+전구 | A round glass device that emits light, powered by electricity. || similar >> 전율 | A state in which one trembles from horror or fear. || mutual=True overlap=
+절망 | The act of abandoning any hopes due to dim prospects, or such a state. || opposite >> 희망 | The act of having expectations for the future. || mutual=False overlap=
+정류장 | A place where buses, taxis etc., stop so people can get on and off the vehicle. || similar >> 정거장 | A place where buses, trains, etc., stop so people can get on and off the vehicle. || mutual=False overlap=bus,etc,stop,vehicle
+정치가 | A person involved in politics. || similar >> 정치인 | A person who is responsible for politics. || mutual=True overlap=politic
+제사 | The act of expressing appreciation to a god or the spirit of the deceased by offering them food, or such ritual. || similar >> 제 | A form of '저' (I), the humble form used by the speaker to show humility, when the postpositional particle '가' is attached to it. || mutual=False overlap=
+죄 | A wrong act or thought that is against conscience, religious teachings or law. || similar >> 악 | What energy that one musters up and uses to the fullest. || mutual=False overlap=
+죄 | A wrong act or thought that is against conscience, religious teachings or law. || similar >> 범죄 | An act of committing a crime, breaking the law. || mutual=False overlap=law
+증상 | Various conditions that indicate a disorder or disease. || similar >> 증세 | Various conditions that indicate a disorder or disease. || mutual=False overlap=condition,disease,disorder,indicate,variou
+지급 | The act of paying or giving out a set amount of money or supplies. || similar >> 지불 | The act of giving money for something or paying the price. || mutual=True overlap=giv,money,pay
+지난번 | A certain time or turn that has passed before the moment when one is speaking. || similar >> 저번 | A turn or time that was in the past at the time of speaking. || mutual=False overlap=speak,turn
+지난번 | A certain time or turn that has passed before the moment when one is speaking. || similar >> 전자 | A previous turn or time that came before the time of speaking. || mutual=False overlap=speak,turn
+지불 | The act of giving money for something or paying the price. || similar >> 지급 | The act of paying or giving out a set amount of money or supplies. || mutual=True overlap=giv,money,pay
+직후 | Something that comes right after another. || opposite >> 직전 | A point in time just before something happens. || mutual=False overlap=
+청구 | An act of demanding a sum of money, property, etc., from someone. || similar >> 구청 | The office responsible for administrative work of a gu, a district. || mutual=False overlap=
+체면 | One's face or position of dignity in encounting others. || similar >> 예의 | A polite way of talking or behaving which one should respect while living as a member of society. || mutual=False overlap=
+체면 | One's face or position of dignity in encounting others. || similar >> 염치 | The attitude of trying to maintain one's dignity or refraining from doing something shameful. || mutual=False overlap=dignity
+초겨울 | The time when winter starts. || opposite >> 늦겨울 | The latter part of winter. || mutual=True overlap=winter
+축소 | An act of making the number, volume, size, etc., smaller. || opposite >> 확대 | An act of widening something to make it larger. || mutual=True overlap=etc,mak,size
+출국 | An act of crossing a national border and going to another country. || opposite >> 입국 | An act of entering one's own country or another country. || mutual=True overlap=country
+출생 | An act of coming out of a womb, into the world. || similar >> 탄생 | Someone having been born. || mutual=False overlap=
+출생 | An act of coming out of a womb, into the world. || opposite >> 죽음 | The act of dying, or the state of being dead. || mutual=False overlap=
+출생 | An act of coming out of a womb, into the world. || opposite >> 사망 | A state in which a person dies. || mutual=True overlap=
+출세 | One's state of rising to a high social position or becoming famous. || similar >> 출신 | The social status level one's family belongs to at the time of one's birth. || mutual=False overlap=social
+친절 | The state of treating someone gently and in a friendly manner, or such an attitude. || similar >> 호의 | Kind heart or a good feeling toward a certain object. || mutual=False overlap=
+콩 | A round grain with a thin, yellow or black skin that is used as an ingredient in tofu, doenjang, soybean paste, etc. || similar >> 대두 | The round grain in thin, yellow or black skin, which is the ingredient for soybean milk or soybean curd. || mutual=False overlap=black,grain,ingredient,round,skin,soybean,thin,yellow
+타인 | A person who is not oneself. || similar >> 남 | South || mutual=True overlap=
+타인 | A person who is not oneself. || opposite >> 나 | A pronoun used to indicate oneself to a friend or a younger person. || mutual=False overlap=oneself
+타인 | A person who is not oneself. || opposite >> 자신 | The person himself/herself. || mutual=True overlap=
+타인 | A person who is not oneself. || opposite >> 자기 | A pronoun used when the speaker refers to the person mentioned in the preceding statement. || mutual=True overlap=
+타인 | A person who is not oneself. || opposite >> 자아 | One's perception or thought about oneself. || mutual=False overlap=oneself
+탈퇴 | An act of ending one's relationship with an organization or group one had belonged to and leaving. || opposite >> 가입 | The act of joining a group or signing up for goods and services. || mutual=True overlap=group
+파란만장 | The state of a task or life being full of big changes and big troubles. || similar >> 우여곡절 | Circumstances which are complicated, not smooth. || mutual=False overlap=
+편지 | The act of saying what one has to say in writing and sending it to another person. || similar >> 서신 | The act of saying what one has to say in writing and sending it to another person. || mutual=False overlap=say,send,writ
+포도주 | Liquor made by fermenting the juice of grapes. || similar >> 와인 | Western liquor made by fermenting the juice of grapes. || mutual=False overlap=ferment,grap,juice,liquor
+표준어 | A language that is officially used in a country. || similar >> 공용어 | A language officially used in a country. || mutual=False overlap=country,language,officially
+표준어 | A language that is officially used in a country. || opposite >> 방언 | The everyday language spoken by the people of a specific area or social group. || mutual=True overlap=language
+표준어 | A language that is officially used in a country. || opposite >> 사투리 | A type of language different from a standard language and used only in some local provinces. || mutual=True overlap=language
+피해자 | A person who suffers harm or damage. || opposite >> 가해자 | A person who does another person harm. || mutual=False overlap=harm
+하양 | A white color or paint. || similar >> 하얀색 | A clearly bright and white color like that of snow or milk. || mutual=False overlap=color,white
+하양 | A white color or paint. || similar >> 백 | One hundred || mutual=True overlap=
+한국 | Korea || similar >> 국한 | Restricting the extent or limit of something to a certain level. || mutual=False overlap=
+한국 | Korea || similar >> 한정 | An act of setting a limit to the quantity or scope of something; or such a limit. || mutual=False overlap=
+한국어 | The language used by the Korean people. || similar >> 한국말 | The language used by the Korean people. || mutual=False overlap=korean,language
+한국어 | The language used by the Korean people. || similar >> 국어 | The language used by the people of a country. || mutual=False overlap=korean,language
+행위 | An act done with an intention or will. || similar >> 소위 | The military rank that is beneath the first lieutenant and above the warrant officer, or a soldier of such a rank. || mutual=True overlap=
+허락 | The act of accepting another's request. || similar >> 허가 | The act of allowing someone to perform a certain act or task. || mutual=True overlap=
+허파 | The respiratory organs that are located in both sides of the human or animal chest. || similar >> 폐 | The respiratory organs that are located in both sides of the human or animal chest. || mutual=False overlap=animal,chest,human,locat,organ,respiratory,sid
+허파 | The respiratory organs that are located in both sides of the human or animal chest. || similar >> 폐장 | The operation of a theater, market, beach, etc., ending, or an act of ending the operation of such a place. || mutual=False overlap=
+현실 | A fact or state that exists in reality. || opposite >> 이상 | A state in which something equals to or is larger or better than a certain point of reference in quantity or degree. || mutual=True overlap=
+혼 | The entity that is believed to reside in the human body and to govern the body and mind. || similar >> 영혼 | The disembodied soul of a dead person. || mutual=False overlap=
+혼 | The entity that is believed to reside in the human body and to govern the body and mind. || similar >> 넋 | Invisible substance controlling the body and mind in one's body, believed to be imperishable even after the body's death. || mutual=True overlap=believ,body,mind
+혼란 | A state of being mixed up to be chaotic without order. || similar >> 혼잡 | A state of being mixed up to be chaotic and complicated. || mutual=True overlap=chaotic,mix
+혼란 | A state of being mixed up to be chaotic without order. || opposite >> 질서 | The regulations or order that people have to maintain in a crowded place to avoid confusion. || mutual=False overlap=order,without
+혼란 | A state of being mixed up to be chaotic without order. || opposite >> 안정 | A consistent state kept, without being changed or shaken. || mutual=False overlap=order,without
+혼인 | A state in which a man and woman become a married couple. || similar >> 결혼 | A man and woman become legally a married couple. || mutual=False overlap=become,couple,man,marri,woman
+혼인 | A state in which a man and woman become a married couple. || opposite >> 이혼 | The act by a married couple to end their marriage legally. || mutual=False overlap=couple,marri
+혼잡 | A state of being mixed up to be chaotic and complicated. || similar >> 혼란 | A state of being mixed up to be chaotic without order. || mutual=True overlap=chaotic,mix
+화가 | A person who paints or draws a picture professionally. || similar >> 화장 | The act of making oneself look more beautiful by applying cosmetics over the face. || mutual=False overlap=
+후자 | The second of two things previously mentioned. || opposite >> 전자 | A previous turn or time that came before the time of speaking. || mutual=False overlap=mention

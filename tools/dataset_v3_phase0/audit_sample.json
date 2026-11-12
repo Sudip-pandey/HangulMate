@@ -1,0 +1,953 @@
+[
+ {
+  "korean": "불어",
+  "seed_id": "HM-12368",
+  "partOfSpeech": "noun",
+  "english": "The language spoken mainly by the French people.",
+  "exampleKo": "불어를 전공하는 지수는 프랑스로 유학을 갔다.",
+  "nepali_candidates": [
+   "फ्रांसिसी",
+   "फ्रान्सेली भाषा"
+  ],
+  "meaning_ids": [
+   28164809,
+   31685312
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "대양",
+  "seed_id": "HM-18245",
+  "partOfSpeech": "noun",
+  "english": "A vast ocean like the Pacific, the Atlantic, the Indian, the Arctic, and the Antarctic oceans.",
+  "exampleKo": "인천에서 출발한 비행기는 대양을 건너 미국에 착륙했다.",
+  "nepali_candidates": [
+   "महासागर"
+  ],
+  "meaning_ids": [
+   27917645
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "화요일",
+  "seed_id": "HM-11329",
+  "partOfSpeech": "noun",
+  "english": "The second day of a week that starts from Monday.",
+  "exampleKo": "나는 다음 주 화요일이 아내 생일이라는 것이 생각났다.",
+  "nepali_candidates": [
+   "मंगलवार",
+   "मङ्गल्बार",
+   "मङ्गलबार"
+  ],
+  "meaning_ids": [
+   1624789,
+   36223544,
+   32088791
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "과",
+  "seed_id": "HM-11769",
+  "partOfSpeech": "noun",
+  "english": "In a school or hospital, the unit that divides academic departments or fields of professional research.",
+  "exampleKo": "나는 이번에 우리 과 수석을 해 장학금을 받았다.",
+  "nepali_candidates": [
+   "र"
+  ],
+  "meaning_ids": [
+   27849769
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "왕",
+  "seed_id": "HM-10899",
+  "partOfSpeech": "noun",
+  "english": "A king who is a ruler of a country where the crown is passed down from one to another member of the royal family.",
+  "exampleKo": "왕이 죽자 왕자가 왕의 자리에 올랐다.",
+  "nepali_candidates": [
+   "राजा"
+  ],
+  "meaning_ids": [
+   27904633
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "사자",
+  "seed_id": "HM-12422",
+  "partOfSpeech": "noun",
+  "english": "A person who is dead.",
+  "exampleKo": "사자의 무덤 앞을 지날 때면 이름도 모르던 사람이었지만 왠지 숙연해진다.",
+  "nepali_candidates": [
+   "सिंह"
+  ],
+  "meaning_ids": [
+   27907527
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "저",
+  "seed_id": "HM-11594",
+  "partOfSpeech": "pronoun",
+  "english": "The humble form used by the speaker to refer to himself/herself for the purpose of showing humility to the listener.",
+  "exampleKo": "저에게 말씀해 보세요.",
+  "nepali_candidates": [
+   "म"
+  ],
+  "meaning_ids": [
+   27834776
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "수화기",
+  "seed_id": "HM-16525",
+  "partOfSpeech": "noun",
+  "english": "The part where one puts one's ear to listen on the phone.",
+  "exampleKo": "지수는 전화벨이 울리자 설거지 중인 어머니의 귀에 수화기를 대 주었다.",
+  "nepali_candidates": [
+   "टेलिफोन रिसिभर"
+  ],
+  "meaning_ids": [
+   32095356
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "독",
+  "seed_id": "HM-14024",
+  "partOfSpeech": "noun",
+  "english": "A tall, bulging earthenware jar in which jang, fermented paste, alcoholic beverage, kimchi, etc., are stored.",
+  "exampleKo": "할머니 댁 뒤뜰의 장독대에는 스무 개도 넘는 독이 늘어서 있다.",
+  "nepali_candidates": [
+   "बिख"
+  ],
+  "meaning_ids": [
+   37301400
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "다다르다",
+  "seed_id": "HM-18201",
+  "partOfSpeech": "verb",
+  "english": "To reach a place.",
+  "exampleKo": "정거장에 다다랐을 때 내가 탈 버스가 지나가 버렸다.",
+  "nepali_candidates": [
+   "पछार"
+  ],
+  "meaning_ids": [
+   31751623
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "철",
+  "seed_id": "HM-13372",
+  "partOfSpeech": "noun",
+  "english": "One of four divisions of a year distinguished by natural phenomena, which are spring, summer, fall, and winter.",
+  "exampleKo": "나는 철이 이른 겨울에 두꺼운 옷을 샀다.",
+  "nepali_candidates": [
+   "phalam",
+   "फलाम"
+  ],
+  "meaning_ids": [
+   43840,
+   36272283
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "수박",
+  "seed_id": "HM-10678",
+  "partOfSpeech": "noun",
+  "english": "A big, green, round fruit with blackish blue stripes on it which contains red, watery flesh.",
+  "exampleKo": "날씨가 더우니까 원두막에서 시원한 수박이나 먹읍시다.",
+  "nepali_candidates": [
+   "खरबुजा"
+  ],
+  "meaning_ids": [
+   32095005
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "잎",
+  "seed_id": "HM-11003",
+  "partOfSpeech": "noun",
+  "english": "A vegetative organ of a plant, which is green, flat, and attached to the point or sides of a stem.",
+  "exampleKo": "어젯밤 내린 폭우에 가로수의 잎들이 떨어졌다.",
+  "nepali_candidates": [
+   "पात"
+  ],
+  "meaning_ids": [
+   27906179
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "당뇨병",
+  "seed_id": "HM-15764",
+  "partOfSpeech": "noun",
+  "english": "A disease in which urine contains an abnormally high level of sugar.",
+  "exampleKo": "당뇨병은 그 자체보다 그로 인한 합병증이 더 무섭다.",
+  "nepali_candidates": [
+   "मधुमेह"
+  ],
+  "meaning_ids": [
+   1326315
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "볼펜",
+  "seed_id": "HM-10528",
+  "partOfSpeech": "noun",
+  "english": "A writing instrument which disperses ink by using the rotation of a small metal ball at its point when it moves.",
+  "exampleKo": "아이가 벽에 볼펜으로 낙서를 한 것이 지워지지 않아서 지저분하다.",
+  "nepali_candidates": [
+   "कलम"
+  ],
+  "meaning_ids": [
+   27922408
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "돌",
+  "seed_id": "HM-10330",
+  "partOfSpeech": "noun",
+  "english": "One year from the day a baby was born.",
+  "exampleKo": "내가 여덟 살이었을 때, 내 막내 동생은 겨우 돌이 지난 아기였다.",
+  "nepali_candidates": [
+   "ढुङ्गा",
+   "पत्थर"
+  ],
+  "meaning_ids": [
+   27945823,
+   37301435
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "속눈썹",
+  "seed_id": "HM-12517",
+  "partOfSpeech": "noun",
+  "english": "Hair that grows from the edges of the eyelids.",
+  "exampleKo": "지수는 속눈썹을 길어 보이게 하기 위해 마스카라를 칠했다.",
+  "nepali_candidates": [
+   "परेला"
+  ],
+  "meaning_ids": [
+   27885036
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "쇠",
+  "seed_id": "HM-12536",
+  "partOfSpeech": "noun",
+  "english": "A silver-white solid matter with magnetic properties, widely used for many purposes, such as making a car or ship, etc.",
+  "exampleKo": "쇠는 두드릴수록 단단해진다고 한다.",
+  "nepali_candidates": [
+   "phalam"
+  ],
+  "meaning_ids": [
+   43840
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "피자",
+  "seed_id": "HM-11275",
+  "partOfSpeech": "noun",
+  "english": "Food originating in Italy, made by baking a round, flat piece of dough topped with tomato, meat, cheese, etc.",
+  "exampleKo": "우리는 근처 이탈리아 레스토랑에 가서 피자와 스파게티를 먹었다.",
+  "nepali_candidates": [
+   "पिज्जा"
+  ],
+  "meaning_ids": [
+   32095026
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "얼음",
+  "seed_id": "HM-10830",
+  "partOfSpeech": "noun",
+  "english": "Frozen and hardened water.",
+  "exampleKo": "나는 냉장고에서 차가운 얼음을 꺼내 먹었다.",
+  "nepali_candidates": [
+   "बरफ"
+  ],
+  "meaning_ids": [
+   37301337
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "황색",
+  "seed_id": "HM-17745",
+  "partOfSpeech": "noun",
+  "english": "Yellow color having both a dark and a light tone.",
+  "exampleKo": "논밭에 익어가는 벼 때문에 마을이 온통 황색을 띠는 듯하다.",
+  "nepali_candidates": [
+   "पहेंलो"
+  ],
+  "meaning_ids": [
+   28547992
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "꽃다발",
+  "seed_id": "HM-11399",
+  "partOfSpeech": "noun",
+  "english": "Flowers tied up in a bundle.",
+  "exampleKo": "나는 졸업식에서 꽃다발을 들고 사진을 찍었다.",
+  "nepali_candidates": [
+   "बुके"
+  ],
+  "meaning_ids": [
+   32094982
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "나비",
+  "seed_id": "HM-11905",
+  "partOfSpeech": "noun",
+  "english": "Horizontal length of cloth, paper, etc.",
+  "exampleKo": "나는 두 천의 나비를 맞추어 서로 연결해서 바느질을 했다.",
+  "nepali_candidates": [
+   "putali",
+   "पुतली"
+  ],
+  "meaning_ids": [
+   44086,
+   27863159
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "스포츠",
+  "seed_id": "HM-10704",
+  "partOfSpeech": "noun",
+  "english": "The act of moving the body according to certain rules or competing using athletic equipment, in order to train one's body or improve one's health.",
+  "exampleKo": "오빠는 어릴 적부터 야구와 농구 같은 스포츠를 좋아했다.",
+  "nepali_candidates": [
+   "खेल"
+  ],
+  "meaning_ids": [
+   27944063
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "사생활",
+  "seed_id": "HM-14428",
+  "partOfSpeech": "noun",
+  "english": "A person's personal, everyday life.",
+  "exampleKo": "사람들은 연예인의 사생활에 대해 궁금해한다.",
+  "nepali_candidates": [
+   "गोपनियता"
+  ],
+  "meaning_ids": [
+   27927630
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "한국어",
+  "seed_id": "HM-13556",
+  "partOfSpeech": "noun",
+  "english": "The language used by the Korean people.",
+  "exampleKo": "그 여자는 한국인 남편과 같이 산 지 십 년이 넘었는데도 한국어 실력이 형편없었다.",
+  "nepali_candidates": [
+   "कोरियाली",
+   "कोरियन"
+  ],
+  "meaning_ids": [
+   17356,
+   32088256
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "러시아",
+  "seed_id": "HM-11357",
+  "partOfSpeech": "noun",
+  "english": "A country between Eastern Europe and Siberia; the largest country in the world, it adjoins the Arctic to the north and the Pacific to the east; its official language is Russian and its capital is Moscow.",
+  "exampleKo": "",
+  "nepali_candidates": [
+   "रसिया",
+   "रूस"
+  ],
+  "meaning_ids": [
+   1665234,
+   28513457
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "점",
+  "seed_id": "HM-13168",
+  "partOfSpeech": "noun",
+  "english": "An unscientific way of guessing what happened in the past or telling someone's fortune, etc., in the present and future.",
+  "exampleKo": "사업이 잘 풀리지 않자 그는 점을 한번 보기로 했다.",
+  "nepali_candidates": [
+   "बिन्दु"
+  ],
+  "meaning_ids": [
+   27925391
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "주무시다",
+  "seed_id": "HM-11088",
+  "partOfSpeech": "verb",
+  "english": "(honorific) To sleep.",
+  "exampleKo": "할아버지, 안녕히 주무셨어요?",
+  "nepali_candidates": [
+   "सुत्नु"
+  ],
+  "meaning_ids": [
+   27941199
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "봉투",
+  "seed_id": "HM-10530",
+  "partOfSpeech": "noun",
+  "english": "A bag made of paper, into which a letter, document, etc., are put.",
+  "exampleKo": "지수는 편지를 봉투에 넣었다.",
+  "nepali_candidates": [
+   "खाम"
+  ],
+  "meaning_ids": [
+   32095408
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "아시아",
+  "seed_id": "HM-13669",
+  "partOfSpeech": "noun",
+  "english": "One of the six continents in the northeastern part of the earth; it is stretched from Japan to Türkiye; it is the home of the countries such as Korea, China, India, etc.",
+  "exampleKo": "",
+  "nepali_candidates": [
+   "एसिया",
+   "एशिया"
+  ],
+  "meaning_ids": [
+   88060,
+   1346200
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "주일",
+  "seed_id": "HM-11096",
+  "partOfSpeech": "noun",
+  "english": "In Christianity, Sunday when services are held.",
+  "exampleKo": "나는 주일마다 성실히 교회에 나갔다.",
+  "nepali_candidates": [
+   "हप्ता"
+  ],
+  "meaning_ids": [
+   27959793
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "기",
+  "seed_id": "HM-15526",
+  "partOfSpeech": "noun",
+  "english": "The force that acts as the basis for doing something.",
+  "exampleKo": "응원단의 응원 소리를 들으니 선수들은 기가 올랐다.",
+  "nepali_candidates": [
+   "झण्डा"
+  ],
+  "meaning_ids": [
+   27887400
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "빨간색",
+  "seed_id": "HM-10569",
+  "partOfSpeech": "noun",
+  "english": "A red color like that of blood, or a ripe apple or red pepper.",
+  "exampleKo": "가을이 되자 나뭇잎이 빨간색으로 곱게 물들었다.",
+  "nepali_candidates": [
+   "रातो"
+  ],
+  "meaning_ids": [
+   28562111
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "목소리",
+  "seed_id": "HM-10439",
+  "partOfSpeech": "noun",
+  "english": "The sound that comes out of the human throat.",
+  "exampleKo": "나는 네 목소리가 참 따뜻해서 좋아.",
+  "nepali_candidates": [
+   "स्वर"
+  ],
+  "meaning_ids": [
+   37301458
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "소비자",
+  "seed_id": "HM-12509",
+  "partOfSpeech": "noun",
+  "english": "A person who pays money to buy products, services, etc.",
+  "exampleKo": "내일부터 이 광장에서는 생산자와 소비자가 직접 만날 수 있는 농산물 직거래 장터가 열린다.",
+  "nepali_candidates": [
+   "उपभोक्ता"
+  ],
+  "meaning_ids": [
+   31741434
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "비우다",
+  "seed_id": "HM-14394",
+  "partOfSpeech": "verb",
+  "english": "To make something empty by eliminating its contents.",
+  "exampleKo": "나는 간장 게장만 있으면 밥 두 그릇은 뚝딱 비운다.",
+  "nepali_candidates": [
+   "खा",
+   "खानु"
+  ],
+  "meaning_ids": [
+   31746938,
+   31746938
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "아프리카",
+  "seed_id": "HM-13670",
+  "partOfSpeech": "noun",
+  "english": "One of the six continents; the equator passes through the continent, explaining its tropical and subtropical climates; it is home to the countries such as Egypt, Nigeria, South Africa, etc.",
+  "exampleKo": "",
+  "nepali_candidates": [
+   "अफ्रीका",
+   "अफ्रिका"
+  ],
+  "meaning_ids": [
+   1555354,
+   36229626
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "고리",
+  "seed_id": "HM-17964",
+  "partOfSpeech": "noun",
+  "english": "Something made by connecting long metal objects, strings or cords in the form of a circle.",
+  "exampleKo": "화성은 고리 모양의 띠가 둘러진 행성이다.",
+  "nepali_candidates": [
+   "टोकरी",
+   "कर्ली लुप"
+  ],
+  "meaning_ids": [
+   27856969,
+   32095548
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "가루",
+  "seed_id": "HM-11615",
+  "partOfSpeech": "noun",
+  "english": "A very small grain of something hard, as a result of grinding or pounding it.",
+  "exampleKo": "아이들이 옷에 묻은 하얀색의 분필 가루를 털었다.",
+  "nepali_candidates": [
+   "पिठो",
+   "आटो",
+   "पीठो"
+  ],
+  "meaning_ids": [
+   27888018,
+   27888018,
+   37301311
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "상",
+  "seed_id": "HM-10601",
+  "partOfSpeech": "noun",
+  "english": "The first in a class, level, order, etc.",
+  "exampleKo": "그의 대학 성적은 상에 해당된다.",
+  "nepali_candidates": [
+   "टेबुल",
+   "टेबिल"
+  ],
+  "meaning_ids": [
+   27948730,
+   37301441
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "자정",
+  "seed_id": "HM-17125",
+  "partOfSpeech": "noun",
+  "english": "Twelve o'clock at night.",
+  "exampleKo": "오늘밤 자정이 지나면 내일부터 기름 값이 일제히 오른다.",
+  "nepali_candidates": [
+   "मध्यरात",
+   "अधरात"
+  ],
+  "meaning_ids": [
+   28587770,
+   28587770
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "법",
+  "seed_id": "HM-12306",
+  "partOfSpeech": "noun",
+  "english": "A set of regulations and rules that the state institutes for all citizens to comply with.",
+  "exampleKo": "대한민국에 사는 모든 국민은 법을 지켜야 할 의무가 있다.",
+  "nepali_candidates": [
+   "कानून"
+  ],
+  "meaning_ids": [
+   1656455
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "종료",
+  "seed_id": "HM-19142",
+  "partOfSpeech": "noun",
+  "english": "The state of a certain action or task being finished, or the act of finishing a certain action or task.",
+  "exampleKo": "시합의 종료를 알리는 심판의 호루라기 소리가 들려왔다.",
+  "nepali_candidates": [
+   "सकिएको संकेत गर्ने वाण"
+  ],
+  "meaning_ids": [
+   32095518
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "화폐",
+  "seed_id": "HM-13623",
+  "partOfSpeech": "noun",
+  "english": "A coin or bill that is a standard for evaluating the value of a product when selling and buying, or exchanging it for another product, and is given and taken for such an exchange.",
+  "exampleKo": "화폐를 위조한 범인이 물건을 사다 경찰에 붙잡혔다.",
+  "nepali_candidates": [
+   "मुद्रा"
+  ],
+  "meaning_ids": [
+   28543322
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "팔월",
+  "seed_id": "HM-11260",
+  "partOfSpeech": "noun",
+  "english": "The eighth month of a year, out of twelve months.",
+  "exampleKo": "우리는 팔월의 찜통 같은 더위를 피해 계곡으로 놀러 갔다.",
+  "nepali_candidates": [
+   "अगस्त"
+  ],
+  "meaning_ids": [
+   36223557
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "젖다",
+  "seed_id": "HM-11529",
+  "partOfSpeech": "verb",
+  "english": "To become wet by absorbing liquid.",
+  "exampleKo": "아이들은 불을 피워 젖은 옷을 말렸다.",
+  "nepali_candidates": [
+   "भिजेको"
+  ],
+  "meaning_ids": [
+   27960037
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "동사",
+  "seed_id": "HM-15844",
+  "partOfSpeech": "noun",
+  "english": "A death caused by freezing",
+  "exampleKo": "유난히 추운 올겨울에는 집이 없는 사람들의 동사 보도가 더욱 많았다.",
+  "nepali_candidates": [
+   "क्रिया"
+  ],
+  "meaning_ids": [
+   27957656
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "식물",
+  "seed_id": "HM-12625",
+  "partOfSpeech": "noun",
+  "english": "A living organism that cannot move by itself, such as plants and trees.",
+  "exampleKo": "이곳에는 예쁜 꽃을 피우는 식물들이 많다.",
+  "nepali_candidates": [
+   "बिरूवा"
+  ],
+  "meaning_ids": [
+   27924739
+  ],
+  "candidate_sources": [
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ },
+ {
+  "korean": "소나무",
+  "seed_id": "HM-12496",
+  "partOfSpeech": "noun",
+  "english": "A tree with long, sharp, needle-like leaves that are always green.",
+  "exampleKo": "식목일을 맞아 마을에서는 어린 소나무 묘목들을 산에 심었다.",
+  "nepali_candidates": [
+   "सल्ला",
+   "सदाबहार"
+  ],
+  "meaning_ids": [
+   27924246,
+   32094992
+  ],
+  "candidate_sources": [
+   "npi",
+   "npi"
+  ],
+  "source": "panlex",
+  "status": "candidate"
+ }
+]
