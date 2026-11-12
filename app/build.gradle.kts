@@ -15,12 +15,34 @@ android {
         minSdk = 26
         targetSdk = 34
         versionCode = 1
-        versionName = "0.1.0"
+        versionName = "0.1.1"
+
+        // Size: ship ARM only. x86/x86_64 native libs (ML Kit OCR pipeline,
+        // TFLite JNI) are emulator-only weight — every real phone is ARM,
+        // and dropping them saves ~15 MB of the ~84 MB APK.
+        ndk {
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a")
+        }
+        // Size: keep only the app's own locales (en default + ne).
+        resourceConfigurations += listOf("en", "ne")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        // Size: the CI debug APK is what Byte installs, so R8 runs here.
+        // Minify + resource shrinking cut the unminified Compose/Room/Hilt
+        // dex and unused resources. Libraries (Hilt, Room, Compose,
+        // CameraX, ML Kit, TFLite) ship their own consumer ProGuard rules;
+        // proguard-rules.pro adds keeps for the app's own data layer.
+        debug {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro",
+            )
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
