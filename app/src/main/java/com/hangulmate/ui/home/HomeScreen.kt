@@ -53,6 +53,7 @@ fun HomeScreen(
     onNavigateToPractice: () -> Unit,
     onNavigateToWord: (String) -> Unit,
     onNavigateToCamera: () -> Unit = {},
+    onNavigateToGrammar: () -> Unit = {},
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
@@ -273,6 +274,30 @@ fun HomeScreen(
                         )
                         Button(onClick = onNavigateToPractice) {
                             Text(stringResource(R.string.home_start_practice))
+                        }
+                    }
+                }
+
+                // Grammar shortcut — same card style as the EPS practice card.
+                Card(
+                    onClick = onNavigateToGrammar,
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Column(
+                        modifier = Modifier.padding(Spacing.lg),
+                        verticalArrangement = Arrangement.spacedBy(Spacing.sm),
+                    ) {
+                        Text(
+                            text = stringResource(R.string.home_grammar_title),
+                            style = MaterialTheme.typography.titleMedium,
+                        )
+                        Text(
+                            text = stringResource(R.string.home_grammar_desc),
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                        Button(onClick = onNavigateToGrammar) {
+                            Text(stringResource(R.string.home_grammar_open))
                         }
                     }
                 }

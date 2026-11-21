@@ -30,6 +30,10 @@
     <string name="home_eps_practice_desc">Revise with quizzes and flashcards for the EPS-TOPIK exam.</string>
     <string name="home_start_practice">Start practice</string>
 
+    <string name="home_grammar_title">Grammar</string>
+    <string name="home_grammar_desc">All 120 EPS-TOPIK grammar points from both textbooks, with Nepali explanations.</string>
+    <string name="home_grammar_open">Open grammar</string>
+
     <string name="home_recently_searched">Recently searched</string>
     <string name="home_weak_words">Words to revise</string>
 

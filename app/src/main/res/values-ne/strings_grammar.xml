@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- व्याकरण खण्ड (दुवै पुस्तकका EPS-TOPIK व्याकरण बुँदा) -->
+    <string name="grammar_title">व्याकरण</string>
+    <string name="grammar_search_hint">रूप वा अर्थ खोज्नुहोस्…</string>
+    <string name="grammar_clear_search">खोज हटाउनुहोस्</string>
+    <string name="grammar_filter_all">सबै</string>
+    <string name="grammar_filter_book_1">पुस्तक १</string>
+    <string name="grammar_filter_book_2">पुस्तक २</string>
+    <string name="grammar_book_1_title">पुस्तक १ · कोरियाली १</string>
+    <string name="grammar_book_2_title">पुस्तक २ · कोरियाली २</string>
+    <string name="grammar_unit_label">एकाइ %1$d · %2$s</string>
+    <string name="grammar_unit_label_short">पुस्तक %1$d · एकाइ %2$d</string>
+    <string name="grammar_points_count">%1$d व्याकरण बुँदा</string>
+    <string name="grammar_no_results">खोजसँग मिल्ने व्याकरण बुँदा भेटिएन।</string>
+    <string name="grammar_loading">व्याकरण लोड हुँदैछ…</string>
+    <string name="grammar_failed">व्याकरण लोड हुन सकेन। अर्को पटक एप खोल्दा पुनः प्रयास गरिनेछ।</string>
+    <string name="grammar_not_found">त्यो व्याकरण बुँदा भेटिएन।</string>
+
+    <string name="grammar_detail_structure">संरचना</string>
+    <string name="grammar_detail_meaning">अर्थ</string>
+    <string name="grammar_meaning_korean">कोरियाली</string>
+    <string name="grammar_meaning_english">अङ्ग्रेजी</string>
+    <string name="grammar_meaning_nepali">नेपाली</string>
+
+    <string name="grammar_tense_title">भूतकाल (past tense)</string>
+    <string name="grammar_tense_yes">भूतकाल लाग्न सक्छ</string>
+    <string name="grammar_tense_no">भूतकाल कहिल्यै लाग्दैन</string>
+    <string name="grammar_tense_not_stated">पुस्तकले यसबारे केही भनेको छैन</string>
+    <string name="grammar_tense_na">लागु हुँदैन — यो रूप आफैं भूतकाल वा विशेषण रूप हो</string>
+
+    <string name="grammar_person_title">कसले प्रयोग गर्न सक्छ</string>
+    <string name="grammar_person_all">सबै व्यक्ति (पहिलो / दोस्रो / तेस्रो)</string>
+    <string name="grammar_person_1st_only">पहिलो व्यक्ति मात्र</string>
+    <string name="grammar_person_2nd_only">दोस्रो व्यक्ति मात्र</string>
+    <string name="grammar_person_1st_2nd">पहिलो र दोस्रो व्यक्ति</string>
+    <string name="grammar_person_2nd_3rd">दोस्रो र तेस्रो व्यक्ति</string>
+    <string name="grammar_person_not_stated">पुस्तकले यसबारे कुनै सीमा तोकेको छैन</string>
+
+    <string name="grammar_examples_title">उदाहरणहरू</string>
+    <string name="grammar_example_book">पुस्तकबाट</string>
+    <string name="grammar_example_authored">लेखिएको उदाहरण</string>
+    <string name="grammar_mistakes_title">सामान्य गल्तीहरू</string>
+    <string name="grammar_source_page">पुस्तक %1$d · एकाइ %2$d · पृ. %3$d</string>
+</resources>

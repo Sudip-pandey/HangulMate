@@ -3,7 +3,8 @@ package com.hangulmate.ui.navigation
 import android.net.Uri
 
 /**
- * All navigation destinations. Five bottom tabs + word detail + collections + add word.
+ * All navigation destinations. Five bottom tabs + word detail + collections
+ * + add word + grammar list/detail.
  *
  * Contract (owned by the Home/Dictionary agent; other agents conform):
  * - [Screen.Dictionary] carries an optional `query` argument (default "").
@@ -14,6 +15,10 @@ import android.net.Uri
  *   package `com.hangulmate.ui.collections`.
  * - [Screen.AddWord] carries an optional `prefillKorean` argument (default "").
  *   Use [Screen.AddWord.createRoute] to build it.
+ * - [Screen.GrammarDetail] carries the grammar point id
+ *   (e.g. "G-B1-U01-01"). Use [Screen.GrammarDetail.createRoute] to build it.
+ *   Grammar is reached from the Home card, not from a bottom tab — the
+ *   five tabs stay as they are.
  */
 sealed class Screen(val route: String) {
     data object Home : Screen("home")
@@ -28,6 +33,12 @@ sealed class Screen(val route: String) {
     data object Practice : Screen("practice")
     data object Profile : Screen("profile")
     data object Collections : Screen("collections")
+
+    data object Grammar : Screen("grammar")
+
+    data object GrammarDetail : Screen("grammar_detail/{pointId}") {
+        fun createRoute(pointId: String): String = "grammar_detail/$pointId"
+    }
 
     data object WordDetail : Screen("word_detail/{wordId}") {
         fun createRoute(wordId: String): String = "word_detail/$wordId"

@@ -12,6 +12,8 @@ import com.hangulmate.ui.collections.CollectionsScreen
 import com.hangulmate.ui.dictionary.AddWordScreen
 import com.hangulmate.ui.dictionary.DictionaryScreen
 import com.hangulmate.ui.dictionary.WordDetailScreen
+import com.hangulmate.ui.grammar.GrammarDetailScreen
+import com.hangulmate.ui.grammar.GrammarListScreen
 import com.hangulmate.ui.home.HomeScreen
 import com.hangulmate.ui.practice.PracticeScreen
 import com.hangulmate.ui.profile.ProfileScreen
@@ -36,6 +38,25 @@ fun HangulMateNavHost(
                     navController.navigate(Screen.WordDetail.createRoute(wordId))
                 },
                 onNavigateToCamera = { navController.navigate(Screen.Camera.route) },
+                onNavigateToGrammar = { navController.navigate(Screen.Grammar.route) },
+            )
+        }
+        composable(Screen.Grammar.route) {
+            GrammarListScreen(
+                onBack = { navController.popBackStack() },
+                onPointClick = { pointId ->
+                    navController.navigate(Screen.GrammarDetail.createRoute(pointId))
+                },
+            )
+        }
+        composable(
+            route = Screen.GrammarDetail.route,
+            arguments = listOf(navArgument("pointId") { type = NavType.StringType }),
+        ) { backStackEntry ->
+            val pointId = backStackEntry.arguments?.getString("pointId").orEmpty()
+            GrammarDetailScreen(
+                pointId = pointId,
+                onBack = { navController.popBackStack() },
             )
         }
         composable(

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Grammar section (EPS-TOPIK grammar points from both textbooks). -->
+    <string name="grammar_title">Grammar</string>
+    <string name="grammar_search_hint">Search form or meaning…</string>
+    <string name="grammar_clear_search">Clear search</string>
+    <string name="grammar_filter_all">All</string>
+    <string name="grammar_filter_book_1">Book 1</string>
+    <string name="grammar_filter_book_2">Book 2</string>
+    <string name="grammar_book_1_title">Book 1 · Korean 1</string>
+    <string name="grammar_book_2_title">Book 2 · Korean 2</string>
+    <string name="grammar_unit_label">Unit %1$d · %2$s</string>
+    <string name="grammar_unit_label_short">Book %1$d · Unit %2$d</string>
+    <string name="grammar_points_count">%1$d grammar points</string>
+    <string name="grammar_no_results">No grammar points match your search.</string>
+    <string name="grammar_loading">Loading grammar…</string>
+    <string name="grammar_failed">Grammar could not be loaded. It will be retried the next time you open the app.</string>
+    <string name="grammar_not_found">That grammar point could not be found.</string>
+
+    <string name="grammar_detail_structure">Structure</string>
+    <string name="grammar_detail_meaning">Meaning</string>
+    <string name="grammar_meaning_korean">Korean</string>
+    <string name="grammar_meaning_english">English</string>
+    <string name="grammar_meaning_nepali">Nepali</string>
+
+    <string name="grammar_tense_title">Past tense</string>
+    <string name="grammar_tense_yes">Past tense can follow</string>
+    <string name="grammar_tense_no">Past tense never follows</string>
+    <string name="grammar_tense_not_stated">The book does not state a rule</string>
+    <string name="grammar_tense_na">Not applicable — this form is itself a past or modifier form</string>
+
+    <string name="grammar_person_title">Who can use it</string>
+    <string name="grammar_person_all">All persons (1st / 2nd / 3rd)</string>
+    <string name="grammar_person_1st_only">1st person only</string>
+    <string name="grammar_person_2nd_only">2nd person only</string>
+    <string name="grammar_person_1st_2nd">1st and 2nd person</string>
+    <string name="grammar_person_2nd_3rd">2nd and 3rd person</string>
+    <string name="grammar_person_not_stated">The book does not state a restriction</string>
+
+    <string name="grammar_examples_title">Examples</string>
+    <string name="grammar_example_book">From the book</string>
+    <string name="grammar_example_authored">Authored example</string>
+    <string name="grammar_mistakes_title">Common mistakes</string>
+    <string name="grammar_source_page">Book %1$d · Unit %2$d · p. %3$d</string>
+</resources>

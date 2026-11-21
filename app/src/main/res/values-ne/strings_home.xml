@@ -30,6 +30,10 @@
     <string name="home_eps_practice_desc">EPS-TOPIK परीक्षाका लागि क्विज र फ्ल्यासकार्डबाट दोहोर्‍याउनुहोस्।</string>
     <string name="home_start_practice">अभ्यास सुरु गर्नुहोस्</string>
 
+    <string name="home_grammar_title">व्याकरण</string>
+    <string name="home_grammar_desc">दुवै पुस्तकका सबै १२० EPS-TOPIK व्याकरण बुँदा, नेपाली व्याख्यासहित।</string>
+    <string name="home_grammar_open">व्याकरण खोल्नुहोस्</string>
+
     <string name="home_recently_searched">भर्खरै खोजिएका</string>
     <string name="home_weak_words">दोहोर्‍याउनुपर्ने शब्दहरू</string>
 
