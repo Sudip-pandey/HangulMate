@@ -11,8 +11,10 @@ import androidx.lifecycle.viewModelScope
 import com.hangulmate.data.backup.BackupManager
 import com.hangulmate.data.preferences.SettingsRepository
 import com.hangulmate.domain.model.ImportReport
+import com.hangulmate.domain.repository.GeminiKeyStore
 import com.hangulmate.domain.repository.LearningRepository
 import com.hangulmate.domain.repository.VocabularyRepository
+import com.hangulmate.ml.maskApiKey
 import com.hangulmate.speech.TtsManager
 import com.hangulmate.speech.TtsState
 import com.hangulmate.work.ReminderScheduler
@@ -50,6 +52,7 @@ class ProfileViewModel @Inject constructor(
     private val vocabularyRepository: VocabularyRepository,
     private val learningRepository: LearningRepository,
     private val backupManager: BackupManager,
+    private val geminiKeyStore: GeminiKeyStore,
     @ApplicationContext private val appContext: Context,
 ) : ViewModel() {
 
@@ -77,14 +80,50 @@ class ProfileViewModel @Inject constructor(
     private val _localBackupInfo = MutableStateFlow<LocalBackupInfo?>(null)
     val localBackupInfo: StateFlow<LocalBackupInfo?> = _localBackupInfo
 
+    /**
+     * Masked Gemini key ("••••" + last 4 chars) when one is saved,
+     * null otherwise. The full key is never exposed to the UI.
+     */
+    private val _geminiKeyMasked = MutableStateFlow<String?>(null)
+    val geminiKeyMasked: StateFlow<String?> = _geminiKeyMasked
+
     init {
         refreshLocalBackupInfo()
+        refreshGeminiKeyState()
         // Re-assert the saved reminder schedule (e.g. after the work was
         // lost): a no-op when nothing changed.
         viewModelScope.launch {
             val enabled = settingsRepository.remindersEnabled.first()
             val hour = settingsRepository.reminderHour.first()
             ReminderScheduler.schedule(appContext, enabled, hour)
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Gemini API key (per-user key for optional online identification)
+    // ------------------------------------------------------------------
+
+    fun refreshGeminiKeyState() {
+        viewModelScope.launch {
+            val key = runCatching { geminiKeyStore.getKey() }.getOrNull()
+            _geminiKeyMasked.value = key?.takeIf { it.isNotBlank() }?.let { maskApiKey(it) }
+        }
+    }
+
+    /** Saves the user's own key (encrypted on device) and refreshes the masked display. */
+    fun saveGeminiKey(key: String) {
+        if (key.isBlank()) return
+        viewModelScope.launch {
+            runCatching { geminiKeyStore.saveKey(key) }
+            refreshGeminiKeyState()
+        }
+    }
+
+    /** Removes the saved key; online identification turns off. */
+    fun clearGeminiKey() {
+        viewModelScope.launch {
+            runCatching { geminiKeyStore.clearKey() }
+            _geminiKeyMasked.value = null
         }
     }
 

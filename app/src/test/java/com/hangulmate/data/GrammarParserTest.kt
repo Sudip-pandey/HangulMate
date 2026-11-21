@@ -16,8 +16,8 @@ import org.robolectric.annotation.Config
 /**
  * Grammar-seed parser tests, fed by the REAL seed file copied to
  * `app/src/test/resources/grammar_seed.json` (hermetic — no asset
- * access), mirroring [SeedImportTest]. Guards the v0.2 shape: 120
- * points, 60 per book, and the honest NOT_STATED mapping for rules the
+ * access), mirroring [SeedImportTest]. Guards the v0.3+extras shape: 157
+ * points, 60/60/37 per book (1/2/extras), and the honest NOT_STATED mapping for rules the
  * book does not state.
  */
 @RunWith(RobolectricTestRunner::class)
@@ -29,15 +29,19 @@ class GrammarParserTest {
             .bufferedReader().readText()
 
     @Test
-    fun realSeed_parsesAll120Points() = runTest {
+    fun realSeed_parsesAll157Points() = runTest {
         val parsed = GrammarJsonParser.parse(realSeedJson())
 
-        assertEquals(120, parsed.points.size)
+        assertEquals(157, parsed.points.size)
         assertEquals(0, parsed.skipped)
         assertEquals(60, parsed.points.count { it.book == 1 })
         assertEquals(60, parsed.points.count { it.book == 2 })
+        assertEquals(37, parsed.points.count { it.book == 3 })
         assertEquals(120, parsed.points.map { it.id }.toSet().size)
         assertTrue(parsed.points.all { it.examples.isNotEmpty() })
+        assertTrue(parsed.points.filter { it.book == 3 }.all { point ->
+            point.keyPoints.any { it.ne.startsWith("पछिको वाक्य:") }
+        })
     }
 
     @Test

@@ -17,11 +17,11 @@ import javax.inject.Inject
 
 /**
  * Owns the grammar list: bundled points, Korean / Nepali / English
- * search, and the Book 1 / Book 2 filter.
+ * search, and the Book 1 / Book 2 / Extra filter.
  *
  * Search matches the form, the Nepali and English meanings, and the unit
  * titles — the same 3-way search idea as the Dictionary, over the
- * in-memory list (120 rows, no database involved).
+ * in-memory list (157 rows, no database involved).
  */
 @HiltViewModel
 class GrammarViewModel @Inject constructor(
@@ -33,7 +33,7 @@ class GrammarViewModel @Inject constructor(
     private val _query = MutableStateFlow("")
     val query: StateFlow<String> = _query.asStateFlow()
 
-    /** Null = both books; 1 or 2 = one book only. */
+    /** Null = all books; 1, 2 or 3 = one book only (3 = KGIU extras). */
     private val _bookFilter = MutableStateFlow<Int?>(null)
     val bookFilter: StateFlow<Int?> = _bookFilter.asStateFlow()
 

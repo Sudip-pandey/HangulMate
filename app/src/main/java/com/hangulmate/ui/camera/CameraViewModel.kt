@@ -7,6 +7,8 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.ImageDecoder
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
 import android.net.Uri
 import android.os.Build
 import android.util.Log
@@ -14,10 +16,16 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.mlkit.common.MlKitException
 import com.hangulmate.R
+import com.hangulmate.data.gemini.GeminiVisionClient
 import com.hangulmate.domain.model.LearningState
 import com.hangulmate.domain.model.VocabularyWord
+import com.hangulmate.domain.repository.GeminiKeyStore
 import com.hangulmate.domain.repository.VocabularyRepository
 import com.hangulmate.ml.ClassificationCandidate
+import com.hangulmate.ml.GeminiError
+import com.hangulmate.ml.GeminiIdentifyResult
+import com.hangulmate.ml.GeminiObjectResult
+import com.hangulmate.ml.KoreanWordMatcher
 import com.hangulmate.ml.OcrResult
 import com.hangulmate.ml.OcrService
 import com.hangulmate.ml.Prediction
@@ -27,6 +35,7 @@ import com.hangulmate.ml.buildTranslationBreakdown
 import com.hangulmate.speech.TtsManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
+import java.io.ByteArrayOutputStream
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -90,6 +99,25 @@ sealed interface ObjectUiState {
     data class Error(val message: String) : ObjectUiState
 }
 
+/** State of the Gemini online identification pipeline. */
+sealed interface GeminiUiState {
+    data object Idle : GeminiUiState
+    data object Loading : GeminiUiState
+
+    /** No API key saved — the UI offers the Settings key screen. */
+    data object NeedsKey : GeminiUiState
+
+    /** A failed attempt; [messageRes] is the user-facing string. */
+    data class Error(val messageRes: Int) : GeminiUiState
+
+    /**
+     * Gemini answered, but the Korean word is not in the bundled seed.
+     * Shown as a labelled result card — never inserted into the
+     * dictionary and never navigated anywhere.
+     */
+    data class NotInDictionary(val result: GeminiObjectResult) : GeminiUiState
+}
+
 data class CameraUiState(
     val mode: CameraMode = CameraMode.TEXT,
     val torchOn: Boolean = false,
@@ -113,6 +141,16 @@ data class CameraUiState(
     val ttsAvailable: Boolean = false,
     /** One-shot notice (a string resource id), cleared after display. */
     val noticeRes: Int? = null,
+    /** Gemini online identification state (object mode only). */
+    val geminiState: GeminiUiState = GeminiUiState.Idle,
+    /** True when the user has saved a Gemini API key. */
+    val geminiHasKey: Boolean = false,
+    /**
+     * One-shot navigation: the id of the seed word Gemini's answer
+     * matched. The screen navigates to it once, then calls
+     * [CameraViewModel.consumeGeminiNavigation] to clear it.
+     */
+    val geminiMatchedWordId: String? = null,
 )
 
 /**
@@ -125,6 +163,8 @@ class CameraViewModel @Inject constructor(
     private val repository: VocabularyRepository,
     @ApplicationContext private val context: Context,
     private val ttsManager: TtsManager,
+    private val geminiKeyStore: GeminiKeyStore,
+    private val geminiVisionClient: GeminiVisionClient,
 ) : ViewModel() {
 
     private val _state = MutableStateFlow(CameraUiState())
@@ -162,6 +202,15 @@ class CameraViewModel @Inject constructor(
                 _state.update { current -> current.copy(ttsAvailable = ttsManager.isKoreanAvailable()) }
             }
         }
+        refreshGeminiHasKey()
+    }
+
+    /** Re-reads whether a Gemini key is saved (e.g. after returning from Settings). */
+    fun refreshGeminiHasKey() {
+        viewModelScope.launch {
+            val hasKey = runCatching { geminiKeyStore.hasKey() }.getOrDefault(false)
+            _state.update { it.copy(geminiHasKey = hasKey) }
+        }
     }
 
     // -- Mode / capture -------------------------------------------------
@@ -193,6 +242,8 @@ class CameraViewModel @Inject constructor(
                 breakdown = null,
                 objectState = ObjectUiState.Idle,
                 manualObjectResults = emptyList(),
+                geminiState = GeminiUiState.Idle,
+                geminiMatchedWordId = null,
             )
         }
         when (_state.value.mode) {
@@ -221,6 +272,8 @@ class CameraViewModel @Inject constructor(
                 breakdown = null,
                 objectState = ObjectUiState.Idle,
                 manualObjectResults = emptyList(),
+                geminiState = GeminiUiState.Idle,
+                geminiMatchedWordId = null,
             )
         }
     }
@@ -395,6 +448,129 @@ class CameraViewModel @Inject constructor(
         }
     }
 
+    // -- Online identify / Gemini ---------------------------------------
+    //
+    // Optional online mode: the photo is sent to Google's Gemini API
+    // ONLY when the user has saved their own API key in Settings.
+    // No key -> NeedsKey (UI offers Settings). Offline -> a clear
+    // error with offline mode as the fallback. A matched Korean word
+    // navigates to its existing WordDetail; an unmatched word shows a
+    // labelled result card and is never added to the dictionary.
+
+    /** Starts online identification for the captured photo. */
+    fun identifyOnline() {
+        val bitmap = _state.value.capturedBitmap ?: return
+        if (_state.value.geminiState is GeminiUiState.Loading) return
+        viewModelScope.launch {
+            _state.update { it.copy(geminiState = GeminiUiState.Loading) }
+            val apiKey = runCatching { geminiKeyStore.getKey() }.getOrNull()
+            if (apiKey.isNullOrBlank()) {
+                _state.update {
+                    it.copy(geminiState = GeminiUiState.NeedsKey, geminiHasKey = false)
+                }
+                return@launch
+            }
+            if (!isOnline()) {
+                _state.update {
+                    it.copy(geminiState = GeminiUiState.Error(R.string.gemini_error_no_internet))
+                }
+                return@launch
+            }
+            val jpegBytes = withContext(Dispatchers.Default) { toGeminiJpeg(bitmap) }
+            if (jpegBytes == null) {
+                _state.update {
+                    it.copy(geminiState = GeminiUiState.Error(R.string.gemini_error_unknown))
+                }
+                return@launch
+            }
+            when (val outcome = geminiVisionClient.identify(apiKey, jpegBytes)) {
+                is GeminiIdentifyResult.Success -> onGeminiResult(outcome.result)
+                is GeminiIdentifyResult.Failure -> _state.update {
+                    it.copy(geminiState = GeminiUiState.Error(outcome.error.toStringRes()))
+                }
+            }
+        }
+    }
+
+    fun retryGemini() {
+        identifyOnline()
+    }
+
+    fun clearGeminiResult() {
+        _state.update { it.copy(geminiState = GeminiUiState.Idle, geminiMatchedWordId = null) }
+    }
+
+    /** Clears the one-shot navigation after the screen has consumed it. */
+    fun consumeGeminiNavigation() {
+        _state.update { it.copy(geminiMatchedWordId = null) }
+    }
+
+    private suspend fun onGeminiResult(result: GeminiObjectResult) {
+        val word = withContext(Dispatchers.Default) { findWordByKorean(result.korean) }
+        if (word != null) {
+            _state.update {
+                it.copy(
+                    geminiState = GeminiUiState.Idle,
+                    geminiMatchedWordId = word.id,
+                )
+            }
+        } else {
+            _state.update { it.copy(geminiState = GeminiUiState.NotInDictionary(result)) }
+        }
+    }
+
+    /**
+     * Seed lookup for a Gemini answer: exact match first
+     * ([VocabularyRepository.getByKorean]), then a normalized match —
+     * whitespace stripped on both sides — over the dictionary search
+     * results for the query. Null when the word is not in the seed.
+     */
+    private suspend fun findWordByKorean(korean: String): VocabularyWord? {
+        val trimmed = korean.trim()
+        if (trimmed.isEmpty()) return null
+        repository.getByKorean(trimmed)?.let { return it }
+        for (query in listOf(trimmed, KoreanWordMatcher.normalize(trimmed))) {
+            if (query.isEmpty()) continue
+            val candidates = runCatching { repository.search(query).first() }.getOrNull()
+                ?: continue
+            val spellings = candidates.map { it.korean }
+            val matched = KoreanWordMatcher.match(spellings, trimmed) ?: continue
+            return candidates.firstOrNull { it.korean == matched }
+        }
+        return null
+    }
+
+    private fun isOnline(): Boolean {
+        val manager = context.getSystemService(Context.CONNECTIVITY_SERVICE)
+            as? ConnectivityManager ?: return false
+        val network = manager.activeNetwork ?: return false
+        val capabilities = manager.getNetworkCapabilities(network) ?: return false
+        return capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
+    }
+
+    /**
+     * Downscales the photo to max 1024px on the long edge and encodes
+     * it as JPEG (quality 85) for the Gemini request — keeps the
+     * upload small. Null when the bitmap cannot be encoded.
+     */
+    private fun toGeminiJpeg(bitmap: Bitmap): ByteArray? = runCatching {
+        val maxSide = maxOf(bitmap.width, bitmap.height)
+        val scaled = if (maxSide <= MAX_GEMINI_SIDE_PX) {
+            bitmap
+        } else {
+            val scale = MAX_GEMINI_SIDE_PX.toFloat() / maxSide
+            Bitmap.createScaledBitmap(
+                bitmap,
+                (bitmap.width * scale).toInt(),
+                (bitmap.height * scale).toInt(),
+                true,
+            )
+        }
+        val output = ByteArrayOutputStream()
+        if (!scaled.compress(Bitmap.CompressFormat.JPEG, 85, output)) return null
+        output.toByteArray()
+    }.getOrNull()
+
     // -- Word actions ----------------------------------------------------
 
     /** Adds the word to the learn list (LEARNING state). */
@@ -489,6 +665,16 @@ class CameraViewModel @Inject constructor(
 
     companion object {
         private const val MAX_PHOTO_SIDE_PX = 1600
+        private const val MAX_GEMINI_SIDE_PX = 1024
         private const val LOW_CONFIDENCE_THRESHOLD = 0.25f
     }
+}
+
+private fun GeminiError.toStringRes(): Int = when (this) {
+    GeminiError.NO_INTERNET -> R.string.gemini_error_no_internet
+    GeminiError.INVALID_KEY -> R.string.gemini_error_invalid_key
+    GeminiError.QUOTA_EXHAUSTED -> R.string.gemini_error_quota
+    GeminiError.EMPTY_RESPONSE -> R.string.gemini_error_empty
+    GeminiError.TIMEOUT -> R.string.gemini_error_timeout
+    GeminiError.UNKNOWN -> R.string.gemini_error_unknown
 }

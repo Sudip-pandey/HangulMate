@@ -7,8 +7,10 @@
     <string name="grammar_filter_all">All</string>
     <string name="grammar_filter_book_1">Book 1</string>
     <string name="grammar_filter_book_2">Book 2</string>
+    <string name="grammar_filter_extra">Extra</string>
     <string name="grammar_book_1_title">Book 1 · Korean 1</string>
     <string name="grammar_book_2_title">Book 2 · Korean 2</string>
+    <string name="grammar_extra_title">Extra · Korean Grammar in Use</string>
     <string name="grammar_unit_label">Unit %1$d · %2$s</string>
     <string name="grammar_unit_label_short">Book %1$d · Unit %2$d</string>
     <string name="grammar_points_count">%1$d grammar points</string>
@@ -38,6 +40,7 @@
     <string name="grammar_person_not_stated">The book does not state a restriction</string>
 
     <string name="grammar_examples_title">Examples</string>
+    <string name="grammar_keypoints_title">Key conditions</string>
     <string name="grammar_example_book">From the book</string>
     <string name="grammar_example_authored">Authored example</string>
     <string name="grammar_mistakes_title">Common mistakes</string>

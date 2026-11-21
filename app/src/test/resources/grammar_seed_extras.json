@@ -1,0 +1,2173 @@
+{
+  "version": "0.3-extras",
+  "generated": "2026-11-21",
+  "source": "Korean Grammar in Use — Beginning to Early Intermediate (Ahn/Lee/Han, Darakwon), sections NOT in the EPS 120 (see kgiu_candidates.json)",
+  "coverage": {
+    "extras_points": 37,
+    "expected_total": 37,
+    "merged_total_with_v03": 157
+  },
+  "id_scheme": "G-KG-U<unit>-<nn>: KG = Korean Grammar in Use; <unit> = KGIU unit number (00 = Introduction sections 1-4 + Getting Ready GR-03/04/05); <nn> = KGIU section number within the unit. Gaps in <nn> mean that section is already in the EPS 120 (e.g. U24-03 'ㅂ' irregular, U3-02/03/04/06/07/08/14). IDs never collide with G-B1-*/G-B2-*.",
+  "notes": [
+    "book = 3 for all 37 extras; the app shows them under the 'Extra' filter (GrammarListScreen bookFilter == 3, grammar_extra_title). unit = KGIU unit number.",
+    "All examples are source 'authored': KGIU transcripts for these pages were not available when the extras were written (OCR was at ~36/344). The KGIU grounding pass should still cross-check them against the transcripts when complete.",
+    "The form '(이)나' appears twice by design: U03-15 (choice/approximation) and U03-16 (at least/as many as) are two senses of one form, distinguished by ID.",
+    "ㄹ irregular (G-KG-U24-02) corrects a common misstatement: ㄹ drops before ㄴ/ㄹ/ㅂ/시- endings but STAYS before -(으)면 (살면, 만들면) and before vowel-initial endings (살아요, 살았어요).",
+    "conditions_researched=false + research_note marks entries whose conditions still need KGIU grounding; never present those as verified."
+  ],
+  "entries": [
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I eat rice.",
+          "ko": "저는 밥을 먹습니다.",
+          "ne": "म भात खान्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "Ms. Lili reads a book.",
+          "ko": "리리 씨는 책을 읽습니다.",
+          "ne": "लिली किताब पढ्छिन्।",
+          "source": "authored"
+        },
+        {
+          "en": "I go to school.",
+          "ko": "저는 학교에 갑니다.",
+          "ne": "म विद्यालय जान्छु।",
+          "source": "authored"
+        }
+      ],
+      "form": "문장 구조 (S + O + V)",
+      "id": "G-KG-U00-01",
+      "key_points": [
+        {
+          "en": "The basic order is S + O + V — subject, object, and only then the verb. Do not confuse it with English S + V + O order.",
+          "ne": "기본 क्रम S + O + V हो — कर्ता, कर्म, अनि मात्र क्रिया। अङ्ग्रेजीको S + V + O क्रमसँग नझुक्किनुहोस्।"
+        },
+        {
+          "en": "Particles show the role: 이/가 marks the subject, 을/를 marks the object, 에 marks place/time. So subject and object can shift a little for emphasis, but the verb always stays last.",
+          "ne": "particle ले भूमिका देखाउँछ: 이/가 = कर्ता (subject), 을/를 = कर्म (object), 에 = ठाउँ/समय। त्यसैले जोड दिन कर्ता र कर्मको क्रम केही बदलिन सक्छ, तर क्रिया सधैँ अन्तमा रहन्छ।"
+        },
+        {
+          "en": "은/는 marks the topic ('as for…'), while 이/가 marks the subject — they are not the same. Say '저는', not '저가'.",
+          "ne": "은/는 विषय (topic — '…चाहिँ') देखाउँछ, 이/가 कर्ता (subject) देखाउँछ — दुवै एउटै होइनन्। '저는' भन्नुपर्छ, '저가' होइन।"
+        },
+        {
+          "en": "Following clause: this is a general topic, so no single form's following-clause rule applies; what comes after the sentence is determined by the final verb and its ending (statement/question/command/suggestion), not by word order.",
+          "ne": "पछिको वाक्य: यो सामान्य विषय हो — कुनै एउटा रूपको पछिको वाक्यको नियम लाग्दैन; वाक्यपछि के आउँछ भन्ने कुरा वाक्यको अन्तिम क्रिया र त्यसको अन्त्य (평서·의문·명령·청유) ले निर्धारण गर्छ, शब्द-क्रमले होइन।"
+        }
+      ],
+      "meaning_en": "Korean sentences basically follow Subject–Object–Verb (SOV) order. Particles after the subject (이/가 or 은/는) and after the object (을/를) mark each word's role in the sentence.",
+      "meaning_ko": "한국어 문장은 기본적으로 주어-목적어-동사(SOV) 순서이다. 주어 뒤에는 이/가 또는 은/는, 목적어 뒤에는 을/를이 붙어 각 단어의 문장 안에서의 역할을 표시한다.",
+      "meaning_ne": "कोरियाली वाक्यको मूल क्रम हो: कर्ता (subject) + कर्म (object) + क्रिया (verb)। नेपालीमा 'म भात खान्छु' भनेजस्तै कोरियालीमा पनि क्रिया वाक्यको अन्तमा आउँछ। शब्दपछि लाग्ने चिन्ह (particle) ले कुन शब्दको के भूमिका हो भन्ने देखाउँछ।",
+      "mistakes": "क्रियालाई वाक्यको बीचमा नराख्नुहोस् (✗ 저는 먹습니다 밥을)। '을/를' र '이/가' को ठाउँ नफेर्नुहोस् — '밥이 먹습니다' होइन, '밥을 먹습니다' हो।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 14,
+      "structure": "주어 + 목적어 + 동사. 예: 저는(주어) 밥을(목적어) 먹습니다(동사). 한국어에서는 동사가 항상 문장의 맨 끝에 온다.",
+      "tense_note": "यो क्रियाको रूप होइन, वाक्यको संरचना हो — त्यसैले भूतकालको प्रश्न यहाँ लागू हुँदैन। काल वाक्यको अन्तिम क्रियामा देखिन्छ (먹습니다 → 먹었습니다)।",
+      "tense_past": "na",
+      "unit": 0,
+      "unit_title": "소개 및 준비",
+      "unit_title_en": "Introduction & Getting Ready"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "To eat → I eat / I ate.",
+          "ko": "먹다 → 먹습니다 / 먹었어요.",
+          "ne": "खानु → खान्छु / खाएँ।",
+          "source": "authored"
+        },
+        {
+          "en": "To go → I go.",
+          "ko": "가다 → 가요.",
+          "ne": "जानु → जान्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "To be pretty → It is pretty.",
+          "ko": "예쁘다 → 예뻐요.",
+          "ne": "राम्रो हुनु → राम्रो छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "활용 (동사·형용사 어미 변화)",
+      "id": "G-KG-U00-02",
+      "key_points": [
+        {
+          "en": "First separate the stem of the verb or adjective — 먹다 → 먹-, 가다 → 가-, 예쁘다 → 예쁘- — then attach the ending.",
+          "ne": "पहिला क्रिया/विशेषणको मूल रूप (stem) छुट्याउनुहोस् — 먹다 → 먹-, 가다 → 가-, 예쁘다 → 예쁘- — अनि त्यसपछि अन्त्य जोड्नुहोस्।"
+        },
+        {
+          "en": "Vowel harmony: if the last vowel is 아/오 use -아요, otherwise -어요. This rule drives many forms, such as -아요/-어요 and -았어요/-었어요.",
+          "ne": "모음 조화: अन्तिम 모음 아/오 भए -아요, अरू भए -어요। यो नियमले -아요/-어요, -았어요/-었어요 जस्ता धेरै रूप चलाउँछ।"
+        },
+        {
+          "en": "Some verbs are irregular (듣다 → 들어요, 춥다 → 추워요, 하다 → 해요) — memorise these as set patterns; do not guess them from the rule.",
+          "ne": "केही क्रिया अनियमित छन् (듣다 → 들어요, 춥다 → 추워요, 하다 → 해요) — यी छुट्टै ढाँचाका रूपमा सम्झनुहोस्, नियमले अनुमान नगर्नुहोस्।"
+        },
+        {
+          "en": "Following clause: this is a general topic, so no single form's following-clause rule applies; what comes next is determined by the ending chosen (e.g. -고 joins, -지만 contrasts, -ㅂ니다 ends the sentence).",
+          "ne": "पछिको वाक्य: यो सामान्य विषय हो — कुनै एउटा रूपको पछिको वाक्यको नियम लाग्दैन; पछि के आउँछ भन्ने कुरा छानिएको अन्त्यले निर्धारण गर्छ (जस्तै -고 जोड्छ, -지만 विरोध जनाउँछ, -ㅂ니다 ले वाक्य टुङ्ग्याउँछ)।"
+        }
+      ],
+      "meaning_en": "Verbs and adjectives conjugate by attaching endings to the stem. The ending decides statement/question/command/suggestion, politeness level and tense.",
+      "meaning_ko": "동사·형용사는 어간에 여러 어미를 붙여 활용한다. 어미에 따라 평서·의문·명령·청유, 높임, 시제 등이 정해진다.",
+      "meaning_ne": "क्रिया र विशेषणको मूल रूप (stem) पछि अन्त्य (ending) जोडेर रूप बदलिन्छ — यही नै '활용' हो। अन्त्यले नै वाक्य कथन हो कि प्रश्न हो, सम्मानको स्तर कति हो, र काल के हो भन्ने निर्धारण गर्छ।",
+      "mistakes": "모음 조화를 ध्यान दिनुहोस्: 어간 마지막 모음이 아/오면 -아요 (가다 → 가요), अरू 모음이면 -어요 (먹다 → 먹어요)। 하다 → 해요 हो, '하아요' होइन।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 15,
+      "structure": "어간 + 어미. 예: 먹- + -습니다 → 먹습니다; 가- + -아요 → 가요. 어미가 문장의 종류·정중함·시제를 정한다.",
+      "tense_note": "यो रूप बदल्ने नियम आफैँ हो — भूतकालको प्रश्न यहाँ लागू हुँदैन। भूतकाल त -았/었- जस्ता अन्त्यले नै देखाइन्छ (먹다 → 먹었어요)।",
+      "tense_past": "na",
+      "unit": 0,
+      "unit_title": "소개 및 준비",
+      "unit_title_en": "Introduction & Getting Ready"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I eat rice and go to school.",
+          "ko": "밥을 먹고 학교에 갑니다.",
+          "ne": "भात खाएर विद्यालय जान्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "It is raining, so I take an umbrella.",
+          "ko": "비가 와서 우산을 가져가요.",
+          "ne": "पानी परेर छाता लैजान्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "The weather is cold, but I go for a walk.",
+          "ko": "날씨가 춥지만 산책을 해요.",
+          "ne": "मौसम चिसो छ तर घुम्न जान्छु।",
+          "source": "authored"
+        }
+      ],
+      "form": "문장 연결 (-고, -아서/어서, -지만...)",
+      "id": "G-KG-U00-03",
+      "key_points": [
+        {
+          "en": "-고 means 'and' — it joins actions or shows sequence (밥을 먹고 학교에 갑니다).",
+          "ne": "-고 = 'र / अनि' — कामहरू जोड्छ वा क्रम देखाउँछ (밥을 먹고 학교에 갑니다)।"
+        },
+        {
+          "en": "-아서/어서 means 'so / because' — it shows reason or sequence. Past -았/었- never comes before it.",
+          "ne": "-아서/어서 = 'त्यसैले / किनभने' — कारण वा क्रम देखाउँछ। यसको अघि भूतकाल -았/었- लाग्दैन।"
+        },
+        {
+          "en": "-지만 means 'but' (contrast); -거나 means 'or' (choice); -(으)면 means 'if' (condition). Never use a connective whose meaning does not fit.",
+          "ne": "-지만 = 'तर' — विरोध देखाउँछ; -거나 = 'वा' — विकल्प देखाउँछ; -(으)면 = 'यदि' — शर्त देखाउँछ। अर्थ नमिल्ने जोड्ने अन्त्य प्रयोग नगर्नुहोस्।"
+        },
+        {
+          "en": "Following clause: this is a general topic, so no single form's following-clause rule applies; what may follow is determined by the connective chosen — after -아서/어서 comes the result of the reason, after -지만 comes the opposite, after -(으)면 comes the result if the condition holds.",
+          "ne": "पछिको वाक्य: यो सामान्य विषय हो — कुनै एउटा रूपको पछिको वाक्यको नियम लाग्दैन; पछि के आउन सक्छ भन्ने कुरा छानिएको जोड्ने अन्त्यले निर्धारण गर्छ — -아서/어서 पछि कारणको परिणाम आउँछ, -지만 पछि विपरीत कुरा आउँछ, -(으)면 पछि शर्त पूरा हुँदाको परिणाम आउँछ।"
+        }
+      ],
+      "meaning_en": "To join two sentences into one, a connective ending is used. Each ending carries a meaning like 'and', 'so/because', 'but', 'or', 'if'.",
+      "meaning_ko": "두 문장을 하나의 문장으로 이을 때 연결 어미를 쓴다. 연결 어미마다 '그리고', '그래서', '하지만', '또는', '만약' 같은 뜻이 있다.",
+      "meaning_ne": "दुई वाक्यलाई एउटै वाक्यमा जोड्न जोड्ने अन्त्य (connective ending) प्रयोग हुन्छ। हरेक अन्त्यको आ-आफ्नै अर्थ हुन्छ — 'र', 'त्यसैले/किनभने', 'तर', 'वा', 'यदि'।",
+      "mistakes": "-아서/어서 अघि भूतकाल -았/었- नजोड्नुहोस् (✗ 먹었어서)। -고 ले कामहरू क्रमैसँग जोड्छ; कारण भन्न -아서/어서 प्रयोग गर्नुहोस्, -고 होइन।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 16,
+      "structure": "앞 문장 + 연결 어미 + 뒤 문장. -고 (그리고), -아서/어서 (그래서/때문에), -지만 (하지만), -(으)면 (만약 ~면), -거나 (~거나). 연결 어미는 앞 문장을 뒤 문장에 잇는다.",
+      "tense_note": "यो जोड्ने नियमहरूको परिचय हो, कुनै एउटा क्रिया रूप होइन — त्यसैले भूतकालको प्रश्न यहाँ लागू हुँदैन। काल जोडिने क्रियाहरूमा छुट्टाछुट्टै देखिन्छ।",
+      "tense_past": "na",
+      "unit": 0,
+      "unit_title": "소개 및 준비",
+      "unit_title_en": "Introduction & Getting Ready"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "Where are you going?",
+          "ko": "어디에 가요?",
+          "ne": "तपाईं कहाँ जाँदै हुनुहुन्छ?",
+          "source": "authored"
+        },
+        {
+          "en": "Please close the door.",
+          "ko": "문을 닫으세요.",
+          "ne": "ढोका बन्द गर्नुहोस्।",
+          "source": "authored"
+        },
+        {
+          "en": "Let's go together.",
+          "ko": "같이 갑시다.",
+          "ne": "सँगै जाऔँ।",
+          "source": "authored"
+        }
+      ],
+      "form": "문장의 종류 (평서문·의문문·명령문·청유문)",
+      "id": "G-KG-U00-04",
+      "key_points": [
+        {
+          "en": "Know the four types: statement -ㅂ니다/-아요·어요, question -ㅂ니까?/-아요·어요?, command -(으)세요, suggestion -(으)ㅂ시다/-(으)ㄹ까요?",
+          "ne": "चार किसिम चिन्नुहोस्: कथन -ㅂ니다/-아요·어요, प्रश्न -ㅂ니까?/-아요·어요?, आदेश -(으)세요, सुझाव -(으)ㅂ시다/-(으)ㄹ까요?"
+        },
+        {
+          "en": "Politeness level applies to every type — formal -ㅂ니다/-ㅂ니까?, everyday -아요/어요. In speech a question rises in intonation, but in writing the ending itself shows it is a question.",
+          "ne": "सम्मानको स्तर सबै किसिममा लागू हुन्छ — औपचारिकमा -ㅂ니다/-ㅂ니까?, दैनिकमा -아요/어요। प्रश्नमा बोल्दा स्वर उँभो उठ्छ, तर लेख्दा अन्त्यले नै प्रश्न देखाउँछ।"
+        },
+        {
+          "en": "-(으)ㄹ까요? both suggests ('같이 갈까요?') and asks ('갈까요?' — 'shall I go?') — context tells them apart.",
+          "ne": "-(으)ㄹ까요? ले सुझाव पनि दिन्छ ('같이 갈까요?') र प्रश्न पनि सोध्छ ('갈까요?' — 'जाने हो?') — प्रसङ्गले छुट्याउँछ।"
+        },
+        {
+          "en": "Following clause: this is a general topic, so no single form's following-clause rule applies; what comes after is determined by the sentence type — an answer follows a question, an action follows a command, agreement or disagreement follows a suggestion, and a statement ends the sentence itself.",
+          "ne": "पछिको वाक्य: यो सामान्य विषय हो — कुनै एउटा रूपको पछिको वाक्यको नियम लाग्दैन; वाक्यपछि के आउँछ भन्ने कुरा वाक्यको किसिमले निर्धारण गर्छ — प्रश्नपछि उत्तर आउँछ, आदेशपछि कार्य आउँछ, सुझावपछि सहमति वा असहमति आउँछ, कथन आफैँले वाक्य टुङ्ग्याउँछ।"
+        }
+      ],
+      "meaning_en": "Sentences are divided by purpose: statement (giving facts), question, command (instruction), and suggestion (proposing to do something together). Each type uses a different sentence-final ending.",
+      "meaning_ko": "문장은 말하는 목적에 따라 평서문(사실 전달), 의문문(질문), 명령문(지시), 청유문(함께 하자는 제안)으로 나뉜다. 각 종류마다 다른 종결 어미를 쓴다.",
+      "meaning_ne": "वाक्य बोल्ने उद्देश्यअनुसार चार किसिमका हुन्छन्: कथन (तथ्य बताउने), प्रश्न (सोध्ने), आदेश (निर्देशन दिने), र सुझाव (सँगै गरौँ भन्ने प्रस्ताव)। हरेक किसिमको अन्त्य फरक हुन्छ।",
+      "mistakes": "आदेशमा माथिल्लो व्यक्तिलाई -(으)세요 प्रयोग गर्नुहोस्, 반말 प्रयोग नगर्नुहोस्। सुझाव -(으)ㅂ시다 मा बोल्ने व्यक्ति आफैँ पनि सामेल हुन्छ — अरूलाई मात्र भन्ने आदेशसँग नझुक्किनुहोस्।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 17,
+      "structure": "평서문(사실 전달): -ㅂ니다 / -아요·어요. 의문문(질문): -ㅂ니까? / -아요·어요? 명령문(지시): -(으)세요. 청유문(함께 하자는 제안): -(으)ㅂ시다 / -(으)ㄹ까요?",
+      "tense_note": "यो वाक्यका चार किसिमको परिचय हो, कुनै एउटा क्रिया रूप होइन — त्यसैले भूतकालको प्रश्न यहाँ लागू हुँदैन। काल हरेक किसिमको अन्त्यमा छुट्टै देखिन्छ (갔습니다 / 갔습니까?)।",
+      "tense_past": "na",
+      "unit": 0,
+      "unit_title": "소개 및 준비",
+      "unit_title_en": "Introduction & Getting Ready"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "Please give me three apples.",
+          "ko": "사과 세 개 주세요.",
+          "ne": "स्याउ तीन वटा दिनुहोस्।",
+          "source": "authored"
+        },
+        {
+          "en": "I am twenty-five years old.",
+          "ko": "저는 스물다섯 살입니다.",
+          "ne": "म २५ वर्षको हुँ।",
+          "source": "authored"
+        },
+        {
+          "en": "This is five thousand won.",
+          "ko": "이것은 오천 원입니다.",
+          "ne": "यो पाँच हजार वोन हो।",
+          "source": "authored"
+        }
+      ],
+      "form": "숫자 (고유어·한자어)",
+      "id": "G-KG-U00-05",
+      "key_points": [
+        {
+          "en": "Keep the two systems apart: native (하나, 둘, 셋…) for counting, age and hours; Sino-Korean (일, 이, 삼…) for dates, money, phone numbers and minutes.",
+          "ne": "दुई प्रणाली छुट्याउनुहोस्: 고유어 (하나, 둘, 셋…) — गन्ती, उमेर, घण्टा; हान्जा어 (일, 이, 삼…) — मिति, पैसा, फोन नम्बर, मिनेट।"
+        },
+        {
+          "en": "Counting always needs a counter word: 개 (things), 명 (people), 장 (paper), 마리 (animals), 권 (books). A number alone does not complete a count.",
+          "ne": "गन्तीमा सधैँ गन्ने शब्द (counter) चाहिन्छ: 개 (वस्तु), 명 (मानिस), 장 (कागज), 마리 (जनावर), 권 (किताब)। सङ्ख्या एक्लैले गन्ती पूरा हुँदैन।"
+        },
+        {
+          "en": "Large numbers use 만 (10,000) as the unit: 50,000 = 오만 원. Do not think in English 'thousand' units.",
+          "ne": "ठूला सङ्ख्यामा 만 (१०,०००) एकाइ प्रयोग हुन्छ: ५०,००० = 오만 원। अङ्ग्रेजीको 'thousand' हिसाबले नसोच्नुहोस्।"
+        },
+        {
+          "en": "Following clause: this is a general topic, so no single form's following-clause rule applies; what comes after a number is determined by the counter or unit that follows it — 개/명/장 completes a count, 원 shows money, 시/분 shows time.",
+          "ne": "पछिको वाक्य: यो सामान्य विषय हो — कुनै एउटा रूपको पछिको वाक्यको नियम लाग्दैन; सङ्ख्यापछि के आउँछ भन्ने कुरा त्यसपछिको गन्ने शब्द (counter) वा एकाइले निर्धारण गर्छ — 개/명/장 ले गन्ती पूरा गर्छ, 원 ले पैसा देखाउँछ, 시/분 ले समय देखाउँछ।"
+        }
+      ],
+      "meaning_en": "Korean has two number systems: native Korean numbers and Sino-Korean numbers. Which one is used depends on what is being counted.",
+      "meaning_ko": "한국어에는 고유어 수사와 한자어 수사 두 체계가 있다. 무엇을 세느냐에 따라 쓰는 체계가 달라진다.",
+      "meaning_ne": "कोरियालीमा दुई किसिमका सङ्ख्या छन्: 고유어 (순 कोरियाली — 하나, 둘, 셋) र हान्जा어 (चिनियाँ मूल — 일, 이, 삼)। के गन्दै हुनुहुन्छ भन्ने कुराले कुन प्रयोग गर्ने भन्ने निर्धारण हुन्छ।",
+      "mistakes": "गन्ने शब्द (counter) अघि 고유어 सङ्ख्या छोटिन्छ: 하나 → 한 개, 둘 → 두 명, 셋 → 세 개, 넷 → 네 개, 스물 → 스무 살। '하나 개' भन्नु हुँदैन। पैसा र मितिमा हान्जा सङ्ख्या, उमेर र घण्टामा 고유어 सङ्ख्या प्रयोग गर्नुहोस्।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 31,
+      "structure": "고유어: 하나, 둘, 셋, 넷, 다섯... (개수·나이·시간의 '시'). 한자어: 일, 이, 삼, 사, 오... (날짜·돈·전화번호·'분'). 숫자 + 단위(수사): 세 개, 두 명, 한 장.",
+      "tense_note": "यो सङ्ख्या प्रणालीको परिचय हो, क्रियाको रूप होइन — त्यसैले भूतकालको प्रश्न यहाँ लागू हुँदैन।",
+      "tense_past": "na",
+      "unit": 0,
+      "unit_title": "소개 및 준비",
+      "unit_title_en": "Introduction & Getting Ready"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "Today is Friday, November 21st.",
+          "ko": "오늘은 11월 21일 금요일입니다.",
+          "ne": "आज २०२६ साल ११ महिना २१ गते शुक्रबार हो।",
+          "source": "authored"
+        },
+        {
+          "en": "Tomorrow is Saturday.",
+          "ko": "내일은 토요일입니다.",
+          "ne": "भोलि शनिबार हो।",
+          "source": "authored"
+        },
+        {
+          "en": "My birthday is May 3rd.",
+          "ko": "제 생일은 5월 3일입니다.",
+          "ne": "मेरो जन्मदिन मे ३ तारिख हो।",
+          "source": "authored"
+        }
+      ],
+      "form": "날짜와 요일",
+      "id": "G-KG-U00-06",
+      "key_points": [
+        {
+          "en": "In dates every number is Sino-Korean: 2026년, 11월, 21일. Never use native numbers here.",
+          "ne": "मितिमा सबै सङ्ख्या हान्जा हुन्: 2026년 (이천이십육 년), 11월 (십일월), 21일 (이십일일)। 고유어 सङ्ख्या प्रयोग नगर्नुहोस्।"
+        },
+        {
+          "en": "Days of the week: 월요일, 화요일, 수요일, 목요일, 금요일, 토요일, 일요일 — 토요일 is Saturday and 일요일 is Sunday.",
+          "ne": "बारका नाम: 월요일, 화요일, 수요일, 목요일, 금요일, 토요일, 일요일 — 토요일 शनिबार र 일요일 आइतबार हो।"
+        },
+        {
+          "en": "오늘 (today), 내일 (tomorrow), 어제 (yesterday), 모레 (the day after tomorrow) — these words name the day without a date.",
+          "ne": "आज (오늘), भोलि (내일), हिजो (어제), पर्सि (모레) — यी शब्दले मिति नभनी पनि दिन बताउन सकिन्छ।"
+        },
+        {
+          "en": "Following clause: this is a general topic, so no single form's following-clause rule applies; what comes after a date or weekday is determined by the rest of the sentence — e.g. in '11월 21일에 만나요' what follows is the event happening on that day.",
+          "ne": "पछिको वाक्य: यो सामान्य विषय हो — कुनै एउटा रूपको पछिको वाक्यको नियम लाग्दैन; मिति वा बारपछि के आउँछ भन्ने कुरा वाक्यको बाँकी भागले निर्धारण गर्छ — जस्तै '11월 21일에 만나요' मा त्यस दिन हुने काम आउँछ।"
+        }
+      ],
+      "meaning_en": "Dates are read with Sino-Korean numbers for year, month and day. There are seven days of the week, and words like today/tomorrow/yesterday are also common.",
+      "meaning_ko": "날짜는 년·월·일을 한자어 숫자로 읽는다. 요일은 월요일부터 일요일까지 일곱 개이며, '오늘·내일·어제·모레'도 자주 쓴다.",
+      "meaning_ne": "मिति भन्दा वर्ष (년), महिना (월), गते (일) सबै हान्जा सङ्ख्याले पढिन्छ। हप्तामा सात दिन हुन्छन्, र 'आज·भोलि·हिजो' जस्ता शब्द पनि धेरै प्रयोग हुन्छन्।",
+      "mistakes": "वर्ष·महिना·गते सबै हान्जा सङ्ख्याले भन्नुहोस् (✗ 스물 월)। क्रम सधैँ वर्ष → महिना → गते हो — '21일 11월' भन्नु हुँदैन।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 37,
+      "structure": "년(해) + 월 + 일 — 모두 한자어 숫자. 예: 2026년 11월 21일. 요일: 월요일, 화요일, 수요일, 목요일, 금요일, 토요일, 일요일.",
+      "tense_note": "यो मिति र बार बताउने तरिका हो, क्रियाको रूप होइन — त्यसैले भूतकालको प्रश्न यहाँ लागू हुँदैन।",
+      "tense_past": "na",
+      "unit": 0,
+      "unit_title": "소개 및 준비",
+      "unit_title_en": "Introduction & Getting Ready"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "It is two thirty now.",
+          "ko": "지금 두 시 삼십 분입니다.",
+          "ne": "अहिले दुई बजेर तीस मिनेट भयो।",
+          "source": "authored"
+        },
+        {
+          "en": "Let's meet at half past three in the afternoon.",
+          "ko": "오후 세 시 반에 만나요.",
+          "ne": "दिउँसो साढे तीन बजे भेटौँला।",
+          "source": "authored"
+        },
+        {
+          "en": "Class starts at nine o'clock sharp.",
+          "ko": "수업은 아홉 시 정각에 시작해요.",
+          "ne": "कक्षा ठीक नौ बजे सुरु हुन्छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "시간 (시·분·초)",
+      "id": "G-KG-U00-07",
+      "key_points": [
+        {
+          "en": "Hours (시) always use native numbers: 한 시, 두 시, 세 시… 열두 시. Minutes (분) and seconds (초) always use Sino-Korean numbers: 십 분, 삼십 분, 오십 초.",
+          "ne": "घण्टा (시) सधैँ 고유어 सङ्ख्या: 한 시, 두 시, 세 시… 열두 시। मिनेट (분) र सेकेन्ड (초) सधैँ हान्जा सङ्ख्या: 십 분, 삼십 분, 오십 초।"
+        },
+        {
+          "en": "오전 is AM (morning), 오후 is PM (afternoon/evening) — put it before the time: 오전 아홉 시, 오후 세 시.",
+          "ne": "오전 = बिहान (AM), 오후 = दिउँसो/बेलुका (PM) — १२ घण्टे समयमा अगाडि लगाउनुहोस्: 오전 아홉 시, 오후 세 시।"
+        },
+        {
+          "en": "반 means 30 minutes ('half past'), 정각 means exactly on the hour: 세 시 반 (3:30), 아홉 시 정각 (exactly 9:00). To ask the time: 지금 몇 시예요?",
+          "ne": "반 = ३० मिनेट ('साढे'), 정각 = ठीक समय ('ठीक'): 세 시 반 (३:३०), 아홉 시 정각 (ठीक ९:००)। समय सोध्न: 지금 몇 시예요?"
+        },
+        {
+          "en": "Following clause: this is a general topic, so no single form's following-clause rule applies; what comes after a time is determined by the rest of the sentence — e.g. after '두 시에 만나요' comes the event at that time, and after '두 시부터' comes a duration or end time.",
+          "ne": "पछिको वाक्य: यो सामान्य विषय हो — कुनै एउटा रूपको पछिको वाक्यको नियम लाग्दैन; समयपछि के आउँछ भन्ने कुरा वाक्यको बाँकी भागले निर्धारण गर्छ — जस्तै '두 시에 만나요' मा त्यस समयमा हुने काम आउँछ, '두 시부터' पछि अवधि वा अन्त्य समय आउँछ।"
+        }
+      ],
+      "meaning_en": "When telling time, hours use native Korean numbers and minutes/seconds use Sino-Korean numbers. 오전/오후 (AM/PM), 반 (half past) and 정각 (o'clock sharp) are used with them.",
+      "meaning_ko": "시간을 말할 때 '시'는 고유어 숫자, '분'과 '초'는 한자어 숫자로 읽는다. 오전·오후, 반(30분), 정각을 함께 쓴다.",
+      "meaning_ne": "समय भन्दा घण्टा (시) गोयेओ सङ्ख्याले र मिनेट (분)·सेकेन्ड (초) हान्जा सङ्ख्याले पढिन्छ। बिहान/दिउँसो छुट्याउन 오전/오후 अगाडि लगाइन्छ।",
+      "mistakes": "घण्टा र मिनेट नमिसाउनुहोस्: घण्टा गोयेओ (두 시), मिनेट हान्जा (삼십 분) — '이 시 삼십 분' वा '두 시 서른 분' भन्नु हुँदैन। 반 भनेको ३० मिनेट मात्र हो।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 39,
+      "structure": "시(시간)는 고유어 숫자 + 시, 분·초는 한자어 숫자 + 분/초. 예: 두 시 삼십 분. 오전/오후를 앞에 붙인다: 오후 세 시.",
+      "tense_note": "यो समय बताउने तरिका हो, क्रियाको रूप होइन — त्यसैले भूतकालको प्रश्न यहाँ लागू हुँदैन।",
+      "tense_past": "na",
+      "unit": 0,
+      "unit_title": "소개 및 준비",
+      "unit_title_en": "Introduction & Getting Ready"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "When I was young, I used to live in Busan (I don't live there now).",
+          "ko": "어렸을 때 저는 부산에 살았었어요.",
+          "ne": "सानो हुँदा म बुसानमा बस्थेँ (अहिले बस्दिनँ)।",
+          "source": "authored"
+        },
+        {
+          "en": "Before coming to Korea, I had studied Korean.",
+          "ko": "한국에 오기 전에 한국어를 공부했었어요.",
+          "ne": "कोरिया आउनुअघि मैले कोरियाली भाषा पढेको थिएँ।",
+          "source": "authored"
+        },
+        {
+          "en": "That restaurant used to be delicious (it isn't anymore).",
+          "ko": "그 식당은 예전에 맛있었어요.",
+          "ne": "त्यो रेस्टुरेन्ट पहिले मिठो थियो (अहिले त्यस्तो छैन)।",
+          "source": "authored"
+        }
+      ],
+      "form": "-았/었었어요",
+      "id": "G-KG-U01-01",
+      "key_points": [
+        {
+          "en": "'-았/었었어요' is the past perfect: it places an event before another past point ('Before I came to Korea, I had studied Korean') or marks a past state that no longer holds ('I used to live in Busan').",
+          "ne": "'-았/었었어요' भनेको 'भूतकालभन्दा पहिले' हो: अर्को विगतको घटनाभन्दा अगाडिको कुरा ('कोरिया आउनुअघि पढेको थिएँ') वा 'पहिले त्यस्तो थियो, अहिले छैन' भन्ने अवस्था ('पहिले बुसानमा बस्थेँ') देखाउँछ।"
+        },
+        {
+          "en": "It is formed by adding '-었-' once more to the simple past: 먹다 → 먹었어요 → 먹었었어요; 가다 → 갔어요 → 갔었어요; 하다 → 했어요 → 했었어요.",
+          "ne": "बनाउने तरिका: साधारण भूतकालमा '-었-' एक पटक फेरि थपिन्छ — 먹다 → 먹었어요 → 먹었었어요; 가다 → 갔어요 → 갔었어요; 하다 → 했어요 → 했었어요।"
+        },
+        {
+          "en": "Do not use it for a simple completed past event ('어제 밥을 먹었어요', not ✗ 먹었었어요). Use it only when there is an earlier past reference point, or when the past state has clearly ended.",
+          "ne": "साधारण बितेको घटनामा यो प्रयोग नगर्नुहोस् ('어제 밥을 먹었어요' सही, ✗ 먹었었어요 गलत)। अझ पहिलेको समयसँग तुलना छ वा विगतको अवस्था सकिएको छ भन्ने बेलामा मात्र प्रयोग गर्नुहोस्।"
+        },
+        {
+          "en": "Following clause: there is no following clause — '-았/었었어요' itself ends the sentence; whether the sentence is a plain statement or a question (by rising intonation, '-았/었었어요?') is determined by this ending itself.",
+          "ne": "पछिको वाक्य: यस रूपपछि अर्को वाक्य आउँदैन — '-았/었었어요' आफैँले वाक्य टुङ्ग्याउँछ; कथन वा प्रश्न (स्वर माथि उठाएर '-았/었었어요?') भन्ने कुरा यसै रूपले निर्धारण हुन्छ।"
+        }
+      ],
+      "meaning_en": "'-았/었었어요' (past perfect) expresses an action or state that happened before some other point in the past, or a past state that is no longer true now — a 'past before the past' or a completed past state.",
+      "meaning_ko": "‘-았/었었어요’는 과거의 어느 시점보다 더 이전에 일어난 일이나, 과거에 있었지만 지금은 더 이상 그렇지 않은 상태를 나타낸다. 즉 ‘과거보다 더 과거(대과거)’ 또는 ‘이미 끝나 버린 과거 상태’를 말한다.",
+      "meaning_ne": "'-았/었었어요' भनेको 'भूतकालभन्दा पनि पहिलेको कुरा' वा 'पहिले त्यस्तो थियो, अहिले छैन' भन्ने रूप हो। जस्तै — पहिले त्यहाँ बसेको थिएँ, तर अहिले बस्दिनँ।",
+      "mistakes": "'-았/었어요' (साधारण भूतकाल) र '-았/었었어요' (त्योभन्दा पहिलेको भूतकाल) नझुक्किनुहोस्: '어제 밥을 먹었어요' (हिजो खाएँ) vs '한국에 오기 전에 밥을 먹었었어요' (आउनुअघि खाएको थिएँ)। अहिले पनि जारी रहेको कुरामा '-았/었었어요' प्रयोग नगर्नुहोस्।",
+      "person": "all",
+      "person_note": "सबै व्यक्तिमा प्रयोग हुन्छ (1st/2nd/3rd)।",
+      "source_page": 56,
+      "structure": "동사/형용사 어간 + -았었어요 (어간 마지막 모음이 ㅏ/ㅗ) / -었었어요 (그 외) / -였었어요 ('하다' → '했었어요'). 과거 시제 -았/었- 에 -었- 을 한 번 더 붙인 형태이다.",
+      "tense_note": "이 형태 자체가 과거형이다 — '과거에 -았/었- 을 쓸 수 있는가'라는 질문이 적용되지 않는다। '-았/었었어요'는 단순 과거 '-았/었어요'보다 한 단계 더 이전의 과거, 또는 이미 끝나 버린 과거 상태를 나타낸다।",
+      "tense_past": "na",
+      "unit": 1,
+      "unit_title": "시제",
+      "unit_title_en": "Tenses"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "Who came? — Sudip came.",
+          "ko": "누가 왔어요? — 수디 씨가 왔어요.",
+          "ne": "को आयो? — सुदीप आउनुभयो।",
+          "source": "authored"
+        },
+        {
+          "en": "It is raining.",
+          "ko": "비가 와요.",
+          "ne": "पानी परिरहेको छ।",
+          "source": "authored"
+        },
+        {
+          "en": "There is a computer in my room.",
+          "ko": "제 방에 컴퓨터가 있어요.",
+          "ne": "मेरो कोठामा कम्प्युटर छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "이/가",
+      "id": "G-KG-U03-01",
+      "key_points": [
+        {
+          "en": "Batchim rule: noun ending in a consonant (받침) takes '이' (책이, 사람이), noun ending in a vowel takes '가' (나비가, 수디 씨가).",
+          "ne": "받침को नियम: नामको अन्त्यमा 받침 (व्यञ्जन) भए '이' लाग्छ (책이, 사람이), स्वर भए '가' लाग्छ (나비가, सुदीप 씨가)।"
+        },
+        {
+          "en": "'이/가' vs '은/는': '이/가' marks the subject, often new information or the answer to 'who/what'; '은/는' marks the topic, something already known or under discussion. '비가 와요' (it is raining — new) vs '비는 와요, 눈은 안 와요' (rain — contrast).",
+          "ne": "'이/가' vs '은/는': '이/가' ले कर्ता देखाउँछ — प्रायः नयाँ जानकारी वा 'को/के' को उत्तर; '은/는' ले विषय (topic) देखाउँछ — थाहा भएको कुरा वा छलफलको विषय। '비가 와요' (नयाँ जानकारी) vs '비는 와요, 눈은 안 와요' (तुलना)।"
+        },
+        {
+          "en": "'이/가' is required with 있다/없다 (to exist / not exist), 아니다 (to not be), 되다 (to become), and with adjective subjects: '시간이 없어요', '이건 책이 아니에요', '날씨가 좋아요'.",
+          "ne": "'있다/없다' (छ/छैन), '아니다' (होइन), '되다' (हुनु) र विशेषण भएको वाक्यमा '이/가' अनिवार्य हुन्छ: '시간이 없어요' (समय छैन), '이건 책이 아니에요' (यो किताब होइन), '날씨가 좋아요' (मौसम राम्रो छ)।"
+        },
+        {
+          "en": "Following clause: there is no single following-clause rule — '이/가' is a particle inside a clause, not a sentence ending; a sentence containing '이/가' can be a statement, question, command, request or suggestion, as decided by the sentence-final ending.",
+          "ne": "पछिको वाक्य: कुनै एउटै नियम छैन — '이/가' वाक्यभित्रको चिन्ह हो, वाक्यको अन्त्य होइन; '이/가' भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ, वाक्यको अन्तिम रूपले निर्धारण हुन्छ।"
+        }
+      ],
+      "meaning_en": "'이/가' is the subject particle: it attaches to a noun to mark it as the subject of the sentence. It is used mainly for new information, for the answer to 'who/what', or to emphasise the subject.",
+      "meaning_ko": "‘이/가’는 명사 뒤에 붙어 그 명사가 문장의 주어임을 나타내는 주격 조사이다. 주로 새로운 정보나, ‘누가/무엇이’ 하는 질문에 대한 답, 또는 주어를 강조할 때 사용한다.",
+      "meaning_ne": "'이/가' भनेको वाक्यको कर्ता (subject — 'ले' गर्ने व्यक्ति/वस्तु) देखाउने चिन्ह हो। नयाँ जानकारी दिनुपर्दा, 'को/के' भन्ने प्रश्नको उत्तर दिँदा, वा कर्तालाई जोड दिनुपर्दा प्रयोग हुन्छ। 받침 भए '이', नभए '가' लाग्छ।",
+      "mistakes": "'은/는' र '이/가' नझुक्किनुहोस्: '은/는' = विषय/화제 (थाहा भएको कुरा), '이/가' = कर्ता (नयाँ जानकारी वा 'को/के' को उत्तर)। '저는 학생입니다' (विषय) vs '누가 학생이에요? — 제가 학생이에요' (कर्ता)।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 68,
+      "structure": "명사 + 이 (받침 O) / 명사 + 가 (받침 X). 문장의 주어(subject)를 나타낸다.",
+      "tense_note": "'이/가'는 조사(격 조사)이지 동사 어미가 아니므로, 과거형이 붙는다는 질문이 적용되지 않는다. काल은 वाक्य 끝의 동사/형용사가 나타낸다.",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "This is Sudip's book.",
+          "ko": "이것은 수디 씨의 책이에요.",
+          "ne": "यो सुदीपको किताब हो।",
+          "source": "authored"
+        },
+        {
+          "en": "The capital of Korea is Seoul.",
+          "ko": "한국의 수도는 서울이에요.",
+          "ne": "कोरियाको राजधानी सउल हो।",
+          "source": "authored"
+        },
+        {
+          "en": "My name is Madhu.",
+          "ko": "제 이름은 마두예요.",
+          "ne": "मेरो नाम मधु हो।",
+          "source": "authored"
+        }
+      ],
+      "form": "의",
+      "id": "G-KG-U03-05",
+      "key_points": [
+        {
+          "en": "'의' shows possession or belonging ('수디 씨의 책' — Sudip's book) and also attribute or origin ('한국의 수도' — the capital of Korea; '네팔의 음식' — Nepali food).",
+          "ne": "'의' ले स्वामित्व वा सम्बन्ध देखाउँछ ('수디 씨의 책' — सुदीपको किताब) र गुण वा उत्पत्ति पनि देखाउँछ ('한국의 수도' — कोरियाको राजधानी; '네팔의 음식' — नेपाली खाना)।"
+        },
+        {
+          "en": "In everyday speech '의' is often dropped when the meaning is clear: '수디 씨 책' (Sudip's book), '우리 회사' (our company). In writing and formal speech it is usually kept.",
+          "ne": "दैनिक बोलचालमा अर्थ स्पष्ट भए '의' प्रायः हटाइन्छ: '수디 씨 책' (सुदीपको किताब), '우리 회사' (हाम्रो कम्पनी)। लेखाइ र औपचारिक बोलाइमा भने प्रायः राखिन्छ।"
+        },
+        {
+          "en": "'의' (possession, 'of') is not '에' (place/time, 'at/in/on'): '한국의 음식' (Korean food) vs '한국에 가요' (I go to Korea). Confusing them changes the meaning completely.",
+          "ne": "'의' (स्वामित्व, 'को') र '에' (स्थान/समय, 'मा/लाई') फरक हुन्: '한국의 음식' (कोरियाको खाना) vs '한국에 가요' (कोरिया जान्छु)। झुक्किँदा अर्थ नै बदलिन्छ।"
+        },
+        {
+          "en": "Pronunciation: '의' is pronounced [의] at the start of a word, [이] after a consonant (회의 → [회이]) and [에] after a vowel in fast speech (나의 → [나에]). In writing it is always '의'.",
+          "ne": "उच्चारण: शब्दको सुरुमा '의' [의] भनिन्छ, व्यञ्जनपछि [이] (회의 → [회이]) र स्वरपछि छिटो बोल्दा [에] (나의 → [나에]) सुनिन्छ। लेखाइमा सधैँ '의' लेखिन्छ।"
+        },
+        {
+          "en": "Following clause: there is no restriction — '의' is a particle inside a noun phrase, not a sentence ending; a sentence containing '의' can be a statement, question, command, request or suggestion, as decided by the sentence-final ending.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — '의' नामभित्रको चिन्ह हो, वाक्यको अन्त्य होइन; '의' भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ, वाक्यको अन्तिम रूपले निर्धारण हुन्छ।"
+        }
+      ],
+      "meaning_en": "'의' is the possessive particle: it attaches to a noun to show ownership, belonging, or that the first noun describes an attribute of the second noun. The following noun can be omitted ('~의 것').",
+      "meaning_ko": "‘의’는 명사 뒤에 붙어 소유나 소속, 또는 앞 명사가 뒤 명사의 속성·특징임을 나타내는 소유격 조사이다. ‘~의 것’처럼 뒤 명사를 생략할 수도 있다.",
+      "meaning_ne": "'의' भनेको 'को' भन्ने अर्थ दिने चिन्ह हो — स्वामित्व वा सम्बन्ध देखाउँछ (मेरो, सुदीपको, कोरियाको)। 'को' पछिको नाम हटाएर '~의 것' पनि भन्न सकिन्छ।",
+      "mistakes": "'저의' भन्दा बोलचालमा '제' (저 + 의 को छोटो रूप) धेरै प्रयोग हुन्छ — '제 이름', '제 친구'। '나의' को छोटो रूप '내' पनि बोलचालमा सामान्य छ ('내 책')। '의' लाई 장소 조사 '에' सँग नझुक्किनुहोस्।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 78,
+      "structure": "명사 + 의 + 명사. 앞 명사가 뒤 명사의 소유자이거나 속성임을 나타낸다. 받침 유무와 관계없이 항상 '의'이다.",
+      "tense_note": "'의'는 조사(격 조사)이지 동사 어미가 아니므로, 과거형이 붙는다는 질문이 적용되지 않는다. काल은 वाक्य 끝의 동사/형용사가 나타낸다.",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "It takes 30 minutes on foot from home to the company.",
+          "ko": "집에서 회사까지 걸어서 30분 걸려요.",
+          "ne": "घरदेखि कम्पनीसम्म हिँडेर 30 मिनेट लाग्छ।",
+          "source": "authored"
+        },
+        {
+          "en": "I work from 9 a.m. to 6 p.m.",
+          "ko": "오전 9시부터 오후 6시까지 일해요.",
+          "ne": "बिहान 9 बजेदेखि साँझ 6 बजेसम्म काम गर्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "Please come only up to here.",
+          "ko": "여기까지만 오세요.",
+          "ne": "यहाँसम्म मात्र आउनुहोस्।",
+          "source": "authored"
+        }
+      ],
+      "form": "에서~까지 / 부터~까지",
+      "id": "G-KG-U03-09",
+      "key_points": [
+        {
+          "en": "'에서~까지' is for places and distances: '집에서 회사까지' (from home to the company), '서울에서 부산까지' (from Seoul to Busan).",
+          "ne": "'에서~까지' ठाउँ र दूरीका लागि हो: '집에서 회사까지' (घरदेखि कम्पनीसम्म), '서울에서 부산까지' (सउलदेखि बुसानसम्म)।"
+        },
+        {
+          "en": "'부터~까지' is for time ('9시부터 6시까지' — from 9 to 6) and can also mark a place as a starting point ('집부터 회사까지'). For time, never use '에서'.",
+          "ne": "'부터~까지' समयका लागि हो ('9시부터 6시까지' — 9 बजेदेखि 6 बजेसम्म) र ठाउँको सुरु बिन्दुमा पनि प्रयोग हुन सक्छ ('집부터 회사까지')। समयमा '에서' कहिल्यै प्रयोग नगर्नुहोस्।"
+        },
+        {
+          "en": "'까지' can be used alone, without a starting point: '여기까지 오세요' (come up to here), '오늘까지 제출하세요' (submit by today).",
+          "ne": "सुरु बिन्दुबिना '까지' मात्र पनि प्रयोग हुन सक्छ: '여기까지 오세요' (यहाँसम्म आउनुहोस्), '오늘까지 제출하세요' (आजसम्म बुझाउनुहोस्)।"
+        },
+        {
+          "en": "'까지' is inclusive — the end point is included: '6시까지 일해요' means working up to and including 6 o'clock, not stopping before 6.",
+          "ne": "'까지' समावेशी हुन्छ — अन्त्य बिन्दु पनि पर्छ: '6시까지 일해요' भनेको 6 बजेसम्म (6 बजे पनि) काम गर्छु भन्ने हो, 6 बजेअघि रोकिन्छ भन्ने होइन।"
+        },
+        {
+          "en": "Following clause: there is no restriction — '에서~까지 / 부터~까지' is a particle phrase inside a clause, not a sentence ending; a sentence containing it can be a statement, question, command, request or suggestion, as decided by the sentence-final ending.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — '에서~까지 / 부터~까지' वाक्यभित्रको चिन्ह हो, वाक्यको अन्त्य होइन; यो भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ, वाक्यको अन्तिम रूपले निर्धारण हुन्छ।"
+        }
+      ],
+      "meaning_en": "'에서~까지' and '부터~까지' mark a range from a starting point to an end point. '에서~까지' is mainly for places; '부터~까지' is mainly for time (also possible for places). '까지' includes the end point.",
+      "meaning_ko": "‘에서~까지’와 ‘부터~까지’는 시작점과 끝점을 나타낸다. ‘에서~까지’는 주로 장소의 범위에, ‘부터~까지’는 주로 시간의 범위(장소에도 가능)에 사용한다. ‘까지’는 끝점을 포함한다.",
+      "meaning_ne": "'에서~까지 / 부터~까지' भनेको 'देखि~सम्म' हो — सुरु र अन्त्य देखाउँछ। ठाउँको दायरामा '에서~까지', समयको दायरामा (ठाउँमा पनि) '부터~까지' प्रयोग हुन्छ। '까지' मा अन्त्य बिन्दु पनि पर्छ (समावेश हुन्छ)।",
+      "mistakes": "장소에는 '에서~까지', 시간에는 '부터~까지' — '9시에서 6시까지' (✗) होइन, '9시부터 6시까지' (O)। '까지' 는 끝점을 포함한다: '6시까지' = 6 बजे पनि 포함।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 89,
+      "structure": "장소 + 에서 ~ 장소 + 까지 (장소의 범위). 시간/장소 + 부터 ~ 시간/장소 + 까지 (시간 또는 장소의 범위). 시작점이 없으면 '까지'만 쓸 수 있다.",
+      "tense_note": "'에서/부터/까지'는 조사이지 동사 어미가 아니므로, 과거형이 붙는다는 질문이 적용되지 않는다। काल은 वाक्य 끝의 동사/형용사가 나타낸다।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I gave a present to my friend.",
+          "ko": "친구에게 선물을 줬어요.",
+          "ne": "साथीलाई उपहार दिएँ।",
+          "source": "authored"
+        },
+        {
+          "en": "I spoke to the teacher in Korean.",
+          "ko": "선생님한테 한국말로 말했어요.",
+          "ne": "शिक्षकलाई कोरियाली भाषामा भनेँ।",
+          "source": "authored"
+        },
+        {
+          "en": "I received a letter from my friend.",
+          "ko": "친구한테서 편지를 받았어요.",
+          "ne": "साथीबाट चिठी पाएँ।",
+          "source": "authored"
+        }
+      ],
+      "form": "에게 / 한테",
+      "id": "G-KG-U03-10",
+      "key_points": [
+        {
+          "en": "'에게' is formal and written ('선생님에게 드렸어요'), '한테' is spoken and casual ('선생님한테 드렸어요'). Same meaning, different register — in EPS-TOPIK listening both appear, in formal writing prefer '에게'.",
+          "ne": "'에게' औपचारिक र लेखाइको रूप हो ('선생님에게 드렸어요'), '한테' बोलचालको रूप हो ('선생님한테 드렸어요')। अर्थ उही हो, स्तर मात्र फरक — औपचारिक लेखाइमा '에게' प्रयोग गर्नुहोस्।"
+        },
+        {
+          "en": "'에게서/한테서' means 'from (a person)': '친구에게서 받았어요' (I received it from my friend), '선생님한테서 들었어요' (I heard it from the teacher). Never use '에게' alone for 'from'.",
+          "ne": "'에게서/한테서' भनेको '(व्यक्तिबाट)' हो: '친구에게서 받았어요' (साथीबाट पाएँ), '선생님한테서 들었어요' (शिक्षकबाट सुनेँ)। 'बाट' अर्थमा '에게' मात्र प्रयोग नगर्नुहोस्।"
+        },
+        {
+          "en": "Typical verbs with '에게/한테': 주다 (give), 받다 (receive, with -에게서), 말하다/묻다 (speak/ask), 가르치다 (teach), 보내다 (send).",
+          "ne": "'에게/한테' सँग प्रायः आउने क्रिया: 주다 (दिनु), 받다 (पाउनु, -에게서 सँग), 말하다/묻다 (भन्नु/सोध्नु), 가르치다 (सिकाउनु), 보내다 (पठाउनु)।"
+        },
+        {
+          "en": "'에게/한테' is for people (and animals), '에' is for places: '친구에게 전화했어요' (I called my friend) vs '회사에 전화했어요' (I called the company / to the company). A person takes '에게/한테', never plain '에' for giving or speaking.",
+          "ne": "'에게/한테' मानिस (र जनावर) का लागि हो, '에' ठाउँका लागि हो: '친구에게 전화했어요' (साथीलाई फोन गरेँ) vs '회사에 전화했어요' (कम्पनीमा फोन गरेँ)। दिने वा बोल्ने बेलामा व्यक्तिलाई '에' होइन, '에게/한테' प्रयोग गर्नुहोस्।"
+        },
+        {
+          "en": "Following clause: there is no restriction — '에게/한테' is a particle inside a clause, not a sentence ending; a sentence containing it can be a statement, question, command, request or suggestion, as decided by the sentence-final ending.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — '에게/한테' वाक्यभित्रको चिन्ह हो, वाक्यको अन्त्य होइन; यो भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ, वाक्यको अन्तिम रूपले निर्धारण हुन्छ।"
+        }
+      ],
+      "meaning_en": "'에게/한테' is the dative particle marking the person (or animal) something is given, said or done to. '에게' is formal/written, '한테' is spoken. '에게서/한테서' marks the source ('from').",
+      "meaning_ko": "‘에게/한테’는 동작의 대상이 되는 사람(또는 동물)에게 방향을 나타내는 여격 조사이다. ‘에게’는 격식적이고 문어적인 표현, ‘한테’는 구어적인 표현이다. ‘에게서/한테서’는 출발점(‘~에게서 받다’)을 나타낸다.",
+      "meaning_ne": "'에게 / 한테' भनेको 'लाई' भन्ने अर्थ — कुनै कुरा कसलाई दिइयो/भनियो भन्ने व्यक्ति देखाउँछ। '에게' औपचारिक/लेखाइको रूप हो, '한테' बोलचालको रूप हो। '에게서/한테서' भनेको 'बाट' (from) हो।",
+      "mistakes": "'에게' (사람에게) 와 '에' (장소에) नझुक्किनुहोस्: '친구에게 줬어요' (साथीलाई दिएँ) vs '학교에 갔어요' (विद्यालय गएँ)। '에게서/한테서' 가 'बाट' अर्थ हो: '친구에게서 받았어요' (साथीबाट पाएँ)।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 91,
+      "structure": "사람/동물 명사 + 에게 (격식체·문어) / 한테 (구어). 받는 사람·듣는 사람을 나타낸다. '에게서/한테서' = '~에게서 (from)'.",
+      "tense_note": "'에게/한테'는 조사이지 동사 어미가 아니므로, 과거형이 붙는다는 질문이 적용되지 않는다। काल은 वाक्य 끝의 동사/형용사가 나타낸다।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I am Korean too. / I am a student too.",
+          "ko": "저도 한국 사람이에요. / 저도 학생이에요.",
+          "ne": "म पनि कोरियाली हुँ। / म पनि विद्यार्थी हुँ।",
+          "source": "authored"
+        },
+        {
+          "en": "I drank water too and ate rice too.",
+          "ko": "물도 마시고 밥도 먹었어요.",
+          "ne": "पानी पनि पिएँ र भात पनि खाएँ।",
+          "source": "authored"
+        },
+        {
+          "en": "I didn't eat even one (I didn't eat at all).",
+          "ko": "하나도 안 먹었어요.",
+          "ne": "एउटा पनि खाइनँ (कत्ति पनि खाइनँ)।",
+          "source": "authored"
+        }
+      ],
+      "form": "도",
+      "id": "G-KG-U03-11",
+      "key_points": [
+        {
+          "en": "'도' replaces 이/가 and 을/를 — it never stacks with them on the same noun: '저도' (not ✗ 저가도), '책도' (not ✗ 책을도). One exception: it CAN follow '에' ('서울에도' — also in Seoul).",
+          "ne": "'도' ले '이/가, 을/를' को ठाउँ लिन्छ — एउटै नाममा तिनीसँग सँगै लाग्दैन: '저도' (✗ 저가도 होइन), '책도' (✗ 책을도 होइन)। एउटा अपवाद: '에' पछि भने लाग्न सक्छ ('서울에도' — सउलमा पनि)।"
+        },
+        {
+          "en": "'Also/too': '저도 학생이에요' (I am a student too), '커피도 마셔요' (I drink coffee too). The noun before '도' is added to something already mentioned.",
+          "ne": "'पनि/समेत' अर्थ: '저도 학생이에요' (म पनि विद्यार्थी हुँ), '커피도 마셔요' (कफी पनि पिउँछु)। '도' अघिको नाम पहिले भनिएको कुरामा थपिन्छ।"
+        },
+        {
+          "en": "'Even' emphasis: '아이도 알아요' (even a child knows it), '한국말도 잘해요' (she even speaks Korean well). '도' stresses that the noun is surprising or extreme.",
+          "ne": "'समेत/सम्म' जोड: '아이도 알아요' (बच्चाले समेत जान्दछ), '한국말도 잘해요' (कोरियाली भाषा समेत राम्रो बोल्छिन्)। '도' ले त्यो नाम आश्चर्यजनक वा चरम हो भन्ने जोड दिन्छ।"
+        },
+        {
+          "en": "In negatives '도' means 'not even / not at all': '하나도 안 먹었어요' (didn't eat even one), '아무도 안 왔어요' (nobody came), '전혀 몰라요' with '도' — '누구도, 아무도, 어디에도' appear in negative sentences.",
+          "ne": "नकारात्मक वाक्यमा '도' भनेको 'पनि … छैन / कत्ति पनि छैन' हो: '하나도 안 먹었어요' (एउटा पनि खाइनँ), '아무도 안 왔어요' (कोही पनि आएनन्)। '누구도, 아무도, 어디에도' जस्ता प्रश्नवाचक शब्द + '도' नकारात्मक वाक्यमा आउँछ।"
+        },
+        {
+          "en": "Following clause: there is no restriction — '도' is a particle inside a clause, not a sentence ending; a sentence containing '도' can be a statement, question, command, request or suggestion, as decided by the sentence-final ending.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — '도' वाक्यभित्रको चिन्ह हो, वाक्यको अन्त्य होइन; '도' भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ, वाक्यको अन्तिम रूपले निर्धारण हुन्छ।"
+        }
+      ],
+      "meaning_en": "'도' is an additive particle meaning 'also/too', 'even' (emphasis), and in negative sentences 'not even / not at all'. It replaces 이/가, 을/를 and 에 — it never stacks with them.",
+      "meaning_ko": "‘도’는 ‘~도, ~역시, ~조차’의 뜻을 더하는 보조사이다. ‘또한/역시’(too, also)의 뜻과, ‘~조차’(even)의 강조 뜻이 있으며, 부정문에서는 ‘전혀 ~도 아니다’(not even / not at all)의 뜻이 된다.",
+      "meaning_ne": "'도' भनेको 'पनि' भन्ने अर्थ दिने चिन्ह हो — 'पनि/समेत' (also/too), जोड दिन 'समेत/सम्म' (even), र नकारात्मक वाक्यमा 'पनि … छैन / कत्ति पनि छैन' (not even/at all) भन्ने अर्थ हुन्छ।",
+      "mistakes": "'도' 는 '이/가, 을/를' 와 함께 쓸 수 없다: '저가도' (✗) होइन, '저도' (O); '책을도' (✗) होइन, '책도' (O)। '에' 뒤에는 붙을 수 있다: '서울에도' (O)।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 93,
+      "structure": "명사 + 도. '이/가, 을/를' 대신 붙는다 (함께 쓸 수 없다). '에' 뒤에는 붙을 수 있다 ('서울에도').",
+      "tense_note": "'도'는 조사(보조사)이지 동사 어미가 아니므로, 과거형이 붙는다는 질문이 적용되지 않는다। काल은 वाक्य 끝의 동사/형용사가 나타낸다।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I ate only rice.",
+          "ko": "저는 밥만 먹었어요.",
+          "ne": "मैले भात मात्र खाएँ।",
+          "source": "authored"
+        },
+        {
+          "en": "Please give me just two cups of coffee.",
+          "ko": "커피 두 잔만 주세요.",
+          "ne": "कफी दुई कप मात्र दिनुहोस्।",
+          "source": "authored"
+        },
+        {
+          "en": "Today I stayed only at home.",
+          "ko": "오늘은 집에만 있었어요.",
+          "ne": "आज घरमा मात्र बसेँ।",
+          "source": "authored"
+        }
+      ],
+      "form": "만",
+      "id": "G-KG-U03-12",
+      "key_points": [
+        {
+          "en": "'만' means 'only / just': '밥만 먹었어요' (I ate only rice), '오늘은 집에만 있었어요' (today I stayed only at home). It limits the noun to that one thing.",
+          "ne": "'만' भनेको 'मात्र / मात्रै' हो: '밥만 먹었어요' (भात मात्र खाएँ), '오늘은 집에만 있었어요' (आज घरमा मात्र बसेँ)। यसले त्यो नाममा मात्र सीमा लगाउँछ।"
+        },
+        {
+          "en": "'만' vs '밖에': '만' is used in positive sentences ('물만 마셔요' — I drink only water); '밖에' is used only in negative sentences ('물밖에 안 마셔요' — I drink nothing but water). Never use '밖에' in a positive sentence.",
+          "ne": "'만' vs '밖에': सकारात्मक वाक्यमा '만' ('물만 마셔요' — पानी मात्र पिउँछु); नकारात्मक वाक्यमा मात्र '밖에' ('물밖에 안 마셔요' — पानीबाहेक केही पिउँदिनँ)। सकारात्मक वाक्यमा '밖에' कहिल्यै प्रयोग नगर्नुहोस्।"
+        },
+        {
+          "en": "'만' with numbers limits a quantity: '두 개만 주세요' (just two, please), '한 시간만 기다리세요' (wait just one hour). The number comes before '만'.",
+          "ne": "संख्यासँग '만' ले परिमाणमा सीमा लगाउँछ: '두 개만 주세요' (दुईवटा मात्र दिनुहोस्), '한 시간만 기다리세요' (एक घण्टा मात्र पर्खनुहोस्)। संख्या '만' अघि आउँछ।"
+        },
+        {
+          "en": "'만' comes right after the noun it limits, and can follow other particles ('집에만' — only at home; '저만' — only me). It does not change the noun itself.",
+          "ne": "'만' ले सीमा लगाउने नामको ठिक पछि आउँछ, र अरू चिन्हपछि पनि आउन सक्छ ('집에만' — घरमा मात्र; '저만' — म मात्र)। यसले नाम आफैँलाई बदल्दैन।"
+        },
+        {
+          "en": "Following clause: there is a real restriction in the negative — '만' itself can appear in any sentence type (statement, question, command, request, suggestion), but its negative counterpart '밖에' is allowed only in negative sentences; a sentence containing '만' can otherwise be any sentence type, as decided by the sentence-final ending.",
+          "ne": "पछिको वाक्य: '만' आफैँ भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ, तर नकारात्मकमा यसको सट्टा प्रयोग हुने '밖에' केवल नकारात्मक वाक्यमा मात्र आउँछ — सकारात्मक वाक्यमा '밖에' प्रयोग गर्न मिल्दैन।"
+        }
+      ],
+      "meaning_en": "'만' is a particle meaning 'only / just' — it limits something to that noun alone, nothing more. In negative sentences '밖에' is used instead.",
+      "meaning_ko": "‘만’은 ‘오직 ~뿐’이라는 뜻을 나타내는 보조사이다. ‘오직 그것뿐, 그 이상이 아니다’는 한정의 의미를 더한다. 부정문에서는 ‘밖에’를 쓴다.",
+      "meaning_ne": "'만' भनेको 'मात्र / मात्रै' भन्ने अर्थ दिने चिन्ह हो — त्यो मात्र, त्योभन्दा बढी होइन भन्ने सीमा देखाउँछ। नकारात्मक वाक्यमा भने '밖에' प्रयोग हुन्छ।",
+      "mistakes": "긍정문에는 '만', 부정문에는 '밖에': '밥만 먹었어요' (O — भात मात्र खाएँ) vs '밥밖에 안 먹었어요' (O — भातबाहेक केही खाइनँ)। 긍정문에 '밖에' 쓰지 마세요: '물밖에 마셔요' (✗) — '물만 마셔요' (O) 가 맞습니다।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 97,
+      "structure": "명사 + 만. '이/가, 을/를' 대신 붙거나, 다른 조사 뒤에 붙을 수도 있다 ('집에만'). 수량 뒤에도 붙는다 ('두 개만').",
+      "tense_note": "'만'은 조사(보조사)이지 동사 어미가 아니므로, 과거형이 붙는다는 질문이 적용되지 않는다। काल은 वाक्य 끝의 동사/형용사가 나타낸다।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I have only 1,000 won.",
+          "ko": "저는 돈이 천 원밖에 없어요.",
+          "ne": "मसँग एक हजार वोन मात्र छ।",
+          "source": "authored"
+        },
+        {
+          "en": "There is nothing but water at home.",
+          "ko": "집에 물밖에 없어요.",
+          "ne": "घरमा पानी मात्र छ (अरू केही छैन)।",
+          "source": "authored"
+        },
+        {
+          "en": "I can speak only Korean.",
+          "ko": "저는 한국어밖에 못 해요.",
+          "ne": "म कोरियाली भाषा मात्र बोल्न सक्छु (अरू भाषा सक्दिनँ)।",
+          "source": "authored"
+        }
+      ],
+      "form": "밖에",
+      "id": "G-KG-U03-13",
+      "key_points": [
+        {
+          "en": "'밖에' is used ONLY in negative sentences — a negative form (안/못, -지 않다, 없다, 모르다) must follow. It can never appear in a positive sentence (✗ 밖에 있어요).",
+          "ne": "'밖에' केवल नकारात्मक वाक्यमा मात्र प्रयोग हुन्छ — पछि अनिवार्य रूपमा 안/못, -지 않다, 없다, 모르다 जस्ता नकारात्मक रूप आउनुपर्छ। सकारात्मक वाक्यमा '밖에' कहिल्यै प्रयोग हुँदैन (✗ 밖에 있어요)।"
+        },
+        {
+          "en": "'밖에' vs '만': both mean 'only', but '만' is used in positive sentences (천 원만 있어요) while '밖에' is used only in negative ones (천 원밖에 없어요). The meaning is the same — only the sentence type differs.",
+          "ne": "'밖에' र '만' दुवैको अर्थ 'मात्र' हो, तर '만' सकारात्मक वाक्यमा (천 원만 있어요) र '밖에' नकारात्मक वाक्यमा मात्र (천 원밖에 없어요) प्रयोग हुन्छ। अर्थ उही हो — वाक्यको प्रकार मात्र फरक हो।"
+        },
+        {
+          "en": "Pattern: noun + 밖에 + negative verb. The noun before 밖에 is the only thing that exists or is possible — '물밖에 없어요' = there is nothing but water.",
+          "ne": "रूप: नाम + 밖에 + नकारात्मक क्रिया। '밖에' अघिको नाम नै एक मात्र भएको वा सम्भव भएको कुरा हो — '물밖에 없어요' भनेको पानीबाहेक अरू केही छैन भन्ने हो।"
+        },
+        {
+          "en": "Following clause: the clause containing 밖에 must be negative — 안/못/없다 is required after it; a plain positive statement, command or request cannot directly follow 밖에 itself. (The whole sentence, however, can be a negative statement or a negative question.)",
+          "ne": "पछिको वाक्य: '밖에' भएको वाक्य नकारात्मक नै हुनुपर्छ — पछि अनिवार्य रूपमा 안/못/없다 आउनुपर्छ; सकारात्मक कथन, आदेश वा अनुरोध '밖에' पछि सिधै आउन सक्दैन। (सम्पूर्ण वाक्य भने नकारात्मक कथन वा नकारात्मक प्रश्न हुन सक्छ।)"
+        }
+      ],
+      "meaning_en": "‘밖에’ means ‘only / nothing but’ and is used only in negative sentences — ‘there is nothing except this’. It is similar to ‘만’ (only) but must always be followed by a negative expression.",
+      "meaning_ko": "‘밖에’는 ‘그것만 있고 다른 것은 없다’는 뜻으로, 부정문에서만 쓰이며 ‘~만’의 의미와 비슷하지만 반드시 부정 표현과 함께 쓰인다.",
+      "meaning_ne": "‘밖에’ भनेको ‘यति मात्र, यसबाहेक अरू छैन’ भन्ने अर्थ हो। यो सधैँ नकारात्मक वाक्यमा मात्र प्रयोग हुन्छ — पछि अनिवार्य रूपमा 안/못/없다 जस्ता नकारात्मक रूप आउँछ।",
+      "mistakes": "‘밖에’ पछि सकारात्मक वाक्य कहिल्यै नआओस् (✗ 천 원밖에 있어요 → ○ 천 원밖에 없어요)। ‘밖에’ भएको वाक्यमा ‘만’ थप्नु हुँदैन (✗ 천 원만밖에 없어요)।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 99,
+      "structure": "명사 + 밖에 + 부정 표현 (안/못 + 동사, -지 않다, 없다, 모르다 등). 밖에 뒤에는 반드시 부정문이 온다.",
+      "tense_note": "‘밖에’ आफैँ काल (tense) होइन; वाक्यको अन्त्यमा काल आउँछ — ‘천 원밖에 없었어요’ जस्तै भूतकाल पनि हुन्छ।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I drink coffee or tea.",
+          "ko": "커피나 차를 마셔요.",
+          "ne": "कफी वा चिया पिउँछु।",
+          "source": "authored"
+        },
+        {
+          "en": "Please come around 3 o’clock.",
+          "ko": "세 시나 오세요.",
+          "ne": "तीन बजेतिर आउनुहोस्।",
+          "source": "authored"
+        },
+        {
+          "en": "Please buy some bread or something.",
+          "ko": "빵이나 사 오세요.",
+          "ne": "रोटी वा यस्तै केही किनेर आउनुहोस्।",
+          "source": "authored"
+        }
+      ],
+      "form": "(이)나",
+      "id": "G-KG-U03-15",
+      "key_points": [
+        {
+          "en": "Choice 'or' between nouns: '커피나 차' = coffee or tea. Unlike '또는', (이)나 is casual and often suggests 'one of these, it doesn't matter which'.",
+          "ne": "नामहरूबीच छनोट 'वा': '커피나 차' भनेको कफी वा चिया हो। '또는' भन्दा (이)나 बढी सामान्य बोलचालको हो र प्रायः 'यीमध्ये जुन भए पनि हुन्छ' भन्ने भाव दिन्छ।"
+        },
+        {
+          "en": "Approximation with numbers and time: '세 시나' = around 3 o'clock, '다섯 명이나' in this sense = about five people. The number is not exact.",
+          "ne": "संख्या र समयसँग अनुमान: '세 시나' भनेको तीन बजेतिर हो, '다섯 명이나' भनेको करिब पाँच जना हो। संख्या ठ्याक्कै होइन, अनुमानित हो।"
+        },
+        {
+          "en": "Batchim rule: use '이나' after a consonant-final noun (책이나) and '나' after a vowel-final noun (커피나).",
+          "ne": "받침 नियम: अन्त्यमा व्यञ्जन (받침) भएको नाम पछि '이나' (책이나), स्वरमा सकिने नाम पछि '나' (커피나) लाग्छ।"
+        },
+        {
+          "en": "(이)나 1 vs (이)나 2: this entry is choice/approximation. (이)나 2 (a separate entry) means 'at least / even as many as' and expresses surprise at a large amount — a different meaning with the same form.",
+          "ne": "(이)나 1 र (이)나 2 फरक हुन्: यो रूप छनोट/अनुमान हो। (이)나 2 (अर्को छुट्टै रूप) भनेको 'कम्तीमा / यति धेरैसम्म' हो र ठूलो मात्रामा अचम्मको भाव दिन्छ — रूप उही भए पनि अर्थ फरक छ।"
+        },
+        {
+          "en": "Following clause: no restriction — a clause containing (이)나 can be a statement, question, command, request or suggestion of any kind.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — यो 조사 भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "‘(이)나’ has two uses. ① Choice: ‘A나 B’ = ‘A or B’. ② Approximation: after a number or time it means ‘about / around’ (세 시나 = around 3 o’clock).",
+      "meaning_ko": "‘(이)나’는 두 가지 뜻이 있다. ① 선택: ‘A나 B’ = ‘A 또는 B’. ② 어림: 숫자·시간 뒤에서 ‘~쯤, ~정도’의 뜻으로 대략의 양을 나타낸다.",
+      "meaning_ne": "‘(이)나’ का दुई प्रयोग छन्। ① छनोट: ‘A나 B’ = ‘A वा B’। ② अनुमान: संख्या वा समय पछि ‘~जति, ~तिर’ भन्ने अर्थ — ‘세 시나’ भनेको ‘तीन बजेतिर’ हो।",
+      "mistakes": "받침 नियम नबिर्सनुहोस्: 받침 भए ‘이나’ (책이나), नभए ‘나’ (커피나)। (✗ 커피이나, ✗ 책나)। ‘세 시나’ को ‘나’ ले ‘वा’ होइन ‘तिर/जति’ भन्ने अर्थ दिन्छ — सन्दर्भ हेरेर बुझ्नुहोस्।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 105,
+      "structure": "명사 + (이)나. 받침이 있으면 ‘이나’, 받침이 없으면 ‘나’. 선택 (‘A나 B’) 또는 수량·시간의 어림 (‘세 시나’ = 세 시쯤).",
+      "tense_note": "‘(이)나’ आफैँ काल (tense) होइन; वाक्यको अन्त्यमा काल आउँछ।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "As many as ten people came!",
+          "ko": "열 명이나 왔어요.",
+          "ne": "दश जनासम्म आए!",
+          "source": "authored"
+        },
+        {
+          "en": "I waited for a whole hour!",
+          "ko": "한 시간이나 기다렸어요.",
+          "ne": "एक घण्टासम्म पर्खिएँ!",
+          "source": "authored"
+        },
+        {
+          "en": "It cost as much as 30,000 won!",
+          "ko": "삼만 원이나 들었어요.",
+          "ne": "तीस हजार वोनसम्म लाग्यो!",
+          "source": "authored"
+        }
+      ],
+      "form": "(이)나",
+      "id": "G-KG-U03-16",
+      "key_points": [
+        {
+          "en": "Minimum/emphasis: '(이)나' after a number means 'at least / even as many as' — '열 명이나' = as many as ten people. It stresses that the amount is large.",
+          "ne": "न्यूनतम/जोड: संख्या पछि '(이)나' भनेको 'कम्तीमा / यति धेरैसम्म' हो — '열 명이나' भनेको दश जनासम्म हो। यसले मात्रा धेरै भएकोमा जोड दिन्छ।"
+        },
+        {
+          "en": "Contrast with (이)나 1: (이)나 1 is choice ('or') or rough approximation ('around 3 o'clock'); (이)나 2 adds the speaker's surprise — the amount is MORE than expected. Same form, different feeling.",
+          "ne": "(이)나 1 सँग फरक: (이)나 1 छनोट ('वा') वा साधारण अनुमान ('तीन बजेतिर') हो; (이)나 2 मा बोल्ने मान्छेको अचम्म थपिन्छ — मात्रा सोचेको भन्दा बढी छ। रूप उही, भाव फरक।"
+        },
+        {
+          "en": "Used with numbers and time: people (열 명이나), hours (한 시간이나), money (삼만 원이나). It attaches to a quantity, not to an ordinary noun like a place.",
+          "ne": "संख्या र समयसँग प्रयोग हुन्छ: मानिस (열 명이나), घण्टा (한 시간이나), पैसा (삼만 원이나)। यो मात्रासँग लाग्छ, ठाउँजस्ता साधारण नामसँग लाग्दैन।"
+        },
+        {
+          "en": "Speaker's attitude: (이)나 2 shows the speaker thinks the amount is surprisingly large (or the time surprisingly long). With a small number the emphasis disappears, so it is mainly used with numbers that feel big.",
+          "ne": "बोल्ने मान्छेको भाव: (이)나 2 ले मात्रा अचम्मलाग्दो धेरै (वा समय अचम्मलाग्दो लामो) लागेको देखाउँछ। सानो संख्यासँग यो जोडको अर्थ आउँदैन, त्यसैले प्रायः ठूलो लाग्ने संख्यासँग प्रयोग हुन्छ।"
+        },
+        {
+          "en": "Following clause: no restriction — a clause containing (이)나 2 can be a statement, question, command, request or suggestion of any kind.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — यो 조사 भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "‘(이)나’ after a number means ‘at least / even as many as’ — it emphasises that the amount is more than the speaker expected. ‘열 명이나 왔어요’ = ‘As many as ten people came!’",
+      "meaning_ko": "‘(이)나’는 숫자 뒤에서 ‘적어도 그만큼, 심지어 그만큼’이라는 뜻으로, 화자가 예상보다 양이 많다고 느끼는 강조를 나타낸다. ‘열 명이나 왔다’ = ‘무려 열 명이나 왔다’.",
+      "meaning_ne": "‘(이)나’ संख्या पछि लागेर 'कम्तीमा यति, यति धेरैसम्म' भन्ने अर्थ दिन्छ — बोल्ने मान्छेले सोचेको भन्दा बढी भएकोमा अचम्म वा जोड दिन्छ। '열 명이나 왔어요' भनेको 'दश जनासम्म आए!' भन्ने हो।",
+      "mistakes": "(이)나 1 (छनोट/अनुमान) सँग नझुक्किनुहोस्: ‘세 시나’ = तीन बजेतिर (अनुमान), तर ‘세 시간이나’ = तीन घण्टासम्म! (धेरै लाग्यो भन्ने जोड)। सानो संख्यामा (이)나 2 को जोड अर्थ आउँदैन।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 107,
+      "structure": "숫자·수량·시간 + (이)나 + 동사. 받침이 있으면 ‘이나’, 받침이 없으면 ‘나’. ‘생각보다 많다’는 화자의 놀라움·강조를 나타낸다.",
+      "tense_note": "‘(이)나’ आफैँ काल (tense) होइन; वाक्यको अन्त्यमा काल आउँछ — ‘한 시간이나 기다렸어요’ जस्तै भूतकाल पनि हुन्छ।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "Let's meet around 3 o'clock.",
+          "ko": "세 시쯤 만나요.",
+          "ne": "तीन बजेतिर भेटौँला।",
+          "source": "authored"
+        },
+        {
+          "en": "About ten people came.",
+          "ko": "열 명쯤 왔어요.",
+          "ne": "करिब दश जना आए।",
+          "source": "authored"
+        },
+        {
+          "en": "It is somewhere near the house.",
+          "ko": "집 근처쯤에 있어요.",
+          "ne": "घर नजिकैतिर छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "쯤",
+      "id": "G-KG-U03-17",
+      "key_points": [
+        {
+          "en": "Approximation after numbers, time and place: '세 시쯤' (around 3 o'clock), '열 명쯤' (about ten people), '여기쯤' (around here). The value is rough, not exact.",
+          "ne": "संख्या, समय र ठाउँ पछि अनुमान: '세 시쯤' (तीन बजेतिर), '열 명쯤' (करिब दश जना), '여기쯤' (यतातिर)। मान ठ्याक्कै होइन, अनुमानित हो।"
+        },
+        {
+          "en": "'쯤' vs '정도' vs '(이)나': all can mean 'about', but '정도' is more formal and neutral, '쯤' is everyday and casual, and '(이)나' (approximation use) often carries a choice nuance as well. In daily speech 쯤 is the most common.",
+          "ne": "'쯤', '정도' र '(이)나' सबैको अर्थ 'करिब' हुन सक्छ, तर '정도' बढी औपचारिक र तटस्थ छ, '쯤' दैनिक बोलचालको हो, र '(이)나' मा छनोटको भाव पनि मिसिन सक्छ। दैनिक बोलचालमा '쯤' सबैभन्दा धेरै प्रयोग हुन्छ।"
+        },
+        {
+          "en": "Position: 쯤 comes directly after the noun or number it modifies ('세 시쯤'), and any further particle follows 쯤 ('세 시쯤에', '세 시쯤부터').",
+          "ne": "स्थान: '쯤' त्यसको पछि सिधै लाग्छ जसको अनुमान गरिन्छ ('세 시쯤'), र अरू कुनै 조사 थप्नुपर्दा '쯤' पछि आउँछ ('세 시쯤에', '세 시쯤부터')।"
+        },
+        {
+          "en": "No batchim change: 쯤 has a single fixed form — it never changes with the preceding word (unlike (이)나, which becomes 이나/나).",
+          "ne": "रूप कहिल्यै फेरिँदैन: '쯤' को एउटै मात्र रूप छ — अघिल्लो शब्दअनुसार कहिल्यै बदलिँदैन ((이)ना जस्तो 이나/나 हुँदैन)।"
+        },
+        {
+          "en": "Following clause: no restriction — a clause containing 쯤 can be a statement, question, command, request or suggestion of any kind.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — यो 조사 भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "‘쯤’ after a number, time or place means ‘about / approximately / around’ — it marks a rough amount or position. ‘세 시쯤’ = around 3 o’clock.",
+      "meaning_ko": "‘쯤’은 숫자·시간·장소 뒤에서 ‘~쯤, ~정도’라는 뜻으로 대략의 양이나 위치를 나타낸다. ‘세 시쯤’ = ‘세 시경’.",
+      "meaning_ne": "‘쯤’ संख्या, समय वा ठाउँ पछि लागेर '~तिर, ~जति' भन्ने अर्थ दिन्छ — ठ्याक्कै होइन, अनुमानित मात्रा वा स्थान देखाउँछ। '세 시쯤' भनेको तीन बजेतिर हो।",
+      "mistakes": "‘쯤’ पछि अर्को 조사 थप्दा 순서 नबिर्सनुहोस्: ‘세 시쯤에’ (쯤 + 에) हो, ‘세 시에쯤’ होइन। ‘쯤’ आफैँले अनुमान देखाउँछ, त्यसैले ‘약/대략’ सँग दोहोर्‍याएर प्रयोग नगर्नु राम्रो (✗ 약 세 시쯤)।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 110,
+      "structure": "숫자·시간·장소 + 쯤. ‘세 시쯤, 열 명쯤, 여기쯤’. 명사 뒤에 바로 붙는다.",
+      "tense_note": "‘쯤’ आफैँ काल (tense) होइन; वाक्यको अन्त्यमा काल आउँछ।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "He cries like a child.",
+          "ko": "아이처럼 울어요.",
+          "ne": "बच्चाजस्तै रुन्छ।",
+          "source": "authored"
+        },
+        {
+          "en": "I study like my older brother.",
+          "ko": "형처럼 공부해요.",
+          "ne": "दाजुजस्तै पढ्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "He talks like a friend.",
+          "ko": "친구같이 말해요.",
+          "ne": "साथीजस्तै बोल्छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "처럼 / 같이",
+      "id": "G-KG-U03-18",
+      "key_points": [
+        {
+          "en": "Similarity/comparison ('like'): '아이처럼 울어요' = cries like a child. Both 처럼 and 같이 can express this meaning.",
+          "ne": "समानता/तुलना ('जस्तै'): '아이처럼 울어요' भनेको बच्चाजस्तै रुन्छ भन्ने हो। '처럼' र '같이' दुवैले यो अर्थ दिन सक्छन्।"
+        },
+        {
+          "en": "'처럼' vs '같이': 처럼 means only 'like/as'. 같이 ALSO means 'together with' ('친구하고 같이 가요' = go together with a friend), so 같이 is ambiguous and 처럼 is the safer choice when you only mean 'like'.",
+          "ne": "'처럼' र '같이' को फरक: '처럼' को अर्थ 'जस्तै' मात्र हो। '같이' को 'सँगै' भन्ने अर्थ पनि हुन्छ ('친구하고 같이 가요' = साथीसँगै जान्छु), त्यसैले '같이' मा दुई अर्थ हुन सक्छ; केवल 'जस्तै' भन्नुछ भने '처럼' प्रयोग गर्नु सुरक्षित छ।"
+        },
+        {
+          "en": "With verbs, '마치 ~처럼/같이' strengthens the comparison: '마치 꿈처럼' = just like a dream. 마치 ('as if') often pairs with 처럼.",
+          "ne": "क्रियासँग '마치 ~처럼/같이' ले तुलना अझ बलियो बनाउँछ: '마치 꿈처럼' भनेको सपनाजस्तै भन्ने हो। '마치' ('जस्तो लाग्ने गरी') प्रायः '처럼' सँगै प्रयोग हुन्छ।"
+        },
+        {
+          "en": "'처럼' with adjectives: '눈처럼 하얘요' = white like snow. 처럼 attaches to a noun and the adjective follows, describing the quality by comparison.",
+          "ne": "'처럼' विशेषणसँग: '눈처럼 하얘요' भनेको हिउँजस्तै सेतो छ भन्ने हो। '처럼' नाम पछि लाग्छ र त्यसपछि विशेषण आउँछ, जसले तुलनाबाट गुण बताउँछ।"
+        },
+        {
+          "en": "Following clause: no restriction — a clause containing 처럼/같이 can be a statement, question, command, request or suggestion of any kind.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — यो 조사 भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "‘처럼’ and ‘같이’ both mean ‘like / as’ and show similarity or comparison. ‘같이’ additionally means ‘together with’.",
+      "meaning_ko": "‘처럼’과 ‘같이’는 ‘~와 같이, ~처럼’이라는 뜻으로 비슷함이나 비교를 나타낸다. ‘같이’는 ‘함께’라는 뜻도 있다.",
+      "meaning_ne": "‘처럼’ र ‘같이’ दुवैको अर्थ '~जस्तै, ~जस्तो' हो — समानता वा तुलना देखाउँछ। '같이' को 'सँगै / सँग' भन्ने अर्थ पनि हुन्छ।",
+      "mistakes": "‘같이’ लाई सधैँ ‘처럼’ जस्तै नसम्झनुहोस्: ‘친구하고 같이 가요’ (= सँगै जान्छु) मा ‘같이’ को अर्थ ‘सँगै’ हो, ‘जस्तै’ होइन। तुलना मात्र भन्नुछ भने ‘처럼’ प्रयोग गर्नु सुरक्षित छ।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 112,
+      "structure": "명사 + 처럼 / 명사 + 같이. ‘아이처럼, 형같이’. ‘마치 ~처럼/같이’ 형태로도 쓴다.",
+      "tense_note": "‘처럼/같이’ आफैँ काल (tense) होइन; वाक्यको अन्त्यमा काल आउँछ।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I am taller than my older brother.",
+          "ko": "저는 형보다 키가 커요.",
+          "ne": "म दाजुभन्दा अग्लो छु।",
+          "source": "authored"
+        },
+        {
+          "en": "Today is hotter than yesterday.",
+          "ko": "오늘은 어제보다 더워요.",
+          "ne": "आज हिजोभन्दा गर्मी छ।",
+          "source": "authored"
+        },
+        {
+          "en": "This is cheaper than that.",
+          "ko": "이것이 저것보다 싸요.",
+          "ne": "यो त्योभन्दा सस्तो छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "보다",
+      "id": "G-KG-U03-19",
+      "key_points": [
+        {
+          "en": "Comparison ('than'): 'A보다 B가 더 ~' = B is more ~ than A. The noun before 보다 is the standard being compared against.",
+          "ne": "तुलना ('भन्दा'): 'A보다 B가 더 ~' भनेको B, A भन्दा बढी ~ छ भन्ने हो। '보다' अघिको नाम नै तुलना गर्ने आधार (मापदण्ड) हो।"
+        },
+        {
+          "en": "'보다' comes after the compared noun: '형보다' (than my brother), '어제보다' (than yesterday). It never comes before the noun it follows.",
+          "ne": "'보다' तुलना गरिने नामको पछि आउँछ: '형보다' (दाजुभन्दा), '어제보다' (हिजोभन्दा)। यो आफूले पछ्याउने नामको अघि कहिल्यै आउँदैन।"
+        },
+        {
+          "en": "'더/덜/제일' with 보다: '더' (more) is the most common partner ('더 커요'); '덜' (less) and '제일' (the most) also combine with 보다 comparisons.",
+          "ne": "'더/덜/제일' र '보다': '더' (बढी) सबैभन्दा धेरै प्रयोग हुन्छ ('더 커요'); '덜' (कम) र '제일' (सबैभन्दा) पनि '보다' सँगको तुलनामा प्रयोग हुन्छन्।"
+        },
+        {
+          "en": "'보다' vs '에서': 보다 marks the comparison standard ('형보다' = than my brother); 에서 marks a starting point or place ('집에서' = from home). '집에서보다' combines them: 'than from home'.",
+          "ne": "'보다' र '에서' को फरक: '보다' ले तुलना गर्ने आधार देखाउँछ ('형보다' = दाजुभन्दा); '에서' ले सुरु हुने ठाउँ वा स्रोत देखाउँछ ('집에서' = घरबाट)। '집에서보다' मा दुवै जोडिन्छन्: 'घरबाट (आउनु) भन्दा'।"
+        },
+        {
+          "en": "Following clause: no restriction — a clause containing 보다 can be a statement, question, command, request or suggestion of any kind.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — यो 조사 भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "‘보다’ attaches to the noun that is the standard of comparison and means ‘than’ — it shows that something is more or less than that standard.",
+      "meaning_ko": "‘보다’는 비교의 기준이 되는 명사 뒤에 붙어 ‘~보다’라는 뜻으로, 그 기준과 비교하여 더 크거나 작음을 나타낸다.",
+      "meaning_ne": "‘보다’ भनेको तुलना गर्ने आधार (मानक) भएको नाम पछि लागेर '~भन्दा' भन्ने अर्थ दिन्छ — त्यसको तुलनामा बढी वा कम भएको देखाउँछ।",
+      "mistakes": "‘보다’ अघिको नाम नै तुलना गर्ने आधार हो: ‘형보다 커요’ = दाजुभन्दा अग्लो छु (दाजु नै मापदण्ड हो)। उल्टो नलेख्नुहोस् (✗ 저는 키가 형보다 커요 — अर्थ बिग्रिन्छ)। ‘보다’ लाई ‘에서’ सँग नझुक्किनुहोस्।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 114,
+      "structure": "비교 대상 명사 + 보다 + (더/덜/제일) + 형용사/동사. ‘A보다 B가 더 ~’ 형태가 기본이다.",
+      "tense_note": "‘보다’ आफैँ काल (tense) होइन; वाक्यको अन्त्यमा काल आउँछ — ‘어제보다 더웠어요’ जस्तै भूतकाल पनि हुन्छ।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I go to church every Sunday.",
+          "ko": "일요일마다 교회에 가요.",
+          "ne": "हरेक आइतबार चर्च जान्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "I rest every hour.",
+          "ko": "한 시간마다 쉬어요.",
+          "ne": "हरेक एक घण्टामा आराम गर्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "Every person thinks differently.",
+          "ko": "사람마다 생각이 달라요.",
+          "ne": "हरेक मानिसको सोच फरक हुन्छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "마다",
+      "id": "G-KG-U03-20",
+      "key_points": [
+        {
+          "en": "'Every/each' after time, place and person nouns: '일요일마다' (every Sunday), '집마다' (every house), '사람마다' (every person). It marks each instance one by one.",
+          "ne": "समय, ठाउँ र मानिस नाम पछि 'हरेक/प्रत्येक': '일요일마다' (हरेक आइतबार), '집마다' (हरेक घर), '사람마다' (हरेक मानिस)। यसले ती सबैलाई एक-एक गरी जनाउँछ।"
+        },
+        {
+          "en": "'마다' vs '매': 매 is a prefix that comes BEFORE the noun ('매일' = every day, '매주' = every week), while 마다 is a suffix that comes AFTER the noun ('일요일마다'). Do not swap their positions.",
+          "ne": "'마다' र '매' को फरक: '매' नामको अघि आउँछ ('매일' = हरेक दिन, '매주' = हरेक हप्ता), '마다' नामको पछि आउँछ ('일요일마다')। यिनको स्थान साट्नु हुँदैन।"
+        },
+        {
+          "en": "'마다' with numbers: '한 시간마다' (every hour), '두 달마다' (every two months). The number + unit comes before 마다.",
+          "ne": "'마다' संख्यासँग: '한 시간마다' (हरेक घण्टा), '두 달마다' (हरेक दुई महिना)। संख्या + एकाइ '마다' को अघि आउँछ।"
+        },
+        {
+          "en": "No plural needed: '사람마다' already means 'every person' — adding -들 ('사람들마다') is unnecessary and unnatural.",
+          "ne": "बहुवचन चाहिँदैन: '사람마다' भन्नेबित्तिकै 'हरेक मानिस' भन्ने अर्थ हुन्छ — '-들' थप्नु ('사람들마다') अनावश्यक र अस्वाभाविक हुन्छ।"
+        },
+        {
+          "en": "Following clause: no restriction — a clause containing 마다 can be a statement, question, command, request or suggestion of any kind.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — यो 조사 भएको वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "‘마다’ attaches to a noun and means ‘every / each’ — it refers to each and every instance of that noun. ‘일요일마다’ = every Sunday.",
+      "meaning_ko": "‘마다’는 명사 뒤에 붙어 ‘~마다, ~할 때마다’라는 뜻으로, 그 명사의 각각·모두를 나타낸다. ‘일요일마다’ = ‘매주 일요일마다’.",
+      "meaning_ne": "‘마다’ नाम पछि लागेर 'हरेक / प्रत्येक' भन्ने अर्थ दिन्छ — त्यो नामका सबै एक-एक वटालाई जनाउँछ। '일요일마다' भनेको हरेक आइतबार हो।",
+      "mistakes": "‘마다’ पछि बहुवचन (-들) थप्नु पर्दैन: ‘사람마다’ नै ‘हरेक मानिस’ हो (✗ 사람들마다 — अनावश्यक)। ‘매’ र ‘마다’ को स्थान नझुक्किनुहोस्: ‘매일’ (매 + 일), तर ‘일요일마다’ (일요일 + 마다)।",
+      "person": "all",
+      "person_note": "व्यक्तिअनुसार फरक पर्दैन।",
+      "source_page": 116,
+      "structure": "명사 + 마다. 시간·장소·사람 명사 뒤에 붙는다. ‘일요일마다, 한 시간마다, 사람마다’.",
+      "tense_note": "‘마다’ आफैँ काल (tense) होइन; वाक्यको अन्त्यमा काल आउँछ।",
+      "tense_past": "na",
+      "unit": 3,
+      "unit_title": "조사",
+      "unit_title_en": "Particles"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "You don't have to go early today.",
+          "ko": "오늘은 일찍 가지 않아도 돼요.",
+          "ne": "आज चाँडै जानु पर्दैन।",
+          "source": "authored"
+        },
+        {
+          "en": "You don't have to come to work tomorrow.",
+          "ko": "내일은 출근하지 않아도 돼요.",
+          "ne": "भोलि काममा जानु पर्दैन।",
+          "source": "authored"
+        },
+        {
+          "en": "You don't have to submit this document now.",
+          "ko": "이 서류는 지금 내지 않아도 돼요.",
+          "ne": "यो कागजात अहिले बुझाउनु पर्दैन।",
+          "source": "authored"
+        }
+      ],
+      "form": "-지 않아도 되다",
+      "id": "G-KG-U07-01",
+      "key_points": [
+        {
+          "en": "Form: verb stem + '-지 않아도 되다'. The variant '안 + -아/어도 되다' (안 가도 돼요) means the same and is very common in speech.",
+          "ne": "रूप: क्रिया + '-지 않아도 되다'। '안 + -아/어도 되다' (안 가도 돼요) पनि उही अर्थमा बोलचालमा धेरै प्रयोग हुन्छ।"
+        },
+        {
+          "en": "Do not confuse the three: '-지 않아도 되다' = don't have to (no obligation); '-아/어도 되다' = may (permission); '-(으)면 안 되다' = must not (prohibition).",
+          "ne": "तीन रूप नझुक्किनुहोस्: '-지 않아도 되다' = गर्नु पर्दैन (बाध्यता छैन); '-아/어도 되다' = गर्न मिल्छ (अनुमति); '-(으)면 안 되다' = गर्न हुँदैन (निषेध)।"
+        },
+        {
+          "en": "Past exists: '-지 않아도 됐다' — '어제 일찍 가지 않아도 됐어요' (I didn't have to go early yesterday).",
+          "ne": "भूतकाल छ: '-지 않아도 됐다' — '어제 일찍 가지 않아도 됐어요' (हिजो चाँडै जानु परेन)।"
+        },
+        {
+          "en": "Following clause: plain statement is allowed and is the natural use (a statement of permission — '가지 않아도 돼요'); a question is allowed only as this ending's own question form ('가지 않아도 돼요?'); a command, a request, a suggestion, and a prohibition do not follow — they are not natural after a permission statement (for prohibition use '-(으)면 안 되다' instead).",
+          "ne": "पछिको वाक्य: साधारण कथन (plain statement) मिल्छ र यही नै स्वाभाविक प्रयोग हो (अनुमतिको कथन — '가지 않아도 돼요'); प्रश्न (question) यसै रूपको प्रश्न रूपले मात्र मिल्छ ('가지 않아도 돼요?'); आदेश (command), अनुरोध (request), सुझाव (suggestion) र निषेध (prohibition) पछि आउँदैनन् — अनुमतिको कथनपछि ती स्वाभाविक छैनन् (निषेधका लागि '-(으)면 안 되다' प्रयोग गर्नुहोस्)।"
+        }
+      ],
+      "meaning_en": "'Don't have to' / 'need not (do something)': expresses that there is no obligation or necessity to do something.",
+      "meaning_ko": "어떤 일을 하지 않아도 괜찮다는 뜻으로, 의무나 필요가 없음을 나타낸다.",
+      "meaning_ne": "‘…गर्नु पर्दैन / नगरे पनि हुन्छ’ भन्ने अर्थ — कुनै काम गर्न बाध्यता वा आवश्यकता छैन भनेर देखाउँछ।",
+      "mistakes": "'-아/어도 되다'(अनुमति, may) र '-(으)면 안 되다'(निषेध, must not) सँग नझुक्किनुहोस्: '-지 않아도 되다' = गर्नु पर्दैन, '-아/어도 되다' = गर्न मिल्छ, '-(으)면 안 되다' = गर्न हुँदैन।",
+      "person": "all",
+      "person_note": "सबै व्यक्तिमा प्रयोग हुन्छ (1st/2nd/3rd)।",
+      "source_page": 179,
+      "structure": "동사 어간 + -지 않다 + -아/어도 되다 → -지 않아도 되다. 받침과 무관하게 항상 '-지 않아도 되다'. '안 + -아/어도 되다'(안 가도 돼요)도 같은 뜻으로 자주 쓰인다.",
+      "tense_note": "과거형 '-지 않아도 됐다'가 있다 — '어제 일찍 가지 않아도 됐어요.' (हिजो चाँडै जानु परेन।)",
+      "tense_past": "yes",
+      "unit": 7,
+      "unit_title": "요구와 의무, 허가와 금지",
+      "unit_title_en": "Demands and Obligations, Permission and Prohibition"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I'll open the door for you.",
+          "ko": "제가 문을 열어 줄게요.",
+          "ne": "म ढोका खोलिदिन्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "Shall I carry the heavy bag for you?",
+          "ko": "무거운 짐을 들어 줄까요?",
+          "ne": "गह्रौं झोला उठाइदिऊँ?",
+          "source": "authored"
+        },
+        {
+          "en": "I'll help you tomorrow.",
+          "ko": "제가 내일 도와줄게요.",
+          "ne": "म भोलि सहयोग गरिदिन्छु।",
+          "source": "authored"
+        }
+      ],
+      "form": "-아/어 줄게요 / -아/어 줄까요?",
+      "id": "G-KG-U10-01",
+      "key_points": [
+        {
+          "en": "This is the speaker's promise or offer, 1st person only: the speaker will do the action for the listener. Never use it for the listener's action.",
+          "ne": "यो वक्ताको वाचा/प्रस्ताव हो, केवल 1인칭 — वक्ता आफैँले सुन्ने व्यक्तिका लागि काम गर्छु भन्छ। सुन्ने व्यक्तिको काममा कहिल्यै प्रयोग हुँदैन।"
+        },
+        {
+          "en": "'-아/어 줄까요?' asks whether the listener wants the help: answer '네, 부탁해요' (yes, please) or '아니요, 괜찮아요' (no, it's fine).",
+          "ne": "'-아/어 줄까요?' ले सुन्ने व्यक्तिलाई सहयोग चाहिएको हो कि होइन भनेर सोध्छ: उत्तर '네, 부탁해요' (हुन्छ, कृपया) वा '아니요, 괜찮아요' (पर्दैन, ठीक छ)।"
+        },
+        {
+          "en": "Past does not attach: this is a future-oriented promise, so '*도와 줬게요' is wrong. For a past favour use '-아/어 줬어요' ('도와줬어요').",
+          "ne": "भूतकाल लाग्दैन: यो भविष्यतर्फको वाचा हो, त्यसैले '*도와 줬게요' गलत हो। विगतमा गरेको सहयोगका लागि '-아/어 줬어요' ('도와줬어요') प्रयोग गर्नुहोस्।"
+        },
+        {
+          "en": "Following clause: there is no following clause — this form itself ends the sentence as a promise ('-아/어 줄게요') or a question ('-아/어 줄까요?'); a plain statement, a command, a request, a suggestion, and a prohibition do not follow it.",
+          "ne": "पछिको वाक्य: यस रूपपछि अर्को वाक्य आउँदैन — यो रूप आफैँले वाक्य टुङ्ग्याउँछ, वाचा ('-아/어 줄게요') वा प्रश्न ('-아/어 줄까요?') का रूपमा; साधारण कथन (plain statement), आदेश (command), अनुरोध (request), सुझाव (suggestion) र निषेध (prohibition) पछि आउँदैनन्।"
+        }
+      ],
+      "meaning_en": "The speaker's promise or offer to do something for the listener ('I'll do it for you'), and '-아/어 줄까요?' asks whether the listener wants the speaker to do it ('Shall I do it for you?').",
+      "meaning_ko": "화자가 듣는 사람을 위해 어떤 일을 해 주겠다고 약속하거나, 해 줄지를 물어보는 표현이다.",
+      "meaning_ne": "‘म तपाईंका लागि … गरिदिन्छु’ भनेर वक्ताले वाचा/प्रस्ताव गर्ने रूप; ‘-아/어 줄까요?’ ले ‘म गरिदिऊँ?’ भनेर सोध्छ।",
+      "mistakes": "'-아/어 주세요'(सुन्ने व्यक्तिलाई अनुरोध — 'गरिदिनुहोस्') सँग दिशा उल्टो छ: '-아/어 줄게요'는 वक्ताले गर्छु भन्ने वाचा हो, अनुरोध होइन।",
+      "person": "1st_only",
+      "person_note": "केवल 1인칭 (वक्ता) — वक्ता आफैँले गर्ने कामको वाचा/प्रस्ताव हो; सुन्ने व्यक्तिको काममा प्रयोग हुँदैन।",
+      "source_page": 201,
+      "structure": "동사 어간 + -아/어 줄게요 (약속) / -아/어 줄까요? (제안·질문). '주다'의 축약형 '줄'이 들어간다. 보다 → 봐 줄게요, 먹다 → 먹어 줄게요.",
+      "tense_note": "미래를 향한 약속/제안이므로 과거형이 붙지 않는다 — '*도와 줬게요'는 틀린 말이다. 과거에 해 준 일은 '-아/어 줬어요'로 말한다.",
+      "tense_past": "no",
+      "unit": 10,
+      "unit_title": "요청과 도움",
+      "unit_title_en": "Making Requests and Assisting"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "Would you like some more coffee?",
+          "ko": "커피를 더 드시겠어요?",
+          "ne": "अझै कफी पिउनुहुन्छ?",
+          "source": "authored"
+        },
+        {
+          "en": "Would you like to come along?",
+          "ko": "같이 가시겠어요?",
+          "ne": "सँगै जानुहुन्छ?",
+          "source": "authored"
+        },
+        {
+          "en": "Would you like to sit here?",
+          "ko": "여기에 앉으시겠어요?",
+          "ne": "यहाँ बस्नुहुन्छ?",
+          "source": "authored"
+        }
+      ],
+      "form": "-(으)시겠어요?",
+      "id": "G-KG-U12-01",
+      "key_points": [
+        {
+          "en": "The honorific -시- is essential: it raises the listener. Dropping it ('*가겠어요?') is impolite to the person you are asking.",
+          "ne": "सम्मानजनक '-시-' अनिवार्य छ: यसले सुन्ने व्यक्तिलाई सम्मान गर्छ। यसलाई हटाउनु ('*가겠어요?') सुन्ने व्यक्तिप्रति असम्मानजनक हुन्छ।"
+        },
+        {
+          "en": "It asks the listener's intention ('Would you...?') and can also work as a polite suggestion or a soft request ('도와주시겠어요?' = 'Would you help me?').",
+          "ne": "यसले सुन्ने व्यक्तिको इच्छा सोध्छ ('तपाईं … गर्नुहुन्छ?') र विनम्र सुझाव वा नरम अनुरोधको काम पनि गर्छ ('도와주시겠어요?' = 'तपाईं सहयोग गर्नुहुन्छ?')।"
+        },
+        {
+          "en": "Past does not attach in this usage: it asks about a future intention, so there is no past form of '-(으)시겠어요?' as an intention question.",
+          "ne": "यस प्रयोगमा भूतकाल लाग्दैन: यसले भविष्यको इच्छा सोध्छ, त्यसैले इच्छा सोध्ने प्रश्नका रूपमा यसको भूतकाल हुँदैन।"
+        },
+        {
+          "en": "Following clause: there is no following clause — this form itself ends the sentence as a question; a plain statement, a command, a request, a suggestion, and a prohibition do not follow it.",
+          "ne": "पछिको वाक्य: यस रूपपछि अर्को वाक्य आउँदैन — यो रूप आफैँले प्रश्नका रूपमा वाक्य टुङ्ग्याउँछ; साधारण कथन (plain statement), आदेश (command), अनुरोध (request), सुझाव (suggestion) र निषेध (prohibition) पछि आउँदैनन्।"
+        }
+      ],
+      "meaning_en": "A polite question asking the listener's intention or willingness ('Would you...?'). The honorific -시- raises the listener. It can also sound like a polite suggestion or request.",
+      "meaning_ko": "듣는 사람의 의향이나 의지를 정중하게 묻는 표현이다. '…하시겠어요?'는 '…하실 건가요?'라는 뜻이며, 정중한 제안이나 요청의 뉘앙스도 있다.",
+      "meaning_ne": "सुन्ने व्यक्तिको इच्छा/मनसाय सम्मानपूर्वक सोध्ने रूप — ‘तपाईं … गर्नुहुन्छ?’; विनम्र सुझाव वा अनुरोधको भाव पनि दिन्छ।",
+      "mistakes": "'-시-' छुटाउनु हुँदैन (*가겠어요? — सुन्ने व्यक्तिलाई सम्मान नगर्ने रूप)। 1인칭मा प्रयोग हुँदैन। '-(으)ㄹ까요?'(의견/제안)와 फरक छ — '-(으)시겠어요?'는 존칭 포함को 정중한 질문이다।",
+      "person": "2nd_only",
+      "person_note": "केवल 2인칭 (सुन्ने व्यक्ति) — वक्ता आफ्नाबारे '*제가 가시겠어요?' भन्न सक्दैन; '-시-' ले सुन्ने व्यक्तिलाई सम्मान गर्छ।",
+      "source_page": 217,
+      "structure": "동사/형용사 어간 + -(으)시겠어요? 받침 없는 어간 + -시겠어요?, 받침 있는 어간 + -으시겠어요?. 존칭 '-시-'가 들어간다.",
+      "tense_note": "이 용법에서는 과거형이 붙지 않는다 — 의향/इच्छा सोध्ने 미래 지향적 질문이기 때문이다.",
+      "tense_past": "no",
+      "unit": 12,
+      "unit_title": "의견 묻기와 제안",
+      "unit_title_en": "Asking Opinions and Making Suggestions"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I wonder if it will rain tomorrow.",
+          "ko": "내일 비가 올까요?",
+          "ne": "भोलि पानी पर्छ होला?",
+          "source": "authored"
+        },
+        {
+          "en": "I wonder if he has arrived already.",
+          "ko": "벌써 도착했을까요?",
+          "ne": "के ऊ आइपुगिसक्यो होला?",
+          "source": "authored"
+        },
+        {
+          "en": "I wonder if the exam will be difficult.",
+          "ko": "시험이 어려울까요?",
+          "ne": "परीक्षा गाह्रो हुन्छ होला?",
+          "source": "authored"
+        }
+      ],
+      "form": "-(으)ㄹ까요?",
+      "id": "G-KG-U17-01",
+      "key_points": [
+        {
+          "en": "This is the conjecture use (use 3), distinct from use 1 (asking an opinion — '뭐 먹을까요?') and use 2 (suggestion 'shall we' — '같이 갈까요?'). Conjecture guesses about something nobody can choose, like the weather or a past event.",
+          "ne": "यो अनुमानको प्रयोग (तेस्रो प्रयोग) हो — 1 (राय सोध्ने — '뭐 먹을까요?') र 2 (सुझाव 'shall we' — '같이 갈까요?') भन्दा फरक छ। अनुमान भनेको कसैले छान्न नसक्ने कुरा (मौसम, विगतको घटना) बारेको अड्कल हो।"
+        },
+        {
+          "en": "Past guesses use '-았/었을까요?': '벌써 도착했을까요?' (I wonder if he has arrived already). Present/future guesses use '-(으)ㄹ까요?': '내일 비가 올까요?'.",
+          "ne": "विगतको अनुमानमा '-았/었을까요?' — '벌써 도착했을까요?' (के ऊ आइपुगिसक्यो होला?)। वर्तमान/भविष्यको अनुमानमा '-(으)ㄹ까요?' — '내일 비가 올까요?'।"
+        },
+        {
+          "en": "Adjective stems can take it too when guessing about a state: '춥다 → 추울까요?' (I wonder if it will be cold).",
+          "ne": "अवस्थाबारे अनुमान गर्दा विशेषणमा पनि लाग्छ: '춥다 → 추울까요?' (जाडो हुन्छ होला?)।"
+        },
+        {
+          "en": "Following clause: there is no following clause — this form itself ends the sentence as a question ('I wonder if...?'); a plain statement, a command, a request, a suggestion, and a prohibition do not follow it.",
+          "ne": "पछिको वाक्य: यस रूपपछि अर्को वाक्य आउँदैन — यो रूप आफैँले प्रश्नका रूपमा ('…होला?') वाक्य टुङ्ग्याउँछ; साधारण कथन (plain statement), आदेश (command), अनुरोध (request), सुझाव (suggestion) र निषेध (prohibition) पछि आउँदैनन्।"
+        }
+      ],
+      "meaning_en": "Conjecture: the speaker wonders or guesses about a present, future or past situation and asks the listener's opinion — 'I wonder if... / Do you think...?'",
+      "meaning_ko": "화자가 어떤 사실에 대해 추측하거나 궁금해하면서 듣는 사람에게 의견을 묻는 표현이다. '…일까요? (I wonder if...)'라는 뜻이다.",
+      "meaning_ne": "अनुमान/अड्कल — वक्ता कुनै कुराबारे अनुमान गर्दै ‘…होला? / …हुन्छ होला?’ भनेर सोध्छ।",
+      "mistakes": "-(으)ㄹ까요? 1 (의견 묻기 — '뭐 먹을까요?') र 2 (제안 — '같이 갈까요?') सँग नझुक्किनुहोस्: 3번 추측은 कसैले छान्न नसक्ने कुरा (मौसम, 과거 घटना) बारेको अनुमान हो।",
+      "person": "all",
+      "person_note": "अनुमानको विषय जोसुकै हुन सक्छ — तेस्रो व्यक्ति, मौसम, घटना, वा वक्ता आफ्नो सम्भावना ('제가 잘할 수 있을까요?')। तर वक्ता आफ्नो 'इरादा/योजना' सोध्ने होइन — त्यो -(으)ㄹ까요? 1 (의견) र 2 (제안 'shall we') को काम हो।",
+      "source_page": 265,
+      "structure": "동사/형용사 어간 + -(으)ㄹ까요? 받침 없는 어간 + -ㄹ까요?, 받침 있는 어간 + -을까요?, ㄹ 받침 어간 + -까요?. 과거 추측은 어간 + -았/었을까요? (도착했을까요?).",
+      "tense_note": "과거에 대한 추측은 '-았/었을까요?' — '벌써 도착했을까요?' (के ऊ आइपुगिसक्यो होला?)। 현재/미래 추측은 '-(으)ㄹ까요?' — '내일 비가 올까요?'।",
+      "tense_past": "yes",
+      "unit": 17,
+      "unit_title": "추측",
+      "unit_title_en": "Conjecture"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "My younger sibling is afraid of dogs.",
+          "ko": "동생이 개를 무서워해요.",
+          "ne": "भाइ कुकुरसँग डराउँछ।",
+          "source": "authored"
+        },
+        {
+          "en": "The children were happy when they got presents.",
+          "ko": "아이들이 선물을 받고 기뻐했어요.",
+          "ne": "बच्चाहरूले उपहार पाएर खुसी भए।",
+          "source": "authored"
+        },
+        {
+          "en": "My friend is sad because he failed the exam.",
+          "ko": "친구가 시험에 떨어져서 슬퍼해요.",
+          "ne": "साथी परीक्षामा फेल भएर दुःखी छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "-아/어하다",
+      "id": "G-KG-U18-01",
+      "key_points": [
+        {
+          "en": "Adjective → verb for someone else's feelings: use the plain adjective for yourself ('저는 기뻐요') and '-아/어하다' for a third person ('동생이 기뻐해요').",
+          "ne": "विशेषण → क्रिया, अरू व्यक्तिको भावनाका लागि: आफ्ना लागि साधारण विशेषण ('저는 기뻐요'), तेस्रो व्यक्तिका लागि '-아/어하다' ('동생이 기뻐해요')।"
+        },
+        {
+          "en": "As a verb it takes an object with 을/를: '개를 무서워해요' (afraid of dogs), not '*개가 무서워해요'. Past attaches normally: '기뻐했어요'.",
+          "ne": "क्रिया भएकाले यसको कर्म (object) मा '을/를' लाग्छ: '개를 무서워해요' ('*개가 무서워해요' होइन)। भूतकाल सामान्य रूपमा लाग्छ: '기뻐했어요'।"
+        },
+        {
+          "en": "Only feeling adjectives take '-아/어하다' (기쁘다, 슬프다, 무섭다, 싫다). Non-emotional adjectives like 하얗다 (white) or 멋있다 (cool) never take it.",
+          "ne": "भावना जनाउने विशेषणमा मात्र '-아/어하다' लाग्छ (기쁘다, 슬프다, 무섭다, 싫다)। भावना नजनाउने विशेषण (하얗다, 멋있다) मा कहिल्यै लाग्दैन।"
+        },
+        {
+          "en": "Following clause: '-아/어하다' is a verb stem, not a sentence ending, so there is no restriction from this form itself — a plain statement ('기뻐해요') and a question ('기뻐해요?') are allowed; a command, a request, a suggestion, and a prohibition are grammatically possible with the right endings but are not natural for feelings, because you cannot order someone to feel something.",
+          "ne": "पछिको वाक्य: '-아/어하다' वाक्यको अन्त्य होइन, क्रियाको मूल रूप हो, त्यसैले यस रूपबाट कुनै रोक छैन — साधारण कथन (plain statement, '기뻐해요') र प्रश्न (question, '기뻐해요?') मिल्छन्; आदेश (command), अनुरोध (request), सुझाव (suggestion) र निषेध (prohibition) व्याकरणतः अन्त्य थपेर सम्भव छन्, तर भावनाका लागि स्वाभाविक छैनन् — कसैलाई भावना महसुस गर्न आदेश दिन सकिँदैन।"
+        }
+      ],
+      "meaning_en": "Turns a feeling adjective into a verb describing someone else's feeling or visible reaction ('to show/feel an emotion', for others): 기쁘다 'to be happy' → 기뻐하다 'to rejoice / to look happy'.",
+      "meaning_ko": "감정을 나타내는 형용사에 붙어, 다른 사람이 느끼는 감정이나 보이는 반응을 동사로 표현한다. '…해 하다'는 '(다른 사람이) …한 감정을 보이다'라는 뜻이다.",
+      "meaning_ne": "भावना जनाउने विशेषणलाई क्रिया बनाउँछ — अरू व्यक्तिको भावना/प्रतिक्रिया देखाउन: 기쁘다 ‘खुसी हुनु’ → 기뻐하다 ‘खुसी देखिनु/रमाउनु’।",
+      "mistakes": "1인칭मा '*나는 기뻐해요' ✗ → '나는 기뻐요'। 대상 (object) 에는 '을/를' — '개를 무서워해요' ('*개가 무서워해요' होइन)। भावना नजनाउने विशेषण (하얗다, 멋있다) मा लाग्दैन।",
+      "person": "2nd_3rd",
+      "person_note": "कथन (statement) मा केवल 3인칭 — '그는 기뻐해요.' प्रश्नमा 2인칭लाई पनि सोध्न सकिन्छ ('왜 그렇게 슬퍼해요?')। 1인칭मा कहिल्यै हुँदैन — '나는 기뻐요' भनिन्छ, '*나는 기뻐해요' होइन।",
+      "source_page": 281,
+      "structure": "감정 형용사 어간 + -아/어하다. '-아/어'형에서 '요'를 빼고 '하다'를 붙인다: 기쁘다 → 기뻐하다, 슬프다 → 슬퍼하다, 무섭다 → 무서워하다.",
+      "tense_note": "일반 동사 भएकाले 과거형이 붙는다 — '아이들이 선물을 받고 기뻐했어요.'",
+      "tense_past": "yes",
+      "unit": 18,
+      "unit_title": "품사 전환",
+      "unit_title_en": "Changes in Parts of Speech"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "It takes an hour to get to the office.",
+          "ko": "회사까지 가는 데 한 시간 걸려요.",
+          "ne": "कम्पनीसम्म जान एक घण्टा लाग्छ।",
+          "source": "authored"
+        },
+        {
+          "en": "It took three days to read this book.",
+          "ko": "이 책을 읽는 데 3일이 걸렸어요.",
+          "ne": "यो किताब पढ्न तीन दिन लाग्यो।",
+          "source": "authored"
+        },
+        {
+          "en": "It costs a lot of money to learn Korean.",
+          "ko": "한국어를 배우는 데 돈이 많이 들어요.",
+          "ne": "कोरियन सिक्न धेरै पैसा लाग्छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "-는 데 걸리다 / -는 데 들다",
+      "id": "G-KG-U20-01",
+      "key_points": [
+        {
+          "en": "Structure: verb stem + '-는 데' + 걸리다/들다, then the amount of time or money: '가는 데 한 시간 걸려요' (it takes an hour to go).",
+          "ne": "संरचना: क्रिया + '-는 데' + 걸리다/들다, त्यसपछि समय वा पैसाको मात्रा: '가는 데 한 시간 걸려요' (जान एक घण्टा लाग्छ)।"
+        },
+        {
+          "en": "걸리다 is for time only; 들다 is for time or cost: '돈이 많이 들어요' (it costs a lot), never '*돈이 많이 걸려요'.",
+          "ne": "걸리다 समयका लागि मात्र; 들다 समय वा पैसाका लागि: '돈이 많이 들어요' (धेरै पैसा लाग्छ), '*돈이 많이 걸려요' कहिल्यै होइन।"
+        },
+        {
+          "en": "Past attaches: '걸렸어요 / 들었어요' — '이 책을 읽는 데 3일이 걸렸어요' (it took three days to read this book).",
+          "ne": "भूतकाल लाग्छ: '걸렸어요 / 들었어요' — '이 책을 읽는 데 3일이 걸렸어요' (यो किताब पढ्न तीन दिन लाग्यो)।"
+        },
+        {
+          "en": "Following clause: this form ends the sentence as a plain statement of time or cost ('한 시간 걸려요'); a question is allowed as this form's own question form ('얼마나 걸려요?'); a command, a request, a suggestion, and a prohibition do not follow — it states a fact about time/cost, it does not tell anyone to do anything.",
+          "ne": "पछिको वाक्य: यो रूप समय/खर्चको साधारण कथन (plain statement, '한 시간 걸려요') का रूपमा वाक्य टुङ्ग्याउँछ; प्रश्न (question) यसै रूपको प्रश्न रूपले मिल्छ ('얼마나 걸려요?'); आदेश (command), अनुरोध (request), सुझाव (suggestion) र निषेध (prohibition) पछि आउँदैनन् — यसले समय/खर्चको तथ्य बताउँछ, कसैलाई केही गर्न भन्दैन।"
+        }
+      ],
+      "meaning_en": "'It takes [time/money] to do something.' 걸리다 is used for time; 들다 for time or cost/money.",
+      "meaning_ko": "어떤 일을 하는 데 시간이나 돈이 얼마나 드는지 나타낸다. '걸리다'는 시간에만, '들다'는 시간이나 비용에 쓴다.",
+      "meaning_ne": "‘कुनै काम गर्न कति समय/पैसा लाग्छ’ भन्ने अर्थ — 걸리다 समयका लागि मात्र, 들다 समय वा पैसाका लागि।",
+      "mistakes": "'걸리다'는 시간에만 — '*돈이 많이 걸려요' ✗ → '돈이 많이 들어요'। '-는 데'(장소/것 — '공부하는 데' = पढ्ने ठाउँ) सँग नझुक्किनुहोस्; यहाँ '-는 데 걸리다/들다'는 시간/खर्च의 निश्चित 표현 हो।",
+      "person": "all",
+      "person_note": "सबै व्यक्तिमा प्रयोग हुन्छ।",
+      "source_page": 299,
+      "structure": "동사 어간 + -는 데 + 걸리다/들다. 시간·비용이 얼마나 드는지 말한다. '-는 데' 뒤에 시간 ('한 시간')이나 비용 ('돈이 많이')이 온다.",
+      "tense_note": "과거형이 붙는다 — '가는 데 한 시간이 걸렸어요.'",
+      "tense_past": "yes",
+      "unit": 20,
+      "unit_title": "정보 확인",
+      "unit_title_en": "Confirming Information"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "This place is so beautiful, I see!",
+          "ko": "여기가 이렇게 예쁘군요.",
+          "ne": "यहाँ त यति राम्रो पो रहेछ!",
+          "source": "authored"
+        },
+        {
+          "en": "Spring has already come, I see!",
+          "ko": "벌써 봄이 왔군요.",
+          "ne": "वसन्त त आइसकेछ!",
+          "source": "authored"
+        },
+        {
+          "en": "So he was a teacher!",
+          "ko": "그분이 선생님이었군요.",
+          "ne": "उहाँ त शिक्षक पो हुनुहुँदो रहेछ!",
+          "source": "authored"
+        }
+      ],
+      "form": "-군요 / -는군요",
+      "id": "G-KG-U21-01",
+      "key_points": [
+        {
+          "en": "Attachment: adjectives take -군요 (예쁘군요), verbs take -는군요 (가는군요), nouns take -이군요 (학생이군요). Past is -았/었군요 (맛있었군요).",
+          "ne": "जोडिने नियम: विशेषण पछि -군요 (예쁘군요), क्रिया पछि -는군요 (가는군요), नाम पछि -이군요 (학생이군요) लाग्छ। भूतकाल -았/었군요 हुन्छ (맛있었군요)।"
+        },
+        {
+          "en": "Use -군요 for something you have just discovered or realised — a new fact, not something you already knew well. It carries a stronger sense of realisation than -네요.",
+          "ne": "भर्खरै थाहा पाएको कुरामा मात्र -군요 प्रयोग गर्नुहोस् — पहिलेदेखि नै थाहा भएको कुरामा होइन। -네요 भन्दा -군요 मा 'नयाँ कुरा थाहा पाएँ' भन्ने भाव बलियो हुन्छ।"
+        },
+        {
+          "en": "-네요 is the lighter, more immediate discovery ending, often shared on the spot ('맛있네요!'); -군요 sounds like a realisation about something previously unknown ('맛있었군요' — so it was delicious). Do not swap them freely.",
+          "ne": "-네요 हल्का र तत्कालको भाव हो — त्यही ठाउँमा सँगै महसुस गर्दा ('맛있네요!') प्रयोग हुन्छ; -군요 पहिले थाहा नभएको कुरा थाहा पाएको भाव हो। दुवैलाई जथाभावी साट्नु हुँदैन।"
+        },
+        {
+          "en": "Following clause: there is no following clause — '-군요/-는군요' itself ends the sentence, and the ending itself makes it an exclamatory statement of discovery or surprise, not a question, command, request or suggestion.",
+          "ne": "पछिको वाक्य: यस रूपपछि अर्को वाक्य आउँदैन — '-군요/-는군요' आफैँले वाक्य टुङ्ग्याउँछ; यसले वाक्यलाई छक्क परेको कथन (exclamation) बनाउँछ, प्रश्न / आदेश / अनुरोध / सुझाव बनाउँदैन।"
+        }
+      ],
+      "meaning_en": "A sentence-final ending used when the speaker expresses fresh realisation or surprise on discovering something they did not know or did not expect.",
+      "meaning_ko": "화자가 방금 알게 된 사실이나 예상하지 못한 것을 보고 놀람이나 새로운 깨달음을 나타낼 때 쓰는 종결 어미이다.",
+      "meaning_ne": "भर्खरै थाहा पाएको वा नसोचेको कुरा देखेर छक्क पर्दा / 'अहो, त्यस्तो पो रहेछ!' भन्ने भावमा वाक्यको अन्त्यमा प्रयोग हुने रूप हो।",
+      "mistakes": "형용사 뒤에는 '-군요', 동사 뒤에는 '-는군요', 명사 뒤에는 '-이군요'를 쓴다. ✗ 예쁘는군요, ✗ 가군요, ✗ 학생군요 → 예쁘군요, 가는군요, 학생이군요.",
+      "person": "all",
+      "person_note": "발견·놀람은 말하는 사람의 것이므로, 주어는 1인칭·2인칭·3인칭 모두 가능하다।",
+      "source_page": 304,
+      "structure": "형용사 어간 + -군요 (예쁘군요). 동사 어간 + -는군요 (가는군요). 명사 + -이군요 (학생이군요). 과거형: -았/었군요 (맛있었군요, 갔군요).",
+      "tense_note": "과거형은 '-았/었군요' — '맛있었군요', '그분이 선생님이었군요'।",
+      "tense_past": "yes",
+      "unit": 21,
+      "unit_title": "발견과 놀람",
+      "unit_title_en": "Discovery and Surprise"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "Is this outfit pretty?",
+          "ko": "이 옷이 예쁜가요?",
+          "ne": "यो लुगा राम्रो छ?",
+          "source": "authored"
+        },
+        {
+          "en": "Will it rain tomorrow?",
+          "ko": "내일 비가 오나요?",
+          "ne": "भोलि पानी पर्छ?",
+          "source": "authored"
+        },
+        {
+          "en": "Did you go to the meeting yesterday?",
+          "ko": "어제 회의에 갔나요?",
+          "ne": "हिजो बैठकमा जानुभयो?",
+          "source": "authored"
+        }
+      ],
+      "form": "-(으)ㄴ가요? / -나요?",
+      "id": "G-KG-U22-01",
+      "key_points": [
+        {
+          "en": "Attachment: verbs take -나요? (가나요?, 먹나요?); adjectives and nouns take -(으)ㄴ가요? (예쁜가요?, 학생인가요?). 있다/없다 behave like verbs: 있나요?",
+          "ne": "जोडिने नियम: क्रिया पछि -나요? (가나요?, 먹나요?), विशेषण वा नाम पछि -(으)ㄴ가요? (예쁜가요?, 학생인가요?) लाग्छ। 있다/없다 मा क्रियाजस्तै -나요? लाग्छ (있나요?)।"
+        },
+        {
+          "en": "This ending is softer than -아/어요? and much softer than -습니까?, so it suits polite confirmation and asking strangers or seniors without sounding pushy.",
+          "ne": "यो रूप -아/어요? भन्दा नरम र -습니까? भन्दा धेरै नरम छ — त्यसैले विनम्र रूपमा पुष्टि गर्न वा अपरिचित / ठूलो मानिसलाई सोध्न उपयुक्त छ।"
+        },
+        {
+          "en": "Past attaches before the ending: adjectives 예뻤나요?, verbs 갔나요?. Future is expressed with -(으)ㄹ까요? instead, not with this ending.",
+          "ne": "भूतकाल अन्त्यअघि लाग्छ: विशेषण 예뻤나요?, क्रिया 갔나요?। भविष्य सोध्न यो रूप होइन, -(으)ㄹ까요? प्रयोग हुन्छ।"
+        },
+        {
+          "en": "Following clause: there is no following clause — '-(으)ㄴ가요?/-나요?' itself ends the sentence, and the ending itself makes it a (soft, polite) question, not a statement, command, request or suggestion.",
+          "ne": "पछिको वाक्य: यस रूपपछि अर्को वाक्य आउँदैन — '-(으)ㄴ가요?/-나요?' आफैँले वाक्य टुङ्ग्याउँछ; यसले वाक्यलाई नरम र विनम्र प्रश्न बनाउँछ, कथन / आदेश / अनुरोध / सुझाव बनाउँदैन।"
+        }
+      ],
+      "meaning_en": "A soft, polite question ending. Used to ask or confirm something gently, with less pressure than -아/어요? or -습니까?",
+      "meaning_ko": "부드럽고 정중하게 묻는 의문형 종결 어미이다. 상대방에게 부담을 주지 않고 묻거나 확인하고 싶을 때 사용한다.",
+      "meaning_ne": "नरम र विनम्र तरिकाले सोध्ने प्रश्नको रूप हो — '...हो?' भनेर हल्का रूपमा सोध्न वा पुष्टि गर्न प्रयोग हुन्छ।",
+      "mistakes": "동사 뒤에는 '-나요?', 형용사·명사 뒤에는 '-(으)ㄴ가요?'를 쓴다. ✗ 가은가요?, ✗ 예쁘나요? → 가나요?, 예쁜가요? (있다/없다는 동사처럼 '-나요?'를 쓴다: 있나요?)",
+      "person": "all",
+      "person_note": "모든 인칭에 대해 물을 수 있다 (1인칭·2인칭·3인칭 모두 가능).",
+      "source_page": 310,
+      "structure": "형용사·명사 + -(으)ㄴ가요? (예쁜가요?, 학생인가요?). 동사 + -나요? (가나요?, 먹나요?). 과거형: 형용사 예뻤나요?, 동사 갔나요?",
+      "tense_note": "과거형: 형용사 '예뻤나요?', 동사 '갔나요?' — 과거 '-았/었-'이 붙는다.",
+      "tense_past": "yes",
+      "unit": 22,
+      "unit_title": "기타 어미",
+      "unit_title_en": "Additional Endings"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I'm busy right now; I'll call you later.",
+          "ko": "지금 바쁜데요, 나중에 전화할게요.",
+          "ne": "अहिले म व्यस्त छु, पछि फोन गर्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "I'm studying Korean — could you recommend a good book?",
+          "ko": "한국어를 공부하는데요, 좋은 책을 추천해 주세요.",
+          "ne": "म कोरियन पढ्दै छु, राम्रो किताब सिफारिस गरिदिनुहोस्।",
+          "source": "authored"
+        },
+        {
+          "en": "It rained yesterday, so the road was very slippery.",
+          "ko": "어제 비가 왔는데요, 길이 많이 미끄러웠어요.",
+          "ne": "हिजो पानी परेको थियो, बाटो धेरै चिप्लो थियो।",
+          "source": "authored"
+        }
+      ],
+      "form": "-(으)ㄴ/는데요",
+      "id": "G-KG-U22-02",
+      "key_points": [
+        {
+          "en": "Attachment: adjectives take -(으)ㄴ데요 (예쁜데요), verbs take -는데요 (가는데요), nouns take -인데요 (학생인데요). Past is -았/었는데요 (갔는데요).",
+          "ne": "जोडिने नियम: विशेषण पछि -(으)ㄴ데요 (예쁜데요), क्रिया पछि -는데요 (가는데요), नाम पछि -인데요 (학생인데요) लाग्छ। भूतकाल -았/었는데요 हुन्छ (갔는데요)।"
+        },
+        {
+          "en": "Two main uses: (1) give background before what you really want to say — a request or question; (2) soften a plain statement so it sounds less blunt ('바쁜데요.' on its own is a soft statement).",
+          "ne": "दुई मुख्य प्रयोग: (१) आफूले साँच्चै भन्न खोजेको अनुरोध वा प्रश्नअघि पृष्ठभूमि दिनु; (२) सिधा भनाइलाई नरम बनाउनु ('바쁜데요।' एक्लै पनि नरम कथन हुन्छ)।"
+        },
+        {
+          "en": "Do not treat -는데요 as a sentence-ender that needs nothing after it when you are setting up a request — the listener waits for the main clause ('...데요, ~해 주세요').",
+          "ne": "अनुरोधको पृष्ठभूमि दिँदा -는데요 मा मात्र वाक्य नसक्नुहोस् — सुन्ने मानिसले मुख्य कुरा ('...데요, ~해 주세요') को प्रतीक्षा गर्छ।"
+        },
+        {
+          "en": "Following clause: typically a request, question, suggestion or plain statement follows ('공부하는데요, 추천해 주세요'); a command or prohibition can also follow ('비가 오는데요, 우산 가져가세요' / '나가지 마세요'). No sentence type is banned after -는데요 — it is a background clause, so effectively no restriction, but a request or question is the most typical follower.",
+          "ne": "पछिको वाक्य: प्रायः अनुरोध, प्रश्न, सुझाव वा कथन आउँछ ('공부하는데요, 추천해 주세요'); आदेश वा निषेध पनि आउन सक्छ ('비가 오는데요, 우산 가져가세요' / 'नजानुहोस्)। -는데요 पछि कुनै पनि वाक्य प्रकार आउन सक्छ — यो पृष्ठभूमि खण्ड भएकाले कुनै रोक छैन, तर सबैभन्दा धेरै अनुरोध वा प्रश्न आउँछ।"
+        }
+      ],
+      "meaning_en": "Gives background information before a request, question or explanation that follows, or softens a plain statement.",
+      "meaning_ko": "뒤에 이어질 말(요청·질문·설명)의 배경 정보를 먼저 제시하거나, 단정적인 말을 부드럽게 완화하는 연결 어미이다.",
+      "meaning_ne": "पछि आउने अनुरोध / प्रश्न / कुराको पृष्ठभूमि जानकारी पहिले दिने, वा सिधा भनाइलाई नरम बनाउने रूप हो — 'कुरा के हो भने...' भन्ने भाव।",
+      "mistakes": "형용사 뒤에는 '-(으)ㄴ데요', 동사 뒤에는 '-는데요', 명사 뒤에는 '-인데요'를 쓴다. ✗ 예쁘는데요, ✗ 학생는데요 → 예쁜데요, 학생인데요.",
+      "person": "all",
+      "person_note": "배경 정보를 말하는 사람의 입장에서 쓰며, 주어는 1인칭·2인칭·3인칭 모두 가능하다.",
+      "source_page": 312,
+      "structure": "형용사 어간 + -(으)ㄴ데요 (예쁜데요). 동사 어간 + -는데요 (가는데요). 명사 + -인데요 (학생인데요). 과거형: -았/었는데요 (갔는데요, 예뻤는데요).",
+      "tense_note": "과거형은 '-았/었는데요' — '어제 비가 왔는데요', '예뻤는데요'।",
+      "tense_past": "yes",
+      "unit": 22,
+      "unit_title": "기타 어미",
+      "unit_title_en": "Additional Endings"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "Minjun said, 'I'll go tomorrow.'",
+          "ko": "민준 씨가 '내일 간다'고 했어요.",
+          "ne": "मिन्जुनले 'भोलि जान्छु' भने।",
+          "source": "authored"
+        },
+        {
+          "en": "The teacher said, 'Sit down.'",
+          "ko": "선생님이 '앉으라'고 하셨어요.",
+          "ne": "शिक्षकले 'बस्नुहोस्' भन्नुभयो।",
+          "source": "authored"
+        },
+        {
+          "en": "My friend said, 'Let's go together.'",
+          "ko": "친구가 '같이 가자'고 했어요.",
+          "ne": "साथीले 'सँगै जाऔँ' भन्यो।",
+          "source": "authored"
+        }
+      ],
+      "form": "직접 인용 (-라고/-(이)라고, -다고, -자고, -냐고)",
+      "id": "G-KG-U23-01",
+      "key_points": [
+        {
+          "en": "Four types by quoted sentence: statement -다고 (간다고 했어요), question -냐고 (가냐고 물었어요), command -(으)라고 (앉으라고 했어요), suggestion -자고 (가자고 했어요). Nouns take -(이)라고 (학생이라고 했어요).",
+          "ne": "उद्धृत वाक्यअनुसार चार प्रकार: कथन -다고 (간다고 했어요), प्रश्न -냐고 (가냐고 물었어요), आदेश -(으)라고 (앉으라고 했어요), सुझाव -자고 (가자고 했어요)। नाम पछि -(이)라고 लाग्छ (학생이라고 했어요)।"
+        },
+        {
+          "en": "Tense lives INSIDE the quoted clause, before the quotation ending: 갔다고 (past), 간다고 (present), 갈 거라고 (future). The quotation ending itself never takes past tense.",
+          "ne": "काल (tense) उद्धृत खण्डभित्रै हुन्छ — 갔다고 (भूत), 간다고 (वर्तमान), 갈 거라고 (भविष्य)। उद्धृत अन्त्य आफैँमा भूतकाल लाग्दैन।"
+        },
+        {
+          "en": "The quoting verb is usually 하다 (말하다 for statements, 묻다/물어보다 for questions: '뭐라고 물었어요?'). Direct quotation keeps the speaker's exact words, including 반말 if that is what was said.",
+          "ne": "उद्धृत गर्ने क्रिया प्रायः 하다 हो (कथनमा 말하다, प्रश्नमा 묻다/물어보다: '뭐라고 물었어요?')। प्रत्यक्ष उद्धरणमा भन्नेको शब्द जस्ताको तस्तै रहन्छ।"
+        },
+        {
+          "en": "Following clause: the follows rule is about the quoting verb 하다, not the quoted clause — the quoted clause ends with -다고/-냐고/-라고/-자고 and then 하다 (or 말하다/묻다) finishes the sentence, normally as a plain statement ('~라고 했어요'); it can be turned into a question ('뭐라고 했어요?'), but a command, request, suggestion or prohibition does not follow the quotation itself.",
+          "ne": "पछिको वाक्य: यो नियम उद्धृत खण्डको होइन, उद्धृत गर्ने क्रिया 하다 को हो — उद्धृत खण्ड -다고/-냐고/-라고/-자고 मा सकिन्छ र त्यसपछि 하다 (वा 말하다/묻다) ले वाक्य टुङ्ग्याउँछ, प्रायः कथनको रूपमा ('~라고 했어요'); प्रश्न बनाउन सकिन्छ ('뭐라고 했어요?'), तर उद्धरणपछि आदेश / अनुरोध / सुझाव / निषेध आउँदैन।"
+        }
+      ],
+      "meaning_en": "Direct quotation — reports someone's exact words. The ending changes with the type of the quoted sentence (statement, question, command, suggestion).",
+      "meaning_ko": "다른 사람의 말을 그대로 옮겨 말할 때 쓰는 직접 인용 표현이다. 인용되는 문장의 종류에 따라 어미가 달라진다.",
+      "meaning_ne": "अरूको कुरा जस्ताको तस्तै उद्धृत गरेर भन्ने रूप हो — उद्धृत वाक्य कथन हो, प्रश्न हो, आदेश हो वा सुझाव हो भन्ने अनुसार अन्त्य फरक हुन्छ।",
+      "mistakes": "인용되는 문장의 종류에 맞는 어미를 써야 한다: 질문은 '-냐고' (어디 가냐고 물었어요), 명령은 '-(으)라고', 청유는 '-자고'. 질문을 '-다고'로 인용하면 안 된다 (✗ 어디 가다고 물었어요).",
+      "person": "all",
+      "person_note": "누구의 말이든 인용할 수 있다 (1인칭·2인칭·3인칭 모두 가능).",
+      "source_page": 316,
+      "structure": "평서문 + -다고 하다 (간다 → 간다고 했어요). 의문문 + -냐고 하다 (가? → 가냐고 물었어요). 명령문 + -(으)라고 하다 (앉아라 → 앉으라고 했어요). 청유문 + -자고 하다 (가자 → 가자고 했어요). 명사 + -(이)라고 하다 (학생이라고 했어요).",
+      "tense_note": "시제(tense)는 인용절 안에 들어간다 — '갔다고 했어요' (과거), '간다고 했어요' (현재), '갈 거라고 했어요' (미래). 인용 어미 자체에는 과거가 붙지 않는다.",
+      "tense_past": "na",
+      "unit": 23,
+      "unit_title": "인용",
+      "unit_title_en": "Quotations"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "This flower is pretty.",
+          "ko": "이 꽃이 예뻐요.",
+          "ne": "यो फूल राम्रो छ।",
+          "source": "authored"
+        },
+        {
+          "en": "This room is bigger than that room.",
+          "ko": "이 방이 저 방보다 커요.",
+          "ne": "यो कोठा त्यो कोठाभन्दा ठूलो छ।",
+          "source": "authored"
+        },
+        {
+          "en": "I'm busy with work these days.",
+          "ko": "요즘 일이 바빠요.",
+          "ne": "आजकल काममा व्यस्त छु।",
+          "source": "authored"
+        }
+      ],
+      "form": "ㅡ 불규칙",
+      "id": "G-KG-U24-01",
+      "key_points": [
+        {
+          "en": "Drop rule: a stem-final ㅡ disappears before a vowel-initial ending — 예쁘다 + -어요 → 예뻐요, 크다 + -어요 → 커요, 쓰다 + -어요 → 써요, 바쁘다 + -아요 → 바빠요.",
+          "ne": "हट्ने नियम: 'ㅡ' मा सकिने मूल रूपपछि स्वरबाट सुरु हुने अन्त्य लाग्दा 'ㅡ' हट्छ — 예쁘다 + -어요 → 예뻐요, 크다 + -어요 → 커요, 쓰다 + -어요 → 써요, 바쁘다 + -아요 → 바빠요।"
+        },
+        {
+          "en": "Before a consonant-initial ending the ㅡ stays: 예쁘다 + -니까 → 예쁘니까, 크다 + -지만 → 크지만. Check the first sound of the ending first.",
+          "ne": "व्यञ्जनबाट सुरु हुने अन्त्य लाग्दा 'ㅡ' रहन्छ: 예쁘다 + -니까 → 예쁘니까, 크다 + -지만 → 크지만। पहिले अन्त्यको पहिलो आवाज हेर्नुहोस्।"
+        },
+        {
+          "en": "Past tense attaches AFTER the ㅡ-drop: 예뻤어요, 컸어요, 바빴어요 (never ✗ 예쁘았어요).",
+          "ne": "भूतकाल 'ㅡ' हटेपछि लाग्छ: 예뻤어요, 컸어요, 바빴어요 (✗ 예쁘았어요 हुँदैन)।"
+        },
+        {
+          "en": "Following clause: no restriction — this is a stem-change rule inside the verb or adjective, not a sentence connector, so any sentence type (statement, question, command, request, suggestion, prohibition) can follow the changed form.",
+          "ne": "पछिको वाक्य: कुनै रोक छैन — यो क्रिया वा विशेषणभित्रको मूल-रूप परिवर्तनको नियम हो, वाक्य जोड्ने रूप होइन; त्यसैले परिवर्तन भएको रूपपछि कथन, प्रश्न, आदेश, अनुरोध, सुझाव, निषेध — जुनसुकै वाक्य प्रकार पनि आउन सक्छ।"
+        }
+      ],
+      "meaning_en": "Stems ending in ㅡ drop the ㅡ before a vowel-initial ending; ㅡ stays before consonant-initial endings.",
+      "meaning_ko": "어간 끝의 모음 'ㅡ'가 모음으로 시작하는 어미 앞에서 탈락하는 불규칙 활용이다.",
+      "meaning_ne": "'ㅡ' मा सकिने शब्दको मूल रूप (stem) बाट स्वर (vowel) बाट सुरु हुने अन्त्य लाग्दा 'ㅡ' हट्छ; व्यञ्जन (consonant) बाट सुरु हुने अन्त्य लाग्दा 'ㅡ' रहन्छ।",
+      "mistakes": "모음 어미 앞에서는 ㅡ를 빼야 한다 (✗ 예쁘어요, ✗ 크어요 → 예뻐요, 커요). 반대로 자음 어미 앞에서는 ㅡ를 빼면 안 된다 (✗ 예뻐니까 → 예쁘니까).",
+      "person": "all",
+      "person_note": "활용 규칙이므로 모든 인칭에 똑같이 적용된다.",
+      "source_page": 326,
+      "structure": "ㅡ로 끝나는 어간 + 모음 어미 → ㅡ 탈락 (예쁘다 + -어요 → 예뻐요, 크다 + -어요 → 커요, 쓰다 + -어요 → 써요). 자음 어미 앞에서는 ㅡ 유지 (예쁘다 + -니까 → 예쁘니까).",
+      "tense_note": "과거형은 변화 후에 붙는다 — 예쁘다 → 예뻐요 → 예뻤어요 (✗ 예쁘았어요).",
+      "tense_past": "yes",
+      "unit": 24,
+      "unit_title": "불규칙 활용",
+      "unit_title_en": "Irregular Conjugations"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I live in Seoul.",
+          "ko": "서울에 삽니다.",
+          "ne": "म सोलमा बस्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "Learning Korean is fun.",
+          "ko": "한국어를 배우니까 재미있어요.",
+          "ne": "कोरियन सिक्दा रमाइलो छ।",
+          "source": "authored"
+        },
+        {
+          "en": "Call me when you've made the meal.",
+          "ko": "밥을 만들면 불러 주세요.",
+          "ne": "खाना बनाएपछि बोलाइदिनुहोस्।",
+          "source": "authored"
+        }
+      ],
+      "form": "ㄹ 불규칙",
+      "id": "G-KG-U24-02",
+      "key_points": [
+        {
+          "en": "Drop rule: stem-final ㄹ disappears before endings starting with ㄴ, ㄹ, ㅂ or 시- — 살다 + -니까 → 사니까, 살다 + -ㅂ니다 → 삽니다, 살다 + -(으)ㄹ 거예요 → 살 거예요, 알다 + -시면 → 아시면.",
+          "ne": "हट्ने नियम: 'ㄹ' मा सकिने मूल रूपपछि ㄴ, ㄹ, ㅂ वा 시- बाट सुरु हुने अन्त्य लाग्दा 'ㄹ' हट्छ — 살다 + -니까 → 사니까, 살다 + -ㅂ니다 → 삽니다, 살다 + -(으)ㄹ 거예요 → 살 거예요, 알다 + -시면 → 아시면।"
+        },
+        {
+          "en": "Contrast — ㄹ STAYS before vowel-initial endings (살아요, 살았어요) and before -(으)면, which starts with ㅁ (살면, 만들면). Note: -(으)면 is a keep-ㄹ case, not a drop-ㄹ case.",
+          "ne": "यसको विपरीत — स्वरबाट सुरु हुने अन्त्य (살아요, 살았어요) र -(으)면 (ㅁ बाट सुरु हुन्छ: 살면, 만들면) लाग्दा 'ㄹ' रहन्छ। ध्यान दिनुहोस्: -(으)면 'ㄹ' हट्ने होइन, 'ㄹ' रहने उदाहरण हो।"
+        },
+        {
+          "en": "Past tense keeps ㄹ because -았/었- starts with a vowel: 살았어요, 만들었어요, 알았어요 (never ✗ 사았어요).",
+          "ne": "भूतकालमा 'ㄹ' रहन्छ, किनभने -았/었- स्वरबाट सुरु हुन्छ: 살았어요, 만들었어요, 알았어요 (✗ 사았어요 हुँदैन)।"
+        },
+        {
+          "en": "Following clause: no restriction — this is a stem-change rule inside the verb, not a sentence connector, so any sentence type (statement, question, command, request, suggestion, prohibition) can follow the changed form.",
+          "ne": "पछिको वाक्य: कुनै रोक छैन — यो क्रियाभित्रको मूल-रूप परिवर्तनको नियम हो, वाक्य जोड्ने रूप होइन; त्यसैले परिवर्तन भएको रूपपछि कथन, प्रश्न, आदेश, अनुरोध, सुझाव, निषेध — जुनसुकै वाक्य प्रकार पनि आउन सक्छ।"
+        }
+      ],
+      "meaning_en": "Stems ending in ㄹ drop the ㄹ before endings beginning with ㄴ, ㄹ, ㅂ or 시-; ㄹ stays before vowel-initial endings and before ㅁ (e.g. -(으)면).",
+      "meaning_ko": "어간 끝의 'ㄹ'이 ㄴ·ㄹ·ㅂ·시로 시작하는 어미 앞에서 탈락하는 불규칙 활용이다.",
+      "meaning_ne": "'ㄹ' मा सकिने शब्दको मूल रूपबाट ㄴ, ㄹ, ㅂ वा 시- बाट सुरु हुने अन्त्य लाग्दा 'ㄹ' हट्छ; स्वरबाट सुरु हुने अन्त्य वा -(으)면 (ㅁ) लाग्दा 'ㄹ' रहन्छ।",
+      "mistakes": "ㄴ·ㄹ·ㅂ·시- 앞에서는 ㄹ을 빼야 한다 (✗ 살니까, ✗ 살ㅂ니다 → 사니까, 삽니다). 반대로 모음 어미·-(으)면 앞에서는 ㄹ을 빼면 안 된다 (✗ 사아요, ✗ 사면 → 살아요, 살면).",
+      "person": "all",
+      "person_note": "활용 규칙이므로 모든 인칭에 똑같이 적용된다.",
+      "source_page": 329,
+      "structure": "ㄹ로 끝나는 어간 + ㄴ·ㄹ·ㅂ·시-로 시작하는 어미 → ㄹ 탈락 (살다 + -니까 → 사니까, 살다 + -ㅂ니다 → 삽니다, 살다 + -(으)ㄹ → 살 거예요). 모음 어미·ㅁ 어미 앞에서는 ㄹ 유지 (살아요, 살았어요, 살면).",
+      "tense_note": "과거형 '-았/었-'은 모음으로 시작하므로 ㄹ이 유지된다 — 살았어요, 알았어요 (✗ 사았어요).",
+      "tense_past": "yes",
+      "unit": 24,
+      "unit_title": "불규칙 활용",
+      "unit_title_en": "Irregular Conjugations"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I listen to music.",
+          "ko": "저는 음악을 들어요.",
+          "ne": "म संगीत सुन्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "I walk in the park every morning.",
+          "ko": "매일 아침 공원을 걸어요.",
+          "ne": "म हरेक बिहान पार्कमा हिँड्छु।",
+          "source": "authored"
+        },
+        {
+          "en": "I asked the teacher.",
+          "ko": "선생님께 물었어요.",
+          "ne": "मैले शिक्षकलाई सोधेँ।",
+          "source": "authored"
+        }
+      ],
+      "form": "ㄷ 불규칙",
+      "id": "G-KG-U24-04",
+      "key_points": [
+        {
+          "en": "Verbs that follow this rule: 듣다 (to listen), 걷다 (to walk), 묻다 (to ask), 깨닫다 (to realise). But 받다, 믿다 and 닫다 look similar and are REGULAR — 받아요, 믿어요, 닫아요, with ㄷ unchanged.",
+          "ne": "यो नियम लाग्ने क्रियाहरू: 듣다 (सुन्नु), 걷다 (हिँड्नु), 묻다 (सोध्नु), 깨닫다 (बुझ्नु/थाहा पाउनु)। तर 받다, 믿다, 닫다 यस्तै देखिए पनि नियमित हुन् — 받아요, 믿어요, 닫아요, ㄷ बदलिँदैन।"
+        },
+        {
+          "en": "ㄷ changes to ㄹ only before a vowel-initial ending: 듣다 + 어요 → 들어요, 걷다 + 어요 → 걸어요. Before a consonant ending ㄷ stays: 듣습니다, 걷습니다.",
+          "ne": "स्वरबाट सुरु हुने अन्त्यअघि मात्र ㄷ → ㄹ: 듣다 + 어요 → 들어요, 걷다 + 어요 → 걸어요। व्यञ्जनअघि ㄷ यथावत् रहन्छ: 듣습니다, 걷습니다।"
+        },
+        {
+          "en": "The past tense attaches after the change: 들었어요, 걸었어요, 물었어요 — first ㄷ → ㄹ, then -았/었- is added.",
+          "ne": "भूतकाल परिवर्तनपछि लाग्छ: 들었어요, 걸었어요, 물었어요 — पहिला ㄷ → ㄹ, अनि -았/었- थपिन्छ।"
+        },
+        {
+          "en": "Following clause: no restriction — the irregular change happens inside the word, before whatever ending follows, so the sentence after it may be a statement, question, command, request or suggestion.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — अनियमित परिवर्तन शब्दभित्र हुन्छ, त्यसपछि आउने वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "The 'ㄷ' irregular conjugation: when a verb stem ending in ㄷ is followed by a vowel-initial ending, ㄷ changes to ㄹ (듣다 + 어요 → 들어요). Before a consonant-initial ending, ㄷ stays unchanged (듣습니다).",
+      "meaning_ko": "‘ㄷ’ 불규칙은 ㄷ 받침으로 끝나는 동사 어간에 모음으로 시작하는 어미가 붙을 때 ㄷ이 ㄹ로 바뀌는 활용이다. 자음으로 시작하는 어미 앞에서는 ㄷ이 그대로 남는다.",
+      "meaning_ne": "‘ㄷ’ अनियमित रूप: ㄷ मा अन्त हुने क्रियाको मूल रूपपछि स्वरबाट सुरु हुने अन्त्य लाग्दा ㄷ → ㄹ मा बदलिन्छ (듣다 + 어요 → 들어요)। व्यञ्जनबाट सुरु हुने अन्त्यअघि ㄷ यथावत् रहन्छ (듣습니다)।",
+      "mistakes": "받다, 믿다, 닫다 जस्ता क्रियामा ㄷ नबदल्नुहोस् — 받아요, 믿어요, 닫아요 (✗ 발아요, ✗ 밀어요)। 자음 어미 앞에서도 ㄷ 그대로: 듣습니다 (✗ 릅니다)।",
+      "person": "all",
+      "person_note": "सबै व्यक्तिमा प्रयोग हुन्छ (1st/2nd/3rd)।",
+      "source_page": 335,
+      "structure": "ㄷ 받침 동사 어간 + 모음 어미 → ㄷ이 ㄹ로 바뀐다 (듣다 + 어요 → 들어요). 자음 어미 앞에서는 ㄷ 그대로 남는다 (듣 + 습니다 → 듣습니다).",
+      "tense_note": "과거형은 변화된 어간 뒤에 붙는다: 듣다 → 들었어요, 걷다 → 걸었어요, 묻다 → 물었어요 (पहिला ㄷ → ㄹ, अनि -았/었-).",
+      "tense_past": "yes",
+      "unit": 24,
+      "unit_title": "불규칙 활용",
+      "unit_title_en": "Irregular Conjugations"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I don't know that person.",
+          "ko": "저는 그 사람을 몰라요.",
+          "ne": "म त्यो मान्छेलाई चिन्दिनँ।",
+          "source": "authored"
+        },
+        {
+          "en": "This car is fast.",
+          "ko": "이 차가 빨라요.",
+          "ne": "यो गाडी छिटो छ।",
+          "source": "authored"
+        },
+        {
+          "en": "I sang a song yesterday.",
+          "ko": "어제는 노래를 불렀어요.",
+          "ne": "हिजो मैले गीत गाएँ।",
+          "source": "authored"
+        }
+      ],
+      "form": "르 불규칙",
+      "id": "G-KG-U24-05",
+      "key_points": [
+        {
+          "en": "Words that follow this rule: 모르다 (not to know), 빠르다 (to be fast), 부르다 (to call / to sing), 다르다 (to be different), 고르다 (to choose), 흐르다 (to flow).",
+          "ne": "यो नियम लाग्ने शब्दहरू: 모르다 (नजान्नु), 빠르다 (छिटो हुनु), 부르다 (बोलाउनु/गीत गाउनु), 다르다 (फरक हुनु), 고르다 (छान्नु), 흐르다 (बग्नु)।"
+        },
+        {
+          "en": "ㄹ is added only before a vowel-initial ending: 모르다 + 아요 → 몰라요, 부르다 + 어요 → 불러요. Before a consonant ending 르 stays: 모릅니다, 빠릅니다.",
+          "ne": "स्वरबाट सुरु हुने अन्त्यअघि मात्र ㄹ थपिन्छ: 모르다 + 아요 → 몰라요, 부르다 + 어요 → 불러요। व्यञ्जनअघि 르 यथावत्: 모릅니다, 빠릅니다।"
+        },
+        {
+          "en": "The past tense attaches after the change: 몰랐어요, 빨랐어요, 불렀어요 — first ㄹ is added, then -았/었-.",
+          "ne": "भूतकाल परिवर्तनपछि लाग्छ: 몰랐어요, 빨랐어요, 불렀어요 — पहिला ㄹ थपिन्छ, अनि -았/었-।"
+        },
+        {
+          "en": "Following clause: no restriction — the irregular change happens inside the word, before whatever ending follows, so the sentence after it may be a statement, question, command, request or suggestion.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — अनियमित परिवर्तन शब्दभित्र हुन्छ, त्यसपछि आउने वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "The '르' irregular conjugation: when a stem ending in 르 is followed by a vowel-initial ending, an extra ㄹ is added (모르다 + 아요 → 몰라요). Before a consonant-initial ending, 르 stays unchanged (모릅니다).",
+      "meaning_ko": "‘르’ 불규칙은 르 받침으로 끝나는 어간에 모음으로 시작하는 어미가 붙을 때 ㄹ을 더하는 활용이다 (모르다 + 아요 → 몰라요). 자음으로 시작하는 어미 앞에서는 르가 그대로 남는다 (모릅니다).",
+      "meaning_ne": "‘르’ अनियमित रूप: 르 मा अन्त हुने मूल रूपपछि स्वरबाट सुरु हुने अन्त्य लाग्दा थप ㄹ थपिन्छ (모르다 + 아요 → 몰라요)। व्यञ्जनबाट सुरु हुने अन्त्यअघि 르 यथावत् रहन्छ (모릅니다)।",
+      "mistakes": "모르다 + 아요 → 몰라요 (✗ 모라요) — ㄹ थप्न नबिर्सनुहोस्। 자음 어मी 앞에서는 르 그대로: 모릅니다 (✗ 몰릅니다)।",
+      "person": "all",
+      "person_note": "सबै व्यक्तिमा प्रयोग हुन्छ (1st/2nd/3rd)।",
+      "source_page": 337,
+      "structure": "르 받침 동사·형용사 어간 + 모음 어미 → ㄹ을 더한다 (모르다 + 아요 → 몰라요). 자음 어미 앞에서는 르 그대로 (모릅니다). 모음 조화: 앞 모음이 ㅏ/ㅗ이면 -라, 그 외는 -러 (몰라요, 빨라요, 달라요 / 불러요).",
+      "tense_note": "과거형은 변화된 어간 뒤에 붙는다: 모르다 → 몰랐어요, 빠르다 → 빨랐어요, 부르다 → 불렀어요.",
+      "tense_past": "yes",
+      "unit": 24,
+      "unit_title": "불규칙 활용",
+      "unit_title_en": "Irregular Conjugations"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "This flower is red.",
+          "ko": "이 꽃이 빨개요.",
+          "ne": "यो फूल रातो छ।",
+          "source": "authored"
+        },
+        {
+          "en": "The snow is white.",
+          "ko": "눈이 하얘요.",
+          "ne": "हिउँ सेतो छ।",
+          "source": "authored"
+        },
+        {
+          "en": "The sky is blue.",
+          "ko": "하늘이 파래요.",
+          "ne": "आकाश नीलो छ।",
+          "source": "authored"
+        }
+      ],
+      "form": "ㅎ 불규칙",
+      "id": "G-KG-U24-06",
+      "key_points": [
+        {
+          "en": "This rule mostly applies to colour adjectives: 빨갛다 (red), 노랗다 (yellow), 까맣다 (black), 하얗다 (white), 파랗다 (blue) — plus 좋다 (good) and 많다 (many). But 좋아하다 is NOT ㅎ-irregular, and 놓다 is regular (놓아요).",
+          "ne": "यो नियम प्रायः रंगका विशेषणमा लाग्छ: 빨갛다 (रातो), 노랗다 (पहेँलो), 까맣다 (कालो), 하얗다 (सेतो), 파랗다 (नीलो) — साथै 좋다 (राम्रो), 많다 (धेरै)। तर 좋아하다 ㅎ अनियमित होइन, र 놓다 नियमित हो (놓아요)।"
+        },
+        {
+          "en": "Before a vowel ㅎ drops and the vowels contract: 빨갛다 + 아요 → 빨개요, 노랗다 + 아요 → 노래요, 하얗다 + 아요 → 하얘요. Before a consonant ㅎ stays: 빨갛습니다, 하얗습니다.",
+          "ne": "स्वरअघि ㅎ हट्छ र स्वर मिल्छन्: 빨갛다 + 아요 → 빨개요, 노랗다 + 아요 → 노래요, 하얗다 + 아요 → 하얘요। व्यञ्जनअघि ㅎ यथावत्: 빨갛습니다, 하얗습니다।"
+        },
+        {
+          "en": "The past tense attaches after the contraction: 빨갰어요, 좋았어요, 많았어요 — first ㅎ drops and the vowels merge, then -았/었- is added.",
+          "ne": "भूतकाल 축약पछि लाग्छ: 빨갰어요, 좋았어요, 많았어요 — पहिला ㅎ हटेर स्वर मिल्छ, अनि -았/었-।"
+        },
+        {
+          "en": "Following clause: no restriction — the irregular change happens inside the word, before whatever ending follows, so the sentence after it may be a statement, question, command, request or suggestion.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — अनियमित परिवर्तन शब्दभित्र हुन्छ, त्यसपछि आउने वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "The 'ㅎ' irregular conjugation: when an adjective stem ending in ㅎ is followed by a vowel-initial ending, ㅎ drops and the two vowels contract (빨갛다 + 아요 → 빨개요). Before a consonant-initial ending, ㅎ stays unchanged (빨갛습니다).",
+      "meaning_ko": "‘ㅎ’ 불규칙은 ㅎ 받침으로 끝나는 형용사 어간에 모음으로 시작하는 어미가 붙을 때 ㅎ이 탈락하고 두 모음이 축약되는 활용이다 (빨갛다 + 아요 → 빨개요). 자음으로 시작하는 어미 앞에서는 ㅎ이 그대로 남는다.",
+      "meaning_ne": "‘ㅎ’ अनियमित रूप: ㅎ मा अन्त हुने विशेषणको मूल रूपपछि स्वरबाट सुरु हुने अन्त्य लाग्दा ㅎ हट्छ र दुई स्वर एउटै हुन्छन् (빨갛다 + 아요 → 빨개요)। व्यञ्जनबाट सुरु हुने अन्त्यअघि ㅎ यथावत् रहन्छ (빨갛습니다)।",
+      "mistakes": "좋아하다 는 ㅎ 불규칙이 아니다 — 좋아해요 (하다 동사, ㅎ 탈락 없음)। 놓다 도 ㅎ이 그대로 남는 규칙 동사이다 — 놓아요 (✗ 노아요)। 자음 어미 앞에서는 ㅎ 그대로: 빨갛습니다 (✗ 빨갔습니다)।",
+      "person": "all",
+      "person_note": "सबै व्यक्तिमा प्रयोग हुन्छ (1st/2nd/3rd)।",
+      "source_page": 339,
+      "structure": "ㅎ 받침 형용사 어간 + 모음 어미 → ㅎ이 탈락하고 모음이 축약된다 (빨갛다 + 아요 → 빨개요, 하얗다 + 아요 → 하얘요). 자음 어미 앞에서는 ㅎ 그대로 (빨갛습니다).",
+      "tense_note": "과거형은 축약된 어간 뒤에 붙는다: 빨갛다 → 빨갰어요, 좋다 → 좋았어요.",
+      "tense_past": "yes",
+      "unit": 24,
+      "unit_title": "불규칙 활용",
+      "unit_title_en": "Irregular Conjugations"
+    },
+    {
+      "book": 3,
+      "conditions_researched": true,
+      "examples": [
+        {
+          "en": "I build a house.",
+          "ko": "집을 지어요.",
+          "ne": "म घर बनाउँछु।",
+          "source": "authored"
+        },
+        {
+          "en": "If you take this medicine, you will get better.",
+          "ko": "이 약을 먹으면 병이 나아요.",
+          "ne": "यो औषधि खाए रोग निको हुन्छ।",
+          "source": "authored"
+        },
+        {
+          "en": "I drew a picture yesterday.",
+          "ko": "어제 그림을 그었어요.",
+          "ne": "हिजो मैले चित्र कोरेँ।",
+          "source": "authored"
+        }
+      ],
+      "form": "ㅅ 불규칙",
+      "id": "G-KG-U24-07",
+      "key_points": [
+        {
+          "en": "Verbs that follow this rule: 짓다 (to build), 낫다 (to get better), 긋다 (to draw a line), 잇다 (to connect), 젓다 (to stir), 붓다 (to pour). But 웃다, 씻다 and 벗다 look similar and are REGULAR — 웃어요, 씻어요, 벗어요, with ㅅ unchanged.",
+          "ne": "यो नियम लाग्ने क्रियाहरू: 짓다 (बनाउनु), 낫다 (निको हुनु), 긋다 (कोर्नु), 잇다 (जोड्नु), 젓다 (चलाउनु/घोल्नु), 붓다 (खन्याउनु)। तर 웃다, 씻다, 벗다 यस्तै देखिए पनि नियमित हुन् — 웃어요, 씻어요, 벗어요, ㅅ हट्दैन।"
+        },
+        {
+          "en": "ㅅ drops only before a vowel-initial ending: 짓다 + 어요 → 지어요, 낫다 + 아요 → 나아요. Before a consonant ending ㅅ stays: 짓습니다, 낫습니다.",
+          "ne": "स्वरबाट सुरु हुने अन्त्यअघि मात्र ㅅ हट्छ: 짓다 + 어요 → 지어요, 낫다 + 아요 → 나아요। व्यञ्जनअघि ㅅ यथावत्: 짓습니다, 낫습니다।"
+        },
+        {
+          "en": "The past tense attaches after ㅅ drops: 지었어요, 나았어요, 그었어요 — first ㅅ drops, then -았/었- is added.",
+          "ne": "भूतकाल ㅅ हटेपछि लाग्छ: 지었어요, 나았어요, 그었어요 — पहिला ㅅ हट्छ, अनि -았/었-।"
+        },
+        {
+          "en": "Following clause: no restriction — the irregular change happens inside the word, before whatever ending follows, so the sentence after it may be a statement, question, command, request or suggestion.",
+          "ne": "पछिको वाक्य: कुनै प्रतिबन्ध छैन — अनियमित परिवर्तन शब्दभित्र हुन्छ, त्यसपछि आउने वाक्य कथन, प्रश्न, आदेश, अनुरोध, सुझाव जुनसुकै हुन सक्छ।"
+        }
+      ],
+      "meaning_en": "The 'ㅅ' irregular conjugation: when a verb stem ending in ㅅ is followed by a vowel-initial ending, ㅅ drops (짓다 + 어요 → 지어요). Before a consonant-initial ending, ㅅ stays unchanged (짓습니다).",
+      "meaning_ko": "‘ㅅ’ 불규칙은 ㅅ 받침으로 끝나는 동사 어간에 모음으로 시작하는 어미가 붙을 때 ㅅ이 탈락하는 활용이다 (짓다 + 어요 → 지어요). 자음으로 시작하는 어미 앞에서는 ㅅ이 그대로 남는다.",
+      "meaning_ne": "‘ㅅ’ अनियमित रूप: ㅅ मा अन्त हुने क्रियाको मूल रूपपछि स्वरबाट सुरु हुने अन्त्य लाग्दा ㅅ हट्छ (짓다 + 어요 → 지어요)। व्यञ्जनबाट सुरु हुने अन्त्यअघि ㅅ यथावत् रहन्छ (짓습니다)।",
+      "mistakes": "웃다, 씻다, 벗다 मा ㅅ नहटाउनुहोस् — 웃어요, 씻어요, 벗어요 (✗ 우어요, ✗ 씨어요)। 자음 어미 앞에서는 ㅅ 그대로: 짓습니다 (✗ 지습니다)।",
+      "person": "all",
+      "person_note": "सबै व्यक्तिमा प्रयोग हुन्छ (1st/2nd/3rd)।",
+      "source_page": 342,
+      "structure": "ㅅ 받침 동사 어간 + 모음 어미 → ㅅ이 탈락한다 (짓다 + 어요 → 지어요). 자음 어미 앞에서는 ㅅ 그대로 남는다 (짓 + 습니다 → 짓습니다).",
+      "tense_note": "과거형은 ㅅ이 탈락한 어간 뒤에 붙는다: 짓다 → 지었어요, 낫다 → 나았어요, 긋다 → 그었어요.",
+      "tense_past": "yes",
+      "unit": 24,
+      "unit_title": "불규칙 활용",
+      "unit_title_en": "Irregular Conjugations"
+    }
+  ]
+}

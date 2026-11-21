@@ -14,6 +14,7 @@ coreKtx = "1.13.1"
 camerax = "1.3.4"
 workmanager = "2.9.0"
 datastore = "1.1.1"
+securityCrypto = "1.1.0-alpha06"
 mlkitKoreanOcr = "16.0.1"
 tflite = "2.14.0"
 tfliteSupport = "0.4.4"
@@ -48,6 +49,7 @@ androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workmanager" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+androidx-security-crypto = { module = "androidx.security:security-crypto", version.ref = "securityCrypto" }
 androidx-camerax-core = { module = "androidx.camera:camera-core", version.ref = "camerax" }
 androidx-camerax-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "camerax" }
 androidx-camerax-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "camerax" }

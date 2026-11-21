@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gemini online object identification strings (kept separate from strings.xml). -->
+
+    <string name="gemini_title">Gemini API key</string>
+    <string name="gemini_key_label">Your Gemini API key</string>
+    <string name="gemini_key_hint">Paste your key from Google AI Studio</string>
+    <string name="gemini_key_show">Show</string>
+    <string name="gemini_key_hide">Hide</string>
+    <string name="gemini_key_saved">Saved: %1$s</string>
+    <string name="gemini_key_not_saved">No key saved — online identification is off. Offline Scan Object still works.</string>
+    <string name="gemini_key_clear">Clear key</string>
+    <string name="gemini_key_privacy">Photos you identify online are sent to Google\'s Gemini API. Your key is stored encrypted on this device, is never sent anywhere except Google\'s Gemini API, and is never put in the app itself. Each student uses their own key — get one free from Google AI Studio.</string>
+    <string name="gemini_key_saved_notice">Key saved</string>
+    <string name="gemini_key_cleared_notice">Key removed</string>
+
+    <string name="gemini_identify_online">Identify online (Gemini)</string>
+    <string name="gemini_identifying">Identifying online…</string>
+    <string name="gemini_no_key_message">Online identification needs your own Gemini API key. Add it in Profile → Gemini API key, then try again. Offline Scan Object still works without a key.</string>
+    <string name="gemini_not_in_dictionary_title">Online result — not in offline dictionary</string>
+    <string name="gemini_not_in_dictionary_note">This word is not in your offline dictionary, so there is no detail page for it — and no word was added. The meaning below comes from Gemini, not from your dictionary.</string>
+    <string name="gemini_offline_hint">No internet right now — try the offline Scan Object above instead.</string>
+
+    <string name="gemini_error_no_internet">No internet connection. Check your connection and try again, or use offline Scan Object.</string>
+    <string name="gemini_error_invalid_key">Your Gemini API key was rejected. Check the key in Profile → Gemini API key and try again.</string>
+    <string name="gemini_error_quota">Gemini\'s free limit is reached for now. Please wait a while and try again, or use offline Scan Object.</string>
+    <string name="gemini_error_empty">Gemini did not return a clear answer for this photo. Try a clearer photo, or use offline Scan Object.</string>
+    <string name="gemini_error_timeout">The request took too long. Check your connection and try again.</string>
+    <string name="gemini_error_unknown">Something went wrong with online identification. Please try again, or use offline Scan Object.</string>
+</resources>

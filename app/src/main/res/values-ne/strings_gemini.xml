@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gemini अनलाइन वस्तु चिन्ने सुविधाका स्ट्रिङहरू (strings.xml बाट छुट्टै राखिएको)। -->
+
+    <string name="gemini_title">Gemini API कुञ्जी</string>
+    <string name="gemini_key_label">तपाईंको Gemini API कुञ्जी</string>
+    <string name="gemini_key_hint">Google AI Studio बाट कुञ्जी पेस्ट गर्नुहोस्</string>
+    <string name="gemini_key_show">देखाउनुहोस्</string>
+    <string name="gemini_key_hide">लुकाउनुहोस्</string>
+    <string name="gemini_key_saved">सेभ भयो: %1$s</string>
+    <string name="gemini_key_not_saved">कुनै कुञ्जी सेभ गरिएको छैन — अनलाइन चिन्ने सुविधा बन्द छ। अफलाइन वस्तु स्क्यान भने अझै चल्छ।</string>
+    <string name="gemini_key_clear">कुञ्जी हटाउनुहोस्</string>
+    <string name="gemini_key_privacy">अनलाइन चिन्नुभएका फोटोहरू Google को Gemini API मा पठाइन्छन्। तपाईंको कुञ्जी यसै डिभाइसमा इन्क्रिप्ट गरेर राखिन्छ, Google को Gemini API बाहेक अन्त कतै पठाइँदैन, र एपमा कहिल्यै राखिँदैन। प्रत्येक विद्यार्थीले आफ्नै कुञ्जी प्रयोग गर्नुहुन्छ — Google AI Studio बाट निःशुल्क लिन सकिन्छ।</string>
+    <string name="gemini_key_saved_notice">कुञ्जी सेभ भयो</string>
+    <string name="gemini_key_cleared_notice">कुञ्जी हटाइयो</string>
+
+    <string name="gemini_identify_online">अनलाइन चिन्नुहोस् (Gemini)</string>
+    <string name="gemini_identifying">अनलाइन चिनिँदैछ…</string>
+    <string name="gemini_no_key_message">अनलाइन चिन्नका लागि तपाईंको आफ्नै Gemini API कुञ्जी चाहिन्छ। Profile → Gemini API कुञ्जी मा थप्नुहोस्, अनि फेरि प्रयास गर्नुहोस्। कुञ्जी बिना पनि अफलाइन वस्तु स्क्यान चल्छ।</string>
+    <string name="gemini_not_in_dictionary_title">अनलाइन नतिजा — अफलाइन शब्दकोशमा छैन</string>
+    <string name="gemini_not_in_dictionary_note">यो शब्द तपाईंको अफलाइन शब्दकोशमा छैन, त्यसैले यसको विवरण पृष्ठ छैन — र कुनै शब्द थपिएको छैन। तलको अर्थ शब्दकोशको होइन, Gemini बाट आएको हो।</string>
+    <string name="gemini_offline_hint">अहिले इन्टरनेट छैन — माथिको अफलाइन वस्तु स्क्यान प्रयोग गर्नुहोस्।</string>
+
+    <string name="gemini_error_no_internet">इन्टरनेट जडान छैन। जडान जाँच गरेर फेरि प्रयास गर्नुहोस्, वा अफलाइन वस्तु स्क्यान प्रयोग गर्नुहोस्।</string>
+    <string name="gemini_error_invalid_key">तपाईंको Gemini API कुञ्जी अस्वीकृत भयो। Profile → Gemini API कुञ्जी मा कुञ्जी जाँच गरेर फेरि प्रयास गर्नुहोस्।</string>
+    <string name="gemini_error_quota">Gemini को निःशुल्क सीमा अहिले सकिएको छ। केही समय पर्खेर फेरि प्रयास गर्नुहोस्, वा अफलाइन वस्तु स्क्यान प्रयोग गर्नुहोस्।</string>
+    <string name="gemini_error_empty">Gemini ले यस फोटोको स्पष्ट उत्तर दिएन। अझ स्पष्ट फोटो प्रयास गर्नुहोस्, वा अफलाइन वस्तु स्क्यान प्रयोग गर्नुहोस्।</string>
+    <string name="gemini_error_timeout">अनुरोधमा धेरै समय लाग्यो। जडान जाँच गरेर फेरि प्रयास गर्नुहोस्।</string>
+    <string name="gemini_error_unknown">अनलाइन चिन्ने क्रममा केही समस्या भयो। कृपया फेरि प्रयास गर्नुहोस्, वा अफलाइन वस्तु स्क्यान प्रयोग गर्नुहोस्।</string>
+</resources>

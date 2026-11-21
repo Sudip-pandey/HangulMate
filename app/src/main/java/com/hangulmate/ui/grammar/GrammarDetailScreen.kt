@@ -25,6 +25,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.hangulmate.R
 import com.hangulmate.domain.model.ExampleSource
 import com.hangulmate.domain.model.GrammarExample
+import com.hangulmate.domain.model.GrammarKeyPoint
 import com.hangulmate.domain.model.GrammarPoint
 import com.hangulmate.domain.model.PersonRule
 import com.hangulmate.domain.model.TenseRule
@@ -37,9 +38,11 @@ import com.hangulmate.ui.theme.Spacing
 /**
  * One grammar point: form, structure, meaning in Korean / English /
  * Nepali, the past-tense rule and the person restriction (each with the
- * book's note), trilingual examples labelled by source, and common
- * mistakes. Every string on screen comes from the seed file or the
- * app's string resources — nothing is invented.
+ * book's note), the researched key conditions (including the "follows"
+ * matrix: which sentence types may come after this form), trilingual
+ * examples labelled by source, and common mistakes. Every string on
+ * screen comes from the seed file or the app's string resources —
+ * nothing is invented.
  */
 @Composable
 fun GrammarDetailScreen(
@@ -186,6 +189,21 @@ private fun GrammarDetailContent(point: GrammarPoint) {
         }
     }
 
+    // Key conditions (v0.3 research, including the "follows" matrix)
+    if (point.keyPoints.isNotEmpty()) {
+        SectionHeader(title = stringResource(R.string.grammar_keypoints_title))
+        Card(modifier = Modifier.fillMaxWidth()) {
+            Column(
+                modifier = Modifier.padding(Spacing.lg),
+                verticalArrangement = Arrangement.spacedBy(Spacing.md),
+            ) {
+                point.keyPoints.forEachIndexed { index, keyPoint ->
+                    KeyPointItem(number = index + 1, keyPoint = keyPoint)
+                }
+            }
+        }
+    }
+
     // Examples
     if (point.examples.isNotEmpty()) {
         SectionHeader(title = stringResource(R.string.grammar_examples_title))
@@ -205,6 +223,33 @@ private fun GrammarDetailContent(point: GrammarPoint) {
                 style = MaterialTheme.typography.bodyLarge,
                 modifier = Modifier.padding(Spacing.lg),
             )
+        }
+    }
+}
+
+@Composable
+private fun KeyPointItem(number: Int, keyPoint: GrammarKeyPoint) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(Spacing.sm),
+    ) {
+        Text(
+            text = "$number.",
+            style = MaterialTheme.typography.titleMedium,
+            color = MaterialTheme.colorScheme.primary,
+        )
+        Column(verticalArrangement = Arrangement.spacedBy(Spacing.xs)) {
+            Text(
+                text = keyPoint.ne,
+                style = MaterialTheme.typography.bodyLarge,
+            )
+            if (keyPoint.en.isNotBlank()) {
+                Text(
+                    text = keyPoint.en,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
         }
     }
 }

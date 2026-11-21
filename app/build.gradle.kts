@@ -129,6 +129,9 @@ dependencies {
 
     implementation(libs.androidx.work.runtime.ktx)
     implementation(libs.androidx.datastore.preferences)
+    // EncryptedSharedPreferences for the per-user Gemini API key
+    // (never plain DataStore / SharedPreferences — see GeminiKeyStore).
+    implementation(libs.androidx.security.crypto)
     implementation(libs.kotlinx.coroutines.android)
 
     // CameraX — used by the camera feature agent.

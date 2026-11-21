@@ -118,6 +118,9 @@ fun HangulMateNavHost(
                 onAddWord = { korean ->
                     navController.navigate(Screen.AddWord.createRoute(korean))
                 },
+                onNavigateToProfile = {
+                    navController.navigate(Screen.Profile.route)
+                },
             )
         }
         composable(Screen.Practice.route) {

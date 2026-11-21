@@ -100,19 +100,38 @@ import java.io.ByteArrayOutputStream
  * Scan Text (ML Kit Korean OCR + dictionary breakdown) and
  * Scan Object (on-device MobileNet classification + dictionary lookup).
  *
- * Photos are processed on-device only and never leave the device.
+ * Photos are processed on-device only and never leave the device —
+ * except the optional "Identify online (Gemini)" action, which sends
+ * the photo to Google's Gemini API only when the user has saved their
+ * own API key in Settings (see the privacy line under that setting).
  * [onWordClick] opens the dictionary detail for a word id. The parent
- * (navigation) wires that callback; this screen never navigates itself.
+ * (navigation) wires that callback; this screen never navigates itself
+ * except through the callbacks it is given ([onNavigateToProfile] opens
+ * the Profile/Settings tab when no Gemini key is saved).
  */
 @Composable
 fun CameraScreen(
     onWordClick: (String) -> Unit,
     onAddWord: (String) -> Unit = {},
+    onNavigateToProfile: () -> Unit = {},
     viewModel: CameraViewModel = hiltViewModel(),
 ) {
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
     val state by viewModel.state.collectAsState()
+
+    // One-shot navigation: Gemini matched a seed word — open its detail once.
+    val matchedWordId = state.geminiMatchedWordId
+    LaunchedEffect(matchedWordId) {
+        if (matchedWordId != null) {
+            onWordClick(matchedWordId)
+            viewModel.consumeGeminiNavigation()
+        }
+    }
+    // Returning from Settings (after saving a key) re-reads key state.
+    LaunchedEffect(Unit) {
+        viewModel.refreshGeminiHasKey()
+    }
 
     var hasPermission by remember {
         mutableStateOf(
@@ -419,6 +438,7 @@ fun CameraScreen(
                 state = state,
                 viewModel = viewModel,
                 onWordClick = onWordClick,
+                onNavigateToProfile = onNavigateToProfile,
             )
         }
     }
@@ -784,8 +804,14 @@ private fun ObjectModeContent(
     state: CameraUiState,
     viewModel: CameraViewModel,
     onWordClick: (String) -> Unit,
+    onNavigateToProfile: () -> Unit,
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(Spacing.lg)) {
+        GeminiSection(
+            state = state,
+            viewModel = viewModel,
+            onNavigateToProfile = onNavigateToProfile,
+        )
         when (val objectState = state.objectState) {
             ObjectUiState.Idle -> Unit
             ObjectUiState.Processing -> {
@@ -897,6 +923,136 @@ private fun ObjectModeContent(
                 }
             }
         }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// ONLINE — Identify with Gemini (optional, needs the user's own key)
+// ---------------------------------------------------------------------------
+
+@Composable
+private fun GeminiSection(
+    state: CameraUiState,
+    viewModel: CameraViewModel,
+    onNavigateToProfile: () -> Unit,
+) {
+    Column(verticalArrangement = Arrangement.spacedBy(Spacing.sm)) {
+        val hasPhoto = state.capturedBitmap != null
+        val loading = state.geminiState is GeminiUiState.Loading
+        Button(
+            onClick = { viewModel.identifyOnline() },
+            enabled = hasPhoto && !loading,
+            modifier = Modifier.fillMaxWidth(),
+        ) {
+            Text(stringResource(R.string.gemini_identify_online))
+        }
+        if (!state.geminiHasKey) {
+            Text(
+                text = stringResource(R.string.gemini_key_not_saved),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        when (val gemini = state.geminiState) {
+            GeminiUiState.Idle -> Unit
+            GeminiUiState.Loading -> {
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(Spacing.sm),
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    CircularProgressIndicator(modifier = Modifier.size(24.dp))
+                    Text(
+                        text = stringResource(R.string.gemini_identifying),
+                        style = MaterialTheme.typography.bodyMedium,
+                    )
+                }
+            }
+            GeminiUiState.NeedsKey -> {
+                Card(
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.primaryContainer,
+                    ),
+                ) {
+                    Column(
+                        modifier = Modifier.padding(Spacing.lg),
+                        verticalArrangement = Arrangement.spacedBy(Spacing.sm),
+                    ) {
+                        Text(
+                            text = stringResource(R.string.gemini_no_key_message),
+                            style = MaterialTheme.typography.bodyMedium,
+                        )
+                        Button(onClick = onNavigateToProfile) {
+                            Text(stringResource(R.string.camera_open_settings))
+                        }
+                    }
+                }
+            }
+            is GeminiUiState.Error -> {
+                WarningCard(stringResource(gemini.messageRes))
+                if (gemini.messageRes == R.string.gemini_error_no_internet) {
+                    Text(
+                        text = stringResource(R.string.gemini_offline_hint),
+                        style = MaterialTheme.typography.bodyMedium,
+                    )
+                }
+                if (hasPhoto) {
+                    OutlinedButton(onClick = { viewModel.retryGemini() }) {
+                        Text(stringResource(R.string.retry))
+                    }
+                }
+            }
+            is GeminiUiState.NotInDictionary -> {
+                Card(modifier = Modifier.fillMaxWidth()) {
+                    Column(
+                        modifier = Modifier.padding(Spacing.lg),
+                        verticalArrangement = Arrangement.spacedBy(Spacing.sm),
+                    ) {
+                        Text(
+                            text = stringResource(R.string.gemini_not_in_dictionary_title),
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.Bold,
+                        )
+                        GeminiResultRow(
+                            labelRes = R.string.grammar_meaning_korean,
+                            value = gemini.result.korean,
+                        )
+                        GeminiResultRow(
+                            labelRes = R.string.grammar_meaning_english,
+                            value = gemini.result.english,
+                        )
+                        GeminiResultRow(
+                            labelRes = R.string.grammar_meaning_nepali,
+                            value = gemini.result.nepali,
+                        )
+                        Text(
+                            text = stringResource(R.string.gemini_not_in_dictionary_note),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun GeminiResultRow(labelRes: Int, value: String) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(Spacing.sm),
+    ) {
+        Text(
+            text = stringResource(labelRes),
+            style = MaterialTheme.typography.bodyMedium,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.weight(1f),
+        )
+        Text(
+            text = value.ifBlank { "—" },
+            style = MaterialTheme.typography.bodyLarge,
+            modifier = Modifier.weight(2f),
+        )
     }
 }
 

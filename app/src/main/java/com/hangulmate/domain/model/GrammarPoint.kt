@@ -39,11 +39,27 @@ enum class PersonRule {
 }
 
 /**
+ * One key usage condition for a grammar point (v0.3 research).
+ * Nepali is primary — the app's users are Nepali EPS students — with an
+ * English gloss. One key point per entry is the "follows" matrix:
+ * which sentence types (question / command / request / suggestion /
+ * statement) may follow this form, stated explicitly even when there is
+ * no restriction, or that the form has no following clause at all.
+ */
+data class GrammarKeyPoint(
+    val ne: String,
+    val en: String,
+)
+
+/**
  * One EPS-TOPIK grammar point, exactly as bundled in
- * `assets/seed/grammar_seed.json` (v0.2: 120 points, 60 per book).
+ * `assets/seed/grammar_seed.json` (v0.3: 120 points, 60 per book, each
+ * with researched key_points).
  *
  * Book 1 = Standard Korean Textbook Korean 1 (units 1–30, everyday life);
- * Book 2 = Volume 2 (units 31–60, work life). Every display string comes
+ * Book 2 = Volume 2 (units 31–60, work life). Book 3 = KGIU extras
+ * (Korean Grammar in Use sections not in the EPS 120, unit = KGIU unit
+ * number, 0 = Introduction & Getting Ready). Every display string comes
  * from the seed file — nothing here is invented, and a "not_stated" rule
  * is displayed as the book being silent, never as a made-up restriction.
  */
@@ -65,4 +81,5 @@ data class GrammarPoint(
     val examples: List<GrammarExample>,
     val mistakes: String,
     val sourcePage: Int,
+    val keyPoints: List<GrammarKeyPoint> = emptyList(),
 )

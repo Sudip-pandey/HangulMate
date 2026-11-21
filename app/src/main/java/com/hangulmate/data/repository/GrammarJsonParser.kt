@@ -2,6 +2,7 @@ package com.hangulmate.data.repository
 
 import com.hangulmate.domain.model.ExampleSource
 import com.hangulmate.domain.model.GrammarExample
+import com.hangulmate.domain.model.GrammarKeyPoint
 import com.hangulmate.domain.model.GrammarPoint
 import com.hangulmate.domain.model.PersonRule
 import com.hangulmate.domain.model.TenseRule
@@ -59,6 +60,7 @@ object GrammarJsonParser {
             examples = parseExamples(obj.optJSONArray("examples")),
             mistakes = obj.optString("mistakes"),
             sourcePage = obj.optInt("source_page", 0),
+            keyPoints = parseKeyPoints(obj.optJSONArray("key_points")),
         )
     }
 
@@ -76,6 +78,21 @@ object GrammarJsonParser {
         "1st_2nd" -> PersonRule.FIRST_SECOND
         "2nd_3rd" -> PersonRule.SECOND_THIRD
         else -> PersonRule.NOT_STATED
+    }
+
+    private fun parseKeyPoints(array: JSONArray?): List<GrammarKeyPoint> {
+        if (array == null) return emptyList()
+        val out = mutableListOf<GrammarKeyPoint>()
+        for (i in 0 until array.length()) {
+            val obj = array.optJSONObject(i) ?: continue
+            val ne = obj.optString("ne").trim()
+            if (ne.isEmpty()) continue
+            out += GrammarKeyPoint(
+                ne = ne,
+                en = obj.optString("en"),
+            )
+        }
+        return out
     }
 
     private fun parseExamples(array: JSONArray?): List<GrammarExample> {

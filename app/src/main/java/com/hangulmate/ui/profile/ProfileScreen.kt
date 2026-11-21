@@ -28,6 +28,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Switch
@@ -47,6 +48,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.hangulmate.BuildConfig
@@ -86,6 +89,11 @@ fun ProfileScreen(
     val ttsState by viewModel.ttsState.collectAsStateWithLifecycle()
     val stats by viewModel.stats.collectAsStateWithLifecycle()
     val localBackupInfo by viewModel.localBackupInfo.collectAsStateWithLifecycle()
+    val geminiKeyMasked by viewModel.geminiKeyMasked.collectAsStateWithLifecycle()
+
+    var geminiKeyInput by remember { mutableStateOf("") }
+    var geminiKeyVisible by remember { mutableStateOf(false) }
+    var geminiKeyNoticeRes by remember { mutableStateOf<Int?>(null) }
 
     var showPermissionRationale by remember { mutableStateOf(false) }
     var showResetDialog by remember { mutableStateOf(false) }
@@ -336,6 +344,81 @@ fun ProfileScreen(
                 Text(
                     text = stringResource(R.string.settings_reminders_note_live),
                     style = MaterialTheme.typography.bodyMedium,
+                )
+            }
+        }
+
+        // Gemini API key — the user's OWN key for optional online object
+        // identification. Stored encrypted on device; only the last 4
+        // characters are ever shown. No key = offline mode still works.
+        SettingsCard(title = stringResource(R.string.gemini_title)) {
+            Column(verticalArrangement = Arrangement.spacedBy(Spacing.sm)) {
+                Text(
+                    text = if (geminiKeyMasked == null) {
+                        stringResource(R.string.gemini_key_not_saved)
+                    } else {
+                        stringResource(R.string.gemini_key_saved, geminiKeyMasked!!)
+                    },
+                    style = MaterialTheme.typography.bodyMedium,
+                )
+                OutlinedTextField(
+                    value = geminiKeyInput,
+                    onValueChange = { geminiKeyInput = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text(stringResource(R.string.gemini_key_label)) },
+                    placeholder = { Text(stringResource(R.string.gemini_key_hint)) },
+                    visualTransformation = if (geminiKeyVisible) {
+                        VisualTransformation.None
+                    } else {
+                        PasswordVisualTransformation()
+                    },
+                    trailingIcon = {
+                        TextButton(onClick = { geminiKeyVisible = !geminiKeyVisible }) {
+                            Text(
+                                stringResource(
+                                    if (geminiKeyVisible) {
+                                        R.string.gemini_key_hide
+                                    } else {
+                                        R.string.gemini_key_show
+                                    },
+                                ),
+                            )
+                        }
+                    },
+                    singleLine = true,
+                )
+                Row(horizontalArrangement = Arrangement.spacedBy(Spacing.sm)) {
+                    Button(
+                        onClick = {
+                            viewModel.saveGeminiKey(geminiKeyInput)
+                            geminiKeyInput = ""
+                            geminiKeyNoticeRes = R.string.gemini_key_saved_notice
+                        },
+                        enabled = geminiKeyInput.isNotBlank(),
+                    ) {
+                        Text(stringResource(R.string.save))
+                    }
+                    OutlinedButton(
+                        onClick = {
+                            viewModel.clearGeminiKey()
+                            geminiKeyInput = ""
+                            geminiKeyNoticeRes = R.string.gemini_key_cleared_notice
+                        },
+                        enabled = geminiKeyMasked != null,
+                    ) {
+                        Text(stringResource(R.string.gemini_key_clear))
+                    }
+                }
+                geminiKeyNoticeRes?.let { noticeRes ->
+                    Text(
+                        text = stringResource(noticeRes),
+                        style = MaterialTheme.typography.bodyMedium,
+                    )
+                }
+                Text(
+                    text = stringResource(R.string.gemini_key_privacy),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
         }

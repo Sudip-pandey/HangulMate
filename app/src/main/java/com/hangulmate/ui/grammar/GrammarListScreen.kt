@@ -39,8 +39,9 @@ import com.hangulmate.ui.components.SectionHeader
 import com.hangulmate.ui.theme.Spacing
 
 /**
- * All 120 EPS-TOPIK grammar points, grouped by book then unit, with
- * Korean / Nepali / English search and a Book 1 / Book 2 filter.
+ * All 157 grammar points (120 EPS-TOPIK + 37 KGIU extras), grouped by
+ * book then unit, with Korean / Nepali / English search and a
+ * Book 1 / Book 2 / Extra filter.
  *
  * Layout follows EpsTopicsScreen: one LazyColumn, header row, search
  * field and filter chips as items. While searching the grouping is
@@ -125,6 +126,11 @@ fun GrammarListScreen(
                     onClick = { viewModel.setBookFilter(2) },
                     label = { Text(stringResource(R.string.grammar_filter_book_2)) },
                 )
+                FilterChip(
+                    selected = bookFilter == 3,
+                    onClick = { viewModel.setBookFilter(3) },
+                    label = { Text(stringResource(R.string.grammar_filter_extra)) },
+                )
             }
         }
 
@@ -180,10 +186,10 @@ private fun androidx.compose.foundation.lazy.LazyListScope.groupedItems(
         item(key = "book-$book") {
             SectionHeader(
                 title = stringResource(
-                    if (book == 1) {
-                        R.string.grammar_book_1_title
-                    } else {
-                        R.string.grammar_book_2_title
+                    when (book) {
+                        1 -> R.string.grammar_book_1_title
+                        2 -> R.string.grammar_book_2_title
+                        else -> R.string.grammar_extra_title
                     },
                 ),
             )
