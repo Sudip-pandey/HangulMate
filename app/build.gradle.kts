@@ -81,6 +81,16 @@ android {
         unitTests.isIncludeAndroidResources = true
     }
 
+    // Unit-test worker JVM heap: the default (512 MB) OOM'd in CI run
+    // 44849807926 — RoomTest.search_likeMatchesKoreanAndTranslations died
+    // with OutOfMemoryError (and the next test cascaded via
+    // UncaughtExceptionsBeforeTest) once the suite grew to 35 tests.
+    // The fixtures are tiny (2-3 words); Robolectric + Room in one
+    // worker JVM is what eats the heap. 2 GB is safe on a 7 GB runner.
+    tasks.withType<org.gradle.api.tasks.testing.Test>().configureEach {
+        maxHeapSize = "2048m"
+    }
+
     // Room schema export is enabled in HangulMateDatabase (exportSchema = true).
     ksp {
         arg("room.schemaLocation", "$projectDir/schemas")
