@@ -9,6 +9,7 @@ import com.hangulmate.ml.GeminiRequest
 import com.hangulmate.ml.KoreanWordMatcher
 import com.hangulmate.ml.maskApiKey
 import kotlinx.coroutines.test.runTest
+import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -63,14 +64,22 @@ class GeminiOnlineTest {
     @Test
     fun requestJson_containsInlineImageAndJsonInstruction() {
         val json = GeminiRequest.buildRequestJson("QUJDREVG")
-
-        assertTrue(json.contains("inline_data"))
-        assertTrue(json.contains("image/jpeg"))
-        assertTrue(json.contains("QUJDREVG"))
-        assertTrue(json.contains("korean"))
-        assertTrue(json.contains("english"))
-        assertTrue(json.contains("nepali"))
-        assertTrue(json.contains("application/json"))
+        // Assert on the PARSED structure, not the raw string: Android's
+        // org.json escapes '/' as '\/' in toString(), so a raw
+        // contains("image/jpeg") check fails even though the JSON is valid.
+        val root = JSONObject(json)
+        val parts = root.getJSONArray("contents").getJSONObject(0).getJSONArray("parts")
+        val imagePart = parts.getJSONObject(0).getJSONObject("inline_data")
+        assertEquals("image/jpeg", imagePart.getString("mime_type"))
+        assertEquals("QUJDREVG", imagePart.getString("data"))
+        val text = parts.getJSONObject(1).getString("text")
+        assertTrue(text.contains("korean"))
+        assertTrue(text.contains("english"))
+        assertTrue(text.contains("nepali"))
+        assertEquals(
+            "application/json",
+            root.getJSONObject("generationConfig").getString("responseMimeType"),
+        )
     }
 
     @Test

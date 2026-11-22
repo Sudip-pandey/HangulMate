@@ -37,7 +37,7 @@ class GrammarParserTest {
         assertEquals(60, parsed.points.count { it.book == 1 })
         assertEquals(60, parsed.points.count { it.book == 2 })
         assertEquals(37, parsed.points.count { it.book == 3 })
-        assertEquals(120, parsed.points.map { it.id }.toSet().size)
+        assertEquals(157, parsed.points.map { it.id }.toSet().size)
         assertTrue(parsed.points.all { it.examples.isNotEmpty() })
         assertTrue(parsed.points.filter { it.book == 3 }.all { point ->
             point.keyPoints.any { it.ne.startsWith("पछिको वाक्य:") }
