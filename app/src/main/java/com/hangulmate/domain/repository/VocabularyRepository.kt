@@ -5,7 +5,27 @@ import com.hangulmate.domain.model.LearningState
 import com.hangulmate.domain.model.Topic
 import com.hangulmate.domain.model.VocabularyWord
 import com.hangulmate.domain.model.WordRelation
+import com.hangulmate.ml.GeminiError
 import kotlinx.coroutines.flow.Flow
+
+/** Outcome of an online (Gemini) word lookup, after the local cache check. */
+sealed interface OnlineSearchResult {
+    /**
+     * The word is now in the local database — either it was already
+     * there ([fromCache] = true) or Gemini just found it and it was
+     * saved ([fromCache] = false).
+     */
+    data class Found(val word: VocabularyWord, val fromCache: Boolean = false) : OnlineSearchResult
+
+    /** No Gemini key is saved, so no online lookup was attempted. */
+    data object NoKey : OnlineSearchResult
+
+    /** Gemini answered, but no Korean word matches the query. */
+    data object NotFound : OnlineSearchResult
+
+    /** The online lookup failed (invalid key, quota, no internet, …). */
+    data class Failed(val error: GeminiError) : OnlineSearchResult
+}
 
 /**
  * Contract for all vocabulary data access. Feature agents code against
@@ -37,6 +57,19 @@ interface VocabularyRepository {
 
     /** One-shot lookup by exact Korean spelling (used by TTS / camera scan). */
     suspend fun getByKorean(korean: String): VocabularyWord?
+
+    /**
+     * Looks [query] up online with Gemini — only when the local
+     * database has no match for it. Cache-first: a word already in
+     * the database is returned without any API call. When Gemini
+     * finds a new word it is saved into the local database
+     * (nepaliStatus "mt_review", tagged "gemini") together with ALL
+     * of its similar / opposite words, so the next search for it —
+     * or for any of those related words — finds it offline. No key
+     * saved means no call: returns [OnlineSearchResult.NoKey].
+     * Never throws for a lookup failure; failures are [OnlineSearchResult.Failed].
+     */
+    suspend fun searchOnline(query: String): OnlineSearchResult
 
     /**
      * Deterministic word of the day for the given epoch day.

@@ -3,6 +3,7 @@ package com.hangulmate.di
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.room.Room
+import com.hangulmate.data.gemini.GeminiWordSearchClient
 import com.hangulmate.data.local.HangulMateDatabase
 import com.hangulmate.data.local.SeedImportPrefs
 import com.hangulmate.data.local.SeedImporter
@@ -12,6 +13,7 @@ import com.hangulmate.data.repository.LearningRepositoryImpl
 import com.hangulmate.data.repository.SearchHistoryRepositoryImpl
 import com.hangulmate.data.repository.VocabularyRepositoryImpl
 import com.hangulmate.domain.repository.CollectionRepository
+import com.hangulmate.domain.repository.GeminiKeyStore
 import com.hangulmate.domain.repository.LearningRepository
 import com.hangulmate.domain.repository.SearchHistoryRepository
 import com.hangulmate.domain.repository.VocabularyRepository
@@ -151,8 +153,10 @@ object DatabaseModule {
     @Provides
     @Singleton
     fun provideVocabularyRepository(
-        database: HangulMateDatabase
-    ): VocabularyRepository = VocabularyRepositoryImpl(database)
+        database: HangulMateDatabase,
+        geminiClient: GeminiWordSearchClient,
+        geminiKeyStore: GeminiKeyStore,
+    ): VocabularyRepository = VocabularyRepositoryImpl(database, geminiClient, geminiKeyStore)
 
     @Provides
     @Singleton

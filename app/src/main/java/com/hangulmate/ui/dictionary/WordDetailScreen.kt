@@ -47,6 +47,7 @@ import com.hangulmate.domain.model.LearningState
 import com.hangulmate.domain.model.UserCollection
 import com.hangulmate.domain.model.VocabularyWord
 import com.hangulmate.domain.model.WordRelation
+import com.hangulmate.ml.GEMINI_TAG
 import com.hangulmate.speech.TtsState
 import com.hangulmate.ui.components.EmptyState
 import com.hangulmate.ui.components.EpsImportanceBadge
@@ -233,11 +234,29 @@ private fun WordDetailContent(
         }
     }
 
+    // Words saved from a Gemini online lookup are labelled AI, never
+    // presented as verified — their Nepali is mt_review (see the
+    // repository's saveGeminiWord). Seed words never carry this tag.
+    if (GEMINI_TAG in word.tags) {
+        Text(
+            text = stringResource(R.string.gemini_search_ai_note),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+    }
+
     // Part of speech / topic / difficulty / EPS importance
     FlowRow(
         horizontalArrangement = Arrangement.spacedBy(Spacing.sm),
         verticalArrangement = Arrangement.spacedBy(Spacing.sm),
     ) {
+        if (GEMINI_TAG in word.tags) {
+            AssistChip(
+                onClick = {},
+                enabled = false,
+                label = { Text(stringResource(R.string.gemini_search_ai_badge)) },
+            )
+        }
         AssistChip(
             onClick = {},
             enabled = false,

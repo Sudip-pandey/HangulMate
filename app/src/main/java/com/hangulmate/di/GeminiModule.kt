@@ -1,6 +1,8 @@
 package com.hangulmate.di
 
 import android.content.Context
+import com.hangulmate.data.gemini.GeminiVisionClient
+import com.hangulmate.data.gemini.GeminiWordSearchClient
 import com.hangulmate.data.preferences.EncryptedGeminiKeyStore
 import com.hangulmate.domain.repository.GeminiKeyStore
 import dagger.Module
@@ -29,4 +31,16 @@ object GeminiModule {
     fun provideGeminiKeyStore(
         @ApplicationContext context: Context,
     ): GeminiKeyStore = EncryptedGeminiKeyStore(context)
+
+    /**
+     * The word-search client is the same [GeminiVisionClient] that
+     * identifies photos — one HTTP implementation for both online
+     * Gemini calls, behind the [GeminiWordSearchClient] interface so
+     * the repository can be tested with a fake.
+     */
+    @Provides
+    @Singleton
+    fun provideGeminiWordSearchClient(
+        client: GeminiVisionClient,
+    ): GeminiWordSearchClient = client
 }

@@ -27,4 +27,20 @@
     <string name="gemini_error_empty">Gemini did not return a clear answer for this photo. Try a clearer photo, or use offline Scan Object.</string>
     <string name="gemini_error_timeout">The request took too long. Check your connection and try again.</string>
     <string name="gemini_error_unknown">Something went wrong with online identification. Please try again, or use offline Scan Object.</string>
+
+    <!-- Gemini online word search (dictionary fallback). -->
+
+    <string name="gemini_search_ai_badge">AI result</string>
+    <string name="gemini_search_ai_note">This meaning comes from Gemini AI — check it with your teacher. The word was saved on this phone only.</string>
+    <string name="gemini_search_searching">Searching with Gemini…</string>
+    <string name="gemini_search_found_saved">Found with Gemini — saved on this phone, so it works offline next time.</string>
+    <string name="gemini_search_not_found">Gemini couldn\'t find this word either.</string>
+    <string name="gemini_search_no_key">Not in the offline dictionary. Add your own Gemini API key in Profile → Gemini API key to search online.</string>
+    <string name="gemini_search_retry">Try again</string>
+    <string name="gemini_search_error_invalid_key">Your Gemini API key was rejected. Check the key in Profile → Gemini API key.</string>
+    <string name="gemini_search_error_quota">Gemini\'s free limit is reached for now. Please wait a while and try again.</string>
+    <string name="gemini_search_error_no_internet">No internet connection. Check your connection and try again.</string>
+    <string name="gemini_search_error_timeout">The request took too long. Check your connection and try again.</string>
+    <string name="gemini_search_error_empty">Gemini did not return a clear answer for this word.</string>
+    <string name="gemini_search_error_unknown">Something went wrong with the online search. Please try again.</string>
 </resources>

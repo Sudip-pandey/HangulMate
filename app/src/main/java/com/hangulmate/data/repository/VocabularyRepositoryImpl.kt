@@ -1,18 +1,29 @@
 package com.hangulmate.data.repository
 
 import androidx.room.withTransaction
+import com.hangulmate.data.gemini.GeminiWordSearchClient
 import com.hangulmate.data.local.DateUtils
 import com.hangulmate.data.local.HangulMateDatabase
 import com.hangulmate.data.local.LearningProgressEntity
 import com.hangulmate.data.local.VocabularyExampleEntity
 import com.hangulmate.data.local.VocabularyRelationEntity
 import com.hangulmate.data.local.VocabularyTranslationEntity
+import com.hangulmate.domain.model.EpsImportance
 import com.hangulmate.domain.model.ImportReport
 import com.hangulmate.domain.model.LearningState
+import com.hangulmate.domain.model.PartOfSpeech
+import com.hangulmate.domain.model.RelationKind
 import com.hangulmate.domain.model.Topic
 import com.hangulmate.domain.model.VocabularyWord
 import com.hangulmate.domain.model.WordRelation
+import com.hangulmate.domain.repository.GeminiKeyStore
+import com.hangulmate.domain.repository.OnlineSearchResult
 import com.hangulmate.domain.repository.VocabularyRepository
+import com.hangulmate.ml.GEMINI_TAG
+import com.hangulmate.ml.GeminiRelatedWord
+import com.hangulmate.ml.GeminiWordResult
+import com.hangulmate.ml.GeminiWordSearchResult
+import com.hangulmate.ml.KoreanWordMatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.emptyFlow
@@ -33,7 +44,15 @@ import javax.inject.Singleton
  */
 @Singleton
 class VocabularyRepositoryImpl @Inject constructor(
-    private val db: HangulMateDatabase
+    private val db: HangulMateDatabase,
+    /**
+     * Online word search (Gemini). Null in unit tests that do not
+     * cover it — [searchOnline] then reports [OnlineSearchResult.NoKey]
+     * without calling anything. The app graph always provides both
+     * (see [com.hangulmate.di.DatabaseModule]).
+     */
+    private val geminiClient: GeminiWordSearchClient? = null,
+    private val geminiKeyStore: GeminiKeyStore? = null,
 ) : VocabularyRepository {
 
     private val vocabDao get() = db.vocabularyDao()
@@ -72,6 +91,199 @@ class VocabularyRepositoryImpl @Inject constructor(
         val entity = vocabDao.getByKorean(korean.trim()) ?: return null
         return enrichOne(entity, withRelations = true)
     }
+
+    // ------------------------------------------------------------------
+    // Online word search (Gemini fallback)
+    // ------------------------------------------------------------------
+
+    override suspend fun searchOnline(query: String): OnlineSearchResult {
+        val trimmed = query.trim()
+        if (trimmed.isEmpty()) return OnlineSearchResult.NotFound
+        // Cache-first: a word already in the local database is returned
+        // without any API call — seed words and previously saved Gemini
+        // words alike.
+        vocabDao.getByKorean(trimmed)?.let {
+            return OnlineSearchResult.Found(enrichOne(it, withRelations = true), fromCache = true)
+        }
+        val client = geminiClient ?: return OnlineSearchResult.NoKey
+        val key = geminiKeyStore?.getKey()?.takeIf { it.isNotBlank() }
+            ?: return OnlineSearchResult.NoKey
+        return when (val result = client.searchWord(key, trimmed)) {
+            is GeminiWordSearchResult.NotFound -> OnlineSearchResult.NotFound
+            is GeminiWordSearchResult.Failure -> OnlineSearchResult.Failed(result.error)
+            is GeminiWordSearchResult.Success -> {
+                val found = result.word
+                // The model may normalize the spelling — re-check the
+                // cache by the RETURNED Korean before saving anything,
+                // so a differently-spelled query never duplicates a word.
+                vocabDao.getByKorean(found.korean)?.let {
+                    return OnlineSearchResult.Found(
+                        enrichOne(it, withRelations = true),
+                        fromCache = true,
+                    )
+                }
+                // Nothing to show at all (no Nepali, no English) is a
+                // miss, not a word worth saving.
+                if (found.nepali.isBlank() && found.english.isBlank()) {
+                    return OnlineSearchResult.NotFound
+                }
+                OnlineSearchResult.Found(saveGeminiWord(found))
+            }
+        }
+    }
+
+    /**
+     * Saves a Gemini-found word into the local database, in one
+     * transaction, with nepaliStatus "mt_review" and the "gemini" tag
+     * (never presented as verified — see the AI badge on the detail
+     * screen). ALL similar / opposite words are saved too: words
+     * already in the database are reused, the rest are saved as
+     * minimal Gemini entries (same mt_review marking), so every
+     * relation resolves to a real row and the detail screen shows
+     * the full lists. This is a per-phone local save only — the
+     * bundled seed JSON asset is never touched.
+     */
+    private suspend fun saveGeminiWord(found: GeminiWordResult): VocabularyWord {
+        val stamp = System.currentTimeMillis()
+        val mainId = "HM-G$stamp"
+        val mainKorean = found.korean.trim()
+        val mainNormalized = KoreanWordMatcher.normalize(mainKorean)
+
+        // Dedupe (by normalized spelling) and drop self-references,
+        // keeping the first occurrence; drop entries with no meaning
+        // at all — there would be nothing to show for them.
+        fun cleanRelated(list: List<GeminiRelatedWord>): List<GeminiRelatedWord> {
+            val seen = mutableSetOf<String>()
+            return list.filter { rel ->
+                val korean = rel.korean.trim()
+                korean.isNotEmpty() &&
+                    (rel.nepali.isNotBlank() || rel.english.isNotBlank()) &&
+                    KoreanWordMatcher.normalize(korean) != mainNormalized &&
+                    seen.add(KoreanWordMatcher.normalize(korean))
+            }
+        }
+        val similar = cleanRelated(found.similar)
+        val opposite = cleanRelated(found.opposite)
+
+        db.withTransaction {
+            val koreanToId = vocabDao.getKoreanToIdMap()
+                .associate { it.korean to it.id }.toMutableMap()
+
+            // Related words first, so every relation below resolves.
+            var stubIndex = 0
+            suspend fun ensureRelatedWord(rel: GeminiRelatedWord): String {
+                koreanToId[rel.korean.trim()]?.let { return it }
+                stubIndex++
+                val stubId = "HM-G${stamp}S$stubIndex"
+                val stub = geminiWord(
+                    id = stubId,
+                    korean = rel.korean.trim(),
+                    nepali = rel.nepali.trim(),
+                    english = rel.english.trim(),
+                    romanization = "",
+                    partOfSpeech = rel.partOfSpeech,
+                )
+                insertWordRow(stub)
+                koreanToId[stub.korean] = stubId
+                return stubId
+            }
+            val similarIds = mutableListOf<String>()
+            for (rel in similar) similarIds += ensureRelatedWord(rel)
+            val oppositeIds = mutableListOf<String>()
+            for (rel in opposite) oppositeIds += ensureRelatedWord(rel)
+
+            val main = geminiWord(
+                id = mainId,
+                korean = mainKorean,
+                nepali = found.nepali.trim(),
+                english = found.english.trim(),
+                romanization = found.romanization.trim(),
+                partOfSpeech = found.partOfSpeech,
+            )
+            insertWordRow(main)
+
+            val rows = mutableListOf<VocabularyRelationEntity>()
+            similar.zip(similarIds).forEach { (rel, targetId) ->
+                rows += VocabularyRelationEntity(
+                    sourceId = mainId,
+                    targetId = targetId,
+                    targetKorean = rel.korean.trim(),
+                    kind = RelationKind.SIMILAR.name,
+                    noteNe = rel.nepali.trim().ifBlank { rel.english.trim() },
+                )
+            }
+            opposite.zip(oppositeIds).forEach { (rel, targetId) ->
+                rows += VocabularyRelationEntity(
+                    sourceId = mainId,
+                    targetId = targetId,
+                    targetKorean = rel.korean.trim(),
+                    kind = RelationKind.OPPOSITE.name,
+                    noteNe = rel.nepali.trim().ifBlank { rel.english.trim() },
+                )
+            }
+            if (rows.isNotEmpty()) relationDao.insertAll(rows)
+        }
+        val entity = vocabDao.getById(mainId)
+            ?: throw IllegalStateException("Gemini word was not saved: $mainId")
+        return enrichOne(entity, withRelations = true)
+    }
+
+    /**
+     * One Gemini-saved word: user-created, tagged "gemini",
+     * nepaliStatus "mt_review" when a Nepali meaning exists, "missing"
+     * when the Nepali column only holds the English gloss as a
+     * display fallback (the detail screen says so plainly).
+     */
+    private fun geminiWord(
+        id: String,
+        korean: String,
+        nepali: String,
+        english: String,
+        romanization: String,
+        partOfSpeech: String,
+    ): VocabularyWord = VocabularyWord(
+        id = id,
+        korean = korean,
+        nepali = nepali.ifBlank { english },
+        nepaliStatus = if (nepali.isNotBlank()) "mt_review" else "missing",
+        english = english,
+        romanization = romanization,
+        syllables = splitSyllables(korean),
+        partOfSpeech = PartOfSpeech.fromKey(partOfSpeech.trim().lowercase()),
+        topic = Topic.GENERAL,
+        difficulty = 1,
+        epsImportance = EpsImportance.LOW,
+        exampleKo = "",
+        exampleNe = "",
+        exampleEn = "",
+        tags = listOf(GEMINI_TAG),
+        isUserCreated = true,
+    )
+
+    /** Word row + its translation and (blank) example rows. */
+    private suspend fun insertWordRow(word: VocabularyWord) {
+        vocabDao.insert(word.toEntity())
+        db.translationDao().insertAll(
+            listOf(
+                VocabularyTranslationEntity(vocabId = word.id, language = "ne", meaning = word.nepali),
+                VocabularyTranslationEntity(vocabId = word.id, language = "en", meaning = word.english),
+            ),
+        )
+        db.exampleDao().insertAll(
+            listOf(
+                VocabularyExampleEntity(
+                    vocabId = word.id,
+                    ko = word.exampleKo,
+                    ne = word.exampleNe,
+                    en = word.exampleEn,
+                ),
+            ),
+        )
+    }
+
+    /** Splits a Korean word into its Hangul syllable blocks (one char each). */
+    private fun splitSyllables(korean: String): List<String> =
+        korean.filter { it in '\uAC00'..'\uD7A3' }.map { it.toString() }
 
     override suspend fun getWordOfTheDay(dateEpochDay: Long): VocabularyWord {
         val total = vocabDao.getTotalCountOnce()

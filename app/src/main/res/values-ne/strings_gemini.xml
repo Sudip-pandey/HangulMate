@@ -27,4 +27,20 @@
     <string name="gemini_error_empty">Gemini ले यस फोटोको स्पष्ट उत्तर दिएन। अझ स्पष्ट फोटो प्रयास गर्नुहोस्, वा अफलाइन वस्तु स्क्यान प्रयोग गर्नुहोस्।</string>
     <string name="gemini_error_timeout">अनुरोधमा धेरै समय लाग्यो। जडान जाँच गरेर फेरि प्रयास गर्नुहोस्।</string>
     <string name="gemini_error_unknown">अनलाइन चिन्ने क्रममा केही समस्या भयो। कृपया फेरि प्रयास गर्नुहोस्, वा अफलाइन वस्तु स्क्यान प्रयोग गर्नुहोस्।</string>
+
+    <!-- Gemini अनलाइन शब्द खोजी (शब्दकोश fallback) -->
+
+    <string name="gemini_search_ai_badge">AI बाट</string>
+    <string name="gemini_search_ai_note">यो अर्थ Gemini AI बाट आएको हो — शिक्षकसँग verify गर्नुहोस्। यो शब्द यसै फोनमा मात्र सेभ भएको छ।</string>
+    <string name="gemini_search_searching">Gemini बाट खोजिँदैछ…</string>
+    <string name="gemini_search_found_saved">Gemini बाट फेला पर्यो — यसै फोनमा सेभ भयो, अब offline पनि काम गर्छ।</string>
+    <string name="gemini_search_not_found">Gemini ले पनि यो शब्द भेटेन।</string>
+    <string name="gemini_search_no_key">यो शब्द offline शब्दकोशमा छैन। अनलाइन खोज्न Profile → Gemini API कुञ्जी मा आफ्नो Gemini API कुञ्जी थप्नुहोस्।</string>
+    <string name="gemini_search_retry">फेरि प्रयास गर्नुहोस्</string>
+    <string name="gemini_search_error_invalid_key">तपाईंको Gemini API कुञ्जी अस्वीकृत भयो। Profile → Gemini API कुञ्जी मा कुञ्जी जाँच गर्नुहोस्।</string>
+    <string name="gemini_search_error_quota">Gemini को निःशुल्क सीमा अहिले सकिएको छ। केही समय पर्खेर फेरि प्रयास गर्नुहोस्।</string>
+    <string name="gemini_search_error_no_internet">इन्टरनेट जडान छैन। जडान जाँच गरेर फेरि प्रयास गर्नुहोस्।</string>
+    <string name="gemini_search_error_timeout">अनुरोधमा धेरै समय लाग्यो। फेरि प्रयास गर्नुहोस्।</string>
+    <string name="gemini_search_error_empty">Gemini ले यस शब्दको स्पष्ट उत्तर दिएन।</string>
+    <string name="gemini_search_error_unknown">अनलाइन खोज्दा केही समस्या भयो। कृपया फेरि प्रयास गर्नुहोस्।</string>
 </resources>

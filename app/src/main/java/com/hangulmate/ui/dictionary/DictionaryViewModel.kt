@@ -4,14 +4,18 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hangulmate.domain.model.Topic
 import com.hangulmate.domain.model.VocabularyWord
+import com.hangulmate.domain.repository.OnlineSearchResult
 import com.hangulmate.domain.repository.SearchHistoryRepository
 import com.hangulmate.domain.repository.VocabularyRepository
+import com.hangulmate.ml.GeminiError
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.FlowPreview
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.flatMapLatest
@@ -20,6 +24,27 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+
+/** State of the Gemini online word search (dictionary fallback). */
+sealed interface OnlineSearchState {
+    /** Nothing to show (no query, local results exist, or a filter is on). */
+    data object Idle : OnlineSearchState
+
+    /** Waiting on Gemini for the current query. */
+    data object Searching : OnlineSearchState
+
+    /** Gemini found the word — it is saved locally now. */
+    data class Found(val word: VocabularyWord) : OnlineSearchState
+
+    /** Neither the seed nor Gemini has this word. */
+    data object NotFound : OnlineSearchState
+
+    /** No Gemini key saved, so no online lookup was attempted. */
+    data object NoKey : OnlineSearchState
+
+    /** The online lookup failed (invalid key, quota, no internet, …). */
+    data class Error(val error: GeminiError) : OnlineSearchState
+}
 
 /** Everything the Dictionary screen needs, in one snapshot. */
 data class DictionaryUiState(
@@ -31,6 +56,8 @@ data class DictionaryUiState(
     val selectedTopic: Topic? = null,
     val recentWords: List<VocabularyWord> = emptyList(),
     val totalCount: Int = 0,
+    /** Gemini online-search state for the current query (Idle when local results exist). */
+    val onlineState: OnlineSearchState = OnlineSearchState.Idle,
 )
 
 @OptIn(FlowPreview::class)
@@ -46,6 +73,50 @@ class DictionaryViewModel @Inject constructor(
 
     /** True once the initial query (from navigation) has been applied; guards rotation. */
     private var initialQueryApplied = false
+
+    /** Gemini online-search state for the current query. */
+    private val _onlineState = MutableStateFlow<OnlineSearchState>(OnlineSearchState.Idle)
+
+    /**
+     * The last query an online lookup was attempted for. Guards
+     * against re-calling Gemini for the same query when the local
+     * results re-emit (e.g. a favorite toggle); cleared when the
+     * query changes or local results appear.
+     */
+    private var lastOnlineQuery: String? = null
+
+    private fun mapOnlineResult(result: OnlineSearchResult): OnlineSearchState =
+        when (result) {
+            is OnlineSearchResult.Found -> OnlineSearchState.Found(result.word)
+            OnlineSearchResult.NoKey -> OnlineSearchState.NoKey
+            OnlineSearchResult.NotFound -> OnlineSearchState.NotFound
+            is OnlineSearchResult.Failed -> OnlineSearchState.Error(result.error)
+        }
+
+    /** Re-runs the online lookup for the current query (e.g. after an error). */
+    fun retryOnlineSearch() {
+        val query = debouncedQuery.value
+        if (query.isBlank()) return
+        // Mark it attempted first, so the trigger collector above
+        // does not fire a second lookup for the same query.
+        lastOnlineQuery = query
+        viewModelScope.launch {
+            _onlineState.value = OnlineSearchState.Searching
+            _onlineState.value = runCatching {
+                vocabularyRepository.searchOnline(query)
+            }.fold(
+                onSuccess = ::mapOnlineResult,
+                onFailure = { OnlineSearchState.Error(GeminiError.UNKNOWN) },
+            )
+        }
+    }
+
+    private data class OnlineTrigger(
+        val query: String,
+        val favoritesOnly: Boolean,
+        val topic: Topic?,
+        val resultsEmpty: Boolean,
+    )
 
     /**
      * Applies the query the screen was opened with (from the `query` nav
@@ -119,7 +190,8 @@ class DictionaryViewModel @Inject constructor(
     /**
      * The [uiState] combine's first five inputs. `combine` only has
      * typed overloads up to 5 flows (kotlinx-coroutines 1.8.1), so the
-     * 6-flow state is built as a 5-flow combine plus the topic flow.
+     * state is built as a 5-flow combine plus the topic and online
+     * flows on the outside.
      */
     private data class DictionaryInputs(
         val query: String,
@@ -170,6 +242,54 @@ class DictionaryViewModel @Inject constructor(
             }
         }
 
+    // NOTE: this init block must stay AFTER `debouncedQuery` and
+    // `results` above — init blocks run in declaration order, and the
+    // collector subscribes to both flows.
+    init {
+        viewModelScope.launch {
+            // Online fallback: when the debounced query has NO local
+            // results (and no favorites/topic filter is narrowing the
+            // list), ask Gemini once for that query. collectLatest
+            // cancels an in-flight lookup when the query changes, so
+            // fast typing never fires a lookup per keystroke.
+            combine(
+                debouncedQuery,
+                results,
+                _favoritesOnly,
+                _selectedTopic,
+            ) { query, results, favoritesOnly, topic ->
+                OnlineTrigger(query, favoritesOnly, topic, results.isEmpty())
+            }.collectLatest { trigger ->
+                if (trigger.query.isBlank() || trigger.favoritesOnly ||
+                    trigger.topic != null || !trigger.resultsEmpty
+                ) {
+                    lastOnlineQuery = null
+                    if (_onlineState.value != OnlineSearchState.Idle) {
+                        _onlineState.value = OnlineSearchState.Idle
+                    }
+                    return@collectLatest
+                }
+                if (trigger.query == lastOnlineQuery) return@collectLatest
+                // Settle window: the `results` flow re-queries Room when
+                // the debounced query changes, but this combine fires on
+                // the query change first — with the PREVIOUS results
+                // still showing. Waiting a beat lets Room answer for
+                // the new query, so a word that IS local never spends
+                // a Gemini call; collectLatest still cancels this block
+                // outright when fresh results arrive.
+                delay(150)
+                lastOnlineQuery = trigger.query
+                _onlineState.value = OnlineSearchState.Searching
+                _onlineState.value = runCatching {
+                    vocabularyRepository.searchOnline(trigger.query)
+                }.fold(
+                    onSuccess = ::mapOnlineResult,
+                    onFailure = { OnlineSearchState.Error(GeminiError.UNKNOWN) },
+                )
+            }
+        }
+    }
+
     val uiState: StateFlow<DictionaryUiState> = combine(
         combine(
             _query,
@@ -181,7 +301,8 @@ class DictionaryViewModel @Inject constructor(
             DictionaryInputs(query, results, recentWords, totalCount, favoritesOnly)
         },
         _selectedTopic,
-    ) { inputs, selectedTopic ->
+        _onlineState,
+    ) { inputs, selectedTopic, onlineState ->
         DictionaryUiState(
             query = inputs.query,
             results = inputs.results,
@@ -190,6 +311,7 @@ class DictionaryViewModel @Inject constructor(
             selectedTopic = selectedTopic,
             recentWords = inputs.recentWords,
             totalCount = inputs.totalCount,
+            onlineState = onlineState,
         )
     }.stateIn(
         scope = viewModelScope,

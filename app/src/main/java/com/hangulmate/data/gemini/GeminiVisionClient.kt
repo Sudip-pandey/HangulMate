@@ -5,6 +5,8 @@ import com.hangulmate.ml.GeminiError
 import com.hangulmate.ml.GeminiIdentifyResult
 import com.hangulmate.ml.GeminiOnline
 import com.hangulmate.ml.GeminiRequest
+import com.hangulmate.ml.GeminiSearch
+import com.hangulmate.ml.GeminiWordSearchResult
 import java.io.IOException
 import java.net.ConnectException
 import java.net.HttpURLConnection
@@ -16,7 +18,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 /**
- * Calls Google's Gemini API to identify the main object in a photo.
+ * Calls Google's Gemini API to identify the main object in a photo and
+ * to look a word up in the online dictionary fallback.
  *
  * Plain [HttpURLConnection] on the IO dispatcher — the project has no
  * OkHttp/Retrofit, and this feature adds no networking dependency.
@@ -26,10 +29,10 @@ import kotlinx.coroutines.withContext
  * in the request URL's `key` query parameter, per the API's
  * documented placement.
  *
- * Never throws: every failure maps to a [GeminiIdentifyResult.Failure]
- * with a distinct [GeminiError] the UI turns into a simple message.
+ * Never throws: every failure maps to a typed Failure result with a
+ * distinct [GeminiError] the UI turns into a simple message.
  */
-class GeminiVisionClient @Inject constructor() {
+class GeminiVisionClient @Inject constructor() : GeminiWordSearchClient {
 
     /**
      * Identifies the main object in [jpegBytes] (a JPEG photo, already
@@ -39,11 +42,63 @@ class GeminiVisionClient @Inject constructor() {
         withContext(Dispatchers.IO) {
             val base64 = Base64.encodeToString(jpegBytes, Base64.NO_WRAP)
             val requestBody = GeminiRequest.buildRequestJson(base64)
-            runCatching { post(apiKey, requestBody) }
-                .getOrElse { error -> GeminiIdentifyResult.Failure(mapTransportError(error)) }
+            runGeminiCall(
+                apiKey = apiKey,
+                requestBody = requestBody,
+                parse = GeminiRequest::parseResponse,
+                failure = GeminiIdentifyResult::Failure,
+            )
         }
 
-    private fun post(apiKey: String, requestBody: String): GeminiIdentifyResult {
+    /**
+     * Looks [query] up online (see [GeminiSearch] for the prompt and
+     * response shape). Text only — no photo is sent.
+     */
+    override suspend fun searchWord(apiKey: String, query: String): GeminiWordSearchResult =
+        withContext(Dispatchers.IO) {
+            runGeminiCall(
+                apiKey = apiKey,
+                requestBody = GeminiSearch.buildRequestJson(query),
+                parse = GeminiSearch::parseWordResponse,
+                failure = GeminiWordSearchResult::Failure,
+            )
+        }
+
+    /**
+     * One POST to the Gemini API, with the shared transport-error
+     * mapping: HTTP auth errors become [GeminiError.INVALID_KEY],
+     * 429 becomes [GeminiError.QUOTA_EXHAUSTED], timeouts and
+     * unreachable hosts become [GeminiError.TIMEOUT] /
+     * [GeminiError.NO_INTERNET]. [parse] turns a 200 body into the
+     * caller's result type; it never throws for a bad body (parsers
+     * return their own Failure), so a throw here is always a transport
+     * or HTTP problem.
+     */
+    private fun <T> runGeminiCall(
+        apiKey: String,
+        requestBody: String,
+        parse: (String) -> T,
+        failure: (GeminiError) -> T,
+    ): T {
+        return try {
+            parse(postJson(apiKey, requestBody))
+        } catch (e: HttpStatusException) {
+            failure(GeminiRequest.mapHttpStatus(e.code))
+        } catch (e: SocketTimeoutException) {
+            failure(GeminiError.TIMEOUT)
+        } catch (e: UnknownHostException) {
+            failure(GeminiError.NO_INTERNET)
+        } catch (e: ConnectException) {
+            failure(GeminiError.NO_INTERNET)
+        } catch (e: IOException) {
+            failure(GeminiError.NO_INTERNET)
+        } catch (e: Exception) {
+            failure(GeminiError.UNKNOWN)
+        }
+    }
+
+    /** POSTs [requestBody] and returns the 200 response body as text. */
+    private fun postJson(apiKey: String, requestBody: String): String {
         val connection = URL(GeminiOnline.buildUrl(apiKey)).openConnection() as HttpURLConnection
         try {
             connection.requestMethod = "POST"
@@ -59,21 +114,16 @@ class GeminiVisionClient @Inject constructor() {
                 // Drain the error body so the connection can be reused;
                 // its contents are never shown (they may echo the key).
                 runCatching { connection.errorStream?.use { it.readBytes() } }
-                return GeminiIdentifyResult.Failure(GeminiRequest.mapHttpStatus(code))
+                throw HttpStatusException(code)
             }
-            val body = connection.inputStream.use { it.readBytes().toString(Charsets.UTF_8) }
-            return GeminiRequest.parseResponse(body)
+            return connection.inputStream.use { it.readBytes().toString(Charsets.UTF_8) }
         } finally {
             connection.disconnect()
         }
     }
 
-    private fun mapTransportError(error: Throwable): GeminiError = when (error) {
-        is SocketTimeoutException -> GeminiError.TIMEOUT
-        is UnknownHostException, is ConnectException -> GeminiError.NO_INTERNET
-        is IOException -> GeminiError.NO_INTERNET
-        else -> GeminiError.UNKNOWN
-    }
+    /** Non-200 HTTP status from the Gemini API (thrown only inside [postJson]). */
+    private class HttpStatusException(val code: Int) : IOException("Gemini HTTP $code")
 
     companion object {
         private const val TIMEOUT_MS = 30_000

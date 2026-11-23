@@ -18,6 +18,7 @@ import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Card
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -38,6 +39,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.hangulmate.R
 import com.hangulmate.domain.model.Topic
+import com.hangulmate.ml.GeminiError
 import com.hangulmate.ui.components.EmptyState
 import com.hangulmate.ui.components.SectionHeader
 import com.hangulmate.ui.components.WordCard
@@ -202,7 +204,18 @@ fun DictionaryScreen(
                 EmptyState(message = stringResource(R.string.dictionary_no_query))
             }
             state.results.isEmpty() && state.query.isNotBlank() -> {
-                EmptyState(message = stringResource(R.string.dictionary_no_results))
+                if (!state.favoritesOnly && state.selectedTopic == null) {
+                    // Local search found nothing: show the Gemini
+                    // online fallback states instead of a dead end.
+                    OnlineSearchSection(
+                        state = state.onlineState,
+                        onWordClick = onOpenWord,
+                        onFavoriteClick = { viewModel.toggleFavorite(it) },
+                        onRetry = { viewModel.retryOnlineSearch() },
+                    )
+                } else {
+                    EmptyState(message = stringResource(R.string.dictionary_no_results))
+                }
             }
             state.results.isEmpty() && state.favoritesOnly -> {
                 EmptyState(message = stringResource(R.string.dictionary_no_favorites))
@@ -235,4 +248,99 @@ fun DictionaryScreen(
             }
         }
     }
+}
+
+/**
+ * What the Dictionary screen shows when the local search finds
+ * nothing: the Gemini online fallback states. When Gemini finds the
+ * word it is already saved locally, so it is shown as a normal word
+ * card — tapping it opens the detail page, which carries the AI badge.
+ */
+@Composable
+private fun OnlineSearchSection(
+    state: OnlineSearchState,
+    onWordClick: (String) -> Unit,
+    onFavoriteClick: (String) -> Unit,
+    onRetry: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    when (state) {
+        OnlineSearchState.Idle -> {
+            EmptyState(message = stringResource(R.string.dictionary_no_results))
+        }
+        OnlineSearchState.Searching -> {
+            Column(
+                modifier = modifier
+                    .fillMaxWidth()
+                    .padding(Spacing.lg),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(Spacing.md),
+            ) {
+                CircularProgressIndicator()
+                Text(
+                    text = stringResource(R.string.gemini_search_searching),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+        }
+        is OnlineSearchState.Found -> {
+            Column(
+                modifier = modifier.fillMaxWidth(),
+                verticalArrangement = Arrangement.spacedBy(Spacing.sm),
+            ) {
+                Text(
+                    text = stringResource(R.string.gemini_search_found_saved),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                WordCard(
+                    word = state.word,
+                    onClick = { onWordClick(state.word.id) },
+                    onFavoriteClick = { onFavoriteClick(state.word.id) },
+                )
+            }
+        }
+        OnlineSearchState.NotFound -> {
+            EmptyState(message = stringResource(R.string.gemini_search_not_found))
+        }
+        OnlineSearchState.NoKey -> {
+            Text(
+                text = stringResource(R.string.gemini_search_no_key),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = modifier
+                    .fillMaxWidth()
+                    .padding(Spacing.lg),
+            )
+        }
+        is OnlineSearchState.Error -> {
+            Column(
+                modifier = modifier
+                    .fillMaxWidth()
+                    .padding(Spacing.lg),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(Spacing.md),
+            ) {
+                Text(
+                    text = stringResource(geminiSearchErrorRes(state.error)),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                OutlinedButton(onClick = onRetry) {
+                    Text(stringResource(R.string.gemini_search_retry))
+                }
+            }
+        }
+    }
+}
+
+/** Search-specific error strings (the camera ones mention photos). */
+private fun geminiSearchErrorRes(error: GeminiError): Int = when (error) {
+    GeminiError.INVALID_KEY -> R.string.gemini_search_error_invalid_key
+    GeminiError.QUOTA_EXHAUSTED -> R.string.gemini_search_error_quota
+    GeminiError.NO_INTERNET -> R.string.gemini_search_error_no_internet
+    GeminiError.TIMEOUT -> R.string.gemini_search_error_timeout
+    GeminiError.EMPTY_RESPONSE -> R.string.gemini_search_error_empty
+    GeminiError.UNKNOWN -> R.string.gemini_search_error_unknown
 }
