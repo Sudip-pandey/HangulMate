@@ -34,6 +34,7 @@
     <string name="gemini_search_ai_note">यो अर्थ Gemini AI बाट आएको हो — शिक्षकसँग verify गर्नुहोस्। यो शब्द यसै फोनमा मात्र सेभ भएको छ।</string>
     <string name="gemini_search_searching">Gemini बाट खोजिँदैछ…</string>
     <string name="gemini_search_found_saved">Gemini बाट फेला पर्यो — यसै फोनमा सेभ भयो, अब offline पनि काम गर्छ।</string>
+    <string name="gemini_search_found_in_dictionary">अफलाइन शब्दकोशमा भेटियो।</string>
     <string name="gemini_search_not_found">Gemini ले पनि यो शब्द भेटेन।</string>
     <string name="gemini_search_no_key">यो शब्द offline शब्दकोशमा छैन। अनलाइन खोज्न Profile → Gemini API कुञ्जी मा आफ्नो Gemini API कुञ्जी थप्नुहोस्।</string>
     <string name="gemini_search_retry">फेरि प्रयास गर्नुहोस्</string>

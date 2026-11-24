@@ -122,6 +122,23 @@ class VocabularyRepositoryImpl @Inject constructor(
                         fromCache = true,
                     )
                 }
+                // Exact match missed, but the model may have returned
+                // a spaced variant of a seed spelling ("사과 주스" for
+                // seed "사과주스") — the same normalized match the
+                // camera scan uses. Prefer that seed word over saving
+                // a duplicate Gemini word.
+                val normalizedMatch = KoreanWordMatcher.match(
+                    vocabDao.getKoreanToIdMap().map { it.korean },
+                    found.korean,
+                )
+                if (normalizedMatch != null) {
+                    vocabDao.getByKorean(normalizedMatch)?.let {
+                        return OnlineSearchResult.Found(
+                            enrichOne(it, withRelations = true),
+                            fromCache = true,
+                        )
+                    }
+                }
                 // Nothing to show at all (no Nepali, no English) is a
                 // miss, not a word worth saving.
                 if (found.nepali.isBlank() && found.english.isBlank()) {

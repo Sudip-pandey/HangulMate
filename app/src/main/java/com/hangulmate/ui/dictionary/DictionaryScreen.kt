@@ -224,6 +224,26 @@ fun DictionaryScreen(
                 EmptyState(message = stringResource(R.string.dictionary_no_topic_words))
             }
             else -> {
+                // A Gemini translation can land while local (partial)
+                // results are showing — for a Nepali / English query
+                // the translated word may not be in the list at all,
+                // so show it on top instead of hiding it behind the list.
+                val onlineFound = state.onlineState as? OnlineSearchState.Found
+                if (onlineFound != null && state.results.none { it.id == onlineFound.word.id }) {
+                    Text(
+                        text = stringResource(
+                            if (onlineFound.fromCache) R.string.gemini_search_found_in_dictionary
+                            else R.string.gemini_search_found_saved,
+                        ),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    WordCard(
+                        word = onlineFound.word,
+                        onClick = { onOpenWord(onlineFound.word.id) },
+                        onFavoriteClick = { viewModel.toggleFavorite(onlineFound.word.id) },
+                    )
+                }
                 Text(
                     text = stringResource(
                         R.string.dictionary_results_count,
@@ -290,7 +310,10 @@ private fun OnlineSearchSection(
                 verticalArrangement = Arrangement.spacedBy(Spacing.sm),
             ) {
                 Text(
-                    text = stringResource(R.string.gemini_search_found_saved),
+                    text = stringResource(
+                        if (state.fromCache) R.string.gemini_search_found_in_dictionary
+                        else R.string.gemini_search_found_saved,
+                    ),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )

@@ -64,11 +64,15 @@ object GeminiSearch {
      * Instruction sent with every lookup. Asks for ONLY a JSON object
      * with the word's meanings plus its FULL similar and opposite
      * lists, so the parser has one shape to handle. The query may be
-     * a Korean word, a Nepali meaning, or an English meaning.
+     * a Korean word, a Nepali meaning (Devanagari or Roman letters),
+     * or an English meaning — when it is a meaning, the answer is
+     * the single most common everyday Korean word for it.
      */
     fun buildPrompt(query: String): String =
         "Look up a Korean dictionary word for this search text: \"$query\". " +
-            "The search text may be a Korean word, a Nepali meaning, or an English meaning. " +
+            "The search text may be a Korean word, a Nepali meaning (in Devanagari or Roman letters), " +
+            "or an English meaning. " +
+            "When the search text is a meaning, give the single most common everyday Korean word for it. " +
             "Reply with ONLY a JSON object, no other text: " +
             "{\"korean\": \"...\", \"english\": \"...\", \"nepali\": \"...\", " +
             "\"romanization\": \"...\", \"partOfSpeech\": \"noun\", " +
@@ -83,7 +87,8 @@ object GeminiSearch {
             "\"opposite\" lists EVERY opposite word (antonym) you know, each with its Nepali meaning — " +
             "include them all, never shorten the list. " +
             "Use empty arrays when there are none. " +
-            "Never invent a word: if no Korean word matches the search text, reply with {\"korean\": \"\"}."
+            "Never invent a word: if no Korean word matches the search text, " +
+            "or the meaning is ambiguous with no clear everyday word, reply with {\"korean\": \"\"}."
 
     /**
      * Request body: one text part with the lookup instruction.

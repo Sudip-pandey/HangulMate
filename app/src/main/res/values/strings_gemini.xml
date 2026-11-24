@@ -34,6 +34,7 @@
     <string name="gemini_search_ai_note">This meaning comes from Gemini AI — check it with your teacher. The word was saved on this phone only.</string>
     <string name="gemini_search_searching">Searching with Gemini…</string>
     <string name="gemini_search_found_saved">Found with Gemini — saved on this phone, so it works offline next time.</string>
+    <string name="gemini_search_found_in_dictionary">Found in your offline dictionary.</string>
     <string name="gemini_search_not_found">Gemini couldn\'t find this word either.</string>
     <string name="gemini_search_no_key">Not in the offline dictionary. Add your own Gemini API key in Profile → Gemini API key to search online.</string>
     <string name="gemini_search_retry">Try again</string>

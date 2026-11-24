@@ -447,4 +447,56 @@ class GeminiWordSearchTest {
         assertEquals(OnlineSearchResult.NotFound, result)
         assertEquals(0, repo.getTotalCount().first())
     }
+
+    // -- Multilingual search -------------------------------------------
+
+    @Test
+    fun promptMentionsRomanNepaliAndMostCommon() {
+        val prompt = GeminiSearch.buildPrompt("pani")
+
+        assertTrue(prompt.contains("Roman"))
+        assertTrue(prompt.contains("most common"))
+    }
+
+    @Test
+    fun nepaliQueryMiss_callsGeminiWithRawQueryAndSaves() = runTest {
+        fakeClient.result = GeminiWordSearchResult.Success(geminiWord())
+
+        val result = repo.searchOnline("नरम")
+
+        assertTrue(result is OnlineSearchResult.Found)
+        val found = result as OnlineSearchResult.Found
+        assertFalse(found.fromCache)
+        assertEquals(1, fakeClient.calls)
+        // The raw Nepali text goes to Gemini unchanged.
+        assertEquals("नरम", fakeClient.lastQuery)
+        assertEquals("부드럽다", found.word.korean)
+        assertEquals("नरम हुनु", found.word.nepali)
+        assertTrue(GEMINI_TAG in found.word.tags)
+    }
+
+    @Test
+    fun geminiReturnsSpacedVariantOfSeedWord_returnsSeedWordWithoutDuplicating() = runTest {
+        seedWordSuspended("HM-0010", "사과주스", "स्याउको रस", "apple juice")
+        fakeClient.result = GeminiWordSearchResult.Success(
+            geminiWord(
+                korean = "사과 주스",
+                english = "apple juice",
+                nepali = "स्याउको रस",
+                similar = emptyList(),
+                opposite = emptyList(),
+            ),
+        )
+
+        val result = repo.searchOnline("사과 주스")
+
+        assertTrue(result is OnlineSearchResult.Found)
+        val found = result as OnlineSearchResult.Found
+        // The seed word wins over a duplicate Gemini save.
+        assertTrue(found.fromCache)
+        assertEquals("HM-0010", found.word.id)
+        assertEquals("사과주스", found.word.korean)
+        assertEquals(1, fakeClient.calls)
+        assertEquals(1, repo.getTotalCount().first())
+    }
 }

@@ -34,7 +34,7 @@ sealed interface OnlineSearchState {
     data object Searching : OnlineSearchState
 
     /** Gemini found the word — it is saved locally now. */
-    data class Found(val word: VocabularyWord) : OnlineSearchState
+    data class Found(val word: VocabularyWord, val fromCache: Boolean = false) : OnlineSearchState
 
     /** Neither the seed nor Gemini has this word. */
     data object NotFound : OnlineSearchState
@@ -87,7 +87,7 @@ class DictionaryViewModel @Inject constructor(
 
     private fun mapOnlineResult(result: OnlineSearchResult): OnlineSearchState =
         when (result) {
-            is OnlineSearchResult.Found -> OnlineSearchState.Found(result.word)
+            is OnlineSearchResult.Found -> OnlineSearchState.Found(result.word, result.fromCache)
             OnlineSearchResult.NoKey -> OnlineSearchState.NoKey
             OnlineSearchResult.NotFound -> OnlineSearchState.NotFound
             is OnlineSearchResult.Failed -> OnlineSearchState.Error(result.error)
@@ -116,6 +116,8 @@ class DictionaryViewModel @Inject constructor(
         val favoritesOnly: Boolean,
         val topic: Topic?,
         val resultsEmpty: Boolean,
+        /** True when a local result matches the query exactly (see hasExactMatch). */
+        val hasExactMatch: Boolean,
     )
 
     /**
@@ -220,7 +222,12 @@ class DictionaryViewModel @Inject constructor(
                         (!inputs.favoritesOnly || it.isFavorite) &&
                             (inputs.topic == null || it.topic == inputs.topic)
                     }
-                    if (filtered.size >= FUZZY_MIN_RESULTS) {
+                    if (filtered.size >= FUZZY_MIN_RESULTS ||
+                        // Devanagari input: the fuzzy pass only compares
+                        // Korean / romanization / English, so it can
+                        // never match — skip it.
+                        detectSearchLanguage(inputs.query) == SearchLanguage.NEPALI
+                    ) {
                         filtered
                     } else {
                         filtered + fuzzyMatches(
@@ -249,19 +256,34 @@ class DictionaryViewModel @Inject constructor(
         viewModelScope.launch {
             // Online fallback: when the debounced query has NO local
             // results (and no favorites/topic filter is narrowing the
-            // list), ask Gemini once for that query. collectLatest
-            // cancels an in-flight lookup when the query changes, so
-            // fast typing never fires a lookup per keystroke.
+            // list), ask Gemini once for that query. A Nepali / English
+            // meaning with no EXACT local match also gets a lookup —
+            // partial LIKE matches must not hide the translation the
+            // user asked for (see detectSearchLanguage / hasExactMatch).
+            // collectLatest cancels an in-flight lookup when the query
+            // changes, so fast typing never fires a lookup per keystroke.
             combine(
                 debouncedQuery,
                 results,
                 _favoritesOnly,
                 _selectedTopic,
             ) { query, results, favoritesOnly, topic ->
-                OnlineTrigger(query, favoritesOnly, topic, results.isEmpty())
+                OnlineTrigger(
+                    query = query,
+                    favoritesOnly = favoritesOnly,
+                    topic = topic,
+                    resultsEmpty = results.isEmpty(),
+                    hasExactMatch = hasExactMatch(results, query),
+                )
             }.collectLatest { trigger ->
+                // A non-Korean query needs the online lookup when no
+                // local word matches it exactly; a Korean query only
+                // when the local list is empty.
+                val needsOnline = trigger.resultsEmpty ||
+                    (detectSearchLanguage(trigger.query) != SearchLanguage.KOREAN &&
+                        !trigger.hasExactMatch)
                 if (trigger.query.isBlank() || trigger.favoritesOnly ||
-                    trigger.topic != null || !trigger.resultsEmpty
+                    trigger.topic != null || !needsOnline
                 ) {
                     lastOnlineQuery = null
                     if (_onlineState.value != OnlineSearchState.Idle) {
